@@ -1,0 +1,102 @@
+
+Xft.dpi: 96
+Xft.antialias: true
+Xft.hinting: true
+Xft.rgba: rgb
+Xft.autohint: true
+Xft.hintstyle: hintfull
+Xft.lcdfilter: lcdfilter
+
+! general settings
+URxvt*saveline:         15000
+!URxvt*termName:         xterm-256color
+URxvt*termName: rxvt-unicode-256color
+URxvt*urgentOnBell:     false
+URxvt*visualBell:       false
+URxvt*iso14755:         false
+URxvt*iso14755_52:      false
+URxvt*meta8:            false
+URxvt*metaSendsEscape:  true
+URxvt*iconFile:  		/usr/share/icons/Sardi-Mono/scalable/apps/terminal.svg
+
+! appearance
+URxvt*depth:             32
+URxvt*transparent:      false
+URxvt*shading:          30
+!URxvt*background:       rgba:0000/0000/0000/AAAA
+URxvt*background:       #262626
+!URxvt*background:       [70]#3F424A
+!URxvt*background:        [80]#282A36
+URxvt*foreground:        #F8F8FF
+URxvt*underlineColor:    #0a1612	
+URxvt*highlightColor:    #1a2930
+URxvt*throughColor:      Blue
+URxvt*cursorColor:       #c5c8c6
+URxvt*scrollBar:         false
+URxvt*scrollTtyOutput:   false
+URxvt*scrollWithBuffer:  true
+URxvt*scrollTtyKeypress: true
+URxvt*internalBorder:    0
+URxvt*externalBorder:    0
+URxvt*colorIT:      	 #87af5f
+URxvt*colorBD:      	 #c5c8c6
+URxvt*colorUL:      	 #87afd7
+
+
+! colors
+URxvt*color0: #b7bec9
+URxvt*color1: #e77171
+URxvt*color2: #a1bf78
+URxvt*color3: #dbb774
+URxvt*color4: #73b3e7
+URxvt*color5: #d390e7
+URxvt*color6: #5ebaa5
+URxvt*color7: #88909f
+URxvt*color8: #f7ce3e
+URxvt*color9: #e77171
+URxvt*color10: #a1bf78
+URxvt*color11: #dbb774
+URxvt*color12: #73b3e7
+URxvt*color13: #d390e7
+URxvt*color14: #5ebaa5
+URxvt*color15: #88909f
+
+! fonts
+URxvt*letterSpace: 	    		-2
+URxvt*font:                 	xft:Monospace:regular:size=12
+URxvt*imFont:               	xft:Monospace:regular:size=12
+URxvt*boldFont:             	xft:Monospace:bold:size=12
+URxvt*italicFont:           	xft:Monospace:italic:size=12
+URxvt*boldItalicFont:     		xft:Monospace:regular:size=12
+
+! perl extensions
+URxvt*perl-ext-common:  default,clipboard,url-select,keyboard-select,resize-font
+!URxvt*perl-ext-common:  default,clipboard,url-select,keyboard-select,tabbed
+
+! macros for clipboard and selection
+URxvt*copyCommand:      xclip -i -selection clipboard
+URxvt*pasteCommand:     xclip -o -selection clipboard
+URxvt*keysym.M-c:       perl:clipboard:copy
+URxvt*keysym.m-v:       perl:clipboard:paste
+URxvt*keysym.M-C-v:     perl:clipboard:paste_escaped
+URxvt*keysym.M-Escape:  perl:keyboard-select:activate
+URxvt*keysym.M-s:       perl:keyboard-select:search
+URxvt*keysym.M-u:       perl:url-select:select_next
+URxvt*resize-font.smaller:	C-Down
+URxvt*resize-font.bigger:	C-Up
+URxvt*urlLauncher:      qutebrowser
+URxvt*underlineURLs:    true
+URxvt*urlButton:        1
+URxvt*geometry: 		90x30
+
+! tabbed
+URxvt*tabbed.tabbar-fg: 4
+URxvt*tabbed.tabbar-bg: 16
+URxvt*tabbed.tab-fg:    15
+URxvt*tabbed.tab-bg:    4
+URxvt*buffered:         false
+URxvt*keysym.Control-Shift-C: perl:clipboard:copy
+URxvt*keysym.Control-Shift-V: perl:clipboard:paste
+
+
+
