@@ -1,0 +1,16 @@
+# Ignore everything
+*
+# But allow to track:
+!.bashrc
+!.zshrc
+!.Xresources
+
+!README.md
+!LICENSE
+!.gitignore
+
+# .config folder
+!.mozilla/
+!.mozilla/**
+!.config/
+!.config/**
