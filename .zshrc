@@ -1,14 +1,10 @@
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-
 # Path to your oh-my-zsh installation.
 export ZSH="/home/$USER/.oh-my-zsh"
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# Which plugins would you like to load?
+# - PLUGINS -
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
 	git
@@ -19,7 +15,7 @@ plugins=(
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-
+# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 ZSH_THEME="powerlevel9k/powerlevel9k"
 source $ZSH/oh-my-zsh.sh
 
@@ -108,11 +104,6 @@ POWERLEVEL9K_VCS_MODIFIED_BACKGROUND='clear'
 POWERLEVEL9K_VCS_MODIFIED_FOREGROUND='yellow'
 POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND='clear'
 POWERLEVEL9K_VCS_UNTRACKED_FOREGROUND='green'
-# Set list of themes to pick from when loading at random
-# Setting this variable when ZSH_THEME=random will cause zsh to load
-# a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
-# If set to an empty array, this variable will have no effect.
-# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -158,35 +149,24 @@ POWERLEVEL9K_VCS_UNTRACKED_FOREGROUND='green'
 # see 'man strftime' for details.
 # HIST_STAMPS="mm/dd/yyyy"
 
-# User configuration
-
 # export MANPATH="/usr/local/man:$MANPATH"
 
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
-
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+export EDITOR='vim'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-#
-
-################################
-########## ALIAS ###############
+#           _      _____           _____
+#     /\   | |    |_   _|   /\    / ____|
+#    /  \  | |      | |    /  \  | (___
+#   / /\ \ | |      | |   / /\ \  \___ \
+#  / ____ \| |____ _| |_ / ____ \ ____) |
+# /_/    \_\______|_____/_/    \_\_____/
 
 #---- System
 alias ram="free -h --mega"
-alias unlock="sudo rm /var/lib/pacman/db.lck"
+
 # reset xresources
 alias xrce="xrdb /home/$USER/.Xresources"
 #alias q=exit
@@ -213,5 +193,3 @@ alias audio="youtube-dl -o '/home/owl/Desktop/%(title)s.%(ext)s' -f bestaudio -x
 alias audio-mp3="youtube-dl -o '/home/owl/Desktop/%(title)s.%(ext)s' -x --audio-format mp3 --audio-quality 0"
 alias audio-mp3t="youtube-dl -o '/home/owl/Desktop/%(title)s.%(ext)s' -x --audio-format mp3 --audio-quality 0 --write-thumbnail"
 alias video="youtube-dl -o '/home/owl/Desktop/%(title)s.%(ext)s' -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4"
-
-export PATH

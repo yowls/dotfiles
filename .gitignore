@@ -10,7 +10,8 @@
 !.gitignore
 
 # .config folder
-!.mozilla/
-!.mozilla/**
-!.config/
-!.config/**
+!.mozilla/firefox/*.default-release/chrome/**
+!.config/picom/*
+!.config/rofi/*
+
+!.config/redshift.conf
