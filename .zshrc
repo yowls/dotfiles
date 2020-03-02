@@ -166,15 +166,15 @@ export EDITOR='vim'
 
 #---- System
 alias ram="free -h --mega"
-
 # reset xresources
 alias xrce="xrdb /home/$USER/.Xresources"
-#alias q=exit
 
 #---- Aplications
 alias fn=firefox-nightly
+
 # update hblock (hosts)
-alias uhblock="hblock --backup /home/owl/Desktop --source /home/owl/MEGA/dotfiles/hosts --whitelist /home/owl/MEGA/dotfiles/whitelist.list"
+alias uhblock="hblock --backup /home/$USER/Desktop --sources /home/$USER/MEGA/dotfiles/hosts --whitelist /home/$USER/MEGA/dotfiles/whitelist.list"
+
 # Git
 alias glogg="git log --all --graph --decorate --oneline"
 
@@ -189,7 +189,7 @@ alias viconf="vim ~/.vimrc"
 alias grconf="sudo vim /etc/default/grub"
 
 #Youtube-dl
-alias audio="youtube-dl -o '/home/owl/Desktop/%(title)s.%(ext)s' -f bestaudio -x --audio-format best --audio-quality 0"
-alias audio-mp3="youtube-dl -o '/home/owl/Desktop/%(title)s.%(ext)s' -x --audio-format mp3 --audio-quality 0"
-alias audio-mp3t="youtube-dl -o '/home/owl/Desktop/%(title)s.%(ext)s' -x --audio-format mp3 --audio-quality 0 --write-thumbnail"
-alias video="youtube-dl -o '/home/owl/Desktop/%(title)s.%(ext)s' -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4"
+alias audio="youtube-dl -o '/home/$USER/Desktop/%(title)s.%(ext)s' -f bestaudio -x --audio-format best --audio-quality 0"
+alias audio-mp3="youtube-dl -o '/home/$USER/Desktop/%(title)s.%(ext)s' -x --audio-format mp3 --audio-quality 0"
+alias audio-mp3t="youtube-dl -o '/home/$USER/Desktop/%(title)s.%(ext)s' -x --audio-format mp3 --audio-quality 0 --write-thumbnail"
+alias video="youtube-dl -o '/home/$USER/Desktop/%(title)s.%(ext)s' -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4"

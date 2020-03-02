@@ -3,6 +3,7 @@
 # But allow to track:
 !.bashrc
 !.zshrc
+!.vimrc
 !.Xresources
 
 !README.md

@@ -6,8 +6,7 @@
 ! ╚═╝░░╚═╝╚═╝░░╚═╝╚══════╝╚══════╝░╚═════╝░░╚═════╝░╚═╝░░╚═╝░╚═════╝╚══════╝╚══════╝
 !
 ! -----------------------------------
-Xft.dpi: 102
-!Xft.dpi: 96
+Xft.dpi: 96
 Xft.antialias: true
 Xft.hinting: true
 Xft.rgba: rgb
@@ -16,16 +15,31 @@ Xft.hintstyle: hintfull
 Xft.lcdfilter: lcddefault
 
 
-! ===== urxvt =====
+! ===== RXVT-Unicode =====
 URxvt.scrollBar: off
 URxvt.internalBorder:     22
 URxvt.externalBorder:      0
+
+URxvt.keysym.F11:          perl:fullscreen:switch
+URxvt.Resize-font.smaller: esc
+URxvt.Resize-font.bigger:  S-Up
+
+URxvt.keysym.M-Delete:     perl:matcher:list
+URxvt.colorUL:             #006699
+
+URxvt.cursorBlink : 1
+URxvt.cursorUnderline : 1
+URxvt.cursorColor : cyan
+URxvt*saveLines: 60000
+URxvt.background: #1E262E
+URxvt.transparent : 0.7
+URxvt.shading : 30
+URxvt*fading: 30
 
 URxvt.foreground :white
 !!URxvt.tintColor : yellow
 urxvt*blurRadius: 10
 URxvt.letterSpace:         -1
-
 
 ! fonts
 URxvt*letterSpace: 	    		-2
@@ -34,11 +48,6 @@ URxvt*imFont:               	xft:Monospace:regular:size=12
 URxvt*boldFont:             	xft:Monospace:bold:size=12
 URxvt*italicFont:           	xft:Monospace:italic:size=12
 URxvt*boldItalicFont:     		xft:Monospace:regular:size=12
-
-URxvt.transparent : 0.7
-URxvt.shading : 30
-URxvt*fading:              30
-
 
 ! perl extensions
 URxvt*perl-ext-common:  default,clipboard,url-select,keyboard-select,resize-font
@@ -53,26 +62,21 @@ URxvt*buffered:         false
 URxvt*keysym.Control-Shift-C: perl:clipboard:copy
 URxvt*keysym.Control-Shift-V: perl:clipboard:paste
 
-!
- URxvt.keysym.F11:          perl:fullscreen:switch
-!
- URxvt.Resize-font.smaller: esc
- URxvt.Resize-font.bigger:  S-Up
-!
-
- URxvt.url-launcher:        /usr/bin/chromium
- URxvt.keysym.M-Delete:     perl:matcher:list
- URxvt.colorUL:             #006699
-
-
-URxvt.cursorBlink : 1
-URxvt.cursorUnderline : 1
-URxvt.cursorColor : cyan
-URxvt*saveLines: 60000
-URxvt.background: #1E262E
-
-
-
+! macros for clipboard and selection
+URxvt*copyCommand:      xclip -i -selection clipboard
+URxvt*pasteCommand:     xclip -o -selection clipboard
+URxvt*keysym.M-c:       perl:clipboard:copy
+URxvt*keysym.m-v:       perl:clipboard:paste
+URxvt*keysym.M-C-v:     perl:clipboard:paste_escaped
+URxvt*keysym.M-Escape:  perl:keyboard-select:activate
+URxvt*keysym.M-s:       perl:keyboard-select:search
+URxvt*keysym.M-u:       perl:url-select:select_next
+URxvt*resize-font.smaller:	C-Down
+URxvt*resize-font.bigger:	C-Up
+URxvt*urlLauncher:      qutebrowser
+URxvt*underlineURLs:    true
+URxvt*urlButton:        1
+URxvt*geometry: 		90x30
 
 ! ====== COLORS ===========
 *background:	#1D1F28
