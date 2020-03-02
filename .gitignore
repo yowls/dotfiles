@@ -10,7 +10,7 @@
 !.gitignore
 
 # .config folder
-!.mozilla/firefox/*.default-release/chrome/**
+!.mozilla/firefox/*.default-esr/chrome/**
 !.config/picom/*
 !.config/rofi/*
 

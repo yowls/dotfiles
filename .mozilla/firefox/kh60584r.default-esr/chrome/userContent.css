@@ -151,7 +151,8 @@ regexp(".*\\.(p|P)(d|D)(f|F).*") {
     --cm-matching-bracket: rgba(255,255,255,.25)!important;
     --cm-search-background: rgba(24,29,32,1)!important;
     --cm-red: #de7474!important;
-    
+    --start-indicator-for-updater-scripts: black;
+    --end-indicator-for-updater-scripts: black;
     --dummy-variable-for-updater-scripts: black
   }
 }
@@ -1703,7 +1704,7 @@ html#feedHandler .enclosures {
 /*! Pop Up Background Fixes */
 @-moz-document url-prefix("moz-extension://{7fc8ef53-24ec-4205-87a4-1e745953bb0d}/popup.html"),
 url-prefix("moz-extension://https-everywhere@eff.org/pages/popup"),
-url-prefix("moz-extension://dc296ecf-189e-4d03-8103-2e8de91f9275/pages/popup"),
+url-prefix("moz-extension://41d395ca-4240-4fda-84aa-b374be0e7f4e/pages/popup"),
 url-prefix("moz-extension://{b3e677f4-1150-4387-8629-da738260a48e}/data/data/popup.html"),
 url-prefix("moz-extension://renametabtitle@mozilla.org/popup/popup.html"),
 url-prefix("moz-extension://{6f5f4891-9637-41f9-9ee5-3a0ac02cf254}/popup"),
@@ -1741,10 +1742,10 @@ url-prefix("moz-extension://{7fc8ef53-24ec-4205-87a4-1e745953bb0d}/"),
 url-prefix("moz-extension://https-everywhere@eff.org/"),
 url-prefix("moz-extension://skipredirect@sblask/"),
 url-prefix("moz-extension://{174b2d58-b983-4501-ab4b-07e71203cb43}/"),
-url-prefix("moz-extension://dc296ecf-189e-4d03-8103-2e8de91f9275/"),
+url-prefix("moz-extension://41d395ca-4240-4fda-84aa-b374be0e7f4e/"),
 url-prefix("moz-extension://{b3e677f4-1150-4387-8629-da738260a48e}/"),
 url-prefix("moz-extension://jid0-HYNmqxA9zQGfJADREri4n2AHKSI@jetpack/options/options"),
-url-prefix("moz-extension://b12fa7d9-4a02-4214-bc8d-86958a3455f1/options/options"),
+url-prefix("moz-extension://2125bd00-e43b-410c-8c5b-e3fd2b1d1d68/options/options"),
 url-prefix("moz-extension://translator@zoli.bod"),
 url-prefix("moz-extension://enhancerforyoutube@maximerf.addons.mozilla.org/options.html"),
 url-prefix("moz-extension://{bee6eb20-01e0-ebd1-da83-080329fb9a3a}/html/options.html"),
@@ -1845,7 +1846,7 @@ url-prefix("moz-extension://generic_styling_5") {
 }
 /*! Code Mirror */
 @-moz-document url-prefix("moz-extension://{aecec67f-0d10-4fa7-b7c7-609a2db280cf}/"),
-url-prefix("moz-extension://4dbea19a-0503-4e86-94ea-c6ccfad0c737/"),
+url-prefix("moz-extension://2e405de8-c1f7-4d6e-95b0-d7e779285612/"),
 url-prefix("moz-extension://uMatrix@raymondhill.net/"),
 url-prefix("moz-extension://{e4a8a97b-f2ed-450b-b12d-ee082ba24781}/src/content/edit-user-script") {
   .CodeMirror {
@@ -2021,7 +2022,7 @@ toolbarbutton#toggle-button--redirectoreinaregilssoncom-redirector[image*=disabl
 }
 /*! Alters the webextension Multi-Account Containers
   IMPORTANT: change the Internal UUID in BOTH locations */
-@-moz-document url-prefix("moz-extension://fd5f4cdc-a948-4f90-8eae-204e74533a81/") {
+@-moz-document url-prefix("moz-extension://c9210112-9b21-4903-befc-2bc2193bd36c/") {
   #current-tab,
   .column-panel-content,
   .container-panel-row,
@@ -2110,14 +2111,14 @@ toolbarbutton#toggle-button--redirectoreinaregilssoncom-redirector[image*=disabl
 }
 /*! Alters the webextension Multi-Account Containers
  IMPORTANT: change the Internal UUID in BOTH locations */
-@-moz-document url-prefix("moz-extension://fd5f4cdc-a948-4f90-8eae-204e74533a81/popup") {
+@-moz-document url-prefix("moz-extension://c9210112-9b21-4903-befc-2bc2193bd36c/popup") {
   html {
     background-color: var(--in-content-box-background)!important
   }
 }
 /*! Alters the webextension Multi-Account Containers
   IMPORTANT: change the Internal UUID in BOTH locations */
-@-moz-document url-prefix("moz-extension://fd5f4cdc-a948-4f90-8eae-204e74533a81/confirm-page") {
+@-moz-document url-prefix("moz-extension://c9210112-9b21-4903-befc-2bc2193bd36c/confirm-page") {
   body {
     background-color: var(--tone-7)!important
   }
@@ -2318,7 +2319,7 @@ toolbarbutton#toggle-button--redirectoreinaregilssoncom-redirector[image*=disabl
 }
 /*! Alters the webextension Tree Style Tab
   IMPORTANT: change the Internal UUID in BOTH locations */
-@-moz-document url-prefix("moz-extension://b12fa7d9-4a02-4214-bc8d-86958a3455f1/resources/group-tab.html") {
+@-moz-document url-prefix("moz-extension://2125bd00-e43b-410c-8c5b-e3fd2b1d1d68/resources/group-tab.html") {
   :root {
     background: var(--tone-7)!important
   }
@@ -2331,7 +2332,7 @@ toolbarbutton#toggle-button--redirectoreinaregilssoncom-redirector[image*=disabl
 }
 /*! Alters the webextension Tree Style Tab
   IMPORTANT: change the Internal UUID all BOTH locations */
-@-moz-document url-prefix("moz-extension://b12fa7d9-4a02-4214-bc8d-86958a3455f1/") {
+@-moz-document url-prefix("moz-extension://2125bd00-e43b-410c-8c5b-e3fd2b1d1d68/") {
   /*! Use Plain Dark Appearance */
 #debug-configs,
   p,
@@ -2424,7 +2425,7 @@ toolbarbutton#toggle-button--redirectoreinaregilssoncom-redirector[image*=disabl
 }
 /*! Alters the webextension Tridactyl
   IMPORTANT: change the Internal UUID */
-@-moz-document url-prefix("moz-extension://6c72d656-60b0-429c-b2e3-1cea9548af34/") {
+@-moz-document url-prefix("moz-extension://0b96c81f-4d95-4d35-8f24-7e9d28243b03/") {
   .container-main,
   body,
   html {
@@ -2474,7 +2475,7 @@ toolbarbutton#toggle-button--redirectoreinaregilssoncom-redirector[image*=disabl
 }
 /*! Alters the webextension uBlock Origin
   IMPORTANT: change the Internal UUID */
-@-moz-document url-prefix("moz-extension://4dbea19a-0503-4e86-94ea-c6ccfad0c737/") {
+@-moz-document url-prefix("moz-extension://2e405de8-c1f7-4d6e-95b0-d7e779285612/") {
   button.custom {
     background-color: var(--in-content-page-background)!important;
     background-image: none!important;
@@ -2770,7 +2771,7 @@ body.colorBlind #netFilteringDialog > .panes > .details > div[data-status="2"],
   /*! COLORBLIND MODE END */
 
 }
-@-moz-document url-prefix("moz-extension://4dbea19a-0503-4e86-94ea-c6ccfad0c737/logger-ui") {
+@-moz-document url-prefix("moz-extension://2e405de8-c1f7-4d6e-95b0-d7e779285612/logger-ui") {
   .fa-icon > svg,
   .ubo-icon > svg {
     fill: var(--in-content-page-color)!important

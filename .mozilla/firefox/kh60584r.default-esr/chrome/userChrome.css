@@ -151,7 +151,8 @@ regexp(".*\\.(p|P)(d|D)(f|F).*") {
     --cm-matching-bracket: rgba(255,255,255,.25)!important;
     --cm-search-background: rgba(24,29,32,1)!important;
     --cm-red: #de7474!important;
-
+    --start-indicator-for-updater-scripts: black;
+    --end-indicator-for-updater-scripts: black;
     --dummy-variable-for-updater-scripts: black
   }
 }
@@ -1482,9 +1483,6 @@ toolbarbutton.bookmark-item[type="menu"] .toolbarbutton-icon{
     display: none !important;
 }
 /*- - - - - - - - - - - - - -  scrollbar - - - - - - - - - - - - - -*/
-toolbarbutton#alltabs-button{
-  -moz-binding:url("./scrollbar/userChrome.xml#js")
-}
 /* Removes scrollbars (like the one in "Edit this Bookmark" when you choose a folder to save) */
 .hidevscroll-scrollbar {
 	display: none !important;
