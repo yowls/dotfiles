@@ -166,15 +166,15 @@ export EDITOR='vim'
 
 #---- System
 alias ram="free -h --mega"
-
 # reset xresources
 alias xrce="xrdb /home/$USER/.Xresources"
-#alias q=exit
 
 #---- Aplications
 alias fn=firefox-nightly
+
 # update hblock (hosts)
-alias uhblock="hblock --backup /home/owl/Desktop --source /home/owl/MEGA/dotfiles/hosts --whitelist /home/owl/MEGA/dotfiles/whitelist.list"
+alias uhblock="hblock --backup /home/$USER/Desktop --source /home/$USER/MEGA/dotfiles/hosts --whitelist /home/$USER/MEGA/dotfiles/whitelist.list"
+
 # Git
 alias glogg="git log --all --graph --decorate --oneline"
 
