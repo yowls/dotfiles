@@ -166,7 +166,6 @@ export EDITOR='vim'
 
 #---- System
 alias ram="free -h --mega"
-
 # reset xresources
 alias xrce="xrdb /home/$USER/.Xresources"
 
@@ -178,6 +177,7 @@ alias upgrade="sudo aptitude upgrade"
 alias fn=firefox-nightly
 
 # update hblock (hosts)
+<<<<<<< HEAD
 alias uhblock="hblock --backup /home/$USER/Desktop/ --sources /home/$USER/MEGA/dotfiles/hosts --whitelist /home/$USER/MEGA/dotfiles/whitelist.list"
 
 # Git
