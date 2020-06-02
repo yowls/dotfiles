@@ -1,17 +1,31 @@
 # Ignore everything
 *
 # But allow to track:
-!.bashrc
-!.zshrc
-!.Xresources
 
+# Git things
 !README.md
 !LICENSE
 !.gitignore
+# On session startup
+!.xsessionrc
+# .rc thing
+!.bashrc
+!.zshrc
+!.vimrc
+!.Xresources
 
-# .config folder
-!.mozilla/firefox/*.default-esr/chrome/**
+# Folder for all pics in the directory
+!Pictures
+!Pictures/*
+!.face
+
+# Config folder
+!.config/redshift.conf
+# Compositor
 !.config/picom/*
+# Launcher
 !.config/rofi/*
 
-!.config/redshift.conf
+# Window Manager (do not include others config files)
+#.config/qtile/*
+#.config/herbstluftwm/*

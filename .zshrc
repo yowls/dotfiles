@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH="/home/$USER/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # - PLUGINS -
@@ -165,36 +165,88 @@ export EDITOR='vim'
 # /_/    \_\______|_____/_/    \_\_____/
 
 #---- System
-alias ram="free -h --mega"
-# reset xresources
-alias xrce="xrdb /home/$USER/.Xresources"
+# Grub
+alias grupdate="sudo grub-mkconfig -o?"
+alias gruconf="sudo vim /etc/default/grub"
 
-# Package manager
+alias hosts="sudo vim /etc/hosts"
+alias rswap="sudo swapoff -a && sudo swapon -a"
+alias ram="free -h --mega"
+
+#---- Package manager
+# Istall
+alias ins="sudo aptitude install"
+alias insb="sudo apt -t buster-backports install"
+# Update
 alias update="sudo aptitude update"
 alias upgrade="sudo aptitude upgrade"
+alias upgradels="apt list --upgradable -a"
+# Nya
+alias nya="update && upgradels"
+alias nyya="update && upgrade"
+# Remove unneeded dependecy
+alias autoremove="sudo apt autoremove"
+# Remove old downloaded packages
+alias autoclean="sudo aptitude autoclean"
+
+# Reset Xresources
+alias rxr="xrdb ~/.Xresources"
 
 #---- Aplications
-alias fn=firefox-nightly
+alias lc="colorls --sort-dirs"
+alias lca="colorls --sort-dirs -A"
+alias lct="colorls --sort-dirs --tree"
 
-# update hblock (hosts)
-<<<<<<< HEAD
-alias uhblock="hblock --backup /home/$USER/Desktop/ --sources /home/$USER/MEGA/dotfiles/hosts --whitelist /home/$USER/MEGA/dotfiles/whitelist.list"
+#---- Scripts
+alias weather="curl wttr.in"
 
-# Git
-alias glogg="git log --all --graph --decorate --oneline"
+# ADD applications in Applications folder to PATH
 
 #----- Configuration files | dotfiles
-alias todo= "vim ~/MEGA/debian"
+#alias todo="vim ~/MEGA/$DISTRIBUTION_NAME"
+alias todo="vim ~/MEGA/debian"
 alias zconf="vim ~/.zshrc"
 alias ohmyconf="vim ~/.oh-my-zsh"
 alias xrconf="vim ~/.Xresources"
 alias viconf="vim ~/.vimrc"
+alias neoconf="vim .config/neofetch/config.conf"
 
-#Grub
-alias grconf="sudo vim /etc/default/grub"
+# Working directories
+alias cdf="cd ~/.mozilla/firefox/*.default-release/chrome"
+alias cdst="cd ~/startpage"
+alias cdsc="cd ~/script"
+alias cdg="cd ~/git"
+# Window manager
+alias cdhl="cd ~/.config/herbstluftwm"
+alias cdql="cd ~/.config/qtile/"
+
+# Firefox
+alias ffd="vim ~/.mozilla/firefox/*.default-release/chrome"
+alias fcss="vim ~/.mozilla/firefox/*.default-release/chrome/userChrome.css"
+alias fcnt="vim ~/.mozilla/firefox/*.default-release/chrome/userContent.css"
+
+# Qtile
+#alias qlfd="vim ~/.config/qtile"
+#alias qlconf="vim ~/.config/qtile/.."
+#alias qlstart="vim ~/.config/qtile/.."
+
+# Herbstluft
+alias hlfd="vim ~/.config/herbstluftwm"
+alias hlconf="vim ~/.config/herbstluftwm/autostart"
+alias hlstart="vim ~/.config/herbstluftwm/startup"
 
 #Youtube-dl
-alias audio="youtube-dl -o '/home/owl/Desktop/%(title)s.%(ext)s' -f bestaudio -x --audio-format best --audio-quality 0"
-alias audio-mp3="youtube-dl -o '/home/owl/Desktop/%(title)s.%(ext)s' -x --audio-format mp3 --audio-quality 0"
-alias audio-mp3t="youtube-dl -o '/home/owl/Desktop/%(title)s.%(ext)s' -x --audio-format mp3 --audio-quality 0 --write-thumbnail"
-alias video="youtube-dl -o '/home/owl/Desktop/%(title)s.%(ext)s' -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4"
+alias audio="youtube-dl -o $HOME/Desktop/%(title)s.%(ext)s' -f bestaudio -x --audio-format best --audio-quality 0"
+alias mp3="youtube-dl -o '$HOME/Desktop/%(title)s.%(ext)s' -x --audio-format mp3 --audio-quality 0"
+alias mp3t="youtube-dl -o '$HOME/Desktop/%(title)s.%(ext)s' -x --audio-format mp3 --audio-quality 0 --write-thumbnail"
+alias video="youtube-dl -o '$HOME/Desktop/%(title)s.%(ext)s' -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4"
+
+# Update hblock (hosts)
+alias uhblock="hblock --backup $HOME/Desktop --sources $HOME/MEGA/dotfiles/hosts --whitelist $HOME/MEGA/dotfiles/whitelist.list"
+#^Add blacklist source
+
+# Git
+alias glogg="git log --all --graph --decorate --oneline"
+
+# EXTRAS
+source $(dirname $(gem which colorls))/tab_complete.sh
