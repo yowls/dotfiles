@@ -1,3 +1,10 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -5,7 +12,6 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 # - PLUGINS -
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Add wisely, as too many plugins slow down shell startup.
 plugins=(
 	git
         zsh-autosuggestions
@@ -16,94 +22,9 @@ plugins=(
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
-ZSH_THEME="powerlevel9k/powerlevel9k"
+
+ZSH_THEME="powerlevel10k/powerlevel10k"
 source $ZSH/oh-my-zsh.sh
-
-#P O W E R L E V E L 9 K !
-function sp {
-  git branch > /dev/null 2>&1 || return 1
-  git config user.initials
-}
-
-POWERLEVEL9K_DIR_BACKGROUND='237'
-POWERLEVEL9K_CUSTOM_GIT_PAIR="echo \$(sp)"
-POWERLEVEL9K_CUSTOM_GIT_PAIR_BACKGROUND="clear"
-POWERLEVEL9K_CUSTOM_GIT_PAIR_FOREGROUND="blue"
-POWERLEVEL9K_CUSTOM_GIT_PAIR_ICON="\uf7af"
-POWERLEVEL9K_DIR_DEFAULT_BACKGROUND="clear"
-POWERLEVEL9K_DIR_DEFAULT_FOREGROUND="012"
-POWERLEVEL9K_DIR_FOREGROUND='010'
-POWERLEVEL9K_DIR_HOME_BACKGROUND="clear"
-POWERLEVEL9K_DIR_HOME_FOREGROUND="012"
-POWERLEVEL9K_DIR_HOME_SUBFOLDER_BACKGROUND="clear"
-POWERLEVEL9K_DIR_HOME_SUBFOLDER_FOREGROUND="012"
-POWERLEVEL9K_DIR_PATH_SEPARATOR="%F{008}/%F{cyan}"
-
-POWERLEVEL9K_DIR_ETC_BACKGROUND="clear"
-POWERLEVEL9K_ETC_ICON='%F{blue}\uf423'
-POWERLEVEL9K_DIR_WRITABLE_FORBIDDEN_FOREGROUND="red"
-POWERLEVEL9K_DIR_WRITABLE_FORBIDDEN_BACKGROUND="clear"
-
-POWERLEVEL9K_GO_ICON="\uf7b7"
-POWERLEVEL9K_GO_VERSION_BACKGROUND='clear'
-POWERLEVEL9K_GO_VERSION_FOREGROUND='081'
-
-POWERLEVEL9K_HOME_ICON="\uf413"
-
-POWERLEVEL9K_INSTALLATION_PATH=$ANTIGEN_BUNDLES/bhilburn/powerlevel9k
-
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(root_indicator dir dir_writable_joined custom_git_pair vcs_joined)
-POWERLEVEL9K_LEFT_SUBSEGMENT_SEPARATOR='%F{008}\uf460%F{008}'
-
-POWERLEVEL9K_CUSTOM_ARCH="echo  "
-POWERLEVEL9K_CUSTOM_ARCH_BACKGROUND=000
-POWERLEVEL9K_CUSTOM_ARCH_FOREGROUND=069
-POWERLEVEL9K_LINUX_MANJARO_ICON="\uf312 "
-POWERLEVEL9K_LINUX_UBUNTU_ICON="\uf31b "
-
-POWERLEVEL9K_MODE='FuraCode Nerd Font'
-
-POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=""
-POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX=" \uf101 "
-
-POWERLEVEL9K_NVM_BACKGROUND='clear'
-POWERLEVEL9K_NVM_FOREGROUND='green'
-
-POWERLEVEL9K_OS_ICON_BACKGROUND='clear'
-POWERLEVEL9K_OS_ICON_FOREGROUND='cyan'
-
-POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
-POWERLEVEL9K_PROMPT_ON_NEWLINE=true
-
-POWERLEVEL9K_TIME_BACKGROUND="black"
-POWERLEVEL9K_TIME_FOREGROUND="white"
-POWERLEVEL9K_TIME_FORMAT="\UF64F %D{%I:%M}"
-POWERLEVEL9K_COMMAND_EXECUTION_TIME_BACKGROUND='black'
-POWERLEVEL9K_COMMAND_EXECUTION_TIME_FOREGROUND='white'
-POWERLEVEL9K_COMMAND_EXECUTION_TIME_THRESHOLD=0
-
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(command_execution_time status go_version nvm time custom_arch)
-POWERLEVEL9K_RIGHT_SEGMENT_SEPARATOR=''
-POWERLEVEL9K_RIGHT_SUBSEGMENT_SEPARATOR='%F{008}\uf104%F{008}'
-
-POWERLEVEL9K_SHORTEN_DELIMITER='%F{008} …%F{008}'
-POWERLEVEL9K_SHORTEN_DIR_LENGTH=3
-POWERLEVEL9K_SHORTEN_STRATEGY="none"
-
-POWERLEVEL9K_STATUS_ERROR_BACKGROUND="clear"
-POWERLEVEL9K_STATUS_ERROR_FOREGROUND="001"
-POWERLEVEL9K_STATUS_OK_BACKGROUND="clear"
-POWERLEVEL9K_STATUS_BACKGROUND="clear"
-POWERLEVEL9K_CARRIAGE_RETURN_ICON="\uf071"
-
-POWERLEVEL9K_TIME_FORMAT="%D{%H:%M \uE868  %d.%m}"
-
-POWERLEVEL9K_VCS_CLEAN_BACKGROUND='clear'
-POWERLEVEL9K_VCS_CLEAN_FOREGROUND='green'
-POWERLEVEL9K_VCS_MODIFIED_BACKGROUND='clear'
-POWERLEVEL9K_VCS_MODIFIED_FOREGROUND='yellow'
-POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND='clear'
-POWERLEVEL9K_VCS_UNTRACKED_FOREGROUND='green'
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -177,11 +98,14 @@ alias ram="free -h --mega"
 # Istall
 alias ins="sudo aptitude install"
 alias insb="sudo apt -t buster-backports install"
+# Remove
+alias remv="sudo aptitude remove"
+alias fremv="sudo aptitude purge"
 # Update
 alias update="sudo aptitude update"
 alias upgrade="sudo aptitude upgrade"
 alias upgradels="apt list --upgradable -a"
-# Nya
+# Nya = Not Y.. A..
 alias nya="update && upgradels"
 alias nyya="update && upgrade"
 # Remove unneeded dependecy
@@ -198,7 +122,7 @@ alias lca="colorls --sort-dirs -A"
 alias lct="colorls --sort-dirs --tree"
 
 #---- Scripts
-alias weather="curl wttr.in"
+alias wttr="curl wttr.in"
 
 # ADD applications in Applications folder to PATH
 
@@ -207,8 +131,8 @@ alias weather="curl wttr.in"
 alias todo="vim ~/MEGA/debian"
 alias zconf="vim ~/.zshrc"
 alias ohmyconf="vim ~/.oh-my-zsh"
-alias xrconf="vim ~/.Xresources"
 alias viconf="vim ~/.vimrc"
+alias xrconf="vim ~/.Xresources"
 alias neoconf="vim .config/neofetch/config.conf"
 
 # Working directories
@@ -250,3 +174,6 @@ alias glogg="git log --all --graph --decorate --oneline"
 
 # EXTRAS
 source $(dirname $(gem which colorls))/tab_complete.sh
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

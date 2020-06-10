@@ -1,3 +1,4 @@
+last updated: 19 July 20
 <div align= "center">
 	<h3>
 		[logo de mi repo]
@@ -28,6 +29,7 @@
 * [Installation]
 * [List of programs]
 * [Extra information]
+* [Known issues]
 * [Gallery]
 
 ## About
@@ -49,11 +51,12 @@ also see for other branchs:
 
 ## Some screenshots
 [Plasma]
-details:
+Details:
 	DE: KDE plasma
 	theme:
 	icons:
 	applications:
+	zsh theme:
 	kde plasma rules: .....
 
 [Qtile]
@@ -66,7 +69,7 @@ details:
 for more details see: [Extra information]
 
 ## Dependency
-* Zsh + [Oh my Zsh](https://github.com/ohmyzsh/ohmyzsh) + [Power Level 9K](https://github.com/Powerlevel9k/powerlevel9k/wiki/Install-Instructions#step-1-install-powerlevel9k)
+* Zsh + [Oh my Zsh](https://github.com/ohmyzsh/ohmyzsh) + [Power Level 10K](https://github.com/romkatv/powerlevel10k)
 * Rofi
 
 If you want to use [QTile](link) also need to install:
@@ -104,14 +107,18 @@ reload xresources for color schemes
 buala, that´s all.
 
 ## List of programs
+In cualquier case, publico las versiones de los programas
+por si en alguna futura actualizacion se rompe algo y 
+no lo he actualizado
+
 Principal:
-* Browser      = Firefox [link to fcss]
-* Shell        = Zsh
-* Terminal     = konsole
-* Text editor  = Vim
-* File Manager = Dolhin
-* Compositor   = Picom [link to that picom]
-* Launcher     = Rofi
+* Browser      = Firefox [link to fcss] "version .."
+* Shell        = Zsh "version .."
+* Terminal     = konsole "version .."
+* Text editor  = Vim "version .."
+* File Manager = Dolhin "version .."
+* Compositor   = Picom [link to that picom] "version .."
+* Launcher     = Rofi "version .."
 
 Others:
 * redshift for you pretty eyes
@@ -134,6 +141,9 @@ xresources color scheme:
 
 *in master branch just put .colors,bg,fg*
 
+## known issues
+Tell me whats wrong 
+
 ## Gallery
-a few photos
+a few more photos
 [full gallery link]

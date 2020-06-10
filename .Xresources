@@ -6,19 +6,21 @@
 ! ╚═╝░░╚═╝╚═╝░░╚═╝╚══════╝╚══════╝░╚═════╝░░╚═════╝░╚═╝░░╚═╝░╚═════╝╚══════╝╚══════╝
 !
 ! -----------------------------------
-Xft.dpi: 96
-Xft.antialias: true
-Xft.hinting: true
-Xft.rgba: rgb
-Xft.autohint: false
-Xft.hintstyle: hintfull
-Xft.lcdfilter: lcddefault
-
+Xft.dpi:	96
+Xft.antialias:	true
+Xft.hinting:	true
+Xft.rgba:	rgb
+Xft.autohint:	false
+Xft.hintstyle:	hintfull
+Xft.lcdfilter:	lcddefault
 
 ! ===== RXVT-Unicode =====
-URxvt.scrollBar: off
-URxvt.internalBorder:     22
-URxvt.externalBorder:      0
+URxvt.scrollBar:	off
+URxvt.internalBorder:	22
+URxvt.externalBorder:	0
+! Disable ISO 4755 mode
+URxvt.iso14755:		False
+URxvt.iso14755_52:	False
 
 URxvt.keysym.F11:          perl:fullscreen:switch
 URxvt.Resize-font.smaller: esc
@@ -27,19 +29,14 @@ URxvt.Resize-font.bigger:  S-Up
 URxvt.keysym.M-Delete:     perl:matcher:list
 URxvt.colorUL:             #006699
 
-URxvt.cursorBlink : 1
-URxvt.cursorUnderline : 1
-URxvt.cursorColor : cyan
-URxvt*saveLines: 60000
-URxvt.background: #1E262E
-URxvt.transparent : 0.7
-URxvt.shading : 30
-URxvt*fading: 30
+URxvt.cursorBlink :	1
+URxvt.cursorUnderline :	1
+URxvt.cursorColor :	pink
+URxvt*saveLines:	60000
 
-URxvt.foreground :white
-!!URxvt.tintColor : yellow
-urxvt*blurRadius: 10
-URxvt.letterSpace:         -1
+URxvt.foreground :	white
+URxvt.background:	#282C34
+URxvt.letterSpace:	-1
 
 ! fonts
 URxvt*letterSpace: 	    		-2
@@ -47,18 +44,17 @@ URxvt*font:                 	xft:Monospace:regular:size=12
 URxvt*imFont:               	xft:Monospace:regular:size=12
 URxvt*boldFont:             	xft:Monospace:bold:size=12
 URxvt*italicFont:           	xft:Monospace:italic:size=12
-URxvt*boldItalicFont:     		xft:Monospace:regular:size=12
+URxvt*boldItalicFont:     	xft:Monospace:regular:size=12
 
 ! perl extensions
-URxvt*perl-ext-common:  default,clipboard,url-select,keyboard-select,resize-font
-!URxvt*perl-ext-common:  default,clipboard,url-select,keyboard-select,tabbed
+URxvt*perl-ext-common: default,tabbed,clipboard,resize-font
 
 ! tabbed
-URxvt*tabbed.tabbar-fg: 4
-URxvt*tabbed.tabbar-bg: 16
-URxvt*tabbed.tab-fg:    15
-URxvt*tabbed.tab-bg:    4
-URxvt*buffered:         false
+URxvt*tabbed.tab-fg:    8
+URxvt*tabbed.tab-bg:    0
+URxvt*tabbed.tabbar-fg: 0
+URxvt*tabbed.tabbar-bg: 0
+URxvt*buffered:         true
 URxvt*keysym.Control-Shift-C: perl:clipboard:copy
 URxvt*keysym.Control-Shift-V: perl:clipboard:paste
 
@@ -68,33 +64,39 @@ URxvt*pasteCommand:     xclip -o -selection clipboard
 URxvt*keysym.M-c:       perl:clipboard:copy
 URxvt*keysym.m-v:       perl:clipboard:paste
 URxvt*keysym.M-C-v:     perl:clipboard:paste_escaped
-URxvt*keysym.M-Escape:  perl:keyboard-select:activate
-URxvt*keysym.M-s:       perl:keyboard-select:search
-URxvt*keysym.M-u:       perl:url-select:select_next
 URxvt*resize-font.smaller:	C-Down
 URxvt*resize-font.bigger:	C-Up
-URxvt*urlLauncher:      qutebrowser
+URxvt*urlLauncher:      firefox
 URxvt*underlineURLs:    true
 URxvt*urlButton:        1
-URxvt*geometry: 		90x30
+URxvt*geometry: 	90x30
 
 ! ====== COLORS ===========
-*background:	#1D1F28
-*foreground:	#FBFAFA
-*cursorColor:	#C574DD
-*color0:	#282A36
-*color1:	#F37F97
-*color2:	#5ADECD
-*color3:	#F2A272
-*color4:	#8897F4
-*color5:	#C574DD
-*color6:	#79E6F3
-*color7:	#FDFDFD
-*color8:	#414458
-*color9:	#FF4971
-*color10:	#18E3C8
-*color11:	#FF8037
-*color12:	#556FFF
-*color13:	#B043D1
-*color14:	#3FDCEE
-*color15:	#BEBEC1
+! special
+*.foreground:   #c7ccd1
+*.background:   #1c2023
+*.cursorColor:  #c7ccd1
+! black
+*.color0:       #282c34
+*.color8:       #5555AA
+! red
+*.color1:       #E06C75
+*.color9:       #E06C75
+! green
+*.color2:       #98E379
+*.color10:      #98E379
+! yellow
+*.color3:       #E5C07B
+*.color11:      #E5C07B
+! blue
+*.color4:       #61AFEF
+*.color12:      #61AFEF
+! magenta
+*.color5:       #C678DD
+*.color13:      #C678DD
+! cyan
+*.color6:       #56E6C2
+*.color14:      #56E6C2
+! white
+*.color7:       #c7ccd1
+*.color15:      #f3f4f5
