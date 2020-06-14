@@ -46,14 +46,9 @@ URxvt*boldFont:             	xft:Monospace:bold:size=12
 URxvt*italicFont:           	xft:Monospace:italic:size=12
 URxvt*boldItalicFont:     	xft:Monospace:regular:size=12
 
-! perl extensions
-URxvt*perl-ext-common: default,tabbed,clipboard,resize-font
+! Perl extensions
+URxvt*perl-ext-common: default,clipboard,resize-font
 
-! tabbed
-URxvt*tabbed.tab-fg:    8
-URxvt*tabbed.tab-bg:    0
-URxvt*tabbed.tabbar-fg: 0
-URxvt*tabbed.tabbar-bg: 0
 URxvt*buffered:         true
 URxvt*keysym.Control-Shift-C: perl:clipboard:copy
 URxvt*keysym.Control-Shift-V: perl:clipboard:paste

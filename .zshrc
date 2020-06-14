@@ -17,12 +17,7 @@ plugins=(
         zsh-autosuggestions
 )
 
-# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
-
+# THEME
 ZSH_THEME="powerlevel10k/powerlevel10k"
 source $ZSH/oh-my-zsh.sh
 
@@ -33,23 +28,8 @@ source $ZSH/oh-my-zsh.sh
 # Case-sensitive completion must be off. _ and - will be interchangeable.
 # HYPHEN_INSENSITIVE="true"
 
-# Uncomment the following line to disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
-
-# Uncomment the following line to automatically update without prompting.
-# DISABLE_UPDATE_PROMPT="true"
-
-# Uncomment the following line to change how often to auto-update (in days).
-# export UPDATE_ZSH_DAYS=13
-
 # Uncomment the following line if pasting URLs and other text is messed up.
 # DISABLE_MAGIC_FUNCTIONS=true
-
-# Uncomment the following line to disable colors in ls.
-# DISABLE_LS_COLORS="true"
-
-# Uncomment the following line to disable auto-setting terminal title.
-# DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
 # ENABLE_CORRECTION="true"
@@ -57,25 +37,10 @@ source $ZSH/oh-my-zsh.sh
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
 
-# Uncomment the following line if you want to disable marking untracked files
-# under VCS as dirty. This makes repository status check for large repositories
-# much, much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
-
-# Uncomment the following line if you want to change the command execution time
-# stamp shown in the history command output.
-# You can set one of the optional three formats:
-# "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-# or set a custom format using the strftime function format specifications,
-# see 'man strftime' for details.
-# HIST_STAMPS="mm/dd/yyyy"
-
-# export MANPATH="/usr/local/man:$MANPATH"
+# export MANPATH="/usr/local/man:$MANPATH" ??
 
 export EDITOR='vim'
 
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
 
 # For a full list of active aliases, run `alias`.
 #           _      _____           _____
@@ -87,14 +52,20 @@ export EDITOR='vim'
 
 #---- System
 # Grub
-alias grupdate="sudo grub-mkconfig -o?"
-alias gruconf="sudo vim /etc/default/grub"
+alias grupdate="sudo grub-mkconfig -o /boot/grub/grub.cfg?"
+alias gruconf="sudo vim /etc/deault/grub"
+# Processes
+#alias p="ps aux | grep"
+alias p="ps -el | grep"
+alias pk="pkill"
 
 alias hosts="sudo vim /etc/hosts"
 alias rswap="sudo swapoff -a && sudo swapon -a"
 alias ram="free -h --mega"
 
 #---- Package manager
+# Search
+alias search="apt search"
 # Istall
 alias ins="sudo aptitude install"
 alias insb="sudo apt -t buster-backports install"
@@ -123,13 +94,13 @@ alias lct="colorls --sort-dirs --tree"
 
 #---- Scripts
 alias wttr="curl wttr.in"
-
 # ADD applications in Applications folder to PATH
 
 #----- Configuration files | dotfiles
 #alias todo="vim ~/MEGA/$DISTRIBUTION_NAME"
 alias todo="vim ~/MEGA/debian"
 alias zconf="vim ~/.zshrc"
+alias bconf="vim ~/.bashrc"
 alias ohmyconf="vim ~/.oh-my-zsh"
 alias viconf="vim ~/.vimrc"
 alias xrconf="vim ~/.Xresources"
@@ -149,15 +120,24 @@ alias ffd="vim ~/.mozilla/firefox/*.default-release/chrome"
 alias fcss="vim ~/.mozilla/firefox/*.default-release/chrome/userChrome.css"
 alias fcnt="vim ~/.mozilla/firefox/*.default-release/chrome/userContent.css"
 
+# Origin
+alias omd="vim ~/README.md"
+alias ostart="vim ~/.xsessionrc"
+
+# Plasma
+alias plstart="vim ~/.config/autostart-scripts"
+
 # Qtile
 #alias qlfd="vim ~/.config/qtile"
 #alias qlconf="vim ~/.config/qtile/.."
-#alias qlstart="vim ~/.config/qtile/.."
+#alias qlkey="vim ~/.config/qtile/.."
+#alias qlmd="vim ~/.config/qtile/README.md"
 
 # Herbstluft
 alias hlfd="vim ~/.config/herbstluftwm"
 alias hlconf="vim ~/.config/herbstluftwm/autostart"
-alias hlstart="vim ~/.config/herbstluftwm/startup"
+alias hlkey="vim ~/.config/herbstluftwm/keybind.sh"
+alias hlmd="vim ~/.config/herbstluftwm/README.md"
 
 #Youtube-dl
 alias audio="youtube-dl -o $HOME/Desktop/%(title)s.%(ext)s' -f bestaudio -x --audio-format best --audio-quality 0"
@@ -170,10 +150,16 @@ alias uhblock="hblock --backup $HOME/Desktop --sources $HOME/MEGA/dotfiles/hosts
 #^Add blacklist source
 
 # Git
+# gst= git status
+# +more default alias
 alias glogg="git log --all --graph --decorate --oneline"
+alias ignore="vim ~/.gitignore"
 
 # EXTRAS
 source $(dirname $(gem which colorls))/tab_complete.sh
+
+# Error fixing
+# tere=tree
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

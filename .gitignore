@@ -13,6 +13,7 @@
 !.zshrc
 !.vimrc
 !.Xresources
+!.gtk-bookmarks
 
 # Folder for all pics in the directory
 #!Pictures
@@ -31,5 +32,8 @@
 !.config/mpd/mpd.conf
 
 # Window Manager (do not include others config files)
+#.config/autostart-scripts/*
 #.config/qtile/*
 #.config/herbstluftwm/*
+#.config/herbstluftwm/HlThemes/*
+#.config/herbstluftwm/PbThemes/*
