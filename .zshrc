@@ -1,13 +1,10 @@
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # - PLUGINS -
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
@@ -76,7 +73,7 @@ alias fremv="sudo aptitude purge"
 alias update="sudo aptitude update"
 alias upgrade="sudo aptitude upgrade"
 alias upgradels="apt list --upgradable -a"
-# Nya = Not Y.. A..
+# Nya = Nya You All
 alias nya="update && upgradels"
 alias nyya="update && upgrade"
 # Remove unneeded dependecy
@@ -94,7 +91,7 @@ alias lct="colorls --sort-dirs --tree"
 
 #---- Scripts
 alias wttr="curl wttr.in"
-# ADD applications in Applications folder to PATH
+# ADD applications in bin folder to PATH
 
 #----- Configuration files | dotfiles
 #alias todo="vim ~/MEGA/$DISTRIBUTION_NAME"
@@ -123,15 +120,17 @@ alias fcnt="vim ~/.mozilla/firefox/*.default-release/chrome/userContent.css"
 # Origin
 alias omd="vim ~/README.md"
 alias ostart="vim ~/.xsessionrc"
+alias cdgo="cd ~/git/MYDFILES"
 
 # Plasma
 alias plstart="vim ~/.config/autostart-scripts"
+alias plout="vim ~/.config/plasma-workspace/shutdown"
 
 # Qtile
-#alias qlfd="vim ~/.config/qtile"
-#alias qlconf="vim ~/.config/qtile/.."
-#alias qlkey="vim ~/.config/qtile/.."
-#alias qlmd="vim ~/.config/qtile/README.md"
+alias qlfd="vim ~/.config/qtile"
+alias qlconf="vim ~/.config/qtile/config.py"
+alias qlkey="vim ~/.config/qtile/keybind.py"
+alias qlmd="vim ~/.config/qtile/README.md"
 
 # Herbstluft
 alias hlfd="vim ~/.config/herbstluftwm"
@@ -146,8 +145,7 @@ alias mp3t="youtube-dl -o '$HOME/Desktop/%(title)s.%(ext)s' -x --audio-format mp
 alias video="youtube-dl -o '$HOME/Desktop/%(title)s.%(ext)s' -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4"
 
 # Update hblock (hosts)
-alias uhblock="hblock --backup $HOME/Desktop --sources $HOME/MEGA/dotfiles/hosts --whitelist $HOME/MEGA/dotfiles/whitelist.list"
-#^Add blacklist source
+alias uhblock="hblock --backup $HOME/Desktop --sources $HOME/MEGA/hblock/hosts --whitelist $HOME/MEGA/hblock/whitelist.list --blacklist $HOME/MEGA/hblock/blacklist.list"
 
 # Git
 # gst= git status

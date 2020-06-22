@@ -6,92 +6,79 @@
 ! ╚═╝░░╚═╝╚═╝░░╚═╝╚══════╝╚══════╝░╚═════╝░░╚═════╝░╚═╝░░╚═╝░╚═════╝╚══════╝╚══════╝
 !
 ! -----------------------------------
+! ===== XFonT ======
 Xft.dpi:	96
 Xft.antialias:	true
 Xft.hinting:	true
-Xft.rgba:	rgb
-Xft.autohint:	false
 Xft.hintstyle:	hintfull
-Xft.lcdfilter:	lcddefault
 
 ! ===== RXVT-Unicode =====
 URxvt.scrollBar:	off
-URxvt.internalBorder:	22
+URxvt.internalBorder:	30
 URxvt.externalBorder:	0
+URxvt.depth: 24
 ! Disable ISO 4755 mode
 URxvt.iso14755:		False
-URxvt.iso14755_52:	False
 
-URxvt.keysym.F11:          perl:fullscreen:switch
-URxvt.Resize-font.smaller: esc
-URxvt.Resize-font.bigger:  S-Up
-
-URxvt.keysym.M-Delete:     perl:matcher:list
-URxvt.colorUL:             #006699
-
+! Cursor
 URxvt.cursorBlink :	1
-URxvt.cursorUnderline :	1
 URxvt.cursorColor :	pink
-URxvt*saveLines:	60000
-
-URxvt.foreground :	white
-URxvt.background:	#282C34
-URxvt.letterSpace:	-1
+URxvt.saveLines:	6000
 
 ! fonts
-URxvt*letterSpace: 	    		-2
-URxvt*font:                 	xft:Monospace:regular:size=12
-URxvt*imFont:               	xft:Monospace:regular:size=12
-URxvt*boldFont:             	xft:Monospace:bold:size=12
-URxvt*italicFont:           	xft:Monospace:italic:size=12
-URxvt*boldItalicFont:     	xft:Monospace:regular:size=12
+URxvt.font:                 	xft:Monospace:regular:size=12
+URxvt.imFont:               	xft:Monospace:regular:size=12
+URxvt.boldFont:             	xft:Monospace:bold:size=12
+URxvt.italicFont:           	xft:Monospace:italic:size=12
+URxvt.boldItalicFont:     	xft:Monospace:regular:size=12
+URxvt.letterSpace:	-1
 
 ! Perl extensions
-URxvt*perl-ext-common: default,clipboard,resize-font
+URxvt.perl-ext-common: default,clipboard,resize-font,matcher
+URxvt.buffered:	true
 
-URxvt*buffered:         true
-URxvt*keysym.Control-Shift-C: perl:clipboard:copy
-URxvt*keysym.Control-Shift-V: perl:clipboard:paste
+! Clipboard
+URxvt.keysym.Control-Shift-C: perl:clipboard:copy
+URxvt.keysym.Control-Shift-V: perl:clipboard:paste
 
-! macros for clipboard and selection
-URxvt*copyCommand:      xclip -i -selection clipboard
-URxvt*pasteCommand:     xclip -o -selection clipboard
-URxvt*keysym.M-c:       perl:clipboard:copy
-URxvt*keysym.m-v:       perl:clipboard:paste
-URxvt*keysym.M-C-v:     perl:clipboard:paste_escaped
-URxvt*resize-font.smaller:	C-Down
-URxvt*resize-font.bigger:	C-Up
-URxvt*urlLauncher:      firefox
-URxvt*underlineURLs:    true
-URxvt*urlButton:        1
-URxvt*geometry: 	90x30
+! Resize-font
+URxvt.keysym.C-minus:     resize-font:smaller
+URxvt.keysym.C-plus:      resize-font:bigger
+URxvt.keysym.C-equal:     resize-font:reset
+URxvt.keysym.C-question:  resize-font:show
+URxvt.resize-font.step: 2
+
+! Links / URL (matcher)
+URxvt.matcher.button:	1
+URxvt.url-launcher:     firefox
+URxvt.colorUL:		#FCB4CC
 
 ! ====== COLORS ===========
 ! special
-*.foreground:   #c7ccd1
-*.background:   #1c2023
-*.cursorColor:  #c7ccd1
+*.foreground:	#DaDaDa
+*.background:	#343434
+*.cursorColor:	#c7ccc7
 ! black
-*.color0:       #282c34
-*.color8:       #5555AA
+*.color0:	#5e6472
+*.color8:	#aed9e0
 ! red
-*.color1:       #E06C75
-*.color9:       #E06C75
+*.color1:	#ffa69e
+*.color9:	#ffa69e
 ! green
-*.color2:       #98E379
-*.color10:      #98E379
+*.color2:	#b8f2e6
+*.color10:	#b8f2e6
 ! yellow
-*.color3:       #E5C07B
-*.color11:      #E5C07B
+*.color3:	#faf3dd
+*.color11:	#faf3dd
 ! blue
-*.color4:       #61AFEF
-*.color12:      #61AFEF
+*.color4:	#aed9e0
+*.color12:	#aed9e0
 ! magenta
-*.color5:       #C678DD
-*.color13:      #C678DD
+*.color5:	#ffa69e
+*.color13:	#ffa69e
 ! cyan
-*.color6:       #56E6C2
-*.color14:      #56E6C2
+*.color6:	#b8f2e6
+*.color14:	#b8f2e6
 ! white
-*.color7:       #c7ccd1
-*.color15:      #f3f4f5
+*.color7:	#c7ccd1
+*.color15:	#f3f4f5

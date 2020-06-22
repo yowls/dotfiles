@@ -1,4 +1,3 @@
-# Solia tener cosas aqui
-# Pero me daba mas problemas de los que deberia
-# Ergo
-# gg
+redshift &
+
+export PATH=$PATH:$HOME/bin

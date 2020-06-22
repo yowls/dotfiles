@@ -30,10 +30,17 @@
 !.config/rofi/*
 # MPD
 !.config/mpd/mpd.conf
+# Random folders
+!.lists
+!.lists/*
 
 # Window Manager (do not include others config files)
-#.config/autostart-scripts/*
-#.config/qtile/*
-#.config/herbstluftwm/*
-#.config/herbstluftwm/HlThemes/*
+#!.kde/*
+#!.config/autostart-scripts/*
+#!.config/plasma-workspace/shutdown/*
+#!.config/qtile/*
+#!.config/qtile/Themes/*
+#!.config/qtile/Panels/*
+#!.config/herbstluftwm/*
+#!.config/herbstluftwm/HlThemes/*
 #.config/herbstluftwm/PbThemes/*

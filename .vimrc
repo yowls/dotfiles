@@ -8,8 +8,9 @@
 " INIT PLUGINS
 call plug#begin('~/.vim/plugged')
 	Plug 'ap/vim-css-color'
-	Plug 'itchyny/lightline.vim'
-	
+	Plug 'itchyny/lightline.vim'	
+	Plug 'preservim/nerdtree'
+	Plug 'airblade/vim-gitgutter'
 call plug#end()
 
 " BASICS
@@ -25,10 +26,6 @@ set showmatch
 set wildmenu
 set wildmode=longest,list,full
 
-" Buffer related
-"set hidden
-"set autowrite
-
 set magic
 set number relativenumber
 set encoding=utf-8
@@ -36,9 +33,14 @@ set clipboard=unnamedplus
 set nocompatible
 set mouse=a
 
-filetype plugin indent on
+" Persist undo history
+set undofile
+set undodir=~/.vim/undodir
 " Enter in the position where you left off
 au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
+
+filetype plugin indent on
+" PLUGINS CONFIG
 
 " LigthLine
 set laststatus=2
@@ -47,3 +49,13 @@ let g:lightline = {
       \ 'colorscheme': 'deus',
       \ }
 
+" NERDTree config
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+" GitGutter
+highlight GitGutterAdd    guifg=#009900 ctermfg=2
+highlight GitGutterChange guifg=#bbbb00 ctermfg=3
+highlight GitGutterDelete guifg=#ff2222 ctermfg=1
+
+" Keybinds
+map <C-n> :NERDTreeToggle<CR>
