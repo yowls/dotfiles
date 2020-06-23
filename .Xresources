@@ -6,95 +6,79 @@
 ! ╚═╝░░╚═╝╚═╝░░╚═╝╚══════╝╚══════╝░╚═════╝░░╚═════╝░╚═╝░░╚═╝░╚═════╝╚══════╝╚══════╝
 !
 ! -----------------------------------
-Xft.dpi: 96
-Xft.antialias: true
-Xft.hinting: true
-Xft.rgba: rgb
-Xft.autohint: false
-Xft.hintstyle: hintfull
-Xft.lcdfilter: lcddefault
-
+! ===== XFonT ======
+Xft.dpi:	96
+Xft.antialias:	true
+Xft.hinting:	true
+Xft.hintstyle:	hintfull
 
 ! ===== RXVT-Unicode =====
-URxvt.scrollBar: off
-URxvt.internalBorder:     22
-URxvt.externalBorder:      0
+URxvt.scrollBar:	off
+URxvt.internalBorder:	30
+URxvt.externalBorder:	0
+URxvt.depth: 24
+! Disable ISO 4755 mode
+URxvt.iso14755:		False
 
-URxvt.keysym.F11:          perl:fullscreen:switch
-URxvt.Resize-font.smaller: esc
-URxvt.Resize-font.bigger:  S-Up
-
-URxvt.keysym.M-Delete:     perl:matcher:list
-URxvt.colorUL:             #006699
-
-URxvt.cursorBlink : 1
-URxvt.cursorUnderline : 1
-URxvt.cursorColor : cyan
-URxvt*saveLines: 60000
-URxvt.background: #1E262E
-URxvt.transparent : 0.7
-URxvt.shading : 30
-URxvt*fading: 30
-
-URxvt.foreground :white
-!!URxvt.tintColor : yellow
-urxvt*blurRadius: 10
-URxvt.letterSpace:         -1
+! Cursor
+URxvt.cursorBlink :	1
+URxvt.cursorColor :	pink
+URxvt.saveLines:	6000
 
 ! fonts
-URxvt*letterSpace: 	    		-2
-URxvt*font:                 	xft:Monospace:regular:size=12
-URxvt*imFont:               	xft:Monospace:regular:size=12
-URxvt*boldFont:             	xft:Monospace:bold:size=12
-URxvt*italicFont:           	xft:Monospace:italic:size=12
-URxvt*boldItalicFont:     		xft:Monospace:regular:size=12
+URxvt.font:                 	xft:Monospace:regular:size=12
+URxvt.imFont:               	xft:Monospace:regular:size=12
+URxvt.boldFont:             	xft:Monospace:bold:size=12
+URxvt.italicFont:           	xft:Monospace:italic:size=12
+URxvt.boldItalicFont:     	xft:Monospace:regular:size=12
+URxvt.letterSpace:	-1
 
-! perl extensions
-URxvt*perl-ext-common:  default,clipboard,url-select,keyboard-select,resize-font
-!URxvt*perl-ext-common:  default,clipboard,url-select,keyboard-select,tabbed
+! Perl extensions
+URxvt.perl-ext-common: default,clipboard,resize-font,matcher
+URxvt.buffered:	true
 
-! tabbed
-URxvt*tabbed.tabbar-fg: 4
-URxvt*tabbed.tabbar-bg: 16
-URxvt*tabbed.tab-fg:    15
-URxvt*tabbed.tab-bg:    4
-URxvt*buffered:         false
-URxvt*keysym.Control-Shift-C: perl:clipboard:copy
-URxvt*keysym.Control-Shift-V: perl:clipboard:paste
+! Clipboard
+URxvt.keysym.Control-Shift-C: perl:clipboard:copy
+URxvt.keysym.Control-Shift-V: perl:clipboard:paste
 
-! macros for clipboard and selection
-URxvt*copyCommand:      xclip -i -selection clipboard
-URxvt*pasteCommand:     xclip -o -selection clipboard
-URxvt*keysym.M-c:       perl:clipboard:copy
-URxvt*keysym.m-v:       perl:clipboard:paste
-URxvt*keysym.M-C-v:     perl:clipboard:paste_escaped
-URxvt*keysym.M-Escape:  perl:keyboard-select:activate
-URxvt*keysym.M-s:       perl:keyboard-select:search
-URxvt*keysym.M-u:       perl:url-select:select_next
-URxvt*resize-font.smaller:	C-Down
-URxvt*resize-font.bigger:	C-Up
-URxvt*urlLauncher:      qutebrowser
-URxvt*underlineURLs:    true
-URxvt*urlButton:        1
-URxvt*geometry: 		90x30
+! Resize-font
+URxvt.keysym.C-minus:     resize-font:smaller
+URxvt.keysym.C-plus:      resize-font:bigger
+URxvt.keysym.C-equal:     resize-font:reset
+URxvt.keysym.C-question:  resize-font:show
+URxvt.resize-font.step: 2
+
+! Links / URL (matcher)
+URxvt.matcher.button:	1
+URxvt.url-launcher:     firefox
+URxvt.colorUL:		#FCB4CC
 
 ! ====== COLORS ===========
-*background:	#1D1F28
-*foreground:	#FBFAFA
-*cursorColor:	#C574DD
-*color0:	#282A36
-*color1:	#F37F97
-*color2:	#5ADECD
-*color3:	#F2A272
-*color4:	#8897F4
-*color5:	#C574DD
-*color6:	#79E6F3
-*color7:	#FDFDFD
-*color8:	#414458
-*color9:	#FF4971
-*color10:	#18E3C8
-*color11:	#FF8037
-*color12:	#556FFF
-*color13:	#B043D1
-*color14:	#3FDCEE
-*color15:	#BEBEC1
+! special
+*.foreground:	#DaDaDa
+*.background:	#343434
+*.cursorColor:	#c7ccc7
+! black
+*.color0:	#5e6472
+*.color8:	#aed9e0
+! red
+*.color1:	#ffa69e
+*.color9:	#ffa69e
+! green
+*.color2:	#b8f2e6
+*.color10:	#b8f2e6
+! yellow
+*.color3:	#faf3dd
+*.color11:	#faf3dd
+! blue
+*.color4:	#aed9e0
+*.color12:	#aed9e0
+! magenta
+*.color5:	#ffa69e
+*.color13:	#ffa69e
+! cyan
+*.color6:	#b8f2e6
+*.color14:	#b8f2e6
+! white
+*.color7:	#c7ccd1
+*.color15:	#f3f4f5

@@ -1,0 +1,46 @@
+# file location:  /etc/apt/sources.list
+# custom sources: /etc/apt/sources.list.d/
+
+# deb cdrom:[Debian GNU/Linux 10.2.0 _Buster_ - Unofficial amd64 DVD Binary-1 with firmware 20191116-09:57]/ buster contrib main non-free
+
+# deb cdrom:[Debian GNU/Linux 10.2.0 _Buster_ - Unofficial amd64 DVD Binary-1 with firmware 20191116-09:57]/ buster contrib main non-free
+
+# Line commented out by installer because it failed to verify:
+#deb http://security.debian.org/debian-security buster/updates main contrib non-free
+# Line commented out by installer because it failed to verify:
+#deb-src http://security.debian.org/debian-security buster/updates main contrib non-free
+
+# buster-updates, previously known as 'volatile'
+# A network mirror was not selected during install.  The following entries
+# are provided as examples, but you should amend them as appropriate
+# for your mirror of choice.
+#
+deb http://deb.debian.org/debian/ buster-updates main contrib non-free
+deb-src http://deb.debian.org/debian/ buster-updates main contrib non-free
+
+# Security Updates
+deb http://security.debian.org/ buster/updates main contrib non-free
+deb-src http://security.debian.org/ buster/updates main contrib non-free
+
+# Chile Mirrors
+deb http://ftp.cl.debian.org/debian/ buster main contrib non-free
+deb-src http://ftp.cl.debian.org/debian/ buster main contrib non-free
+#
+#deb http://mirror.insacom.cl/debian/ buster main contrib non-free
+#deb-src http://mirror.insacom.cl/debian/ buster main contrib non-free
+#
+#deb http://mirror.ufro.cl/debian/ buster main contrib non-free
+#deb-src http://mirror.ufro.cl/debian/ buster main contrib non-free
+#
+#deb http://debian.redlibre.cl/debian/ buster main contrib non-free
+#deb-src http://debian.redlibre.cl/debian/ buster main contrib non-free
+
+
+# Virtual Box repo
+deb https://download.virtualbox.org/virtualbox/debian  buster contrib
+# Palemoon
+deb http://download.opensuse.org/repositories/home:/stevenpusser/Debian_10/ /
+
+# Backports repository
+deb http://deb.debian.org/debian buster-backports main contrib non-free # available after buster release
+#deb http://deb.debian.org/debian buster-backports-sloppy main contrib non-free # available after bullseye release

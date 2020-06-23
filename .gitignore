@@ -1,18 +1,66 @@
 # Ignore everything
 *
 # But allow to track:
+
+# Git things
+!README.md
+!LICENSE
+!.gitignore
+# On session startup
+!.xsessionrc
+# .rc thing
 !.bashrc
 !.zshrc
 !.vimrc
 !.Xresources
+!.gtk-bookmarks
 
-!README.md
-!LICENSE
-!.gitignore
+# Folder for all pics in the directory
+!Pictures
+!Pictures/*
+!Pictures/**
+!.face
+!.directory
 
-# .config folder
-!.mozilla/firefox/*.default-release/chrome/**
-!.config/picom/*
-!.config/rofi/*
-
+# Config folder
+!.config
+.config/*
 !.config/redshift.conf
+# Compositor
+!.config/picom
+!.config/picom/*
+# Launcher
+!.config/rofi
+!.config/rofi/*
+# MPD
+!.config/mpd
+.config/mpd*
+!.config/mpd/mpd.conf
+# Random folders
+!.lists
+!.lists/*
+
+# Window Manager (do not include others config files)
+# Plasma
+!.kde
+!.kde/Kongsole
+!.kde/Kongsole/*
+!.config/autostart-scripts
+!.config/autostart-scripts/*
+!.config/plasma-workspace
+!.config/plasma-workspace/shutdown
+!.config/plasma-workspace/shutdown/*
+# Qtile
+!.config/qtile
+!.config/qtile/*
+!.config/qtile/Themes
+!.config/qtile/Themes/*
+!.config/qtile/Panels
+!.config/qtile/Panels/*
+# Herbstluftwm
+!.config/herbstluftwm
+!.config/herbstluftwm/*
+!.config/herbstluftwm/HlThemes
+!.config/herbstluftwm/HlThemes/*
+!.config/herbstluftwm/PbThemes
+!.config/herbstluftwm/PbThemes/*

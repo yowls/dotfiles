@@ -1,0 +1,3 @@
+redshift &
+
+export PATH=$PATH:$HOME/bin
