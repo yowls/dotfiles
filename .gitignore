@@ -23,29 +23,44 @@
 !.directory
 
 # Config folder
+!.config
+.config/*
 !.config/redshift.conf
 # Compositor
+!.config/picom
 !.config/picom/*
 # Launcher
+!.config/rofi
 !.config/rofi/*
 # MPD
+!.config/mpd
+.config/mpd*
 !.config/mpd/mpd.conf
 # Random folders
 !.lists
 !.lists/*
 
 # Window Manager (do not include others config files)
+# Plasma
+!.kde
 !.kde/Kongsole
 !.kde/Kongsole/*
-
-# Plasma
+!.config/autostart-scripts
 !.config/autostart-scripts/*
+!.config/plasma-workspace
+!.config/plasma-workspace/shutdown
 !.config/plasma-workspace/shutdown/*
 # Qtile
+!.config/qtile
 !.config/qtile/*
+!.config/qtile/Themes
 !.config/qtile/Themes/*
+!.config/qtile/Panels
 !.config/qtile/Panels/*
 # Herbstluftwm
+!.config/herbstluftwm
 !.config/herbstluftwm/*
+!.config/herbstluftwm/HlThemes
 !.config/herbstluftwm/HlThemes/*
-.config/herbstluftwm/PbThemes/*
+!.config/herbstluftwm/PbThemes
+!.config/herbstluftwm/PbThemes/*

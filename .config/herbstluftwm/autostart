@@ -1,0 +1,59 @@
+#!/usr/bin/env bash
+
+#  __  __    ______    ______    ______    ______    ______  __        __  __    ______   ______
+# /\ \_\ \  /\  ___\  /\  == \  /\  == \  /\  ___\  /\__  _\/\ \      /\ \/\ \  /\  ___\/\__  _\
+# \ \  __ \ \ \  __\  \ \  __<  \ \  __<  \ \___  \ \/_/\ \/\ \ \____ \ \ \_\ \ \ \  __\\/_/\ \/
+#  \ \_\ \_\ \ \_____\ \ \_\ \_\ \ \_____\ \/\_____\   \ \_\ \ \_____\ \ \_____\ \ \_\     \ \_\
+#   \/_/\/_/  \/_____/  \/_/ /_/  \/_____/  \/_____/    \/_/  \/_____/  \/_____/  \/_/      \/_/
+#	github.com/yowls
+
+hc() {
+	herbstclient "$@"
+}
+
+# Clean existing instances
+# HerbstluftWM
+hc emit_hook reload	#idk
+hc keyunbind --all	#Keybinds
+hc mouseunbind --all	#Mousebinds
+hc unrule -F		#Rules
+hc unlock		#Multi monitor
+# From startup
+pkill compton
+killall -q polybar
+
+# Primary variables for global usage
+Mod="Mod4"				# Use the SUPER KEY as the main modifier
+Alt="Mod1"				# Use the ALT KEY as second modifier
+Htheme="default"			# Herbstluft Theme
+Ptheme="default"			# Polybar Theme
+hldir="$HOME/.config/herbstluftwm"	#Herbstluftwm directory
+export -f hc
+export Mod
+export Alt
+
+# 1.Load the keybind for manage WINDOWS
+bash "$hldir/window.sh"
+
+# 2.Load TAGS for workspaces
+bash "$hldir/workspace.sh"
+
+# 3.Load personal KEYBINDS
+bash "$hldir/keybind.sh"
+
+# 4.Load the herbstluft THEME
+bash "$hldir/HlThemes/$Htheme.sh"
+
+# 5.Load the RULES for windows
+bash "$hldir/rule.sh"
+
+# 6.Load on login STARTUP programs
+bash "$hldir/startup.sh"
+
+# 7.Load the config of PANEL 'polybar'
+while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
+polybar -c "$hldir/PbThemes/$Ptheme.ini" top &
+
+# If you have multiple monitors uncomment one of this:
+#hc detect_monitors
+#hc set_monitors 1280x1024+0+0 1280x1024+1280+0
