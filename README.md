@@ -225,7 +225,7 @@ In any case, I publish the versions of the programs in case in any future update
 + Compositor   = Compton (0.1~beta2+20150922-1) (*debian version*)
 + Launcher     = Rofi (1.5.1)
 
-
+--
 + Plasma  (5.14)
 + QTile   (0.15.1)
 + Herbstluftwm  (0.8.2)

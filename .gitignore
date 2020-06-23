@@ -16,9 +16,9 @@
 !.gtk-bookmarks
 
 # Folder for all pics in the directory
-#!Pictures
-#!Pictures/*
-#!Pictures/**
+!Pictures
+!Pictures/*
+!Pictures/**
 !.face
 !.directory
 
@@ -35,12 +35,17 @@
 !.lists/*
 
 # Window Manager (do not include others config files)
-#!.kde/*
-#!.config/autostart-scripts/*
-#!.config/plasma-workspace/shutdown/*
-#!.config/qtile/*
-#!.config/qtile/Themes/*
-#!.config/qtile/Panels/*
-#!.config/herbstluftwm/*
-#!.config/herbstluftwm/HlThemes/*
-#.config/herbstluftwm/PbThemes/*
+!.kde/Kongsole
+!.kde/Kongsole/*
+
+# Plasma
+!.config/autostart-scripts/*
+!.config/plasma-workspace/shutdown/*
+# Qtile
+!.config/qtile/*
+!.config/qtile/Themes/*
+!.config/qtile/Panels/*
+# Herbstluftwm
+!.config/herbstluftwm/*
+!.config/herbstluftwm/HlThemes/*
+.config/herbstluftwm/PbThemes/*

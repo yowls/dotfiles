@@ -1,0 +1,5 @@
+global kde ubication:
+	~/.kde/share/apps/color-scheme
+
+Konsole:
+	$HOME/.local/share/konsole/
