@@ -1,5 +1,5 @@
 <p align="center" >
- <img src="Pictures/bbanner.png" height=300px><br>
+ <img src="Pictures/banner_debian.png" height=300px><br>
  <b> config files for GNU/Linux and BSD </b>
 </p>
 <p align="center">
@@ -9,43 +9,43 @@
 </p>
 
 ## Table of contents:
-<img src="Pictures/debian_logo.png" align=right height=500px >
+<img src="Pictures/logdeb.png" align=right height=400px >
 <ul align=left>
 <li>Introduction</li>
   <ul>
   <li><a href="https://github.com/yowls/dotfiles/tree/debian#about">About</a></li>
   <li><a href="https://github.com/yowls/dotfiles/tree/debian#Q&A">Q&A</a></li>
-	<li><a href="https://github.com/yowls/dotfiles/tree/debian#What-you-gonna-find-here">What you gonna find in this branch</a></li>
-	<li><a href="https://github.com/yowls/dotfiles/tree/debian#My-other-branchs">Check my other branchs</a></li>
+  <li><a href="https://github.com/yowls/dotfiles/tree/debian#What-you-gonna-find-here">What you gonna find in this branch</a></li>
+  <li><a href="https://github.com/yowls/dotfiles/tree/debian#My-other-branchs">Check my other branchs</a></li>
   </ul>
 <li>Screenshots</li>
   <ul>
-	<li><a href="https://github.com/yowls/dotfiles/tree/debian#Plasma">Plasma setup</a></li>
-	<li><a href="https://github.com/yowls/dotfiles/tree/debian#Qtile">Qtile setup</a></li>
-	<li><a href="https://github.com/yowls/dotfiles/tree/debian#Herbstluftwm">Herbstluftwm setup</a></li>
+  <li><a href="https://github.com/yowls/dotfiles/tree/debian#Plasma">Plasma setup</a></li>
+  <li><a href="https://github.com/yowls/dotfiles/tree/debian#Qtile">Qtile setup</a></li>
+  <li><a href="https://github.com/yowls/dotfiles/tree/debian#Herbstluftwm">Herbstluftwm setup</a></li>
   </ul>
 <li>Dependences</li>
   <ul>
-	<li><a href="https://github.com/yowls/dotfiles/tree/debian#Must-have">Must have</a></li>
+  <li><a href="https://github.com/yowls/dotfiles/tree/debian#Must-have">Must have</a></li>
   <li><a href="https://github.com/yowls/dotfiles/tree/debian#Recommended-fonts">Recommended fonts</a></li>
-	<li><a href="https://github.com/yowls/dotfiles/tree/debian/.config/qtile#Requiered-dependences">Qtile</a></li>
-	<li><a href="https://github.com/yowls/dotfiles/tree/debian/.config/herbstluftwm#Requiered-dependences">Herbstluftwm</a></li>
+  <li><a href="https://github.com/yowls/dotfiles/tree/debian/.config/qtile#Requiered-dependences">Qtile</a></li>
+  <li><a href="https://github.com/yowls/dotfiles/tree/debian/.config/herbstluftwm#Requiered-dependences">Herbstluftwm</a></li>
   </ul>
 <li>Installation</li>
   <ul>
-	<li><a href="https://github.com/yowls/dotfiles/tree/debian#Preparations">Preparations</a></li>
-	<li><a href="https://github.com/yowls/dotfiles/tree/debian#Execute">Execute</a></li>
+  <li><a href="https://github.com/yowls/dotfiles/tree/debian#Preparations">Preparations</a></li>
+  <li><a href="https://github.com/yowls/dotfiles/tree/debian#Execute">Execute</a></li>
   </ul>
 <li>List of programs</li>
   <ul>
   <li><a href="https://github.com/yowls/dotfiles/tree/debian#Main">Main</a></li>
-	<li><a href="https://github.com/yowls/dotfiles/tree/debian#Others">Others</a></li>
+  <li><a href="https://github.com/yowls/dotfiles/tree/debian#Others">Others</a></li>
   </ul>
 <li>Extra information</li>
   <ul>
-	<li><a href="https://github.com/yowls/dotfiles/tree/debian/.config/qtile">Qtile</a></li>
-	<li><a href="https://github.com/yowls/dotfiles/tree/debian/.config/herbstluftwm">Herbstluftwm</a></li>
-	<li><a href="https://github.com/yowls/dotfiles/tree/debian#Extra-information">Others</a></li>
+  <li><a href="https://github.com/yowls/dotfiles/tree/debian/.config/qtile">Qtile</a></li>
+  <li><a href="https://github.com/yowls/dotfiles/tree/debian/.config/herbstluftwm">Herbstluftwm</a></li>
+  <li><a href="https://github.com/yowls/dotfiles/tree/debian#Extra-information">Others</a></li>
   </ul>
 <li><a href="https://github.com/yowls/dotfiles/tree/debian#Known-issues">Known issues</a></li>
 <li><a href="https://github.com/yowls/dotfiles/tree/debian/Pictures">Gallery</a></li>
@@ -56,9 +56,9 @@
 <li>Disclaimer</li>
 </ul>
 
-<img src=Pictures/content_master/2_about.png width=200px><br>
-> "some time i feel cool even paralize"<br>
-> -- <cite>Carl Sagan</cite>
+<img src=Pictures/titleDeb/01.png width=200px><br>
+> "A computer is like air conditioning - it becomes useless when you open Windows"<br>
+> -- <cite>Linus Torvalds</cite>
 
 ### About
 <img src="Pictures/profilepic.jpg" align="right" width= 400px>
@@ -158,7 +158,6 @@ Just a fews screenshots of my setup in Debian
 <br>
 <br>
 <br>
-<br>
 
 *For more photos see: [enter in gallery here](https://github.com/yowls/dotfiles/tree/debian/Pictures)*
 
@@ -243,6 +242,7 @@ In any case, I publish the versions of the programs in case in any future update
 + [More about Herbstluft](https://github.com/yowls/dotfiles/tree/debian/.config/herbstluftwm)
 
 ### ZSH
+.zshrc make a reference to colorls, to install it go [here](https://github.com/athityakumar/colorls)
 Useful terminal aliases in .zshrc:
 ```
 	code code code
@@ -255,8 +255,6 @@ Xresources color scheme:
 + photo demostration in terminal
  - [demostration]
 
-*in master branch just put .colors,bg,fg*
-
 ### Vim
 .vimrc file will going to install some pluggins using [VimPlug](https://github.com/junegunn/vim-plug)<br>
 Some of them are:
@@ -266,11 +264,11 @@ Some of them are:
 * css-color
 
 Also, you may notice that clipboard doesnt work well when trying to pase from outside.
-To fix that, **install gvim**. 
-This will give vim the ability to copy/paste from/to others programs.
+To fix that, **install gvim**.
+This will give vim the ability to copy/paste from/to others programs.<br>
 Otherwise, you can fix it using xclip, making a keybind in .vimrc replacing paste command. But the easiest way is just install gvim.
 
-Plus, you need to create a `undodir` folder in .vim for a history of undo´s. So you can undo a line of a file previously closed
+Plus, you need to create a **undodir** folder in .vim for a history of undo´s. So you can undo a line of a file previously closed
 
 ## known issues
 Nothing recorded yet.<br>
