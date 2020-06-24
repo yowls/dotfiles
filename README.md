@@ -8,7 +8,7 @@
 <a href="https://github.com/yowls/firefoxcss"><img width="200px" style="padding: 0 10px;" src="Pictures/related3.png"></a>
 </p>
 
-## Table of contents:
+<img src=Pictures/title/01.png width=400px><br>
 <img src="Pictures/logdeb.png" align=right height=400px >
 <ul align=left>
 <li>Introduction</li>
@@ -49,15 +49,15 @@
   </ul>
 <li><a href="https://github.com/yowls/dotfiles/tree/debian#Known-issues">Known issues</a></li>
 <li><a href="https://github.com/yowls/dotfiles/tree/debian/Pictures">Gallery</a></li>
-<li>Acknowledgement</li>
 <li>Contributors</li>
+<li>Acknowledgement</li>
 <li>Social media</li>
-<li>Licence</li>
 <li>Disclaimer</li>
+<li>Licence</li>
 </ul>
 
-<img src=Pictures/titleDeb/01.png width=200px><br>
-> "A computer is like air conditioning - it becomes useless when you open Windows"<br>
+<img src=Pictures/title/02.png width=400px><br>
+> "A computer is like air conditioning, it becomes useless when you open Windows"<br>
 > -- <cite>Linus Torvalds</cite>
 
 ### About
@@ -102,7 +102,7 @@ Bajo este contexto, se refiere a la palabra R.I.C.E (Race Inspired Cosmetic Enha
 + [Arch branch](https://github.com/yowls/dotfiles/tree/arch) --- --- --- ---{ Awesome wm + openbox }
 + [Freebsd branch](https://github.com/yowls/dotfiles/tree/freebsd)--- -- ---{ Bspwm + 2bwm }
 
-## Screenshots
+<img src=Pictures/title/03.png width=400px><br>
 Just a fews screenshots of my setup in Debian
 ### Plasma
 <img src="Pictures/pldemo.png" align=right width=300px>
@@ -161,7 +161,7 @@ Just a fews screenshots of my setup in Debian
 
 *For more photos see: [enter in gallery here](https://github.com/yowls/dotfiles/tree/debian/Pictures)*
 
-## Dependences
+<img src=Pictures/title/04.png width=400px><br>
 ### Must have
 Programs that i use in every setup
 * Zsh + [Oh my Zsh](https://github.com/ohmyzsh/ohmyzsh) + [Power Level 10K](https://github.com/romkatv/powerlevel10k)
@@ -184,7 +184,7 @@ i personaly prefer Fira code
 `If you plan to use Plasma`<br>
 It doesnt requiered any special dependencies to work, just install some themes and widgets for the panel, and leave it as you want.
 
-## Installation
+<img src=Pictures/title/05.png width=400px><br>
 Instructions to set my rice.<br>
 You can complete all the dependences of only one to work with it.<br>
 This setup should work on moslty debian based, but anyways, dont promise you nothing. Good luck.
@@ -212,7 +212,7 @@ And buala, that´s all.
 
 *I will do a script to do it automatically, i hope soon*
 
-## List of programs
+<img src=Pictures/title/06.png width=400px><br>
 In any case, I publish the versions of the programs in case in any future update something broke and I haven't updated it yet.
 
 ### Main:
@@ -236,7 +236,7 @@ In any case, I publish the versions of the programs in case in any future update
 + ? for record?
 
 
-## Extra information
+<img src=Pictures/title/07.png width=400px><br>
 ### To know more about the details of every rice, i recommend you to see
 + [More information about Qtile](https://github.com/yowls/dotfiles/tree/debian/.config/qtile)
 + [More about Herbstluft](https://github.com/yowls/dotfiles/tree/debian/.config/herbstluftwm)
@@ -270,15 +270,15 @@ Otherwise, you can fix it using xclip, making a keybind in .vimrc replacing past
 
 Plus, you need to create a **undodir** folder in .vim for a history of undo´s. So you can undo a line of a file previously closed
 
-## known issues
+<img src=Pictures/title/08.png width=400px><br>
 Nothing recorded yet.<br>
 If you are having an issue, first check you are using the same version as me, then open a ticket at issue section or just make a pull request.
 
-## Gallery
+<img src=Pictures/title/09.png width=400px><br>
 a few more photos<br>
 [Check my full gallery](https://github.com/yowls/dotfiles/tree/debian/Pictures), all the setups of the branch here.
 
-## Disclaimer
+<img src=Pictures/title/13.png width=400px><br>
 This is MY setup and it is opinionated and made to work how I want. Anyone can download and use it, but unless you and me are the same person, you'll probably find things that you don't want. It is OK. Use this as a starting point for making your own.
 
 Under no circumstances I am responsible for any kind of damage derived from the use of this on your machine. If you lose files, if your install breaks something, if something explodes. My dotfiles comes with no warranties. Again; you shouldn't play with my toys if you don't want to get hurt. (This doesn't mean my dotfiles will hurt you, you know, but this is legal boilerplate to cover my ass in case something happens).

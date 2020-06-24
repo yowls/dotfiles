@@ -108,6 +108,7 @@ alias cdf="cd ~/.mozilla/firefox/*.default-release/chrome"
 alias cdst="cd ~/startpage"
 alias cdsc="cd ~/script"
 alias cdg="cd ~/git"
+alias rmd="vim README.md"
 # Window manager
 alias cdhl="cd ~/.config/herbstluftwm"
 alias cdql="cd ~/.config/qtile/"

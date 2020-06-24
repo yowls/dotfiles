@@ -1,8 +1,11 @@
 *last updated: 19 July 20*<br>
 *version: 0.8.2*
-# About Herbstluftwm:
 
-<img src="https://i.imgur.com/IVFpQbV.png" align=right width=300px>
+<img src="../../Pictures/hl_banner.png" align=center height=300px>
+
+## About Herbstluftwm:
+
+<img src="../../Pictures/hldemo.png" align=right width=300px>
 <p align=left>
 <strong><a href="https://herbstluftwm.org/">Herbstluftwm</a></strong> is a manual tiling window manager.<br>
 Is characterized by his frames
@@ -39,6 +42,7 @@ Also, you can take this as an example or for your own ricing.<br>
 		- [Examples](#Some-rules)
 	- [Startup programs](#Startup-programs)
 	- Panel
++ [Gallery] < Pictures/#Herbstluft
 + [To Do](#To-Do)
 	- [Issues](#Issues)
 	- [Integrate](#Integrate)
