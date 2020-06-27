@@ -20,7 +20,7 @@ from Themes.default import *
 # 5.Load the RULES for windows
 from rule import *
 # 6.Load the config of PANEL
-from Panels.default import screens
+from Bars.default import screens
 # 7.Load hook for autostart
 from libqtile import hook
 

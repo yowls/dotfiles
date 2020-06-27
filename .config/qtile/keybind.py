@@ -53,10 +53,12 @@ keys.extend([
     # Launcher
     Key([alt], "space", lazy.spawn("rofi -show drun combi"),
         desc="rofi *launcher* mode"),
-    #Key([alt], "Space", lazy.spawn("rofi -show drun combi"),
-    #    desc="Launch rofi *dmenu* mode"),
-    #Key([alt], "n", lazy.spawn(rofi -mobi "clibpard:greenclip print" -show clipboard -run-command '{cmd}'),
-    #    desc="Rofi clipboard"),
-    #Key([alt], "m", lazy.spawn( ?? ),
-    #    desc="Clear clipboard"),
+    #Key([alt], "x", lazy.spawn("rofi -show run"),
+    #    desc="Launch rofi run mode"),
+    # Greenclip Clipboard
+    #Key([alt], "n", lazy.spawn("rofi -mobi 'clibpard:greenclip print' -show clipboard -run-command '{cmd}'"),
+    # Greenclip Clipboard
+    #    desc="Launch Greenclip"),
+    #Key([alt], "m", lazy.spawn("rm ~/.cache/greenclip.history"),
+    #    desc="Clear greenclip history"),
 ])

@@ -17,9 +17,10 @@ Is characterized by his frames
 + **Shell**: zsh + powerlevel10k
 + **Panel**: Polybar
 + **Applications**: neofetch, htop, feh, colorls
++ **Compositor**: Compton
 
 **You gonna need all this files to let herbstluftwm work properly**<br>
-Excepto los temas, solo necesitas uno de ellos.<br>
+Except themes (HlThemes,PbThemes), you just need one of them.<br>
 Also, you can take this as an example or for your own ricing.<br>
 
 [Video gif del setup]
@@ -33,16 +34,16 @@ Also, you can take this as an example or for your own ricing.<br>
 	- Updates
 + [File structure](#File-structure)
 	- [Main file](#Main-file)
-	- [Window and frames](Window-and-frames)
+	- [Window and frames](#Window-and-frames)
 	- [Workspaces](#Workspaces)
 	- [Keybinds](#Keybinds)
 		- [Examples](#Some-keybinds)
-	- Theme
+	- [Theme](https://github.com/yowls/dotfiles/tree/debian/.config/herbstluftwm/HlThemes)
 	- [Rules](#Rules)
 		- [Examples](#Some-rules)
 	- [Startup programs](#Startup-programs)
-	- Panel
-+ [Gallery] < Pictures/#Herbstluft
+	- [Panel](https://github.com/yowls/dotfiles/tree/debian/.config/herbstluftwm/PbThemes)
++ [Gallery](https://github.com/yowls/dotfiles/tree/debian/Pictures#herbstluftwm)
 + [To Do](#To-Do)
 	- [Issues](#Issues)
 	- [Integrate](#Integrate)
@@ -54,31 +55,34 @@ Also, you can take this as an example or for your own ricing.<br>
 * **Polybar**	-> panel
 * **Dunst**	-> notificacionts
 * **Rofi**	-> launcher
-* ..
+* **Compton**	-> Compositor
+
+Herbstluft come with dzen2 as default panel but i instead use polybar.
 
 ### Optional dependences
 * **Greenclip** for clipboard manager with Rofi
-* **clip** for multiple clipboard operations
+* **xclip** for multiple clipboard operations
 * **MPD** - **MPC** for media player CLI
 * **xbacklight** for brightness control
 * **Playerctl** for multiple media control, include spotify
 
 ### Fonts
 Needed fonts for the setup:
-* .. for setup
-* .. for terminal
-* .. for panel/ rofi
+* .. for general setup
+* .. for panel
+* .. for rofi
+* [Any NerdFont](https://github.com/ryanoasis/nerd-fonts) for terminal
 
 ## File structure
 Explanation about what do every file.<br>
-Son nombrados en singular por facilidad y estan ordenados segun quien arranca primero en el archivo principal.<br>
-Inicia Herbstluftwm en 7 very simples pasos :)
+They are written in singular by ease by naming them and sorted according to who starts first in the main file.<br>
+Herbstluftwm start in 7 simple steps :)
 
 ### Main file
 **File name: "autostart"**
 
 Is like the main function to start the wm.<br>
-Just clear previous config, export variables and call the other functions.
+Just clear previous config, export variables and call the other files.
 
 ### Window and frames
 **File name: "window.sh"**
@@ -91,16 +95,16 @@ In general is for window manipulation.
 ### Workspaces
 **File name: "workspace.sh"**
 
-Set all the virtual workspace.<br>
-Originalmente se llaman TAGS, pero ya que se encarga de los escritorios virtuales, su nombre generico seria workspace.
-You can adjust cuantos quieres aqui.<br>
-Actualmente hay 10.
+Set all the virtual workspaces and the keybinds to switch to these.<br>
+Originally called TAGS, but since they take care of the virtual desks, its generic name would be.
+You can adjust as many as you want.<br>
+There are currently 10.
 
 ### Keybinds
 **File name: "keybind.sh"**
 
-Here are the keybinds for **launch programs and scripts** but non for set the keyboards for window manage.<br>
-*For manipulation of window and frames, see [window and frames]*
+Here are the keybinds for **launch programs and scripts** but not to set the keybinds for window manage.<br>
+*For manipulation of window and frames, see* [window and frames](https://github.com/yowls/dotfiles/tree/debian/.config/herbstluftwm#window-and-frames)
 
 #### Some keybinds
 | Key | Produce? |
@@ -116,14 +120,15 @@ Here are the keybinds for **launch programs and scripts** but non for set the ke
 **File name: "HlThemes/theme.sh"**
 
 Does that, set the theme that herbstluftwm will going to use.<br>
-You can change the theme just renaming [here]*linea donde se llama*<br>
+You can change the theme just renaming [Here](https://github.com/yowls/dotfiles/blob/debian/.config/herbstluftwm/autostart#L28)<br>
+Or you can create one and put in that folder then rename the autostart file
 
-*For more information enter in the [HlThemes folder]*
+*For more information enter in the* [HlThemes folder](https://github.com/yowls/dotfiles/tree/debian/.config/herbstluftwm/HlThemes)
 
 ### Rules
-**File name: "rule"**
+**File name: "rule.sh"**
 
-Set the rules las cuales deban cumplir las ventanas.<br>
+Sets the rules that windows must comply.<br>
 ¿How to break the rules for cierta ocacion?
 
 #### Some rules
@@ -132,22 +137,22 @@ Set the rules las cuales deban cumplir las ventanas.<br>
 * open terminal in 1st workspace
 
 ### Startup programs
-**File name: "startup"**
+**File name: "startup.sh"**
 
-Set the principal programs that will initialize on login.<br>
-Some of them are deamons, otros son programas como el browser.
-Si quieres que añadir un programa, pon **"run"** al principo de la linea, ya que se verifica si no esta corriendo, entonces se inicia. Esto se define en la funcion run.
-De lo contrario, si tienes por ejemplo el terminal abierto y recargas, te va a volver a cargar el programa como si estuviese iniciando.
+Sets the programs that start on login.<br>
+Some of them are deamons, others are programs like the browser,compositor,etc.
+If you want to add a program, put **"run"** at the beginning of the line, because it is verified that it is not running. This is defined in the same function run.
+Otherwise, if you have, for example, the terminal open and reloads, it will spawn again as if it were starting.
 
 ### Panel
 **File name: "PbThemes/polybar.ini"**
 
 Set the config for the panel, but **not for launch it explicitly**.<br>
 In this case, i use polybar as panel, so herbstluft call this file to set the config.<br>
-The call is produced in [startup file]*linea donde se llama*<br>
-*For more information enter in the [PbThemes folder]*
+The call is produced in [here](https://github.com/yowls/dotfiles/blob/debian/.config/herbstluftwm/autostart#L29)<br>
+*For more information enter in the* [Polybar Themes Folder](https://github.com/yowls/dotfiles/tree/debian/.config/herbstluftwm/PbThemes)
 
-Puedes no usar Polybar, y usar la barra que quieras, como dzen,tint2,etc. Solo tienes que borrar [esta linea]*linea donde se llama* y reemplazarla por el programas que elijas
+You can not use Polybar, and use the bar you want, such as dzen2,tint2, etc. Just delete [This Line](https://github.com/yowls/dotfiles/blob/debian/.config/herbstluftwm/autostart#L55) and replace it with the program of your choice.
 
 ## To Do
 Things that one day gonna make

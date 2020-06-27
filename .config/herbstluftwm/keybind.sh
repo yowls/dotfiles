@@ -34,8 +34,8 @@ hc keybind $Mod-Print	spawn maim ~/Downloads/$(date +%s).png
 
 # Launcher
 hc keybind $Alt-space	spawn rofi -show drun combi
-#hc keybind $Alt-d	spawn rofi -show dmenu
+#hc keybind $Alt-x	spawn rofi -show run
 
 # Clipboard
-hc keybind $Alt-b	spawn rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
-#hc keybind $Alt-n	spawn xclip clear?
+hc keybind $Alt-n	spawn rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
+#hc keybind $Alt-m	spawn rm ~/.cache/greenclip.history

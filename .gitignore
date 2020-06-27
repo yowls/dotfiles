@@ -14,6 +14,8 @@
 !.vimrc
 !.Xresources
 !.gtk-bookmarks
+!.config/gtk-3.0
+!.config/gtk-3.0/bookmarks
 
 # Folder for all pics in the directory
 !Pictures
@@ -24,7 +26,6 @@
 
 # Config folder
 !.config
-.config/*
 !.config/redshift.conf
 # Compositor
 !.config/picom
@@ -34,15 +35,22 @@
 !.config/rofi/*
 # MPD
 !.config/mpd
-.config/mpd*
 !.config/mpd/mpd.conf
-# Random folders
+# Cava
+!.config/cava
+!.config/cava/config
+# Vim
+!.vim
+!.vim/README.md
+# Random folder
 !.lists
 !.lists/*
 
 # Window Manager (do not include others config files)
 # Plasma
 !.kde
+!.kde/KwinRules
+!.kde/KwinRules/*
 !.kde/Kongsole
 !.kde/Kongsole/*
 !.config/autostart-scripts
