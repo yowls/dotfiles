@@ -21,3 +21,11 @@ done
 # cycle through tags
 hc keybind $Mod-period use_index +1 --skip-visible
 hc keybind $Mod-comma  use_index -1 --skip-visible
+
+# Rules applications on tags
+hc rule class=firefox tag=2
+hc rule class=urxvt tag=3
+hc rule class=pcmanfm tag=4
+
+# Layouts on tags
+hc rule tag=3 floating=on

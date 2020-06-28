@@ -1,0 +1,8 @@
+[No border]
+Description=No border
+noborder=true
+noborderrule=2
+types=1
+wmclass=
+wmclasscomplete=false
+wmclassmatch=0

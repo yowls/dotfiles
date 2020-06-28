@@ -1,64 +1,63 @@
-<p align="center" >
- <img src="Pictures/bbanner.png" height=300px><br>
- <b> config files for GNU/Linux and BSD </b>
-</p>
+<img src="Pictures/banner_debian.png" align=center height=300px><br>
+<p align="center"><b> config files for GNU/Linux and BSD </b></p>
+
 <p align="center">
 <a href="https://github.com/yowls/scripts"><img width="200px" style="padding: 0 10px;" src="Pictures/related1.png"></a>
 <a href="https://github.com/yowls/startpages"><img width="200px" style="padding: 0 10px;" src="Pictures/related2.png"></a>
 <a href="https://github.com/yowls/firefoxcss"><img width="200px" style="padding: 0 10px;" src="Pictures/related3.png"></a>
 </p>
 
-## Table of contents:
-<img src="Pictures/debian_logo.png" align=right height=500px >
+<img src=Pictures/title/01.png width=400px><br>
+<img src="Pictures/logdeb.png" align=right height=400px >
 <ul align=left>
 <li>Introduction</li>
   <ul>
   <li><a href="https://github.com/yowls/dotfiles/tree/debian#about">About</a></li>
   <li><a href="https://github.com/yowls/dotfiles/tree/debian#Q&A">Q&A</a></li>
-	<li><a href="https://github.com/yowls/dotfiles/tree/debian#What-you-gonna-find-here">What you gonna find in this branch</a></li>
-	<li><a href="https://github.com/yowls/dotfiles/tree/debian#My-other-branchs">Check my other branchs</a></li>
+  <li><a href="https://github.com/yowls/dotfiles/tree/debian#What-you-gonna-find-here">What you gonna find in this branch</a></li>
+  <li><a href="https://github.com/yowls/dotfiles/tree/debian#My-other-branchs">Check my other branchs</a></li>
   </ul>
 <li>Screenshots</li>
   <ul>
-	<li><a href="https://github.com/yowls/dotfiles/tree/debian#Plasma">Plasma setup</a></li>
-	<li><a href="https://github.com/yowls/dotfiles/tree/debian#Qtile">Qtile setup</a></li>
-	<li><a href="https://github.com/yowls/dotfiles/tree/debian#Herbstluftwm">Herbstluftwm setup</a></li>
+  <li><a href="https://github.com/yowls/dotfiles/tree/debian#Plasma">Plasma setup</a></li>
+  <li><a href="https://github.com/yowls/dotfiles/tree/debian#Qtile">Qtile setup</a></li>
+  <li><a href="https://github.com/yowls/dotfiles/tree/debian#Herbstluftwm">Herbstluftwm setup</a></li>
   </ul>
 <li>Dependences</li>
   <ul>
-	<li><a href="https://github.com/yowls/dotfiles/tree/debian#Must-have">Must have</a></li>
-  <li><a href="https://github.com/yowls/dotfiles/tree/debian#Recommended-fonts">Recommended fonts</a></li>
-	<li><a href="https://github.com/yowls/dotfiles/tree/debian/.config/qtile#Requiered-dependences">Qtile</a></li>
-	<li><a href="https://github.com/yowls/dotfiles/tree/debian/.config/herbstluftwm#Requiered-dependences">Herbstluftwm</a></li>
+  <li><a href="https://github.com/yowls/dotfiles/tree/debian#Must-have">Must have</a></li>
+  <li><a href="https://github.com/yowls/dotfiles/tree/debian#Recommended">Recommended</a></li>
+  <li><a href="https://github.com/yowls/dotfiles/tree/debian/.config/qtile#Requiered-dependences">Qtile</a></li>
+  <li><a href="https://github.com/yowls/dotfiles/tree/debian/.config/herbstluftwm#Requiered-dependences">Herbstluftwm</a></li>
   </ul>
 <li>Installation</li>
   <ul>
-	<li><a href="https://github.com/yowls/dotfiles/tree/debian#Preparations">Preparations</a></li>
-	<li><a href="https://github.com/yowls/dotfiles/tree/debian#Execute">Execute</a></li>
+  <li><a href="https://github.com/yowls/dotfiles/tree/debian#Preparations">Preparations</a></li>
+  <li><a href="https://github.com/yowls/dotfiles/tree/debian#Execute">Execute</a></li>
   </ul>
 <li>List of programs</li>
   <ul>
   <li><a href="https://github.com/yowls/dotfiles/tree/debian#Main">Main</a></li>
-	<li><a href="https://github.com/yowls/dotfiles/tree/debian#Others">Others</a></li>
+  <li><a href="https://github.com/yowls/dotfiles/tree/debian#Secondary">Secondary</a></li>
   </ul>
 <li>Extra information</li>
   <ul>
-	<li><a href="https://github.com/yowls/dotfiles/tree/debian/.config/qtile">Qtile</a></li>
-	<li><a href="https://github.com/yowls/dotfiles/tree/debian/.config/herbstluftwm">Herbstluftwm</a></li>
-	<li><a href="https://github.com/yowls/dotfiles/tree/debian#Extra-information">Others</a></li>
+  <li><a href="https://github.com/yowls/dotfiles/tree/debian/.config/qtile">Qtile</a></li>
+  <li><a href="https://github.com/yowls/dotfiles/tree/debian/.config/herbstluftwm">Herbstluftwm</a></li>
+  <li><a href="https://github.com/yowls/dotfiles/tree/debian#Others">Others</a></li>
   </ul>
 <li><a href="https://github.com/yowls/dotfiles/tree/debian#Known-issues">Known issues</a></li>
 <li><a href="https://github.com/yowls/dotfiles/tree/debian/Pictures">Gallery</a></li>
-<li>Acknowledgement</li>
 <li>Contributors</li>
+<li>Acknowledgement</li>
 <li>Social media</li>
-<li>Licence</li>
 <li>Disclaimer</li>
+<li>Licence</li>
 </ul>
 
-<img src=Pictures/content_master/2_about.png width=200px><br>
-> "some time i feel cool even paralize"<br>
-> -- <cite>Carl Sagan</cite>
+<img src=Pictures/title/02.png width=400px><br>
+> "A computer is like air conditioning, it becomes useless when you open Windows"<br>
+> -- <cite>Linus Torvalds</cite>
 
 ### About
 <img src="Pictures/profilepic.jpg" align="right" width= 400px>
@@ -95,15 +94,15 @@ Bajo este contexto, se refiere a la palabra R.I.C.E (Race Inspired Cosmetic Enha
 
 ### What you gonna find here<br>
 **Plasma** as *Desktop Environment* <br>
-**Qtile** && **Herbstluft** as *Window Manager* <br>
+[**Qtile**](https://github.com/yowls/dotfiles/tree/debian/.config/qtile) && [**Herbstluft**](https://github.com/yowls/dotfiles/tree/debian/.config/herbstluftwm) as *Window Manager* <br>
 
 ### My other branches
 + [Master branch](https://github.com/yowls/dotfiles/tree/master) --- --- ---{ Summary }
 + [Arch branch](https://github.com/yowls/dotfiles/tree/arch) --- --- --- ---{ Awesome wm + openbox }
 + [Freebsd branch](https://github.com/yowls/dotfiles/tree/freebsd)--- -- ---{ Bspwm + 2bwm }
 
-## Screenshots
-Just a fews screenshots of my setup in Debian
+<img src=Pictures/title/03.png width=400px><br>
+Just a fews screenshots of my rice in Debian
 ### Plasma
 <img src="Pictures/pldemo.png" align=right width=300px>
 
@@ -115,14 +114,14 @@ Just a fews screenshots of my setup in Debian
 + **Terminals**: urxvt, konsole
 + **Decoration**: Neofetch, pfetch
 + **Other apps**:
-  - vim with vimplug
+  - vim
   - feh for the image
 + **KDE plasma rules**: No title bar and frame
 
 <br>
 <br>
 
-### Qtile
+### [Qtile](https://github.com/yowls/dotfiles/tree/debian/.config/qtile)
 <img src="Pictures/hldemo.png" align=right width=300px>
 
 `Details:`
@@ -141,14 +140,14 @@ Just a fews screenshots of my setup in Debian
 <br>
 <br>
 
-### Herbstluftwm
+### [Herbstluftwm](https://github.com/yowls/dotfiles/tree/debian/.config/herbstluftwm)
 <img src="Pictures/hldemo.png" align=right width=300px>
 
 `Details:`
 + **Os**: Debian Buster
 + **Terminal**: konsole
 + **Shell**: Zsh with powerlevel10k
-+ **Panel**: Polybar
++ **Bar**: Polybar
 + **Applications**:
   - neofetch
   - htop
@@ -158,65 +157,64 @@ Just a fews screenshots of my setup in Debian
 <br>
 <br>
 <br>
-<br>
-
 *For more photos see: [enter in gallery here](https://github.com/yowls/dotfiles/tree/debian/Pictures)*
 
-## Dependences
+<img src=Pictures/title/04.png width=400px><br>
 ### Must have
-Programs that i use in every setup
-* Zsh + [Oh my Zsh](https://github.com/ohmyzsh/ohmyzsh) + [Power Level 10K](https://github.com/romkatv/powerlevel10k)
-* Rofi
-* Vim + gvim (for pasting fix) + [VimPlug](https://github.com/junegunn/vim-plug) (for pluggins)
-* Rxvt-Unicode
+Programs that i use in every setup and my config files depend on it.
+Qtile and Herbstluft require aditional dependencies, but in both i use:
+* Compton as compositor
+* Rofi as application launcher and dmenu replacement
+* Rxvt-Unicode as terminal
+* Vim for text editing
 
-### Recommended fonts
-always is good to have a nerd font
+### Recommended 
+* Zsh + [Oh my Zsh](https://github.com/ohmyzsh/ohmyzsh) + [Power Level 10K](https://github.com/romkatv/powerlevel10k)
+* [VimPlug](https://github.com/junegunn/vim-plug) for vim pluggins
+
+Fonts
 + [Nerd font](https://github.com/ryanoasis/nerd-fonts)
 choose what you want
-i personaly prefer Fira code
 
-`If you want to use QTile`<br>
-**[See more information](Qtile page)**
+### If you want to use QTile
+[*See additional dependences*](https://github.com/yowls/dotfiles/tree/debian/.config/qtile#Dependences)
 
-`If you want to use Herbstluftwm`<br>
-**[see more information](Herbstluftwm page)**
+### If you want to use Herbstluftwm
+[*see additional dependences*](https://github.com/yowls/dotfiles/tree/debian/.config/herbstluftwm#Dependences)
 
-`If you plan to use Plasma`<br>
+### If you plan to use Plasma
 It doesnt requiered any special dependencies to work, just install some themes and widgets for the panel, and leave it as you want.
 
-## Installation
-Instructions to set my rice.<br>
+<img src=Pictures/title/05.png width=400px><br>
+Instructions to set up my rice.<br>
 You can complete all the dependences of only one to work with it.<br>
-This setup should work on moslty debian based, but anyways, dont promise you nothing. Good luck.
+I made this setup in debian where the most are not in the latest version.
 
-### Preparations:
+### Preparations
 Make sure there´s no conflict between your files and mine.<br>
-**Make a backup** of your files anyways, doing:
-```shell
-        $ cp ~/.config ~/.oldconfig
-        $ cp ~/{.zshrc .bashrc .Xresources} ~/.oldconfig
-```
+**Make a backup** of your files anyways, don't replace with mine just<br>
 And make sure you have all needed dependencies to work properly.
 
-### Execution:
-First clone the directory in home directoy:
+### Execution
+Elige cual de los dos (o los dos) wm vas a usar, luego<br>
+Clone the repository:
+
 ```shell
-	$ git clone --depth=1 https://github.com/yowls/dotfiles/tree/debian
+	$ cd Downloads
+	$ git clone https://github.com/yowls/dotfiles/tree/debian
+	$ mv dotfiles/.config/qtile ../.config
+	$ mv dotfiles/.config/herbstluftwm ../.config
 ```
-Change zsh default shell with
-```shell
-	$ chsh -s zsh
-```
-After all installation and execution, you should reboot and in the display manager choose your option.<br>
+
+Then logout and in the display manager choose your option.<br>
 And buala, that´s all.
 
 *I will do a script to do it automatically, i hope soon*
 
-## List of programs
+<img src=Pictures/title/06.png width=400px><br>
 In any case, I publish the versions of the programs in case in any future update something broke and I haven't updated it yet.
 
-### Main:
+### Main
 + Browser      = Firefox (78.0.1)
 + Shell        = Zsh (5.7.1)
 + Terminal     = konsole (18.04.0)
@@ -226,61 +224,59 @@ In any case, I publish the versions of the programs in case in any future update
 + Launcher     = Rofi (1.5.1)
 
 --
+
 + Plasma  (5.14)
 + QTile   (0.15.1)
 + Herbstluftwm  (0.8.2)
 
-### Others
-+ redshift for you pretty eyes
+### Secondary
++ redshift for filer
 + dunst for notification
 + flameshot in plasma and maim in wm´s for screenshots
 + ? for record?
 
 
-## Extra information
-### To know more about the details of every rice, i recommend you to see
+<img src=Pictures/title/07.png width=400px><br>
+### To know more about the details of every rice, see
 + [More information about Qtile](https://github.com/yowls/dotfiles/tree/debian/.config/qtile)
 + [More about Herbstluft](https://github.com/yowls/dotfiles/tree/debian/.config/herbstluftwm)
 
-### ZSH
-Useful terminal aliases in .zshrc:
-```
-	code code code
-```
+### Others
 
-### Xresources
-Xresources color scheme:
-+ Color scheme
- - [color scheme]
-+ photo demostration in terminal
- - [demostration]
+`Rxvt-Unicode (URxvt)`
+All the config is in .Xresources file.<br>
+Actually using: clipboard, resize-font and matcher as perl-extensions.
 
-*in master branch just put .colors,bg,fg*
-
-### Vim
-.vimrc file will going to install some pluggins using [VimPlug](https://github.com/junegunn/vim-plug)<br>
+`Vim`
+Im using [VimPlug] for vim plugins.<br>
 Some of them are:
 * Gitgutter
 * NERDTree
 * Lightline
 * css-color
 
-Also, you may notice that clipboard doesnt work well when trying to pase from outside.
-To fix that, **install gvim**. 
-This will give vim the ability to copy/paste from/to others programs.
+If you notice that clipboard doesnt work well when trying to pase from outside install **gvim**.<br>
+This will give vim the ability to copy/paste from/to others programs.<br>
 Otherwise, you can fix it using xclip, making a keybind in .vimrc replacing paste command. But the easiest way is just install gvim.
 
-Plus, you need to create a `undodir` folder in .vim for a history of undo´s. So you can undo a line of a file previously closed
+In my .vimrc im using **undodir** folder for a history of undo´s. So i can undo a line of a file previously closed
 
-## known issues
+`Xresources`
+Xresources color scheme:
++ Color scheme
+ - [color scheme]
++ photo demostration in terminal
+ - [demostration]
+
+<img src=Pictures/title/08.png width=400px><br>
 Nothing recorded yet.<br>
 If you are having an issue, first check you are using the same version as me, then open a ticket at issue section or just make a pull request.
 
-## Gallery
-a few more photos<br>
+<img src=Pictures/title/09.png width=400px><br>
+A few more photos<br>
 [Check my full gallery](https://github.com/yowls/dotfiles/tree/debian/Pictures), all the setups of the branch here.
 
-## Disclaimer
+<img src=Pictures/title/13.png width=400px><br>
 This is MY setup and it is opinionated and made to work how I want. Anyone can download and use it, but unless you and me are the same person, you'll probably find things that you don't want. It is OK. Use this as a starting point for making your own.
 
 Under no circumstances I am responsible for any kind of damage derived from the use of this on your machine. If you lose files, if your install breaks something, if something explodes. My dotfiles comes with no warranties. Again; you shouldn't play with my toys if you don't want to get hurt. (This doesn't mean my dotfiles will hurt you, you know, but this is legal boilerplate to cover my ass in case something happens).

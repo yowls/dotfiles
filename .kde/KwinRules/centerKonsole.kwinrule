@@ -1,0 +1,14 @@
+[Window settings for konsole]
+Description=Window settings for konsole
+clientmachine=localhost
+clientmachinematch=0
+placement=Centered
+placementrule=2
+title=awn : zsh \xe2\x80\x94 Konsole
+titlematch=0
+types=1
+windowrole=mainwindow#1
+windowrolematch=1
+wmclass=konsole
+wmclasscomplete=false
+wmclassmatch=1
