@@ -62,24 +62,23 @@ alias ram="free -h --mega"
 
 #---- Package manager
 # Search
-alias search="apt search"
+#alias search="insert"
 # Istall
-alias ins="sudo aptitude install"
-alias insb="sudo apt -t buster-backports install"
+#alias ins="insert"
 # Remove
-alias remv="sudo aptitude remove"
-alias fremv="sudo aptitude purge"
+#alias remv="insert"
+#alias fremv="insert"
 # Update
-alias update="sudo aptitude update"
-alias upgrade="sudo aptitude upgrade"
-alias upgradels="apt list --upgradable -a"
+#alias update="insert"
+#alias upgrade="insert"
+#alias upgradels="insert"
 # Nya = Nya You All
-alias nya="update && upgradels"
-alias nyya="update && upgrade"
+#alias nya="update && upgradels"
+#alias nyya="update && upgrade"
 # Remove unneeded dependecy
-alias autoremove="sudo apt autoremove"
+#alias autoremove="insert"
 # Remove old downloaded packages
-alias autoclean="sudo aptitude autoclean"
+#alias autoclean="insert"
 
 # Reset Xresources
 alias rxr="xrdb ~/.Xresources"
