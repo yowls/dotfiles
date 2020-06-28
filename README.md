@@ -1,4 +1,4 @@
-<img src="Pictures/banner_debian.png" align=center height=300px><br>
+<img src="Pictures/banner_master.png" align=center height=300px><br>
 <p align="center"><b> config files for GNU/Linux and BSD </b></p>
 
 <p align="center">
@@ -12,42 +12,42 @@
 <ul align=left>
 <li>Introduction</li>
   <ul>
-  <li><a href="https://github.com/yowls/dotfiles/tree/debian#about">About</a></li>
-  <li><a href="https://github.com/yowls/dotfiles/tree/debian#Q&A">Q&A</a></li>
-  <li><a href="https://github.com/yowls/dotfiles/tree/debian#What-you-gonna-find-here">What you gonna find in this branch</a></li>
-  <li><a href="https://github.com/yowls/dotfiles/tree/debian#My-other-branchs">Check my other branchs</a></li>
+  <li><a href="https://github.com/yowls/dotfiles/tree/master#about">About</a></li>
+  <li><a href="https://github.com/yowls/dotfiles/tree/master#Q&A">Q&A</a></li>
+  <li><a href="https://github.com/yowls/dotfiles/tree/master#What-you-gonna-find-here">What you gonna find in this branch</a></li>
+  <li><a href="https://github.com/yowls/dotfiles/tree/master#My-other-branchs">Check my other branchs</a></li>
   </ul>
 <li>Screenshots</li>
   <ul>
-  <li><a href="https://github.com/yowls/dotfiles/tree/debian#Plasma">Plasma setup</a></li>
-  <li><a href="https://github.com/yowls/dotfiles/tree/debian#Qtile">Qtile setup</a></li>
-  <li><a href="https://github.com/yowls/dotfiles/tree/debian#Herbstluftwm">Herbstluftwm setup</a></li>
+  <li><a href="https://github.com/yowls/dotfiles/tree/master#Plasma">Plasma setup</a></li>
+  <li><a href="https://github.com/yowls/dotfiles/tree/master#Qtile">Qtile setup</a></li>
+  <li><a href="https://github.com/yowls/dotfiles/tree/master#Herbstluftwm">Herbstluftwm setup</a></li>
   </ul>
 <li>Dependences</li>
   <ul>
-  <li><a href="https://github.com/yowls/dotfiles/tree/debian#Must-have">Must have</a></li>
-  <li><a href="https://github.com/yowls/dotfiles/tree/debian#Recommended">Recommended</a></li>
-  <li><a href="https://github.com/yowls/dotfiles/tree/debian/.config/qtile#Requiered-dependences">Qtile</a></li>
-  <li><a href="https://github.com/yowls/dotfiles/tree/debian/.config/herbstluftwm#Requiered-dependences">Herbstluftwm</a></li>
+  <li><a href="https://github.com/yowls/dotfiles/tree/master#Must-have">Must have</a></li>
+  <li><a href="https://github.com/yowls/dotfiles/tree/master#Recommended">Recommended</a></li>
+  <li><a href="https://github.com/yowls/dotfiles/tree/master/.config/qtile#Requiered-dependences">Qtile</a></li>
+  <li><a href="https://github.com/yowls/dotfiles/tree/master/.config/herbstluftwm#Requiered-dependences">Herbstluftwm</a></li>
   </ul>
 <li>Installation</li>
   <ul>
-  <li><a href="https://github.com/yowls/dotfiles/tree/debian#Preparations">Preparations</a></li>
-  <li><a href="https://github.com/yowls/dotfiles/tree/debian#Execute">Execute</a></li>
+  <li><a href="https://github.com/yowls/dotfiles/tree/master#Preparations">Preparations</a></li>
+  <li><a href="https://github.com/yowls/dotfiles/tree/master#Execute">Execute</a></li>
   </ul>
 <li>List of programs</li>
   <ul>
-  <li><a href="https://github.com/yowls/dotfiles/tree/debian#Main">Main</a></li>
-  <li><a href="https://github.com/yowls/dotfiles/tree/debian#Secondary">Secondary</a></li>
+  <li><a href="https://github.com/yowls/dotfiles/tree/master#Main">Main</a></li>
+  <li><a href="https://github.com/yowls/dotfiles/tree/master#Secondary">Secondary</a></li>
   </ul>
 <li>Extra information</li>
   <ul>
-  <li><a href="https://github.com/yowls/dotfiles/tree/debian/.config/qtile">Qtile</a></li>
-  <li><a href="https://github.com/yowls/dotfiles/tree/debian/.config/herbstluftwm">Herbstluftwm</a></li>
-  <li><a href="https://github.com/yowls/dotfiles/tree/debian#Others">Others</a></li>
+  <li><a href="https://github.com/yowls/dotfiles/tree/master/.config/qtile">Qtile</a></li>
+  <li><a href="https://github.com/yowls/dotfiles/tree/master/.config/herbstluftwm">Herbstluftwm</a></li>
+  <li><a href="https://github.com/yowls/dotfiles/tree/master#Others">Others</a></li>
   </ul>
-<li><a href="https://github.com/yowls/dotfiles/tree/debian#Known-issues">Known issues</a></li>
-<li><a href="https://github.com/yowls/dotfiles/tree/debian/Pictures">Gallery</a></li>
+<li><a href="https://github.com/yowls/dotfiles/tree/master#Known-issues">Known issues</a></li>
+<li><a href="https://github.com/yowls/dotfiles/tree/master/Pictures">Gallery</a></li>
 <li>Contributors</li>
 <li>Acknowledgement</li>
 <li>Social media</li>
