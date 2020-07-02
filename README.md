@@ -232,6 +232,7 @@ In any case, I publish the versions of the programs in case in any future update
 ### Secondary
 + redshift for filer
 + dunst for notification
++ ulauncher for application launcher and others in plasma
 + flameshot in plasma and maim in wm´s for screenshots
 + ? for record?
 

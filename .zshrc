@@ -49,7 +49,7 @@ export EDITOR='vim'
 
 #---- System
 # Grub
-alias grupdate="sudo grub-mkconfig -o /boot/grub/grub.cfg?"
+alias grupdate="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 alias gruconf="sudo vim /etc/deault/grub"
 # Processes
 #alias p="ps aux | grep"
@@ -81,13 +81,6 @@ alias autoremove="sudo apt autoremove"
 # Remove old downloaded packages
 alias autoclean="sudo aptitude autoclean"
 
-# Reset Xresources
-alias rxr="xrdb ~/.Xresources"
-
-#---- Aplications
-alias lc="colorls --sort-dirs"
-alias lca="colorls --sort-dirs -A"
-alias lct="colorls --sort-dirs --tree"
 
 #---- Scripts
 alias wttr="curl wttr.in"
@@ -96,11 +89,19 @@ alias wttr="curl wttr.in"
 #----- Configuration files | dotfiles
 #alias todo="vim ~/MEGA/$DISTRIBUTION_NAME"
 alias todo="vim ~/MEGA/debian"
-alias zconf="vim ~/.zshrc"
+# Shell
 alias bconf="vim ~/.bashrc"
-alias ohmyconf="vim ~/.oh-my-zsh"
+alias zconf="vim ~/.zshrc"
+#alias ohmyconf="vim ~/.oh-my-zsh"
+# Terminal
+alias kiconf="vim ~/.config/kitty/kitty.conf"
+alias kifd="vim ~/.config/kitty"
+# Editor
 alias viconf="vim ~/.vimrc"
+# Xresources
 alias xrconf="vim ~/.Xresources"
+alias rxr="xrdb ~/.Xresources"
+# Others
 alias neoconf="vim .config/neofetch/config.conf"
 
 # Working directories
@@ -113,51 +114,53 @@ alias rmd="vim README.md"
 alias cdhl="cd ~/.config/herbstluftwm"
 alias cdql="cd ~/.config/qtile/"
 
-# Firefox
-alias ffd="vim ~/.mozilla/firefox/*.default-release/chrome"
-alias fcss="vim ~/.mozilla/firefox/*.default-release/chrome/userChrome.css"
-alias fcnt="vim ~/.mozilla/firefox/*.default-release/chrome/userContent.css"
-
 # Origin
 alias omd="vim ~/README.md"
+alias oig="vim ~/.gitignore"
 alias ostart="vim ~/.xsessionrc"
-alias cdgo="cd ~/git/MYDFILES"
-
+alias cdgo="cd ~/git/dotfiles"
 # Plasma
 alias plstart="vim ~/.config/autostart-scripts"
 alias plout="vim ~/.config/plasma-workspace/shutdown"
-
 # Qtile
 alias qlfd="vim ~/.config/qtile"
 alias qlconf="vim ~/.config/qtile/config.py"
 alias qlkey="vim ~/.config/qtile/keybind.py"
 alias qlmd="vim ~/.config/qtile/README.md"
-
 # Herbstluft
 alias hlfd="vim ~/.config/herbstluftwm"
 alias hlconf="vim ~/.config/herbstluftwm/autostart"
 alias hlkey="vim ~/.config/herbstluftwm/keybind.sh"
 alias hlmd="vim ~/.config/herbstluftwm/README.md"
 
-#Youtube-dl
+# Firefox
+alias ffd="vim ~/.mozilla/firefox/*.default-release/chrome"
+alias fcss="vim ~/.mozilla/firefox/*.default-release/chrome/userChrome.css"
+alias fcnt="vim ~/.mozilla/firefox/*.default-release/chrome/userContent.css"
+
+
+#---- Aplications
+# Color ls
+alias lc="colorls --sort-dirs"
+alias lca="colorls --sort-dirs -A"
+alias lct="colorls --sort-dirs --tree"
+# Youtube-dl
 alias audio="youtube-dl -o $HOME/Desktop/%(title)s.%(ext)s' -f bestaudio -x --audio-format best --audio-quality 0"
 alias mp3="youtube-dl -o '$HOME/Desktop/%(title)s.%(ext)s' -x --audio-format mp3 --audio-quality 0"
 alias mp3t="youtube-dl -o '$HOME/Desktop/%(title)s.%(ext)s' -x --audio-format mp3 --audio-quality 0 --write-thumbnail"
 alias video="youtube-dl -o '$HOME/Desktop/%(title)s.%(ext)s' -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4"
-
-# Update hblock (hosts)
+# HBlock (hosts)
 alias uhblock="hblock --backup $HOME/Desktop --sources $HOME/MEGA/hblock/hosts --whitelist $HOME/MEGA/hblock/whitelist.list --blacklist $HOME/MEGA/hblock/blacklist.list"
-
 # Git
-# gst= git status
-# +more default alias
+#gst= git status
+#+more default alias
 alias glogg="git log --all --graph --decorate --oneline"
-alias ignore="vim ~/.gitignore"
+alias gig="vim .gitignore"
 
-# EXTRAS
+#---- EXTRAS
 source $(dirname $(gem which colorls))/tab_complete.sh
 
-# Error fixing
+#---- Error fixing
 # tere=tree
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.

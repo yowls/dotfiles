@@ -39,9 +39,17 @@
 # Cava
 !.config/cava
 !.config/cava/config
+# ouRXvt
+!.urxvt
+!.urxvt/ext
+!.urxvt/ext/*
 # Vim
 !.vim
 !.vim/README.md
+# Kitty
+!.config/kitty
+!.config/kitty/*
+
 # Random folder
 !.lists
 !.lists/*
