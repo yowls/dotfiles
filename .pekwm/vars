@@ -1,0 +1,8 @@
+$TERM="x-terminal-emulator"
+
+$DIR="$HOME/.pekwm"
+$TERM1="kitty"
+$TERM2="urxvt"
+
+$mod="mod4"
+$alt="mod1"

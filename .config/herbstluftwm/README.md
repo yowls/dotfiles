@@ -5,17 +5,17 @@
 
 ## About Herbstluftwm:
 
-<img src="../../Pictures/hldemo.png" align=right width=300px>
+<img src="../../Pictures/hldemo.png" align=right width=400px>
 <p align=left>
-<strong><a href="https://herbstluftwm.org/">Herbstluftwm</a></strong> is a manual tiling window manager.<br>
-Is characterized by his frames
+<strong><a href="https://herbstluftwm.org/">Herbstluftwm</a></strong> is a manual tiling window manager for x11. Is characterized by the layout which is based on splitting frames into subframes and the ability to multi monitor setup with X tags per monitor.<br>
+It's also written from scratch in C and configured with a bash script.
 </p>
 
 `Details:`
 + **Os**: Debian '10' Buster
 + **Terminal**: konsole
 + **Shell**: zsh + powerlevel10k
-+ **Panel**: Polybar
++ **Bar**: Polybar
 + **Applications**: neofetch, htop, feh, colorls
 + **Compositor**: Compton
 
@@ -42,7 +42,7 @@ Also, you can take this as an example or for your own ricing.<br>
 	- [Rules](#Rules)
 		- [Examples](#Some-rules)
 	- [Startup programs](#Startup-programs)
-	- [Panel](https://github.com/yowls/dotfiles/tree/debian/.config/herbstluftwm/PbThemes)
+	- [Bar](https://github.com/yowls/dotfiles/tree/debian/.config/polybar)
 + [Gallery](https://github.com/yowls/dotfiles/tree/debian/Pictures#herbstluftwm)
 + [To Do](#To-Do)
 	- [Issues](#Issues)
@@ -52,12 +52,12 @@ Also, you can take this as an example or for your own ricing.<br>
 ### Requiered dependences
 * **Herbstluft** obviously
 * **Feh**	-> set the wallpaper
-* **Polybar**	-> panel
+* **Polybar**	-> bar
 * **Dunst**	-> notificacionts
 * **Rofi**	-> launcher
 * **Compton**	-> Compositor
 
-Herbstluft come with dzen2 as default panel but i instead use polybar.
+Herbstluft come with dzen2 as default bar but i instead use polybar.
 
 ### Optional dependences
 * **Greenclip** for clipboard manager with Rofi
@@ -69,7 +69,7 @@ Herbstluft come with dzen2 as default panel but i instead use polybar.
 ### Fonts
 Needed fonts for the setup:
 * .. for general setup
-* .. for panel
+* .. for polybar
 * .. for rofi
 * [Any NerdFont](https://github.com/ryanoasis/nerd-fonts) for terminal
 
@@ -144,15 +144,13 @@ Some of them are deamons, others are programs like the browser,compositor,etc.
 If you want to add a program, put **"run"** at the beginning of the line, because it is verified that it is not running. This is defined in the same function run.
 Otherwise, if you have, for example, the terminal open and reloads, it will spawn again as if it were starting.
 
-### Panel
-**File name: "PbThemes/polybar.ini"**
+### Bar
 
-Set the config for the panel, but **not for launch it explicitly**.<br>
-In this case, i use polybar as panel, so herbstluft call this file to set the config.<br>
+In this case, i use polybar as bar, so herbstluft call this file to set the config.<br>
 The call is produced in [here](https://github.com/yowls/dotfiles/blob/debian/.config/herbstluftwm/autostart#L29)<br>
-*For more information enter in the* [Polybar Themes Folder](https://github.com/yowls/dotfiles/tree/debian/.config/herbstluftwm/PbThemes)
+*For more information enter in the* [Polybar Themes Folder](https://github.com/yowls/dotfiles/tree/debian/.config/polybar)
 
-You can not use Polybar, and use the bar you want, such as dzen2,tint2, etc. Just delete [This Line](https://github.com/yowls/dotfiles/blob/debian/.config/herbstluftwm/autostart#L55) and replace it with the program of your choice.
+You may not use Polybar, and use the bar you want, such as dzen2,tint2, etc. Just delete [This Line](https://github.com/yowls/dotfiles/blob/debian/.config/herbstluftwm/autostart#L55) and replace it with the program of your choice.
 
 ## To Do
 Things that one day gonna make

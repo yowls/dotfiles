@@ -8,14 +8,23 @@
 !.gitignore
 # On session startup
 !.xsessionrc
-# .rc thing
+# Shell
 !.bashrc
+!.bash
+!.bash/*
+#!.fishrc
+#!.fish
+#!.fish/*
 !.zshrc
-!.vimrc
-!.Xresources
+!.zsh
+!.zsh/*
+# Bookmarks
 !.gtk-bookmarks
 !.config/gtk-3.0
 !.config/gtk-3.0/bookmarks
+!.Xresources
+!.Xresources.d
+!.Xresources.d/*
 
 # Folder for all pics in the directory
 !Pictures
@@ -44,6 +53,7 @@
 !.urxvt/ext
 !.urxvt/ext/*
 # Vim
+!.vimrc
 !.vim
 !.vim/README.md
 # Kitty
@@ -66,17 +76,23 @@
 !.config/plasma-workspace
 !.config/plasma-workspace/shutdown
 !.config/plasma-workspace/shutdown/*
+# PekWM
+!.pekwm
+!.pekwm/*
+!.pekwm/Themes
+!.pekwm/Themes/*
 # Qtile
 !.config/qtile
 !.config/qtile/*
 !.config/qtile/Themes
 !.config/qtile/Themes/*
-!.config/qtile/Panels
-!.config/qtile/Panels/*
+!.config/qtile/Bars
+!.config/qtile/Bars/*
 # Herbstluftwm
 !.config/herbstluftwm
 !.config/herbstluftwm/*
-!.config/herbstluftwm/HlThemes
-!.config/herbstluftwm/HlThemes/*
-!.config/herbstluftwm/PbThemes
-!.config/herbstluftwm/PbThemes/*
+!.config/herbstluftwm/Themes
+!.config/herbstluftwm/Themes/*
+# Polybar
+!.config/polybar
+!.config/polybar/*
