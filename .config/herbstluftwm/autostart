@@ -42,7 +42,7 @@ bash "$hldir/workspace.sh"
 bash "$hldir/keybind.sh"
 
 # 4.Load the herbstluft THEME
-bash "$hldir/HlThemes/$Htheme.sh"
+bash "$hldir/Themes/$Htheme.sh"
 
 # 5.Load the RULES for windows
 bash "$hldir/rule.sh"
@@ -52,7 +52,7 @@ bash "$hldir/startup.sh"
 
 # 7.Load the config of PANEL 'polybar'
 while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
-polybar -c "$hldir/PbThemes/$Ptheme.ini" top &
+polybar -c "$HOME/.config/polybar/$Ptheme.ini" main &
 
 # If you have multiple monitors uncomment one of this:
 #hc detect_monitors

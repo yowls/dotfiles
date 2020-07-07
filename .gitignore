@@ -8,14 +8,23 @@
 !.gitignore
 # On session startup
 !.xsessionrc
-# .rc thing
+# Shell
 !.bashrc
+!.bash
+!.bash/*
+#!.fishrc
+#!.fish
+#!.fish/*
 !.zshrc
-!.vimrc
-!.Xresources
+!.zsh
+!.zsh/*
+# Bookmarks
 !.gtk-bookmarks
 !.config/gtk-3.0
 !.config/gtk-3.0/bookmarks
+!.Xresources
+!.Xresources.d
+!.Xresources.d/*
 
 # Folder for all pics in the directory
 !Pictures
@@ -33,15 +42,27 @@
 # Launcher
 !.config/rofi
 !.config/rofi/*
+# Dunst
+!.config/dunst
+!.config/dunst/*
 # MPD
 !.config/mpd
 !.config/mpd/mpd.conf
 # Cava
 !.config/cava
 !.config/cava/config
+# ouRXvt
+!.urxvt
+!.urxvt/ext
+!.urxvt/ext/*
 # Vim
+!.vimrc
 !.vim
 !.vim/README.md
+# Kitty
+!.config/kitty
+!.config/kitty/*
+
 # Random folder
 !.lists
 !.lists/*
@@ -58,17 +79,24 @@
 !.config/plasma-workspace
 !.config/plasma-workspace/shutdown
 !.config/plasma-workspace/shutdown/*
+# PekWM
+!.pekwm
+!.pekwm/*
+!.pekwm/Themes
+!.pekwm/Themes/*
 # Qtile
 !.config/qtile
 !.config/qtile/*
 !.config/qtile/Themes
 !.config/qtile/Themes/*
-!.config/qtile/Panels
-!.config/qtile/Panels/*
+!.config/qtile/Bars
+!.config/qtile/Bars/*
 # Herbstluftwm
 !.config/herbstluftwm
 !.config/herbstluftwm/*
-!.config/herbstluftwm/HlThemes
-!.config/herbstluftwm/HlThemes/*
-!.config/herbstluftwm/PbThemes
-!.config/herbstluftwm/PbThemes/*
+!.config/herbstluftwm/Themes
+!.config/herbstluftwm/Themes/*
+# Polybar
+!.config/polybar
+!.config/polybar/*
+#!.config/polybar/**

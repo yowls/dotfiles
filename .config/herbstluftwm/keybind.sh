@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
 # VARIABLES
-Terminal=konsole
-Terminal2=urxvt
-#Editor="$Terminal2 -e vim"
+Terminal=urxvt
+Terminal2=kitty
+#Editor="$Terminal -e vim"
 Explorer=pcmanfm
 Browser=firefox
 

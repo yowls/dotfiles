@@ -10,37 +10,31 @@ function run {
 
 # -- PolicyKit | Polkit
 run /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
-
-# -- Tray icon - Applets
-# power manager
-# network applet
-# brightness
-# volume
-# clipboard
-# Tray system
-
-# -- Demon Processes
-# Notification deamon
-#run pcmanfm --daemon-mode
-#run tilda
-#run urxvtd
-#run megasync
-run greenclip daemon
-#[ ! -s ~/.config/mpd/pid ] && mpd
-
-# -- Start application on login
-#run telegram-desktop
-#run firefox
-#run konsole
-
 # -- Compositor
-compton &
-
+run compton
+# -- Status bar
+# built-in
+#-- Notification
+#run dunst
 # -- Wallpaper
 # Automatic
 #~/.fehbg
 # Static
 feh --bg-scale "$HOME/MEGA/Wallpaper/Animewe/Evangelion/Eva01.png"
-
 # -- Reload xresources
 xrdb ~/.Xresources
+
+
+# -- Demons
+run greenclip daemon
+#run tilda
+#run urxvtd
+#run pcmanfm --daemon-mode
+#run megasync
+#[ ! -s ~/.config/mpd/pid ] && mpd
+
+
+# -- Applications
+#run telegram-desktop
+#run firefox
+#run konsole

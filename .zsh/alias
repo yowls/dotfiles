@@ -1,0 +1,138 @@
+#!/bin/bash
+
+# For a full list of active aliases, run `alias`.
+#           _      _____           _____
+#     /\   | |    |_   _|   /\    / ____|
+#    /  \  | |      | |    /  \  | (___
+#   / /\ \ | |      | |   / /\ \  \___ \
+#  / ____ \| |____ _| |_ / ____ \ ____) |
+# /_/    \_\______|_____/_/    \_\_____/
+
+#---- 1.System
+# Grub
+alias grupdate="sudo grub-mkconfig -o /boot/grub/grub.cfg"
+alias gruconf="sudo vim /etc/deault/grub"
+# Processes
+#alias p="ps aux | grep"
+alias p="ps -el | grep"
+alias pk="pkill"
+# Otros
+alias hosts="sudo vim /etc/hosts"
+alias rswap="sudo swapoff -a && sudo swapon -a"
+alias ram="free -h --mega"
+
+#---- 2.Package manager
+# Search
+alias search="apt search"
+# Istall
+alias ins="sudo aptitude install"
+alias insb="sudo apt -t buster-backports install"
+# Remove
+alias remv="sudo aptitude remove"
+alias fremv="sudo aptitude purge"
+# Update
+alias update="sudo aptitude update"
+alias upgrade="sudo aptitude upgrade"
+alias upgradels="apt list --upgradable -a"
+# Nya = Nya You All
+alias nya="update && upgradels"
+alias nyya="update && upgrade"
+# Remove unneeded dependecy
+alias autoremove="sudo apt autoremove"
+# Remove old downloaded packages
+alias autoclean="sudo aptitude autoclean"
+
+#---- 3.Scripts
+alias wttr="curl wttr.in"
+# ADD applications in bin folder to PATH
+
+#----- 4.Configuration files | dotfiles
+#alias todo="vim ~/MEGA/$DISTRIBUTION_NAME"
+alias todo="vim ~/MEGA/debian"
+# Shell
+#alias fconf="vim fish"
+alias bconf="vim ~/.bashrc"
+alias zconf="vim ~/.zshrc"
+alias zfd="vim ~/.zsh"
+alias zkey="vim ~/.zsh/alias"
+#alias zupd="source ~/.zshrc"
+#alias ohmyconf="vim ~/.oh-my-zsh"
+# Terminal
+alias kiconf="vim ~/.config/kitty/kitty.conf"
+alias kifd="vim ~/.config/kitty"
+alias kikey="vim ~/.config/kitty/keybinds.conf"
+# Editor
+alias viconf="vim ~/.vimrc"
+#alias vifd="vim ~/.vim"
+# Xresources
+alias xrconf="vim ~/.Xresources"
+alias rxr="xrdb -merge ~/.Xresources"
+# Others
+alias neoconf="vim .config/neofetch/config.conf"
+alias nfch="neofetch --source "
+
+# Working directories
+alias cdf="cd ~/.mozilla/firefox/*.default-release/chrome/Yowls"
+alias cdst="cd ~/startpage"
+alias cdsc="cd ~/script"
+alias cdg="cd ~/git"
+# Window manager
+alias cdpk="cd ~/.pekwm"
+alias cdql="cd ~/.config/qtile/"
+alias cdhl="cd ~/.config/herbstluftwm"
+
+# Origin
+alias omd="vim ~/README.md"
+alias oig="vim ~/.gitignore"
+alias ostart="vim ~/.xsessionrc"
+alias cdgo="cd ~/git/dotfiles"
+# Plasma
+alias plstart="vim ~/.config/autostart-scripts"
+alias plout="vim ~/.config/plasma-workspace/shutdown"
+# PekWM
+alias pkfd="vim ~/.pekwm"
+alias pkconf="vim ~/.pekwm/config"
+alias pkkey="vim ~/.pekwm/keys"
+alias pkmd="vim ~/.pekwm/README.md"
+# Qtile
+alias qlfd="vim ~/.config/qtile"
+alias qlconf="vim ~/.config/qtile/config.py"
+alias qlkey="vim ~/.config/qtile/keybind.py"
+alias qlmd="vim ~/.config/qtile/README.md"
+# Herbstluft
+alias hlfd="vim ~/.config/herbstluftwm"
+alias hlconf="vim ~/.config/herbstluftwm/autostart"
+alias hlkey="vim ~/.config/herbstluftwm/keybind.sh"
+alias hlmd="vim ~/.config/herbstluftwm/README.md"
+
+# Firefox
+alias ffd="vim ~/.mozilla/firefox/*.default-release/chrome/Yowls"
+alias fcss="vim ~/.mozilla/firefox/*.default-release/chrome/userChrome.css"
+alias fcnt="vim ~/.mozilla/firefox/*.default-release/chrome/userContent.css"
+
+
+#---- 5.Aplications
+# Trash-cli
+#alias x="trash-put"
+# Exa
+alias lx="exa --group-directories-first"
+# Colorls
+alias lc="colorls --sort-dirs"
+alias lca="colorls --sort-dirs -A"
+alias lct="colorls --sort-dirs --tree"
+# Youtube-dl
+alias audio="youtube-dl -o $HOME/Desktop/%(title)s.%(ext)s' -f bestaudio -x --audio-format best --audio-quality 0"
+alias mp3="youtube-dl -o '$HOME/Desktop/%(title)s.%(ext)s' -x --audio-format mp3 --audio-quality 0"
+alias mp3t="youtube-dl -o '$HOME/Desktop/%(title)s.%(ext)s' -x --audio-format mp3 --audio-quality 0 --write-thumbnail"
+alias video="youtube-dl -o '$HOME/Desktop/%(title)s.%(ext)s' -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4"
+# HBlock (hosts)
+alias uhblock="hblock --backup $HOME/Desktop --sources $HOME/MEGA/hblock/hosts --whitelist $HOME/MEGA/hblock/whitelist.list --blacklist $HOME/MEGA/hblock/blacklist.list"
+# Git
+#https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git#aliases
+alias g="git"
+alias glogg="git log --all --graph --decorate --oneline"
+alias gig="vim .gitignore"
+alias rmd="vim README.md"
+
+#---- 6.Error fixing
+# tere=tree

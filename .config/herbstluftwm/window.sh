@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Basic
-hc keybind $Mod-Shift-q chain , pkill redshift, quit
+hc keybind $Mod-Shift-q chain ,pkill redshift ,quit
 hc keybind $Mod-Shift-r reload
 hc keybind $Mod-q close
 

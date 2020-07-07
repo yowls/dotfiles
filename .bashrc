@@ -1,5 +1,42 @@
-# ~/.bashrc: executed by bash(1) for non-login shells.
-# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
+#  /|                               .
+#  ||                             .'|
+#  ||                            <  |
+#  ||  __        __               | |
+#  ||/'__ '.  .:--.'.         _   | | .'''-.
+#  |:/`  '. '/ |   \ |      .' |  | |/.'''. \
+#  ||     | |`" __ | |     .   | /|  /    | |
+#  ||\    / ' .'.''| |   .'.'| |//| |     | |
+#  |/\'..' / / /   | |_.'.'.-'  / | |     | |
+#  '  `'-'`  \ \._,\ '/.'   \_.'  | '.    | '.
+#             `--'  `"            '---'   '---'
+
+# If not running interactively, don't do anything
+case $- in
+    *i*) ;;
+      *) return;;
+esac
+
+# Import sources
+source "$HOME/.zsh/alias"	# zsh alias
+source $(dirname $(gem which colorls))/tab_complete.sh
+source "$HOME/.bash/theme1"
+
+# Export var
+export EDITOR='vim'
+export FETCH="$HOME/MEGA/fetch"
+
+# append to the history file, don't overwrite it
+shopt -s histappend
+
+# History
+HISTSIZE=1000
+HISTFILESIZE=2000
+HISTFILE=~/.cache/bash_history
+HISTCONTROL=ignoreboth
+
+# check the window size after each command and, if necessary,
+# update the values of LINES and COLUMNS.
+shopt -s checkwinsize
 
 # If set, the pattern "**" used in a pathname expansion context will
 # match all files and zero or more directories and subdirectories.
@@ -8,28 +45,11 @@
 # make less more friendly for non-text input files, see lesspipe(1)
 #[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
-# uncomment for a colored prompt, if the terminal has the capability; turned
-# off by default to not distract the user: the focus in a terminal window
-# should be on the output of commands, not on the prompt
-force_color_prompt=yes
-
-if [ -n "$force_color_prompt" ]; then
-    if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
-	color_prompt=yes
-    else
-	color_prompt=
-    fi
-fi
-
-if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
-else
-    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
-fi
-unset color_prompt force_color_prompt
+#force_color_prompt=yes
+color_prompt=yes
 
 
-# enable color support of ls and also add handy aliases
+# Aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     alias ls='ls --color=auto'
@@ -41,19 +61,9 @@ if [ -x /usr/bin/dircolors ]; then
     #alias egrep='egrep --color=auto'
 fi
 
-# some more ls aliases
-#alias ll='ls -l'
-#alias la='ls -A'
-#alias l='ls -CF'
+# colored GCC warnings and errors
+#export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
-# Alias definitions.
-# You may want to put all your additions into a separate file like
-# ~/.bash_aliases, instead of adding them here directly.
-# See /usr/share/doc/bash-doc/examples in the bash-doc package.
-
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
-fi
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
