@@ -19,7 +19,7 @@ esac
 # Import sources
 source "$HOME/.zsh/alias"	# zsh alias
 source $(dirname $(gem which colorls))/tab_complete.sh
-#source "$HOME/.bash/theme1"
+source "$HOME/.bash/theme1"
 
 # Export var
 export EDITOR='vim'
@@ -47,9 +47,6 @@ shopt -s checkwinsize
 
 #force_color_prompt=yes
 color_prompt=yes
-
-# Prompt
-PS1="\[\e[36m\][\[\e[m\]\[\e[33m\]\u\[\e[m\]\[\e[34m\]@\[\e[m\]\[\e[32m\]\h\[\e[m\]\[\e[35m\]\w\[\e[m\]\[\e[36m\]]\[\e[m\]  "
 
 
 # Aliases

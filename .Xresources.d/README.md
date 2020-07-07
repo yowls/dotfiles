@@ -6,3 +6,4 @@ Xresources is ...
 ## Table of content
 + Includes
 + Color schemes
++ Photos

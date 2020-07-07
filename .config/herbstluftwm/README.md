@@ -20,7 +20,7 @@ It's also written from scratch in C and configured with a bash script.
 + **Compositor**: Compton
 
 **You gonna need all this files to let herbstluftwm work properly**<br>
-Except themes (HlThemes,PbThemes), you just need one of them.<br>
+Except themes (besides polybar config), you just need one of them.<br>
 Also, you can take this as an example or for your own ricing.<br>
 
 [Video gif del setup]

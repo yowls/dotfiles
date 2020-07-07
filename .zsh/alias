@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # For a full list of active aliases, run `alias`.
 #           _      _____           _____
 #     /\   | |    |_   _|   /\    / ____|
@@ -70,7 +72,7 @@ alias neoconf="vim .config/neofetch/config.conf"
 alias nfch="neofetch --source "
 
 # Working directories
-alias cdf="cd ~/.mozilla/firefox/*.default-release/chrome"
+alias cdf="cd ~/.mozilla/firefox/*.default-release/chrome/Yowls"
 alias cdst="cd ~/startpage"
 alias cdsc="cd ~/script"
 alias cdg="cd ~/git"
@@ -104,7 +106,7 @@ alias hlkey="vim ~/.config/herbstluftwm/keybind.sh"
 alias hlmd="vim ~/.config/herbstluftwm/README.md"
 
 # Firefox
-alias ffd="vim ~/.mozilla/firefox/*.default-release/chrome"
+alias ffd="vim ~/.mozilla/firefox/*.default-release/chrome/Yowls"
 alias fcss="vim ~/.mozilla/firefox/*.default-release/chrome/userChrome.css"
 alias fcnt="vim ~/.mozilla/firefox/*.default-release/chrome/userContent.css"
 

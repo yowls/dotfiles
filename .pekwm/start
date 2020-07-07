@@ -1,44 +1,41 @@
-#!/bin/sh
-# PekWM start file
-# It gets run on pekwm startup, after the theme and all config has loaded
+#!/usr/bin/env bash
+
+# Run, if it´s not running
+function run {
+	if ! pgrep $1 ;
+	then
+		$@&
+	fi
+}
 
 # -- PolicyKit | Polkit
 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
-
-# -- Tray icon - Applets
-# power manager
-# network applet
-# brightness
-# volume
-# clipboard
-# Tray system
-
-# -- Demon Processes
-# Notification deamon
-#run pcmanfm --daemon-mode
-#run urxvtd
-#run megasync
-#run greenclip daemon
-#[ ! -s ~/.config/mpd/pid ] && mpd
-
-# -- Start application on login
-#run telegram-desktop
-#run firefox
-#run konsole
-#run tilda
-
 # -- Compositor
 compton &
-
+# -- Polybar
+Ptheme="adi1"
+polybar -c "$HOME/.config/polybar/$Ptheme.ini" main &
+#-- Notification
+#run dunst
 # -- Wallpaper
 # Automatic
 #~/.fehbg
 # Static
 feh --bg-fill "$HOME/MEGA/Wallpaper/Animewe/oregai.jpg"
-
-# -- Polybar
-Ptheme="adi1"
-polybar -c "$HOME/.config/polybar/$Ptheme.ini" main &
-
 # -- Reload xresources
 xrdb ~/.Xresources
+
+
+# -- Demons
+#run greenclip daemon
+#run tilda
+#run urxvtd
+#run pcmanfm --daemon-mode
+#run megasync
+#[ ! -s ~/.config/mpd/pid ] && mpd
+
+
+# -- Applications
+#run telegram-desktop
+#run firefox
+#run konsole

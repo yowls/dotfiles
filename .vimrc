@@ -46,7 +46,7 @@ filetype plugin indent on
 set laststatus=2
 set noshowmode
 let g:lightline = {
-      \ 'colorscheme': 'deus',
+      \ 'colorscheme': 'wombat',
       \ }
 
 " NERDTree config

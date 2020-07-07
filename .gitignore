@@ -42,6 +42,9 @@
 # Launcher
 !.config/rofi
 !.config/rofi/*
+# Dunst
+!.config/dunst
+!.config/dunst/*
 # MPD
 !.config/mpd
 !.config/mpd/mpd.conf
@@ -96,3 +99,4 @@
 # Polybar
 !.config/polybar
 !.config/polybar/*
+#!.config/polybar/**

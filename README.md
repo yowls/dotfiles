@@ -8,7 +8,7 @@
 </p>
 
 <img src=Pictures/title/01.png width=400px><br>
-<img src="Pictures/logdeb.png" align=right height=400px >
+<img src="Pictures/logdeb.png" align=right height=500px >
 <ul align=left>
 <li>Introduction</li>
   <ul>
@@ -20,6 +20,7 @@
 <li>Screenshots</li>
   <ul>
   <li><a href="https://github.com/yowls/dotfiles/tree/debian#Plasma">Plasma setup</a></li>
+  <li><a href="https://github.com/yowls/dotfiles/tree/debian#PekWM">Pekwm setup</a></li>
   <li><a href="https://github.com/yowls/dotfiles/tree/debian#Qtile">Qtile setup</a></li>
   <li><a href="https://github.com/yowls/dotfiles/tree/debian#Herbstluftwm">Herbstluftwm setup</a></li>
   </ul>
@@ -27,6 +28,7 @@
   <ul>
   <li><a href="https://github.com/yowls/dotfiles/tree/debian#Must-have">Must have</a></li>
   <li><a href="https://github.com/yowls/dotfiles/tree/debian#Recommended">Recommended</a></li>
+  <li><a href="https://github.com/yowls/dotfiles/tree/debian/.pekwm#Requiered-dependences">Pekwm</a></li>
   <li><a href="https://github.com/yowls/dotfiles/tree/debian/.config/qtile#Requiered-dependences">Qtile</a></li>
   <li><a href="https://github.com/yowls/dotfiles/tree/debian/.config/herbstluftwm#Requiered-dependences">Herbstluftwm</a></li>
   </ul>
@@ -42,6 +44,7 @@
   </ul>
 <li>Extra information</li>
   <ul>
+  <li><a href="https://github.com/yowls/dotfiles/tree/debian/.pekwm">PekWM</a></li>
   <li><a href="https://github.com/yowls/dotfiles/tree/debian/.config/qtile">Qtile</a></li>
   <li><a href="https://github.com/yowls/dotfiles/tree/debian/.config/herbstluftwm">Herbstluftwm</a></li>
   <li><a href="https://github.com/yowls/dotfiles/tree/debian#Others">Others</a></li>
@@ -88,18 +91,18 @@ No deberias tener ningun problema, aunque siempre cae la posibilidad de que algo
 
 The word 'dotfiles' refers to any configuration file that is used to modify a program. Algunos de ellos empiezan con un punto (los que estan en el directorio home), por ej: .zshrc. Otros estan en una carpeta llamada '.config'
 
-* **¿Que significa 'ricing'?**
+* **¿What "ricing" means?**
 
-Bajo este contexto, se refiere a la palabra R.I.C.E (Race Inspired Cosmetic Enhancements), lo que es put parts on cars to make them look fast. En este caso, personalizar la interfaz para que se vea mejor.
+In this context, it refers to the word "R.I.C.E" (Race Inspired Cosmetic Enhancements), what it's like to put parts on cars to make them look fast. In this case, customize the interface to make it look better.
 
 ### What you gonna find here<br>
 **Plasma** as *Desktop Environment* <br>
-[**Qtile**](https://github.com/yowls/dotfiles/tree/debian/.config/qtile) && [**Herbstluft**](https://github.com/yowls/dotfiles/tree/debian/.config/herbstluftwm) as *Window Manager* <br>
+[**Qtile**](https://github.com/yowls/dotfiles/tree/debian/.config/qtile) && [**Herbstluft**](https://github.com/yowls/dotfiles/tree/debian/.config/herbstluftwm) && [**PekWM**](https://github.com/yowls/dotfiles/tree/debian/.pekwm) as *Window Manager* <br>
 
 ### My other branches
 + [Master branch](https://github.com/yowls/dotfiles/tree/master) --- --- ---{ Summary }
-+ [Arch branch](https://github.com/yowls/dotfiles/tree/arch) --- --- --- ---{ Awesome wm + openbox }
-+ [Freebsd branch](https://github.com/yowls/dotfiles/tree/freebsd)--- -- ---{ Bspwm + 2bwm }
++ [Arch branch](https://github.com/yowls/dotfiles/tree/arch) --- --- --- ---{ Openbox + Stump? + Awesome }
++ [Freebsd branch](https://github.com/yowls/dotfiles/tree/freebsd)--- -- ---{ Berry + Bsp + Spectr }
 
 <img src=Pictures/title/03.png width=400px><br>
 Just a fews screenshots of my rice in Debian
@@ -121,6 +124,24 @@ Just a fews screenshots of my rice in Debian
 <br>
 <br>
 
+### [PekWM](https://github.com/yowls/dotfiles/tree/debian/.pekwm)
+<img src="Pictures/pkdemo.png" align=right width=300px>
+
+`Details:`
++ **Os**: Debian Buster
++ **Terminal**: URxvt
++ **Shell**: Zsh + powerlevel10k
++ **Bar**: [Polybar](https://github.com/yowls/dotfiles/tree/debian/.config/polybar)
++ **Applications**: Neofetch, cava, toilet
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
 ### [Qtile](https://github.com/yowls/dotfiles/tree/debian/.config/qtile)
 <img src="Pictures/hldemo.png" align=right width=300px>
 
@@ -128,7 +149,7 @@ Just a fews screenshots of my rice in Debian
 + **Os**: Debian Buster
 + **Terminal**: Konsole
 + **Shell**: Zsh + powerlevel10k
-+ **Panel**: Built in
++ **Bar**: Built in
 
 <br>
 <br>
@@ -147,7 +168,7 @@ Just a fews screenshots of my rice in Debian
 + **Os**: Debian Buster
 + **Terminal**: konsole
 + **Shell**: Zsh with powerlevel10k
-+ **Bar**: Polybar
++ **Bar**: [Polybar](https://github.com/yowls/dotfiles/tree/debian/.config/polybar)
 + **Applications**:
   - neofetch
   - htop
@@ -157,24 +178,31 @@ Just a fews screenshots of my rice in Debian
 <br>
 <br>
 <br>
+<br>
+<br>
+
 *For more photos see: [enter in gallery here](https://github.com/yowls/dotfiles/tree/debian/Pictures)*
 
 <img src=Pictures/title/04.png width=400px><br>
 ### Must have
-Programs that i use in every setup and my config files depend on it.
-Qtile and Herbstluft require aditional dependencies, but in both i use:
-* Compton as compositor
-* Rofi as application launcher and dmenu replacement
-* Rxvt-Unicode as terminal
-* Vim for text editing
+Programs that i use in every setup and my config files depend on it.<br>
+Pekwm, Qtile and Herbstluft require aditional dependencies, but in all i use:
++ **Compton** as compositor
++ **Polybar** as status bar, except in qtile
++ **Rofi** as application launcher and dmenu replacement
++ **Rxvt-Unicode** or kitty as terminal
++ **Vim** for text editing
 
-### Recommended 
+### Recommended
 * Zsh + [Oh my Zsh](https://github.com/ohmyzsh/ohmyzsh) + [Power Level 10K](https://github.com/romkatv/powerlevel10k)
 * [VimPlug](https://github.com/junegunn/vim-plug) for vim pluggins
 
 Fonts
 + [Nerd font](https://github.com/ryanoasis/nerd-fonts)
 choose what you want
+
+### If you want to use PekWm
+[*See additional dependences*](https://github.com/yowls/dotfiles/tree/debian/.pekwm/#Dependences)
 
 ### If you want to use QTile
 [*See additional dependences*](https://github.com/yowls/dotfiles/tree/debian/.config/qtile#Dependences)
@@ -202,6 +230,7 @@ Clone the repository:
 ```shell
 	$ cd Downloads
 	$ git clone https://github.com/yowls/dotfiles/tree/debian
+	$ mv dotfiles/.pekwm ../.pekwm
 	$ mv dotfiles/.config/qtile ../.config
 	$ mv dotfiles/.config/herbstluftwm ../.config
 ```
@@ -226,29 +255,33 @@ In any case, I publish the versions of the programs in case in any future update
 --
 
 + Plasma  (5.14)
++ PekWM   (0.1.17)
 + QTile   (0.15.1)
-+ Herbstluftwm  (0.8.2)
++ Herbstluftwm (0.8.2)
 
 ### Secondary
-+ redshift for filer
-+ dunst for notification
-+ ulauncher for application launcher and others in plasma
-+ flameshot in plasma and maim in wm´s for screenshots
-+ ? for record?
++ Redshift for filer
++ Dunst for notification
++ Ulauncher for application launcher and others in plasma
++ Flameshot in plasma and maim in wm´s for screenshots
++ ?? for record
 
 
 <img src=Pictures/title/07.png width=400px><br>
 ### To know more about the details of every rice, see
++ [More information about PekWM](https://github.com/yowls/dotfiles/tree/debian/.pekwm)
 + [More information about Qtile](https://github.com/yowls/dotfiles/tree/debian/.config/qtile)
 + [More about Herbstluft](https://github.com/yowls/dotfiles/tree/debian/.config/herbstluftwm)
 
 ### Others
 
 `Rxvt-Unicode (URxvt)`
-All the config is in .Xresources file.<br>
+
+All the config is in .Xresources.d/urxvt file.<br>
 Actually using: clipboard, resize-font and matcher as perl-extensions.
 
 `Vim`
+
 Im using [VimPlug] for vim plugins.<br>
 Some of them are:
 * Gitgutter
@@ -262,12 +295,12 @@ Otherwise, you can fix it using xclip, making a keybind in .vimrc replacing past
 
 In my .vimrc im using **undodir** folder for a history of undo´s. So i can undo a line of a file previously closed
 
+*More info in* [vim directory](https://github.com/yowls/dotfiles/tree/debian/.vim)
+
 `Xresources`
-Xresources color scheme:
-+ Color scheme
- - [color scheme]
-+ photo demostration in terminal
- - [demostration]
+
+All in the config is under .Xresources.d directory.<br>
+Check it [HERE](https://github.com/yowls/dotfiles/tree/debian/.Xresources.d)
 
 <img src=Pictures/title/08.png width=400px><br>
 Nothing recorded yet.<br>
@@ -275,7 +308,7 @@ If you are having an issue, first check you are using the same version as me, th
 
 <img src=Pictures/title/09.png width=400px><br>
 A few more photos<br>
-[Check my full gallery](https://github.com/yowls/dotfiles/tree/debian/Pictures), all the setups of the branch here.
+[Check my full gallery](https://github.com/yowls/dotfiles/tree/debian/Pictures), all the setups of this branch.
 
 <img src=Pictures/title/13.png width=400px><br>
 This is MY setup and it is opinionated and made to work how I want. Anyone can download and use it, but unless you and me are the same person, you'll probably find things that you don't want. It is OK. Use this as a starting point for making your own.

@@ -1,6 +1,9 @@
 <img src="https://seekvectorlogo.net/wp-content/uploads/2020/02/vim-vector-logo.png" align=center height=300px>
 
-Table of Content
+### For the best editor
+about..
+
+## Table of Content
 + Dependence
 + File .vimrc
 + Keybinds
@@ -8,9 +11,9 @@ Table of Content
  + Pluggins list
  + External pluggins
 
-# Dependence
+## Dependence
 + Vimplug for pluggins
-+ gvim for clipboard capability
++ gvim for global clipboard capability
 
 create a undodir directoy for mayor history of files
 mkdir -p $HOME/.vim/undodir
