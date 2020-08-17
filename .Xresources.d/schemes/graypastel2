@@ -1,0 +1,30 @@
+! ====  Color scheme  =======
+! ====== softy colors =======
+! special
+*.foreground:	#f8f7ff
+*.background:	#5e6472
+*.cursorColor:	#e9d6ec
+! black
+*.color0:	#293241
+*.color8:	#979dac
+! red
+*.color1:	#ffd8be
+*.color9:	#ffd8be
+! green
+*.color2:	#dfffd6
+*.color10:	#dfffd6
+! yellow
+*.color3:	#ffeedd
+*.color11:	#ffeedd
+! blue
+*.color4:	#b8b8ff
+*.color12:	#b8b8ff
+! magenta
+*.color5:	#ffd8be
+*.color13:	#ffd8be
+! cyan
+*.color6:	#b8b8ff
+*.color14:	#b8b8ff
+! white
+*.color7:	#f8f7ff
+*.color15:	#f8f7ff

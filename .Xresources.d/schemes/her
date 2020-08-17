@@ -1,0 +1,30 @@
+! =====  Color scheme  ======
+! ====== 'Her' colors =======
+! Special
+*.foreground:	#faf9f9
+*.background:	#414451
+*.cursorColor:	#efe9ae
+! black
+*.color0:	#3e5c76
+*.color8:	#748cab
+! red
+*.color1:	#cdeac0
+*.color9:	#cdeac0
+! green
+*.color2:	#efe9ae
+*.color10:	#efe9ae
+! yellow
+*.color3:	#fec3a6
+*.color11:	#fec3a6
+! blue
+*.color4:	#ffac81
+*.color12:	#ffac81
+! magenta
+*.color5:	#cdeac0
+*.color13:	#cdeac0
+! cyan
+*.color6:	#ffac81
+*.color14:	#ffac81
+! white
+*.color7:	#ffffff
+*.color15:	#ffffff

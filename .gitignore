@@ -1,0 +1,118 @@
+# Ignore everything
+*
+# But allow to track:
+
+# Git things
+!README.md
+!LICENSE
+!.gitignore
+# On session startup
+!.xsessionrc
+# Shell
+!.bashrc
+!.bash
+!.bash/*
+#!.fishrc
+#!.fish
+#!.fish/*
+!.zshrc
+!.zsh
+!.zsh/*
+# Bookmarks
+!.gtk-bookmarks
+!.config/gtk-3.0
+!.config/gtk-3.0/*
+!.Xresources
+!.Xresources.d
+!.Xresources.d/*
+!.Xresources.d/**
+
+# Folder for all pics in the directory
+!Pictures
+!Pictures/*
+!Pictures/**
+!.face
+!.directory
+
+# Config folder
+!.config
+!.config/redshift.conf
+# Compositor
+!.config/picom
+!.config/picom/*
+# Launcher
+!.config/rofi
+!.config/rofi/*
+# Neofetch
+!.config/neofetch
+!.config/neofetch/*
+# Dunst
+!.config/dunst
+!.config/dunst/*
+# Conky
+!.config/conky
+!.config/conky/*
+# MPD
+!.config/mpd
+!.config/mpd/mpd.conf
+# MPV
+!.config/mpv
+!.config/mpv/*
+# Cava
+!.config/cava
+!.config/cava/*
+# ouRXvt
+!.urxvt
+!.urxvt/ext
+!.urxvt/ext/*
+# Vim
+!.vimrc
+!.vim
+!.vim/README.md
+# Kitty
+!.config/kitty
+!.config/kitty/*
+
+# Random folder
+!.lists
+!.lists/*
+
+# Window Manager (do not include others config files)
+# Plasma
+!.kde
+!.kde/*
+!.kde/**
+.kde/cache-art
+.kde/share
+!.config/autostart-scripts
+!.config/autostart-scripts/*
+!.config/plasma-workspace
+!.config/plasma-workspace/shutdown
+!.config/plasma-workspace/shutdown/*
+# PekWM
+!.pekwm
+!.pekwm/*
+!.pekwm/**
+.pekwm/0conf
+# Herbstluftwm
+#!.config/herbstluftwm
+#!.config/herbstluftwm/*
+#!.config/herbstluftwm/**
+#.config/herbstluftwm/0conf
+# Qtile
+!.config/qtile
+!.config/qtile/*
+!.config/qtile/**
+.config/qtile/0conf
+.config/qtile/**/__pycache__
+# Polybar
+#!.config/polybar
+#!.config/polybar/*
+#!.config/polybar/**
+#.config/polybar/0conf
+
+# Temp files
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-v][a-z]
+[._]sw[a-p]

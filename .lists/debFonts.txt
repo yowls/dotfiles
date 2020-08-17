@@ -1,0 +1,62 @@
+Andale Mono
+Anka code
+Anonymous-pro
+Arial
+ttf-bitstream-vera
+Caladea
+Carlito
+Century Schoolbook
+Code new roman
+Comic sans
+Crom
+Courier new
+DefaVu
+Eufm10
+Expressway
+Free Mono
+Free sans
+Free serif
+Fura code Nerd font (+Mono)
+Gentium
+Georgia
+Hack
+Impact
+Iosevka
+Input Font 
+Inconsolata
+Jetbrains Mono
+Lato
+Liberation sans,Mono
+Linux Biolium O
+Monoki
+Monofur
+Nimbus mono
+NOTO
+Open sans
+Otto
+Pricedown
+Quick sand
+San francisco text,display
+Source code pro nerd
+Scriptina
+staypuft
+Times new roman
+Treebucket
+Terminus
+ttf-ubuntu-font-family
+URW
+Verdana
+
+
+ttf-mscorefonts-installer
+
+Icons:
+Dingbats
+Wedings
+font-awesome
+icomooon-regular,feather
+Material
+
+Symbols:
+Droid sans
+Open Symbol

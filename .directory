@@ -1,0 +1,13 @@
+[Desktop Entry]
+Icon=folder-red
+
+[Dolphin]
+GroupedSorting=true
+SortOrder=1
+SortRole=type
+Timestamp=2020,7,27,21,24,41
+Version=4
+VisibleRoles=Icons_text
+
+[Settings]
+HiddenFilesShown=true

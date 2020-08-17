@@ -1,0 +1,175 @@
+#!/bin/bash
+
+# For a full list of active aliases, run `alias`.
+# Some alias may be from zsh,ohmyzsh,p10K,here
+#           _      _____           _____
+#     /\   | |    |_   _|   /\    / ____|
+#    /  \  | |      | |    /  \  | (___
+#   / /\ \ | |      | |   / /\ \  \___ \
+#  / ____ \| |____ _| |_ / ____ \ ____) |
+# /_/    \_\______|_____/_/    \_\_____/
+
+#---- 1.System
+# Grub
+alias grupdate="sudo grub-mkconfig -o /boot/grub/grub.cfg"
+alias gruconf="sudo vim /etc/deault/grub"
+# Processes
+#alias p="ps aux | grep"
+alias p="ps -el | grep"
+alias pk="pkill"
+# Otros
+alias hosts="sudo vim /etc/hosts"
+alias rswap="sudo swapoff -a && sudo swapon -a"
+alias ram="free -h --mega"
+
+#---- 2.Package manager
+# Search
+alias search="aptitude search"
+alias srins="aptitude search '~i(~n $name|~d $description)'"
+alias srinfo="aptitude show"
+alias srfile="dpkg -L"
+# Istall
+alias ins="sudo aptitude install"
+alias lins="sudo dpkg -i"
+alias insb="sudo apt -t buster-backports install"
+alias insdl="sudo aptitude install --download-only"
+# Remove
+alias remv="sudo aptitude remove"
+alias fremv="sudo aptitude purge"
+# Update
+alias update="sudo aptitude update"
+alias upgrade="sudo aptitude upgrade"
+alias upgradels="apt list --upgradable -a"
+# Nya = Nya You All
+alias nya="update && upgradels"
+alias nyya="update && upgrade"
+# Remove unneeded dependecy
+alias autoremove="sudo apt autoremove"
+# Remove old downloaded packages
+alias autoclean="sudo aptitude autoclean"
+
+#---- 3.Scripts
+alias wttr="curl wttr.in"
+# ADD applications in bin folder to PATH
+
+#----- 4.Configuration files | dotfiles
+#alias todo="vim ~/MEGA/$DISTRIBUTION_NAME"
+alias todo="vim ~/MEGA/debian"
+# Shell
+#alias fconf="vim fish"
+alias bconf="vim ~/.bashrc"
+alias zconf="vim ~/.zshrc"
+alias zfd="vim ~/.zsh"
+alias zkey="vim ~/.zsh/alias"
+#alias zupd="source ~/.zshrc"
+#alias ohmyconf="vim ~/.oh-my-zsh"
+# Terminal
+alias cdki="cd ~/.config/kitty"
+alias kifd="vim ~/.config/kitty"
+alias kiconf="vim ~/.config/kitty/kitty.conf"
+alias kikey="vim ~/.config/kitty/keybinds.conf"
+# Editor
+alias viconf="vim ~/.vimrc"
+#alias vifd="vim ~/.vim"
+# Xresources
+alias cdxr="cd ~/.Xresources.d"
+alias xrfd="vim ~/.Xresources.d"
+alias xrconf="vim ~/.Xresources"
+alias rxr="xrdb -merge ~/.Xresources"
+# Others
+alias neoconf="vim .config/neofetch/config.conf"
+alias nfch="neofetch --source "
+
+# Working directories
+alias cdst="cd ~/startpage"
+alias cdg="cd ~/git"
+
+# Origin
+alias omd="vim ~/README.md"
+alias oig="vim ~/.gitignore"
+alias ostart="vim ~/.xsessionrc"
+alias cdgo="cd ~/git/dotfiles"
+# Plasma
+alias plstart="vim ~/.config/autostart-scripts"
+alias plout="vim ~/.config/plasma-workspace/shutdown"
+# PekWM
+alias cdpk="cd ~/.pekwm"
+alias pkfd="vim ~/.pekwm"
+alias pkconf="vim ~/.pekwm/config"
+alias pkkey="vim ~/.pekwm/keys"
+alias pkstart="vim ~/.pekwm/start"
+alias pkmd="vim ~/.pekwm/README.md"
+# Herbstluft
+alias cdhl="cd ~/.config/herbstluftwm"
+alias hlfd="vim ~/.config/herbstluftwm"
+alias hlconf="vim ~/.config/herbstluftwm/autostart"
+alias hlvar="vim ~/.config/herbstluftwm/vars.sh"
+alias hlstart="vim ~/.config/herbstluftwm/startup.sh"
+alias hlmd="vim ~/.config/herbstluftwm/README.md"
+# Qtile
+alias cdql="cd ~/.config/qtile"
+alias qlfd="vim ~/.config/qtile"
+alias qlconf="vim ~/.config/qtile/config.py"
+alias qlkey="vim ~/.config/qtile/keybind.py"
+alias qlstart="vim ~/.config/qitle/autostart.sh"
+alias qlmd="vim ~/.config/qtile/README.md"
+# Polybar
+alias cdpb="cd ~/.config/polybar"
+alias pbfd="vim ~/.config/polybar"
+alias pbmd="vim ~/.config/polybar/README.md"
+
+# Scripts
+alias cdsc="cd ~/scripts"
+alias scfd="vim ~/scripts"
+alias scmd="vim ~/scripts/README.md"
+
+# Firefox
+alias cdf="cd ~/.mozilla/firefox/*.default-release/chrome/Yowls"
+alias ffd="vim ~/.mozilla/firefox/*.default-release/chrome/Yowls"
+alias fcss="vim ~/.mozilla/firefox/*.default-release/chrome/userChrome.css"
+alias fcnt="vim ~/.mozilla/firefox/*.default-release/chrome/userContent.css"
+alias fmd="vim ~/.mozilla/firefox/*.default-release/chrome/README.md"
+
+
+#---- 5.Aplications
+# Trash-cli
+#alias x="trash-put"
+#alias rx="trash-put"
+#alias rxa="trash-put"
+# Exa
+alias ls="exa --group-directories-first"
+alias ll="exa --group-directories-first -lha"
+alias l="exa --group-directories-first -lh"
+# Lsd
+alias lx="lsd --group-dirs first"
+alias lxa="lsd --group-dirs first -lhA"
+alias lxt="lsd --group-dirs first --tree"
+# Youtube-dl
+alias audio="youtube-dl -o $HOME/Desktop/%(title)s.%(ext)s' -f bestaudio -x --audio-format best --audio-quality 0"
+alias mp3="youtube-dl -o '$HOME/Desktop/%(title)s.%(ext)s' -x --audio-format mp3 --audio-quality 0"
+alias mp3t="youtube-dl -o '$HOME/Desktop/%(title)s.%(ext)s' -x --audio-format mp3 --audio-quality 0 --write-thumbnail"
+alias video="youtube-dl -o '$HOME/Desktop/%(title)s.%(ext)s' -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4"
+# HBlock (hosts)
+alias uhblock="hblock --backup $HOME/Desktop --sources $HOME/MEGA/hblock/hosts --whitelist $HOME/MEGA/hblock/whitelist.list --blacklist $HOME/MEGA/hblock/blacklist.list"
+# Git
+#https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git#aliases
+alias g="git"
+alias glogg="git log --all --graph --decorate --oneline"
+alias gig="vim .gitignore"
+alias rmd="vim README.md"
+# Upgrade Man-page with colors
+function man() {
+    env \
+    LESS_TERMCAP_mb=$'\e[01;31m' \
+    LESS_TERMCAP_md=$'\e[01;31m' \
+    LESS_TERMCAP_me=$'\e[0m' \
+    LESS_TERMCAP_se=$'\e[0m' \
+    LESS_TERMCAP_so=$'\e[01;44;33m' \
+    LESS_TERMCAP_ue=$'\e[0m' \
+    LESS_TERMCAP_us=$'\e[01;32m' \
+    man "$@"
+}
+
+#---- 6.Error fixing
+#alias vi=vim
+#alias nvim=vim
