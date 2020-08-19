@@ -1,6 +1,5 @@
-<!--Brach: Debian-->
-*Branch abandoned*<br>
-<img src="Pictures/banner_debian.png" align=center height=300px><br><br>
+<!--Brach: Master-->
+<img src="Pictures/banner_master.png" align=center height=300px><br><br>
 <br>
 <div align="center">
         <p><b> Related proyects </b></p>
@@ -31,7 +30,7 @@ ah and of course, **(I use arch btw)**
 </p>
 <br>
 <img src=Pictures/title/01.png width=400px><br>
-<img src="Pictures/logdeb.png" align=right height=400px >
+<!-- <img src="Pictures/logdeb.png" align=right height=400px> -->
 <ul align=left>
 <!-- Line .. -->
  <li>Information</li>
@@ -58,13 +57,15 @@ ah and of course, **(I use arch btw)**
  </ul>
 
 ### What you gonna find here<br>
-**Plasma** as *Desktop Environment* <br>
-[**PekWM**](https://github.com/yowls/dotfiles/tree/debian/.pekwm) as *Stacking window manager* <br>
-[**Herbstluftwm**](https://github.com/yowls/hlwm) as *Tiling window manager* <br>
-[**Qtile**](https://github.com/yowls/dotfiles/tree/debian/.config/qtile) as *Dynamic window manager*
+[Zsh]<br>
+[Vim]<br>
+[Kitty]<br>
+[Xresources related]<br>
+[Rofi config]
+
 
 ### My other branches
-+ [Master branch](https://github.com/yowls/dotfiles/tree/master) --- ---{ Summary }
++ [Debian branch](https://github.com/yowls/dotfiles/tree/debian10) --- ---{ Pekwm + Herbstluftwm + Qtile }
 + [Arch branch](https://github.com/yowls/dotfiles/tree/arch) --- --- ---{ Openbox + Stump? + Awesome }
 + [Freebsd branch](https://github.com/yowls/dotfiles/tree/freebsd)--- --{ Berry + Bsp + Spectr }
 
@@ -74,9 +75,9 @@ Just a fews screenshots of my rice in Debian
 ### Plasma
 <p align="center">
   <img src="Pictures/Plasma/3-231018.png" alt="Plasma1"/>
-  <img src="Pictures/Plasma/18-184348.png" width="300px" height="170px" alt="Plasma2"/>
-  <img src="Pictures/Plasma/18-192725.png" width="300px" height="170px" alt="Plasma3"/>
-  <img src="Pictures/Plasma/18-193816.png" width="300px" height="170px" alt="Plasma4"/>
+  <img src="Pictures/Plasma/18-184348.png" width="270px" height="160px" alt="Plasma2"/>
+  <img src="Pictures/Plasma/18-192725.png" width="270px" height="160px" alt="Plasma3"/>
+  <img src="Pictures/Plasma/18-193816.png" width="270px" height="160px" alt="Plasma4"/>
 </p>
 <p align="center">
   <sub>
@@ -90,9 +91,9 @@ Just a fews screenshots of my rice in Debian
 ### [PekWM](https://github.com/yowls/dotfiles/tree/debian/.pekwm)
 <p align="center">
   <img src="Pictures/Pekwm/1594072498.png" alt="Minimalist1"/>
-  <img src="Pictures/Pekwm/1594074201.png" width="300px" height="170px" alt="Minimalist2"/>
-  <img src="Pictures/Pekwm/1594073197.png" width="300px" height="170px" alt="Minimalist3"/>
-  <img src="Pictures/Pekwm/1594074839.png" width="300px" height="170px" alt="Minimalist4"/>
+  <img src="Pictures/Pekwm/1594074201.png" width="270px" height="160px" alt="Minimalist2"/>
+  <img src="Pictures/Pekwm/1594073197.png" width="270px" height="160px" alt="Minimalist3"/>
+  <img src="Pictures/Pekwm/1594074839.png" width="270px" height="160px" alt="Minimalist4"/>
 </p>
 <p align="center">
   <sub>
@@ -106,9 +107,9 @@ Just a fews screenshots of my rice in Debian
 ### [Herbstluftwm](https://github.com/yowls/hlwm)
 <p align="center">
   <img src="Pictures/Herbstluft/blueg1.png" alt="blueg1"/>
-  <img src="Pictures/Herbstluft/blueg2.png" width="300px" height="170px" alt="blueg2"/>
-  <img src="Pictures/Herbstluft/blueg3.png" width="300px" height="170px" alt="blueg3"/>
-  <img src="Pictures/Herbstluft/blueg4.png" width="300px" height="170px" alt="blueg4"/>
+  <img src="Pictures/Herbstluft/blueg2.png" width="270px" height="160px" alt="blueg2"/>
+  <img src="Pictures/Herbstluft/blueg3.png" width="270px" height="160px" alt="blueg3"/>
+  <img src="Pictures/Herbstluft/blueg4.png" width="270px" height="160px" alt="blueg4"/>
 </p>
 <p align="center">
   <sub>
@@ -122,9 +123,9 @@ Just a fews screenshots of my rice in Debian
 ### [Qtile](https://github.com/yowls/dotfiles/tree/debian/.config/qtile)
 <p align="center">
   <img src="Pictures/Qtile/photo.png" alt="theme#1"/>
-  <img src="Pictures/Qtile/photo.png" width="300px" height="170px" alt="theme#2"/>
-  <img src="Pictures/Qtile/photo.png" width="300px" height="170px" alt="theme#3"/>
-  <img src="Pictures/Qtile/photo.png" width="300px" height="170px" alt="theme#4"/>
+  <img src="Pictures/Qtile/photo.png" width="270px" height="160px" alt="theme#2"/>
+  <img src="Pictures/Qtile/photo.png" width="270px" height="160px" alt="theme#3"/>
+  <img src="Pictures/Qtile/photo.png" width="270px" height="160px" alt="theme#4"/>
 </p>
 <p align="center">
   <sub>
@@ -146,21 +147,15 @@ I made this setup in debian where the most are not in the latest version.
 ### Preparations
 Make sure there´s no conflict between your files and mine.<br>
 **Make a backup** of your files anyways, don't replace with mine just<br>
-And make sure you have all needed dependencies to work properly. ([hl](github.com/yowls/hlwm),[qt])
 
 ### Execution
 Elige cual de los dos (o los dos) wm vas a usar, luego<br>
 Clone the repository:
 
 ```bash
-	$ git clone https://github.com/yowls/dotfiles/tree/debian /tmp
-	$ cp /tmp/dotfiles/.pekwm $HOME/.pekwm
-        $ cp /tmp/dotfiles/.config/herbstluftwm $HOME/.config
-	$ cp /tmp/dotfiles/.config/qtile $HOME/.config
+	$ git clone https://github.com/yowls/dotfiles /tmp
+    $ cp /tmp/dotfiles/.config $HOME/.config
 ```
-
-Then logout and in the display manager choose your option.<br>
-And buala, that´s all.
 
 *I will do a script to do it automatically, i hope soon*
 

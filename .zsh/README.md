@@ -11,9 +11,10 @@ My config for the best shell.
 
 
 ## Dependence
-Install ohmyzsh
-- zsh-autosuggestions
-- autojump
-install p10K
+Install [ohmyzsh]
+install [zsh-autosuggestions]
+install [zsh-syntax-hightlighting]
+install [autojump]
+install [p10K]
 
 History file will be in: *~/.cache/zsh_history*
