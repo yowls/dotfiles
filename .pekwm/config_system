@@ -80,7 +80,7 @@ Menu {
     # Possible values are: "ButtonPress ButtonRelease DoubleClick Motion"
     # To make submenus open on mouse over, comment the default Enter,
     # uncomment the alternative, and reload pekwm.
-    
+
     Select = "Motion MotionPressed"
     Enter = "MotionPressed ButtonPress"
     # Enter = "Motion"

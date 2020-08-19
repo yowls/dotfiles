@@ -22,7 +22,7 @@ Georgia
 Hack
 Impact
 Iosevka
-Input Font 
+Input Font
 Inconsolata
 Jetbrains Mono
 Lato

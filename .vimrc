@@ -1,10 +1,10 @@
-"____    ____  __  .___  ___.       ______   ______   .__   __.  _______  __    _______ 
+"____    ____  __  .___  ___.       ______   ______   .__   __.  _______  __    _______
 "\   \  /   / |  | |   \/   |      /      | /  __  \  |  \ |  | |   ____||  |  /  _____|
-" \   \/   /  |  | |  \  /  |     |  ,----'|  |  |  | |   \|  | |  |__   |  | |  |  __ 
+" \   \/   /  |  | |  \  /  |     |  ,----'|  |  |  | |   \|  | |  |__   |  | |  |  __
 "  \      /   |  | |  |\/|  |     |  |     |  |  |  | |  . `  | |   __|  |  | |  | |_ |
 "   \    /    |  | |  |  |  |     |  `----.|  `--'  | |  |\   | |  |     |  | |  |__| |
 "    \__/     |__| |__|  |__|      \______| \______/  |__| \__| |__|     |__|  \______|
-"                                                                                                                                 
+"
 " INIT PLUGINS
 call plug#begin('~/.vim/plugged')
 	" Style
@@ -17,7 +17,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'Yggdroot/indentLine'
 	Plug 'airblade/vim-gitgutter'
 	" Statusline /Tabline
-	Plug 'itchyny/lightline.vim'	
+	Plug 'itchyny/lightline.vim'
 	" Explorer
 	Plug 'preservim/nerdtree'
 call plug#end()

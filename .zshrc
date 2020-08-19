@@ -11,7 +11,7 @@ export EDITOR='vim'
 export FETCH="$HOME/MEGA/fetch"
 export ZSH="$HOME/.oh-my-zsh"
 
-# Oh My ZSH: PLUGINS 
+# Oh My ZSH: PLUGINS
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 plugins=(
