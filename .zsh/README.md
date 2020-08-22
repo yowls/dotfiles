@@ -3,11 +3,11 @@
 My config for the best shell.
 
 ## Table of Content
-+ Dependence
-+ Main file
-+ Aliases
-+ Themes
-+ Pluggins
++ [Dependence](#Dependence)
++ [Main file](#Main-file)
++ [Aliases](#Alias)
++ [Themes]
++ [Pluggins]
 
 
 ## Dependence
@@ -18,3 +18,9 @@ install [autojump]
 install [p10K]
 
 History file will be in: *~/.cache/zsh_history*
+
+## Main file
+All the config is in ´.zshrc´ in the home directory
+
+## Alias
+All the alias that i use is in ´.alias´ in the home dir

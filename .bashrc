@@ -17,7 +17,7 @@ case $- in
 esac
 
 # Import sources
-source "$HOME/.zsh/alias"	# zsh alias
+source "$HOME/.alias"
 source "$HOME/.bash/theme1"
 
 # Export var

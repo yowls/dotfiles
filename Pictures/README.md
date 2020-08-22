@@ -28,11 +28,3 @@ All resources exposed here
 ![Qtile 3]
 <br>
 <br>
-## Debian logos
-folder: debian
-
-|  |  | |
-| :---: | :---: | :---:|
-|![deb1](debian/logo1.png)|![deb2](debian/logo2.png)|![deb3](debian/logo3.png)|
-|![deb4](debian/logo4.png)|![deb5](debian/logo5.png)|![deb6](debian/logo6.png)
-|![deb7](debian/logo7.png)|![deb8](debian/logo8.png)|![deb9](debian/logo9.png)

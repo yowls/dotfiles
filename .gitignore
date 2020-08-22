@@ -18,6 +18,7 @@
 !.zshrc
 !.zsh
 !.zsh/*
+!.alias
 # Bookmarks
 !.gtk-bookmarks
 !.config/gtk-3.0
