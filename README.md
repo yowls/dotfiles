@@ -67,7 +67,7 @@ ah and of course, **(I use arch btw)**
 ### My other branches
 + [Debian branch](https://github.com/yowls/dotfiles/tree/debian10) --- ---{ Pekwm + Herbstluftwm + Qtile }
 + [Arch branch](https://github.com/yowls/dotfiles/tree/arch) --- --- ---{ Openbox + Stump? + Awesome }
-+ [Freebsd branch](https://github.com/yowls/dotfiles/tree/freebsd)--- --{ Berry + Bsp + Spectr }
+<!-- + [Freebsd branch](https://github.com/yowls/dotfiles/tree/freebsd)--- --{ Berry + Bsp + Spectr }    -->
 
 
 <img src=Pictures/title/03.png width=400px><br>

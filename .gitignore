@@ -62,10 +62,6 @@
 # Cava
 !.config/cava
 !.config/cava/*
-# ouRXvt
-!.urxvt
-!.urxvt/ext
-!.urxvt/ext/*
 # Vim
 !.vimrc
 !.vim

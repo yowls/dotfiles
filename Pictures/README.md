@@ -26,5 +26,3 @@ All resources exposed here
 ![Qtile 1]
 ![Qtile 2]
 ![Qtile 3]
-<br>
-<br>
