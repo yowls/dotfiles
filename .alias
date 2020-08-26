@@ -170,6 +170,6 @@ function man() {
     man "$@"
 }
 
-#---- 6.Error fixing
-#alias vi=vim
-#alias nvim=vim
+#---- 6.Common errors
+#alias vi=nvim
+#alias vim=nvim

@@ -1,0 +1,27 @@
+# For reinstall the boot loader and charge to efi nvram
+
+# Install grub by chroot (add sudo or do with root)
+lsblk
+# Mount points in uefi mode (check /sys/firmware/efi if exist)
+mount /dev/sda2 /mnt
+for i in /dev /dev/pts /proc /sys /run; do SUDO mount -B $i /mnt$i; done
+mount /dev/sda1 /mnt/boot/efi
+# Change to directory
+chroot /mnt
+# Install grub2 uefi
+modprobe efivars #ifs necessary
+grub-install --target=x86_64-efi --bootloader-id=artix --efi-directory=/boot/efi #--removable
+grub-mkconfig -o /boot/grub/grub.cfg #if kernel or some entry change in grub
+# Exit chroot
+exit
+# UNMOUNT points
+umount -R /mnt
+
+# Check all boot entries
+efibootmgr --verbose
+
+# Create a new entry in uefi
+efibootmgr --create --disk /dev/sda --part 1 --loader /EFI/artix/grubx64.efi --label "Artix Linux" --verbose
+
+# Delete entry
+efibootmgr -Bb 0003

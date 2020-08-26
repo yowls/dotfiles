@@ -1,10 +1,9 @@
-"____    ____  __  .___  ___.       ______   ______   .__   __.  _______  __    _______
-"\   \  /   / |  | |   \/   |      /      | /  __  \  |  \ |  | |   ____||  |  /  _____|
-" \   \/   /  |  | |  \  /  |     |  ,----'|  |  |  | |   \|  | |  |__   |  | |  |  __
-"  \      /   |  | |  |\/|  |     |  |     |  |  |  | |  . `  | |   __|  |  | |  | |_ |
-"   \    /    |  | |  |  |  |     |  `----.|  `--'  | |  |\   | |  |     |  | |  |__| |
-"    \__/     |__| |__|  |__|      \______| \______/  |__| \__| |__|     |__|  \______|
-"
+" ██ ███    ██ ██ ████████ ███    ██ ██    ██ ██ ███    ███ 
+" ██ ████   ██ ██    ██    ████   ██ ██    ██ ██ ████  ████ 
+" ██ ██ ██  ██ ██    ██    ██ ██  ██ ██    ██ ██ ██ ████ ██ 
+" ██ ██  ██ ██ ██    ██    ██  ██ ██  ██  ██  ██ ██  ██  ██ 
+" ██ ██   ████ ██    ██ ██ ██   ████   ████   ██ ██      ██ 
+" --- ---- ---- ---- --- ---- ----- ------ ----- ----- ----
 " INIT PLUGINS
 call plug#begin('~/.vim/plugged')
 	" Style
@@ -34,7 +33,7 @@ set showmatch
 " Wildmenu
 set wildmenu
 set wildmode=longest,list,full
-" Varios
+" Various
 set magic
 set number relativenumber
 set encoding=utf-8
@@ -73,8 +72,8 @@ let g:multi_cursor_use_default_mapping=0
 "set cursorline
 "set cursorcolumn
 let g:ping_cursor_flash_milliseconds = 250
-"
-" Keybinds
+
+" KEYBINDS
 "map <C-n> :NERDTreeToggle<CR>
 "map <C-m> :GitGutterLineHighlightsToggle<?>
 let g:multi_cursor_start_word_key      = '<C-n>'
