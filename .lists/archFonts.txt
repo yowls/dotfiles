@@ -1,0 +1,148 @@
+Medium nerd font
+Narrow nerd font
+Semi Narrow
+
+Adobe courier
+Adobe helvetica
+adobe new centurt schoolbook
+adobe times
+adobe utopia
+
+agave nerd font
+alegreya
+andale
+
+anka/coder
+anonymice
+anonymous
+
+apple garamond
+arial
+arimo
+arvo
+aurulent sans
+
+B&H lucida
+BioRhyme
+Bitstream
+Blexmono
+
+Cabin
+Cantarell
+Cardo
+Caskaydia Cover
+
+Cherry
+Chivo
+Code New Roman
+Coding font tobi
+Comic sans ms
+Cormorant
+
+Courier new
+Cousine nerd font
+Crimson text
+Crisp
+
+Daddy Time Mono
+Deja Vu
+Dina
+Droid sans mono
+Eczar
+
+Fantasque nerd font
+Fira code nerd font
+Fura code nerd font
+Georgia
+Gohu font nerd font
+Go mono nerd font
+
+Hack nerd font
+Hard gothic
+Hashlug nerd font
+Heavy Data nerd font
+Hurmit nerd font
+
+IBM Plex sans
+Impact
+IM Writing DuoS nerd font
+Inconsolata
+Inknut antiqua
+Inter
+
+Icomoon
+Ionicons
+Typicons
+
+Iosevka
+Jet Brains nerd font
+Karla
+
+Lato
+Leggie
+Lekton
+Libre Baskerville
+Libre Franklin
+Lingconsolata
+
+Liberation mono nerd font
+Lora
+Lucida
+Lucy tewi (collection)
+
+Merriweather
+Meslo GLDZ Nerd font
+MonoFur nerd font
+Monoid
+Mononoki nerd font 
+Monserrat
+Mplus nerd font
+Mt extra
+
+Neuton
+Nimbus
+
+NOTO
+
+Open Dyslexic 
+Open sans
+Opti
+
+Overpass mono nerd font
+Playfair
+Poppins
+ProfontIIx
+Profont windows
+Proggy
+
+Progsole
+Proza libre
+Raleway
+Roboto
+Rubik
+Sauce Code Pro
+Source code
+
+San Francisco (SF)
+? (SGI)
+ShureTech mono
+Space Mono
+Spectral
+Speedy
+Spleen
+
+Tahoma
+Terminess TTF Nerd Font
+
+Times new roman
+Tinos nerd font
+TreBuchet MS
+
+Ubuntu nerd font
+URW
+Verdana
+Victor Mono
+
+Webby Caps
+Webdings
+Work Sans

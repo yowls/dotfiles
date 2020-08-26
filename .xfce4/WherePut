@@ -1,0 +1,6 @@
+Where put your themes:
+i found 3 locations
+
+1) /usr/share/xfce4/terminal/colorschemes/		// Avaible for all users.
+2) ~/.local/share/xfce4/terminal/colorschemes/		// Available for only the user
+3) ~/.config/xfce4/terminal/terminalrc			// Config

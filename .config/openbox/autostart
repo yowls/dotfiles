@@ -1,0 +1,29 @@
+# These things are run when an Openbox X Session is started.
+# You may place a similar script in $HOME/.config/openbox/autostart
+# to run user-specific things.
+#
+# you can use ~/.xprofile to autostart on login
+
+# If you want to use XFCE config tools????...
+#xfce-mcs-manager &
+
+# Tray icon - Applet
+xfce4-clipman &
+nm-applet &
+pa-applet &
+xfce4-power-manager &
+
+# Demon processes
+# init lxpolkit
+urxvtd &
+# tilda &
+# megasync &
+pcmanfm -d &
+
+# Load terminal coloscheme and settings 
+# xrdb ~/.Xresources ??
+
+# Desktop
+nitrogen --restore &
+picom --config ~/.config/picom/compton.conf &
+tint2 &

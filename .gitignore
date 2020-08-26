@@ -8,6 +8,9 @@
 !.gitignore
 # On session startup
 !.xsessionrc
+!.xprofile
+!.xinitrc
+!.dmrc
 # Shell
 !.bashrc
 !.bash
@@ -59,16 +62,20 @@
 # MPV
 !.config/mpv
 !.config/mpv/*
+# NCMPCPP
+!.ncmpcpp
+!.ncmpcpp/*
+.ncmpcpp/error.log
 # Cava
 !.config/cava
 !.config/cava/*
-# Vim
-!.vimrc
-!.vim
-!.vim/README.md
 # Kitty
 !.config/kitty
 !.config/kitty/*
+# Neovim
+!.vimrc
+!.config/nvim
+!.config/nvim/*
 
 # Random folder
 !.lists
@@ -86,27 +93,24 @@
 !.config/plasma-workspace
 !.config/plasma-workspace/shutdown
 !.config/plasma-workspace/shutdown/*
+# XFCE
+!.xfce4
+!.xfce4/*
+!.xfce4/**
 # PekWM
 !.pekwm
 !.pekwm/*
 !.pekwm/**
 .pekwm/0conf
-# Herbstluftwm
-#!.config/herbstluftwm
-#!.config/herbstluftwm/*
-#!.config/herbstluftwm/**
-#.config/herbstluftwm/0conf
-# Qtile
-!.config/qtile
-!.config/qtile/*
-!.config/qtile/**
-.config/qtile/0conf
-.config/qtile/**/__pycache__
-# Polybar
-#!.config/polybar
-#!.config/polybar/*
-#!.config/polybar/**
-#.config/polybar/0conf
+# Openbox
+!.config/openbox
+!.config/openbox/*
+!.config/openbox/**
+.config/openbox/OThemes
+
+# Tint2
+!.config/tint2
+!.config/tint2/*
 
 # Temp files
 [._]*.s[a-v][a-z]
