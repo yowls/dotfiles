@@ -1,7 +1,8 @@
 # For reinstall the boot loader and charge to efi nvram
 
 # Install grub by chroot (add sudo or do with root)
-lsblk
+# See partitions information
+lsblk -o name,mountpoint,label,size,uuid
 # Mount points in uefi mode (check /sys/firmware/efi if exist)
 mount /dev/sda2 /mnt
 for i in /dev /dev/pts /proc /sys /run; do SUDO mount -B $i /mnt$i; done
