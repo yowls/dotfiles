@@ -47,6 +47,9 @@ alias nyya="update && upgrade"
 alias autoremove="sudo apt autoremove"
 # Remove old downloaded packages
 alias autoclean="sudo aptitude autoclean"
+# Others
+alias addgpg="gpg --keyserver pool.sks-keyservers.net --recv-keys"
+alias unlock="sudo rm /var/lib/pacman/db.lck"
 
 #---- 3.Scripts
 alias wttr="curl wttr.in"

@@ -76,6 +76,9 @@
 !.vimrc
 !.config/nvim
 !.config/nvim/*
+# Zathura
+!.config/zathura
+!.config/zathura/*
 
 # Random folder
 !.lists

@@ -40,6 +40,7 @@ set encoding=utf-8
 set clipboard=unnamedplus
 set nocompatible
 set mouse=a
+"set nolist
 filetype plugin indent on
 " Persist undo history
 set undofile

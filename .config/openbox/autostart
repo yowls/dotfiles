@@ -1,29 +1,55 @@
-# These things are run when an Openbox X Session is started.
-# You may place a similar script in $HOME/.config/openbox/autostart
-# to run user-specific things.
-#
+#!/usr/bin/env bash
 # you can use ~/.xprofile to autostart on login
 
-# If you want to use XFCE config tools????...
-#xfce-mcs-manager &
+# If it´s not running, Run it
+function run {
+	if ! pgrep $1 ;
+	then
+		$@&
+	fi
+}
 
-# Tray icon - Applet
-xfce4-clipman &
-nm-applet &
-pa-applet &
-xfce4-power-manager &
+# If you want to use XFCE config tools
+#run xfce-mcs-manager
+#-- Polkit | Pam
+run lxqt-policykit-agent
+#run /usr/lib64/libexec/kf5/pam_kwallet_init
+#-- Compositor
+run picom --config $HOME/.config/picom/picom.conf
+#-- Notification
+run dunst
+#-- Status bar
+run tint2
+#-- Widgets
+#conky -c $HOME/.config/conky/
+#-- Wallpaper
+~/.fehbg	#Automatic
+#feh --bg-fill '/home/aix/MEGA/Wallpaper/General-Art/66398581_p0.jpg' #Static
+#-- Reload Xresources
+#xrdb ~/.Xresources
 
-# Demon processes
-# init lxpolkit
-urxvtd &
-# tilda &
-# megasync &
-pcmanfm -d &
 
-# Load terminal coloscheme and settings 
-# xrdb ~/.Xresources ??
+#-- Demons
+run redshift
+#run greenclip daemon
+run tilda
+#run urxvtd
+run docky
+#run pcmanfm --daemon-mode
+#run thunar --daemon
+#run megasync
 
-# Desktop
-nitrogen --restore &
-picom --config ~/.config/picom/compton.conf &
-tint2 &
+#-- Applications
+#run kitty
+#run firefox
+#run telegram-desktop
+
+#-- Scripts
+#run vitas
+#run wal -R
+
+# Applets
+run qlipper	#Clipboard
+run nm-applet	#Network
+run pa-applet	#Volume
+run lxqt-powermanagement	#Power manager
