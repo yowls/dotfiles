@@ -20,7 +20,7 @@ For fit the config, you need [perl extensions](https://github.com/muennich/urxvt
 Which provide the extensions needed for my config.<br>
 If you cannot install it,just [download](https://github.com/bookercodes/awesome-urxvt) the indicaded files below, and put in `~/.urxvt/ext` folder.
 
-Extensions used
+Perl Extensions used
 + Clipboard (for clipboard copy/pasting)
 + Resize-font (for dinamically resize the font size)
 + Matcher (for hightlight urls)

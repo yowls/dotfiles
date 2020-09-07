@@ -5,7 +5,7 @@
 " ██ ██   ████ ██    ██ ██ ██   ████   ████   ██ ██      ██ 
 " --- ---- ---- ---- --- ---- ----- ------ ----- ----- ----
 " INIT PLUGINS
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.config/nvim/plugged')
 	" Style
 	Plug 'ap/vim-css-color'
 	Plug 'ryanoasis/vim-devicons'
@@ -41,12 +41,12 @@ set clipboard=unnamedplus
 set nocompatible
 set mouse=a
 "set nolist
-filetype plugin indent on
 " Persist undo history
 set undofile
 set undodir=~/.config/nvim/undodir
 " Enter in the position where you left off
 au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
+filetype plugin indent on
 
 " PLUGINS CONFIG
 " LigthLine

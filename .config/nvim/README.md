@@ -1,43 +1,73 @@
+*version: 0.4.4*<br>
+<!--
 <img src="https://seekvectorlogo.net/wp-content/uploads/2020/02/vim-vector-logo.png" align=center height=300px>
+-->
+```bash
+███▄▄▄▄      ▄████████  ▄██████▄   ▄█    █▄   ▄█    ▄▄▄▄███▄▄▄▄   
+███▀▀▀██▄   ███    ███ ███    ███ ███    ███ ███  ▄██▀▀▀███▀▀▀██▄
+███   ███   ███    █▀  ███    ███ ███    ███ ███▌ ███   ███   ███
+███   ███  ▄███▄▄▄     ███    ███ ███    ███ ███▌ ███   ███   ███
+███   ███ ▀▀███▀▀▀     ███    ███ ███    ███ ███▌ ███   ███   ███ 
+███   ███   ███    █▄  ███    ███ ███    ███ ███  ███   ███   ███
+███   ███   ███    ███ ███    ███ ███    ███ ███  ███   ███   ███
+ ▀█   █▀    ██████████  ▀██████▀   ▀██████▀  █▀    ▀█   ███   █▀  
 
-### For the best editor
-about..
+```
+
+### About
+[Neovim](https://neovim.io/) is a text editor based on vim but modernized
+
 
 ## Table of Content
-+ Dependence
-+ File .vimrc
-+ Keybinds
-+ Plugins
- + Pluggins list
- + External pluggins
++ [Dependence](#Dependence)
++ [About file](#About-file)
++ [Keybinds](#Keybinds)
++ [Plugins](#Plugins)
+ + [Lists](#List)
+ + [Recommended](#Recommended)
 
 ## Dependence
 + Vimplug for pluggins
-+ gvim for global clipboard capability
 
-create a undodir directoy for mayor history of files
-mkdir -p $HOME/.vim/undodir
+**Recomendation**
++ Create a undodir folder for mayor history of files:
+`mkdir -p $HOME/.config/nvim/undodir`
++ Modify keybinds as you like
+
+The config is compatible with clasic vim, if you use it.<br>
+But in that case i recommend you to install gvim for global clipboard capability or make a keybind for paste using xclip
+
+## About File
+Options previews:
++ autoindent
++ ignorecase
++ smartcase
++ hlsearch
++ incsearch
++ showmatch
++ wildmenu
++ magic
++ number relativenumber
++ clipboard=unnamedplus
++ nocompatible
++ undofile
 
 ## Plugins
-Plugin manager: VimPlug
+Plugin manager: *VimPlug*
 
-### Pluggins list
-`Main using`
-+ Lightline
-+ vim-css-color
-+ [Nerdtree](https://github.com/preservim/nerdtree)
-+ [vim-gitgutter](https://github.com/airblade/vim-gitgutter)
-+ Multi-cursors
-+ [icons](https://github.com/ryanoasis/vim-devicons)
-+ [ping cursor](https://github.com/uptech/vim-ping-cursor)
-+ [indent](https://github.com/Yggdroot/indentLine)
+### Lists
++ [Lightline](https://github.com/itchyny/lightline.vim) as status bar
++ [Nerdtree](https://github.com/preservim/nerdtree) for file directory panel
++ [Gitgutter](https://github.com/airblade/vim-gitgutter) to see git diffs changes in files
++ [Indent](https://github.com/Yggdroot/indentLine) for show indent lines
++ [Ping cursor](https://github.com/uptech/vim-ping-cursor)
++ [Multi-cursors](https://github.com/mg979/vim-visual-multi)
++ [Vim-css-color](https://github.com/ap/vim-css-color)
++ [Icons](https://github.com/ryanoasis/vim-devicons)
 
 
-`Recommended pluggins`
-+ Goyo
+### Recommended
+Plugins that i dont use but are interesting
++ [Goyo](https://github.com/junegunn/goyo.vim)
 + [startify](https://github.com/mhinz/vim-startify)
-
-### External Pluggins
-Plugins from external sources != plugin manager
-
 + [AutoCompleteMe](https://github.com/ajh17/VimCompletesMe)
