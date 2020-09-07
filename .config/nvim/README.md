@@ -7,7 +7,7 @@
 ███▀▀▀██▄   ███    ███ ███    ███ ███    ███ ███  ▄██▀▀▀███▀▀▀██▄
 ███   ███   ███    █▀  ███    ███ ███    ███ ███▌ ███   ███   ███
 ███   ███  ▄███▄▄▄     ███    ███ ███    ███ ███▌ ███   ███   ███
-███   ███ ▀▀███▀▀▀     ███    ███ ███    ███ ███▌ ███   ███   ███ 
+███   ███ ▀▀███▀▀▀     ███    ███ ███    ███ ███▌ ███   ███   ███
 ███   ███   ███    █▄  ███    ███ ███    ███ ███  ███   ███   ███
 ███   ███   ███    ███ ███    ███ ███    ███ ███  ███   ███   ███
  ▀█   █▀    ██████████  ▀██████▀   ▀██████▀  █▀    ▀█   ███   █▀  
@@ -27,7 +27,7 @@
  + [Recommended](#Recommended)
 
 ## Dependence
-+ Vimplug for pluggins
++ [Vimplug](https://github.com/junegunn/vim-plug) for pluggins
 
 **Recomendation**
 + Create a undodir folder for mayor history of files:
@@ -38,7 +38,7 @@ The config is compatible with clasic vim, if you use it.<br>
 But in that case i recommend you to install gvim for global clipboard capability or make a keybind for paste using xclip
 
 ## About File
-Options previews:
+*Options previews*:
 + autoindent
 + ignorecase
 + smartcase
@@ -53,18 +53,24 @@ Options previews:
 + undofile
 
 ## Plugins
-Plugin manager: *VimPlug*
-
 ### Lists
-+ [Lightline](https://github.com/itchyny/lightline.vim) as status bar
-+ [Nerdtree](https://github.com/preservim/nerdtree) for file directory panel
-+ [Gitgutter](https://github.com/airblade/vim-gitgutter) to see git diffs changes in files
-+ [Indent](https://github.com/Yggdroot/indentLine) for show indent lines
-+ [Ping cursor](https://github.com/uptech/vim-ping-cursor)
-+ [Multi-cursors](https://github.com/mg979/vim-visual-multi)
+*Style*
 + [Vim-css-color](https://github.com/ap/vim-css-color)
-+ [Icons](https://github.com/ryanoasis/vim-devicons)
++ [Devicons](https://github.com/ryanoasis/vim-devicons)
 
+*Cursor*
++ [Multi-cursors](https://github.com/mg979/vim-visual-multi) for a very versatile multi cursors support
++ [Ping cursor](https://github.com/uptech/vim-ping-cursor) to identify cursor position
+
+*Syntax*
++ [Indent](https://github.com/Yggdroot/indentLine) for show indent lines
++ [Gitgutter](https://github.com/airblade/vim-gitgutter) to see git diffs changes in files
+
+*Panel*
++ [Nerdtree](https://github.com/preservim/nerdtree) for file directory panel
+
+*Status Line*
++ [Lightline](https://github.com/itchyny/lightline.vim) as status bar
 
 ### Recommended
 Plugins that i dont use but are interesting

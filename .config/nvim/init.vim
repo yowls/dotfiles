@@ -10,15 +10,15 @@ call plug#begin('~/.config/nvim/plugged')
 	Plug 'ap/vim-css-color'
 	Plug 'ryanoasis/vim-devicons'
 	" Cursor
-	Plug 'terryma/vim-multiple-cursors'
+	Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 	Plug 'uptech/vim-ping-cursor'
 	" Syntax
 	Plug 'Yggdroot/indentLine'
 	Plug 'airblade/vim-gitgutter'
+	" Panel
+	Plug 'preservim/nerdtree'
 	" Statusline /Tabline
 	Plug 'itchyny/lightline.vim'
-	" Explorer
-	Plug 'preservim/nerdtree'
 call plug#end()
 
 " BASICS

@@ -56,9 +56,9 @@ Ah yeah of course, ***I use arch btw***
 
 ### Configs for<br>
 ***Local***:<br>
-[NeoVim](https://github.com/yowls/.config/nvim)<br>
-[Kitty](https://github.com/yowls/.config/kitty)<br>
-[Xresources related](https://github.com/yowls/.Xresources.d)<br>
+[NeoVim](https://github.com/yowls/dotfiles/tree/master/.config/nvim)<br>
+[Kitty](https://github.com/yowls/dotfiles/tree/master/.config/kitty)<br>
+[Xresources related](https://github.com/yowls/tree/master/.Xresources.d)<br>
 <!--
 [Zsh]<br>
 [Rofi config]<br>
