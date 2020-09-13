@@ -9,6 +9,8 @@ for i in /dev /dev/pts /proc /sys /run; do SUDO mount -B $i /mnt$i; done
 mount /dev/sda1 /mnt/boot/efi
 # Change to directory
 chroot /mnt
+# Update initramfs (optional)
+dracut --regenerate-all -f
 # Install grub2 uefi
 modprobe efivars #ifs necessary
 grub-install --target=x86_64-efi --bootloader-id=artix --efi-directory=/boot/efi #--removable

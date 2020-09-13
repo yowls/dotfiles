@@ -1,24 +1,24 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # For a full list of active aliases, run `alias`.
-# Some alias may be from zsh,ohmyzsh,p10K,here
-#           _      _____           _____
-#     /\   | |    |_   _|   /\    / ____|
-#    /  \  | |      | |    /  \  | (___
-#   / /\ \ | |      | |   / /\ \  \___ \
-#  / ____ \| |____ _| |_ / ____ \ ____) |
-# /_/    \_\______|_____/_/    \_\_____/
-
+# alias come from here,default zsh,ohmyzsh,p10K.
+#  █████╗ ██╗     ██╗ █████╗ ███████╗
+# ██╔══██╗██║     ██║██╔══██╗██╔════╝
+# ███████║██║     ██║███████║███████╗
+# ██╔══██║██║     ██║██╔══██║╚════██║
+# ██║  ██║███████╗██║██║  ██║███████║
+# ╚═╝  ╚═╝╚══════╝╚═╝╚═╝  ╚═╝╚══════╝
 #---- 1.System
 # Grub
 alias grupdate="sudo grub-mkconfig -o /boot/grub/grub.cfg"
-alias gruconf="sudo vim /etc/deault/grub"
+alias grup2date="sudo grub2-mkconfig -o /boot/grub2/grub.cfg"
+alias gruconf="sudo nvim /etc/deault/grub"
 # Processes
 #alias p="ps aux | grep"
 alias p="ps -el | grep"
 alias k="pkill"
 # Otros
-alias hosts="sudo vim /etc/hosts"
+alias hosts="sudo nvim /etc/hosts"
 alias rswap="sudo swapoff -a && sudo swapon -a"
 alias ram="free -h --mega"
 alias lsbok="lsblk -o name,mountpoint,label,size,uuid"
@@ -57,89 +57,93 @@ alias wttr="curl wttr.in"
 # ADD applications in bin folder to PATH
 
 #----- 4.Configuration files | dotfiles
-#alias todo="vim ~/MEGA/$DISTRIBUTION_NAME"
-alias todo="vim ~/MEGA/debian"
+#alias todo="nvim ~/MEGA/$DISTRIBUTION_NAME"
+alias todo="nvim ~/MEGA/debian"
 # Shell
-#alias fconf="vim fish"
-alias bconf="vim ~/.bashrc"
-alias zconf="vim ~/.zshrc"
-alias zfd="vim ~/.zsh"
-alias zkey="vim ~/.zsh/alias"
+#alias fconf="nvim fish"
+alias bconf="nvim ~/.bashrc"
+alias zfd="nvim ~/.bash"
+alias zconf="nvim ~/.zshrc"
+alias zfd="nvim ~/.zsh"
+alias shkey="nvim ~/.alias"
 #alias zupd="source ~/.zshrc"
-#alias ohmyconf="vim ~/.oh-my-zsh"
+#alias ohmyconf="nvim ~/.oh-my-zsh"
 # Terminal
 alias cdki="cd ~/.config/kitty"
-alias kifd="vim ~/.config/kitty"
-alias kiconf="vim ~/.config/kitty/kitty.conf"
-alias kikey="vim ~/.config/kitty/keybinds.conf"
+alias kifd="nvim ~/.config/kitty"
+alias kiconf="nvim ~/.config/kitty/kitty.conf"
+alias kikey="nvim ~/.config/kitty/keybinds.conf"
 # Editor
-alias viconf="vim ~/.vimrc"
-#alias vifd="vim ~/.vim"
+alias nvconf="nvim ~/.config/nvim/init.vim"
+#alias nvfd="nvim ~/.conig/nvim"
 # Xresources
 alias cdxr="cd ~/.Xresources.d"
-alias xrfd="vim ~/.Xresources.d"
-alias xrconf="vim ~/.Xresources"
+alias xrfd="nvim ~/.Xresources.d"
+alias xrconf="nvim ~/.Xresources"
 alias rxr="xrdb -merge ~/.Xresources"
 # Others
-alias neoconf="vim .config/neofetch/config.conf"
+alias neoconf="nvim .config/neofetch/config.conf"
 alias nfch="neofetch --source "
 
-# Working directories
-alias cdst="cd ~/startpage"
-alias cdg="cd ~/git"
-
+# WORKING DIRECTORIES
 # Origin
-alias omd="vim ~/README.md"
-alias oig="vim ~/.gitignore"
-alias ostart="vim ~/.xsessionrc"
+alias omd="nvim ~/README.md"
+alias oig="nvim ~/.gitignore"
+alias ostart="nvim ~/.xsessionrc"
 alias cdgo="cd ~/git/dotfiles"
 # Plasma
-alias plstart="vim ~/.config/autostart-scripts"
-alias plout="vim ~/.config/plasma-workspace/shutdown"
+alias plstart="nvim ~/.config/autostart-scripts"
+alias plout="nvim ~/.config/plasma-workspace/shutdown"
 # PekWM
 alias cdpk="cd ~/.pekwm"
-alias pkfd="vim ~/.pekwm"
-alias pkconf="vim ~/.pekwm/config"
-alias pkkey="vim ~/.pekwm/keys"
-alias pkstart="vim ~/.pekwm/start"
-alias pkmd="vim ~/.pekwm/README.md"
+alias pkfd="nvim ~/.pekwm"
+alias pkconf="nvim ~/.pekwm/config"
+alias pkkey="nvim ~/.pekwm/keys"
+alias pkstart="nvim ~/.pekwm/start"
+alias pkmd="nvim ~/.pekwm/README.md"
 # Herbstluft
 alias cdhl="cd ~/.config/herbstluftwm"
-alias hlfd="vim ~/.config/herbstluftwm"
-alias hlconf="vim ~/.config/herbstluftwm/autostart"
-alias hlvar="vim ~/.config/herbstluftwm/vars.sh"
-alias hlstart="vim ~/.config/herbstluftwm/startup.sh"
-alias hlmd="vim ~/.config/herbstluftwm/README.md"
+alias hlfd="nvim ~/.config/herbstluftwm"
+alias hlconf="nvim ~/.config/herbstluftwm/autostart"
+alias hlvar="nvim ~/.config/herbstluftwm/vars.sh"
+alias hlstart="nvim ~/.config/herbstluftwm/startup.sh"
+alias hlmd="nvim ~/.config/herbstluftwm/README.md"
 # Qtile
 alias cdql="cd ~/.config/qtile"
-alias qlfd="vim ~/.config/qtile"
-alias qlconf="vim ~/.config/qtile/config.py"
-alias qlkey="vim ~/.config/qtile/keybind.py"
-alias qlstart="vim ~/.config/qitle/autostart.sh"
-alias qlmd="vim ~/.config/qtile/README.md"
+alias qlfd="nvim ~/.config/qtile"
+alias qlconf="nvim ~/.config/qtile/config.py"
+alias qlkey="nvim ~/.config/qtile/keybind.py"
+alias qlstart="nvim ~/.config/qitle/autostart.sh"
+alias qlmd="nvim ~/.config/qtile/README.md"
 # Polybar
 alias cdpb="cd ~/.config/polybar"
-alias pbfd="vim ~/.config/polybar"
-alias pbmd="vim ~/.config/polybar/README.md"
+alias pbfd="nvim ~/.config/polybar"
+alias pbmd="nvim ~/.config/polybar/README.md"
 
 # Scripts
 alias cdsc="cd ~/scripts"
-alias scfd="vim ~/scripts"
-alias scmd="vim ~/scripts/README.md"
+alias scfd="nvim ~/scripts"
+alias scmd="nvim ~/scripts/README.md"
+
+# Startpages
+alias cdst="cd ~/startpages"
+alias stfd="nvim ~/startpages"
+alias stmd="nvim ~/startpages/README.md"
 
 # Firefox
 alias cdf="cd ~/.mozilla/firefox/*.default-release/chrome/Yowls"
-alias ffd="vim ~/.mozilla/firefox/*.default-release/chrome/Yowls"
-alias fcss="vim ~/.mozilla/firefox/*.default-release/chrome/userChrome.css"
-alias fcnt="vim ~/.mozilla/firefox/*.default-release/chrome/userContent.css"
-alias fmd="vim ~/.mozilla/firefox/*.default-release/chrome/README.md"
+alias ffd="nvim ~/.mozilla/firefox/*.default-release/chrome/Yowls"
+alias fcss="nvim ~/.mozilla/firefox/*.default-release/chrome/userChrome.css"
+alias fcnt="nvim ~/.mozilla/firefox/*.default-release/chrome/userContent.css"
+alias fmd="nvim ~/.mozilla/firefox/*.default-release/chrome/README.md"
 
 
 #---- 5.Aplications
 # Trash-cli
 #alias x="trash-put"
-#alias rx="trash-put"
-#alias rxa="trash-put"
+#alias xl="trash-list"
+#alias xr="trash-restore"
+#alias xempty="trash-empty"
 # Exa
 alias ls="exa --group-directories-first"
 alias ll="exa --group-directories-first -lha"
@@ -159,8 +163,9 @@ alias uhblock="hblock --backup $HOME/Desktop --sources $HOME/MEGA/hblock/hosts -
 #https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git#aliases
 alias g="git"
 alias glogg="git log --all --graph --decorate --oneline"
-alias gig="vim .gitignore"
-alias rmd="vim README.md"
+alias gig="nvim .gitignore"
+alias rmd="nvim README.md"
+alias cdg="cd ~/git"
 # Upgrade Man-page with colors
 function man() {
     env \
@@ -175,5 +180,5 @@ function man() {
 }
 
 #---- 6.Common errors
-#alias vi=nvim
-#alias vim=nvim
+alias vi=nvim
+alias vim=nvim

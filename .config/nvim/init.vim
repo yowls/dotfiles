@@ -64,10 +64,7 @@ let g:gitgutter_max_signs = 500
 highlight GitGutterAdd    guifg=#009900 ctermfg=2
 highlight GitGutterChange guifg=#bbbb00 ctermfg=3
 highlight GitGutterDelete guifg=#ff2222 ctermfg=1
-":GitGutterLineNrHighligtsEnable	"nvim
-
-" Multi cursor
-let g:multi_cursor_use_default_mapping=0
+":GitGutterLineNrHighlightsEnable	"nvim
 
 " Ping cursor
 "set cursorline
@@ -77,11 +74,3 @@ let g:ping_cursor_flash_milliseconds = 250
 " KEYBINDS
 "map <C-n> :NERDTreeToggle<CR>
 "map <C-m> :GitGutterLineHighlightsToggle<?>
-let g:multi_cursor_start_word_key      = '<C-n>'
-let g:multi_cursor_select_all_word_key = '<A-n>'
-let g:multi_cursor_start_key           = 'g<C-n>'
-let g:multi_cursor_select_all_key      = 'g<A-n>'
-let g:multi_cursor_next_key            = '<C-n>'
-let g:multi_cursor_prev_key            = '<C-p>'
-let g:multi_cursor_skip_key            = '<C-x>'
-let g:multi_cursor_quit_key            = '<Esc>'

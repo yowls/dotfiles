@@ -7,7 +7,7 @@ fi
 source "$HOME/.alias"
 
 # Export variables
-export EDITOR='vim'
+export EDITOR='nvim'
 export FETCH="$HOME/MEGA/fetch"
 export ZSH="$HOME/.oh-my-zsh"
 
