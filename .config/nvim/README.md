@@ -75,5 +75,6 @@ But in that case i recommend you to install gvim for global clipboard capability
 ### Recommended
 Plugins that i dont use but are interesting
 + [Goyo](https://github.com/junegunn/goyo.vim)
++ [Limelight](https://github.com/junegunn/limelight.vim)
 + [startify](https://github.com/mhinz/vim-startify)
 + [AutoCompleteMe](https://github.com/ajh17/VimCompletesMe)

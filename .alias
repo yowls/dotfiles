@@ -16,11 +16,12 @@ alias gruconf="sudo vim /etc/deault/grub"
 # Processes
 #alias p="ps aux | grep"
 alias p="ps -el | grep"
-alias pk="pkill"
+alias k="pkill"
 # Otros
 alias hosts="sudo vim /etc/hosts"
 alias rswap="sudo swapoff -a && sudo swapon -a"
 alias ram="free -h --mega"
+alias lsbok="lsblk -o name,mountpoint,label,size,uuid"
 
 #---- 2.Package manager
 # Search

@@ -63,9 +63,9 @@
 !.config/mpv
 !.config/mpv/*
 # NCMPCPP
-!.ncmpcpp
-!.ncmpcpp/*
-.ncmpcpp/error.log
+!.config/ncmpcpp
+!.config/ncmpcpp/*
+.config/ncmpcpp/error.log
 # Cava
 !.config/cava
 !.config/cava/*
