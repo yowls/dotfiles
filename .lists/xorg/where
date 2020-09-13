@@ -1,0 +1,8 @@
+libinput -> arch
+synaptic -> debian
+
+where:
+	/etc/X11/xorg.conf
+	/etc/X11/xorg.conf.d
+
+	/usr/share/X11/xorg.conf.d

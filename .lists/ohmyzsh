@@ -1,0 +1,40 @@
+Remove conflicts with ohmzsh aliases
+(sed to comment line)
+
+$HOME/.ohmyzsh/lib/directories.zsh
+aliases:
+	# List directory contents
+	#alias lsa='ls -lah'
+	#alias l='ls -lah'
+	#alias ll='ls -lh'
+	#alias la='ls -lAh'
+command: sed ..
+
+
+$HOME/.ohmyzsh/lib/history.zsh
+	## History file configuration
+	#[ -z "$HISTFILE" ] && HISTFILE="$HOME/.zsh_history"
+	#[ "$HISTSIZE" -lt 50000 ] && HISTSIZE=50000
+	#[ "$SAVEHIST" -lt 10000 ] && SAVEHIST=10000
+command: sed ..
+
+
+$HOME/.ohmyzsh/lib/theme-and-appearance.zsh
+line 35:
+	ls --color -d . &>/dev/null && alias ls='ls --color=tty' || { ls -G . &>/dev/null && alias ls='ls -G' }
+command: sed..
+
+
+(BY DEFAULT ARE NOT ENABLED)
+$HOME/.ohmyzsh/plugins/common-aliases/common-aliases.plugin.zsh
+	# ls, the common ones I use a lot shortened for rapid fire usage
+	#alias l='ls -lFh'     #size,show type,human readable
+	#alias la='ls -lAFh'   #long list,show almost all,show type,human readable
+	#alias lr='ls -tRFh'   #sorted by date,recursive,show type,human readable
+	#alias lt='ls -ltFh'   #long list,sorted by date,show type,human readable
+	#alias ll='ls -l'      #long list
+	#alias ldot='ls -ld .*'
+	#alias lS='ls -1FSsh'
+	#alias lart='ls -1Fcart'
+	#alias lrt='ls -1Fcrt'
+command: sed..

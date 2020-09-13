@@ -1,10 +1,11 @@
 # If you change this file, run 'update-grub' afterwards to update
 # Full documentation of the options, see: info -f grub -n 'Simple configuration'
 # --
-# Config file =/etc/default/grub
-# Config dir=/etc/grub.d
-# Theme =/usr/share/grub/themes
-# Update =grub-mkconfig -o /boot/grub/grub.cfg
+# Config file   = /etc/default/grub
+# Config dir    = /etc/grub.d/
+#   > custom.pacsave entries
+# Theme         = /usr/share/grub/themes/
+# Update        = grub-mkconfig -o /boot/grub/grub.cfg
 
 GRUB_DEFAULT="saved"
 GRUB_TIMEOUT="5"

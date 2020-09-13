@@ -83,6 +83,7 @@
 # Random folder
 !.lists
 !.lists/*
+!.lists/**
 
 # Window Manager (do not include others config files)
 # Plasma
