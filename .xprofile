@@ -1,9 +1,24 @@
+# Set keyboard layout
 setxkbmap latam &
-redshift &
-light-locker &
 
-# MPD daemon start (if no other user instance exists)
-[ ! -s ~/.config/mpd/pid ] && mpd
+# Autostart Applications On Every Login
+light-locker &
+#redshift
+# MPD start if no other user instance exists
+#[ ! -s ~/.config/mpd/pid ] && mpd
+#export MPD_HOST=$HOME/.config/mpd/socket
+
+# QT
+export QT_QPA_PLATFORMTHEME="qt5ct"
 
 # custom PATH
-export PATH=$PATH:$HOME/bin
+export PATH="${PATH}:${HOME}/.local/bin/:${HOME}/bin"
+
+# Openrc
+#xbacklight -set 10
+
+## Ensure that the D-Bus Communication System is running properly to fix
+## File management, authentication, and other essential system processes
+if which dbus-launch >/dev/null && test -z "$DBUS_SESSION_BUS_ADDRESS"; then
+    eval "$(dbus-launch --sh-syntax --exit-with-session)"
+fi

@@ -18,7 +18,7 @@ grub-install --target=x86_64-efi --bootloader-id=artix --efi-directory=/boot/efi
 grub-mkconfig -o /boot/grub/grub.cfg #if kernel or some entry change in grub
 # Exit chroot
 exit
-# UNMOUNT points
+# UNMOUNT! points
 umount -R /mnt
 
 # Check all boot entries

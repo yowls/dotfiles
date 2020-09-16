@@ -8,9 +8,9 @@
 !.gitignore
 # On session startup
 !.xsessionrc
+!.profile
 !.xprofile
 !.xinitrc
-!.dmrc
 # Shell
 !.bashrc
 !.bash
@@ -111,6 +111,7 @@
 !.config/openbox/*
 !.config/openbox/**
 .config/openbox/OThemes
+# BerryWM
 
 # Tint2
 !.config/tint2

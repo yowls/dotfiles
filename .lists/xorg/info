@@ -1,0 +1,12 @@
+libinput -> 30,99
+synaptic -> 70
+
+==where==
+	/etc/X11/xorg.conf
+	/etc/X11/xorg.conf.d
+
+	/usr/share/X11/xorg.conf.d
+
+==For synaptics==
+	Can controll with synclient
+	https://jlk.fjfi.cvut.cz/arch/manpages/man/synaptics.4#CONFIGURATION_OPTIONS
