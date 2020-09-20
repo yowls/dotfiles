@@ -7,7 +7,6 @@ fi
 source "$HOME/.alias"
 
 # Export variables
-export EDITOR='nvim'
 export FETCH="$HOME/MEGA/fetch"
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -16,17 +15,18 @@ export ZSH="$HOME/.oh-my-zsh"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 plugins=(
         zsh-autosuggestions
-	zsh-syntax-highlighting
-	git
-	autojump
+        zsh-syntax-highlighting
+        git
+        autojump
 )
 
 # Oh My ZSH: THEME
 ZSH_THEME="powerlevel10k/powerlevel10k"
 source $ZSH/oh-my-zsh.sh
 
-# Enable auto-correction.
-setopt correct
+# Options
+setopt correct		# Enable auto-correction.
+#setopt autocd		# Automatically cd into typed directory.
 
 # History
 HISTSIZE=3000

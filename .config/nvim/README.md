@@ -22,7 +22,7 @@
 + [Dependence](#Dependence)
 + [About file](#About-file)
 + [Keybinds](#Keybinds)
-+ [Plugins](#Plugins)
++ [Plugins](#floppy_disk-Plugins)
  + [Lists](#List)
  + [Recommended](#Recommended)
 
@@ -52,7 +52,15 @@ But in that case i recommend you to install gvim for global clipboard capability
 + nocompatible
 + undofile
 
-## Plugins
+Also i made a simplified nvim config for root, to use it do:
+```bash
+	$ sudo mkdir -p /root/.config/nvim
+	$ git clone https://github.com/yowls/dotfiles/
+	$ sudo cp yowls/.config/nvim/root.init.vim /root/.config/nvim/init.vim
+	$ rm -rf yowls #Optional
+```
+
+## 💾 Plugins 
 ### Lists
 *Style*
 + [Vim-css-color](https://github.com/ap/vim-css-color)

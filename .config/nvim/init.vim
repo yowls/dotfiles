@@ -35,11 +35,11 @@ set wildmenu
 set wildmode=longest,list,full
 " Various
 set magic
-set number relativenumber
+set mouse=a
 set encoding=utf-8
 set clipboard=unnamedplus
+set number relativenumber
 set nocompatible
-set mouse=a
 "set nolist
 " Persist undo history
 set undofile

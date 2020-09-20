@@ -9,6 +9,7 @@
 # ██║  ██║███████╗██║██║  ██║███████║
 # ╚═╝  ╚═╝╚══════╝╚═╝╚═╝  ╚═╝╚══════╝
 #---- 1.System
+alias suconf="sudo EDITOR=nvim visudo"
 # Grub
 alias grupdate="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 alias grup2date="sudo grub2-mkconfig -o /boot/grub2/grub.cfg"
@@ -17,10 +18,12 @@ alias gruconf="sudo nvim /etc/deault/grub"
 #alias p="ps aux | grep"
 alias p="ps -el | grep"
 alias k="pkill"
-# Otros
+alias ka"killall"
+# Others
+alias ram="free -h --mega"
+alias grep="grep --color=auto"
 alias hosts="sudo nvim /etc/hosts"
 alias rswap="sudo swapoff -a && sudo swapon -a"
-alias ram="free -h --mega"
 alias lsbok="lsblk -o name,mountpoint,label,size,uuid"
 
 #---- 2.Package manager
@@ -139,6 +142,7 @@ alias fmd="nvim ~/.mozilla/firefox/*.default-release/chrome/README.md"
 
 
 #---- 5.Aplications
+alias v="$EDITOR"
 # Trash-cli
 #alias x="trash-put"
 #alias xl="trash-list"
@@ -146,6 +150,7 @@ alias fmd="nvim ~/.mozilla/firefox/*.default-release/chrome/README.md"
 #alias xempty="trash-empty"
 # Exa
 alias ls="exa --group-directories-first"
+alias la="exa --group-directories-first -a"
 alias ll="exa --group-directories-first -lha"
 alias l="exa --group-directories-first -lh"
 # Lsd
@@ -153,10 +158,10 @@ alias lx="lsd --group-dirs first"
 alias lxa="lsd --group-dirs first -lhA"
 alias lxt="lsd --group-dirs first --tree"
 # Youtube-dl
-alias audio="youtube-dl -o $HOME/Desktop/%(title)s.%(ext)s' -f bestaudio -x --audio-format best --audio-quality 0"
-alias mp3="youtube-dl -o '$HOME/Desktop/%(title)s.%(ext)s' -x --audio-format mp3 --audio-quality 0"
-alias mp3t="youtube-dl -o '$HOME/Desktop/%(title)s.%(ext)s' -x --audio-format mp3 --audio-quality 0 --write-thumbnail"
-alias video="youtube-dl -o '$HOME/Desktop/%(title)s.%(ext)s' -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4"
+alias audio="youtube-dl -o '$HOME/Desktop/%(title)s.%(ext)s' -f bestaudio -x --audio-format best --audio-quality 0 -i"
+alias mp3="youtube-dl -o '$HOME/Desktop/%(title)s.%(ext)s' -x --audio-format mp3 --audio-quality 0 -i"
+alias mp3t="youtube-dl -o '$HOME/Desktop/%(title)s.%(ext)s' -x --audio-format mp3 --audio-quality 0 --write-thumbnail -i"
+alias video="youtube-dl -o '$HOME/Desktop/%(title)s.%(ext)s' -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 -i"
 # HBlock (hosts)
 alias uhblock="hblock --backup $HOME/Desktop --sources $HOME/MEGA/hblock/hosts --whitelist $HOME/MEGA/hblock/whitelist.list --blacklist $HOME/MEGA/hblock/blacklist.list"
 # Git
@@ -169,13 +174,13 @@ alias cdg="cd ~/git"
 # Upgrade Man-page with colors
 function man() {
     env \
-    LESS_TERMCAP_mb=$'\e[01;31m' \
-    LESS_TERMCAP_md=$'\e[01;31m' \
-    LESS_TERMCAP_me=$'\e[0m' \
-    LESS_TERMCAP_se=$'\e[0m' \
-    LESS_TERMCAP_so=$'\e[01;44;33m' \
-    LESS_TERMCAP_ue=$'\e[0m' \
-    LESS_TERMCAP_us=$'\e[01;32m' \
+    LESS_TERMCAP_mb=$'\e[01;31m'	\
+    LESS_TERMCAP_md=$'\e[01;31m'	\
+    LESS_TERMCAP_me=$'\e[0m'		\
+    LESS_TERMCAP_se=$'\e[0m'		\
+    LESS_TERMCAP_so=$'\e[01;44;33m'	\
+    LESS_TERMCAP_ue=$'\e[0m'		\
+    LESS_TERMCAP_us=$'\e[01;32m'	\
     man "$@"
 }
 

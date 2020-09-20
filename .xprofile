@@ -8,10 +8,15 @@ light-locker &
 #[ ! -s ~/.config/mpd/pid ] && mpd
 #export MPD_HOST=$HOME/.config/mpd/socket
 
+# Defaults
+export EDITOR='nvim'
+export TERMINAL="kitty"
+export BROWSER="firefox"
+
 # QT
 export QT_QPA_PLATFORMTHEME="qt5ct"
 
-# custom PATH
+# Custom PATH
 export PATH="${PATH}:${HOME}/.local/bin/:${HOME}/bin"
 
 # Openrc

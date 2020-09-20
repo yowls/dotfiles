@@ -138,12 +138,18 @@ Make sure there´s no conflict between your files and mine.<br>
 **Make a backup** of your files anyways, don't replace with mine just<br>
 
 ### Execution
-Elige cual de los dos (o los dos) wm vas a usar, luego<br>
-Clone the repository:
+Clone the repository and copy the files:
 
 ```bash
 	$ git clone https://github.com/yowls/dotfiles /tmp
-    $ cp /tmp/dotfiles/.config $HOME/.config
+	$ cp /tmp/dotfiles/.config $HOME/.config
+```
+
+Also i made a simplified zsh and nvim config **for root**, to use it do:
+```bash
+    $ sudo mkdir -p /root/.config/nvim
+    $ sudo cp Yowls/.config/nvim/root.init.vim /root/.config/nvim/init.vim
+    $ sudo cp Yowls/.zsh/root.zshrc /root/.zshrc
 ```
 
 <img src=Pictures/title/13.png width=400px><br>
