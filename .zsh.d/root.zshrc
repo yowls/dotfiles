@@ -3,7 +3,7 @@
 # Options
 setopt correct		# Enable auto-correction.
 setopt autocd		# Automatically cd into typed directory.
-autoload -U compinit
+autoload -Uz compinit
 compinit
 
 # History
@@ -38,5 +38,5 @@ alias ls="ls -hN --color=auto --group-directories-first"
 alias la="ls -a"
 alias ll="ls -la"
 alias l="ls -l"
-alias vi=nvim
-alias vim=nvim
+alias vi="nvim"
+alias vim="nvim"

@@ -8,19 +8,19 @@
 !.gitignore
 # On session startup
 !.xsessionrc
-!.profile
 !.xprofile
+!.profile
 !.xinitrc
 # Shell
 !.bashrc
-!.bash
-!.bash/*
+!.bash.d
+!.bash.d/*
 #!.fishrc
-#!.fish
-#!.fish/*
+#!.fish.d
+#!.fish.d/*
 !.zshrc
-!.zsh
-!.zsh/*
+!.zsh.d
+!.zsh.d/*
 !.alias
 # Bookmarks
 !.gtk-bookmarks
@@ -64,8 +64,8 @@
 !.config/mpv/*
 # NCMPCPP
 !.config/ncmpcpp
-!.config/ncmpcpp/*
-.config/ncmpcpp/error.log
+!.config/ncmpcpp/config
+!.config/ncmpcpp/bindings
 # Cava
 !.config/cava
 !.config/cava/*

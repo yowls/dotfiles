@@ -21,6 +21,7 @@ export PATH="${PATH}:${HOME}/.local/bin/:${HOME}/bin"
 
 # Openrc
 #xbacklight -set 10
+#/usr/bin/amixer -c 0 sset "Auto-Mute Mode" Disabled
 
 ## Ensure that the D-Bus Communication System is running properly to fix
 ## File management, authentication, and other essential system processes

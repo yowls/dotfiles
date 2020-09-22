@@ -89,6 +89,7 @@ alias neoconf="nvim .config/neofetch/config.conf"
 alias nfch="neofetch --source "
 
 # WORKING DIRECTORIES
+alias cdyo="cd ~/Yowls"
 # Origin
 alias omd="nvim ~/README.md"
 alias oig="nvim ~/.gitignore"

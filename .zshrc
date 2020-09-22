@@ -21,7 +21,11 @@ plugins=(
 )
 
 # Oh My ZSH: THEME
+# Standard themes can be found in ~/.oh-my-zsh/themes/*
+# Custom themes may be added to ~/.oh-my-zsh/custom/themes/
 ZSH_THEME="powerlevel10k/powerlevel10k"
+#ZSH_THEME="random"
+#ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 source $ZSH/oh-my-zsh.sh
 
 # Options
@@ -32,7 +36,6 @@ setopt correct		# Enable auto-correction.
 HISTSIZE=3000
 SAVEHIST=3000
 HISTFILE=~/.cache/zsh_history
-
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

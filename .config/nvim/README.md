@@ -20,6 +20,7 @@
 
 ## Table of Content
 + [Dependence](#Dependence)
++ [Installation](#Installation)
 + [About file](#About-file)
 + [Keybinds](#Keybinds)
 + [Plugins](#floppy_disk-Plugins)
@@ -37,6 +38,20 @@
 The config is compatible with clasic vim, if you use it.<br>
 But in that case i recommend you to install gvim for global clipboard capability or make a keybind for paste using xclip
 
+## Installation
+Just clone the repostory and copy the config:
+```bash
+	$ git clone --depth=1 https://github.com/yowls/dotfiles/ Yowls
+	$ mkdir .config/nvim
+	$ cp Yowls/.config/nvim/init.vim ~/.config/nvim
+	$ rm -rf Yowls #Optional
+```
+Also i made a simplified nvim config for root, to use it do:
+```bash
+	$ sudo mkdir -p /root/.config/nvim
+	$ sudo cp Yowls/.config/nvim/root.init.vim /root/.config/nvim/init.vim
+```
+
 ## About File
 *Options previews*:
 + autoindent
@@ -51,14 +66,6 @@ But in that case i recommend you to install gvim for global clipboard capability
 + clipboard=unnamedplus
 + nocompatible
 + undofile
-
-Also i made a simplified nvim config for root, to use it do:
-```bash
-	$ sudo mkdir -p /root/.config/nvim
-	$ git clone https://github.com/yowls/dotfiles/
-	$ sudo cp yowls/.config/nvim/root.init.vim /root/.config/nvim/init.vim
-	$ rm -rf yowls #Optional
-```
 
 ## 💾 Plugins 
 ### Lists
