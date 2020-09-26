@@ -150,7 +150,7 @@ Also i made a simplified zsh and nvim config **for root**, to use it do:
 ```bash
 	$ sudo mkdir -p /root/.config/nvim
 	$ sudo cp Yowls/.config/nvim/root.init.vim /root/.config/nvim/init.vim
-	$ sudo cp Yowls/.zsh/root.zshrc /root/.zshrc
+	$ sudo cp Yowls/.zsh.d/root.zshrc /root/.zshrc
 ```
 
 <img src=Pictures/title/13.png width=400px><br>

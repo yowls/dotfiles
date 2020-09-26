@@ -27,33 +27,83 @@ alias rswap="sudo swapoff -a && sudo swapon -a"
 alias lsbok="lsblk -o name,mountpoint,label,size,uuid"
 
 #---- 2.Package manager
-# Search
-alias search="aptitude search"
-alias srins="aptitude search '~i(~n $name|~d $description)'"
-alias srinfo="aptitude show"
-alias srfile="dpkg -L"
-# Istall
-alias ins="sudo aptitude install"
-alias lins="sudo dpkg -i"
-alias insb="sudo apt -t buster-backports install"
-alias insdl="sudo aptitude install --download-only"
+# Search in online repositories
+alias zpps="zypper se"
+alias pacs="yay -Ss"
+alias xbpss="xbps -Rs"
+alias apts="aptitude search"
+# Search local packages
+alias zppsrins="echo nosellama"
+alias pacsrins="yay -Qs"
+alias xbpsrins=".."
+alias aptsrins="aptitude search '~i(~n $name|~d $description)'"
+# Search for package info
+alias zppinfo="zypper info"
+alias pacinfo="yay -Qi"
+alias xbpinfo=".."
+alias aptinfo="aptitude show"
+# Search for package files
+alias zppfiles="rpm -ql"
+alias pacfiles="yay -Ql"
+alias xbpfiles=".."
+alias aptfiles="dpkg -L"
+# Istall from remote repository
+alias zppins="sudo zypper install"
+alias pacins="yay -S"
+alias xbpins="sudo xbps -S"
+alias aptins="sudo aptitude install"
+alias aptinsb="sudo apt -t buster-backports install"
+# Install from local package
+alias zpplins="sudo zypper in"
+alias paclins="yay -U"
+alias xbplins=".."
+alias aptlins="sudo dpkg -i"
+# Download package
+alias zppdw="zypper --download-only"
+alias pacdw="yay -Sw"
+alias xbpdw=".."
+alias aptdw="sudo aptitude install --download-only"
 # Remove
-alias remv="sudo aptitude remove"
-alias fremv="sudo aptitude purge"
-# Update
-alias update="sudo aptitude update"
-alias upgrade="sudo aptitude upgrade"
-alias upgradels="apt list --upgradable -a"
+alias zpprm="sudo zypper remove"
+alias pacrm="yay -R"
+alias xbprm="sudo xbps -R"
+alias aptrm="sudo aptitude remove"
+# Remove Completly
+alias zppfrm=".."
+alias pacfrm="yay -Rns"
+alias zppfrm=".."
+alias aptfrm="sudo aptitude purge"
+# Update repositories database
+alias zppup="sudo zypper refresh"
+alias pacup="yay -Sy"
+alias xbpup=".."
+alias aptup="sudo aptitude update"
+# Upgrade packages
+alias zppug=".."
+alias pacup="yay -Su"
+alias xbpup=".."
+alias aptug="sudo aptitude upgrade"
+# List avaible upgrades
+alias zppuls="zypper list-updates"
+alias paculs="yay -Qu"
+alias xbpuls=""
+alias aptuls="apt list --upgradable -a"
 # Nya = Nya You All
 alias nya="update && upgradels"
 alias nyya="update && upgrade"
 # Remove unneeded dependecy
-alias autoremove="sudo apt autoremove"
+alias zpparm=".."
+alias pacarm="yay -Rns $(yay -Qtdq)"
+alias xbparm=".."
+alias aptarm="sudo apt autoremove"
 # Remove old downloaded packages
-alias autoclean="sudo aptitude autoclean"
+alias zppacl="sudo zypper clean"
+alias pacacl="yay -Sc"
+alias xbpacl=".."
+alias aptacl="sudo aptitude autoclean"
 # Others
 alias addgpg="gpg --keyserver pool.sks-keyservers.net --recv-keys"
-alias unlock="sudo rm /var/lib/pacman/db.lck"
+alias pacunlock="sudo rm /var/lib/pacman/db.lck"
 
 #---- 3.Scripts
 alias wttr="curl wttr.in"

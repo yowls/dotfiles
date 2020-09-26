@@ -42,7 +42,7 @@ Just clone the repostory and copy the config:
 
 Also i made a simplified zsh config for root, to use it do:
 ```bash
-	$ sudo cp Yowls/.zsh/root.zshrc /root/.zshrc
+	$ sudo cp Yowls/.zsh.d/root.zshrc /root/.zshrc
 ```
 
 

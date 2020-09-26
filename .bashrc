@@ -18,10 +18,9 @@ esac
 
 # Import sources
 source "$HOME/.alias"
-source "$HOME/.bash/theme1"
+source "$HOME/.bash.d/theme1"
 
 # Export var
-export EDITOR='vim'
 export FETCH="$HOME/MEGA/fetch"
 
 # HISTORY
