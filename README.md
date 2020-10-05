@@ -52,7 +52,10 @@ Ah yeah of course, ***I use arch btw***
 <br>
 
 <img src=Pictures/title/07.png width=400px><br>
-### [Q&A](https://github.com/yowls/dotfiles/wiki/Q&A)
+### Question & Answer
+* [Q1]
+* [Q2]
+* [Q3]
 
 ### Configs for<br>
 ***Local***:<br>
@@ -66,6 +69,14 @@ Ah yeah of course, ***I use arch btw***
 
 ***External***<br>
 [Polybar](https://github.com/yowls/pbar)
+
+***Window managers***<br>
+*Stacking*
+* [openbox](https://github.com/yowls/dotfiles/tree/master/.config/openbox)
+*Tiling*
+* [Herbstluftwm](https://github.com/yowls/hlwm)
+*Dynamic*
+* [Awesome](https://github.com/yowls/awwn)
 
 <img src=Pictures/title/03.png width=400px><br>
 ### Plasma
@@ -81,7 +92,7 @@ Ah yeah of course, ***I use arch btw***
 <br>
 <br>
 
-### [PekWM](https://github.com/yowls/dotfiles/.pekwm)
+### [Openbox](https://github.com/yowls/dotfiles/.config/openbox)
 *Work in progress*
 <!--
 <p align="center">

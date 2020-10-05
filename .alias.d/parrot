@@ -1,0 +1,77 @@
+#!/usr/bin/env bash
+#  ▄▄▄· ▄▄▄· ▄▄▄  ▄▄▄        ▄▄▄▄▄
+# ▐█ ▄█▐█ ▀█ ▀▄ █·▀▄ █·▪     •██
+#  ██▀·▄█▀▀█ ▐▀▀▄ ▐▀▀▄  ▄█▀▄  ▐█.▪
+# ▐█▪·•▐█ ▪▐▌▐█•█▌▐█•█▌▐█▌.▐▌ ▐█▌·
+# .▀    ▀  ▀ .▀  ▀.▀  ▀ ▀█▄▀▪ ▀▀▀
+#---- 1.System
+# Grub
+alias grupdate="sudo grub-mkconfig -o /boot/grub/grub.cfg"
+
+#---- 2.Package manager
+#---2.1 SEARCH
+# Search in online repositories
+alias aptss="aptitude search"
+# Search local packages
+alias aptssl="aptitude search '~i(~n $name|~d $description)'"
+# Search for package info
+alias aptinf="aptitude show"
+# Search for package files
+alias aptfiles="dpkg -L"
+
+#---2.2 INSTALL
+# Istall from remote repository
+alias aptin="sudo aptitude install"
+alias aptinb="sudo apt -t buster-backports install"
+# Install from local package
+alias aptinl="sudo dpkg -i"
+# Download a package
+alias aptdw="sudo aptitude install --download-only"
+
+#---2.3 REMOVE
+# Remove a package
+alias aptrm="sudo aptitude remove"
+# Remove completly include dependencies
+alias aptrmf="sudo aptitude purge"
+# Remove unneeded dependecy
+alias aptnd="sudo apt autoremove"
+# Remove old downloaded packages
+alias aptcl="sudo aptitude autoclean"
+
+#---2.4 UPDATE
+# Update repositories database
+alias aptu="sudo aptitude update"
+# Upgrade packages
+alias aptug="sudo aptitude upgrade"
+# List avaible upgrades
+alias aptuls="apt list --upgradable -a"
+
+#---- 3.Configuration files | dotfiles
+#---3.1 MATE
+alias mtstart="nvim ~/.config/autostart-scripts"
+alias mtout="nvim ~/.config/plasma-workspace/shutdown"
+#---3.2 BERRY
+alias cdpk="cd ~/.pekwm"
+alias pkfd="nvim ~/.pekwm"
+alias pkconf="nvim ~/.pekwm/config"
+alias pkkey="nvim ~/.pekwm/keys"
+alias pkstart="nvim ~/.pekwm/start"
+alias pkmd="nvim ~/.pekwm/README.md"
+#---3.3 HERBSTLUFT
+alias cdhl="cd ~/.config/herbstluftwm"
+alias hlfd="nvim ~/.config/herbstluftwm"
+alias hlconf="nvim ~/.config/herbstluftwm/autostart"
+alias hlvar="nvim ~/.config/herbstluftwm/vars.sh"
+alias hlstart="nvim ~/.config/herbstluftwm/startup.sh"
+alias hlmd="nvim ~/.config/herbstluftwm/README.md"
+#---3.4 QTILE
+alias cdql="cd ~/.config/qtile"
+alias qlfd="nvim ~/.config/qtile"
+alias qlconf="nvim ~/.config/qtile/config.py"
+alias qlkey="nvim ~/.config/qtile/keybind.py"
+alias qlstart="nvim ~/.config/qitle/autostart.sh"
+alias qlmd="nvim ~/.config/qtile/README.md"
+#---3.5 POLYBAR
+alias cdpb="cd ~/.config/polybar"
+alias pbfd="nvim ~/.config/polybar"
+alias pbmd="nvim ~/.config/polybar/README.md"

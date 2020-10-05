@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # For a full list of active aliases, run `alias`.
-# alias come from here,default zsh,ohmyzsh,p10K.
+# alias come from .alias,.alias.d,default zsh,ohmyzsh,p10K.
 #  █████╗ ██╗     ██╗ █████╗ ███████╗
 # ██╔══██╗██║     ██║██╔══██╗██╔════╝
 # ███████║██║     ██║███████║███████╗
@@ -11,8 +11,6 @@
 #---- 1.System
 alias suconf="sudo EDITOR=nvim visudo"
 # Grub
-alias grupdate="sudo grub-mkconfig -o /boot/grub/grub.cfg"
-alias grup2date="sudo grub2-mkconfig -o /boot/grub2/grub.cfg"
 alias gruconf="sudo nvim /etc/deault/grub"
 # Processes
 #alias p="ps aux | grep"
@@ -26,173 +24,81 @@ alias hosts="sudo nvim /etc/hosts"
 alias rswap="sudo swapoff -a && sudo swapon -a"
 alias lsbok="lsblk -o name,mountpoint,label,size,uuid"
 
-#---- 2.Package manager
-# Search in online repositories
-alias zpps="zypper se"
-alias pacs="yay -Ss"
-alias xbpss="xbps -Rs"
-alias apts="aptitude search"
-# Search local packages
-alias zppsrins="echo nosellama"
-alias pacsrins="yay -Qs"
-alias xbpsrins=".."
-alias aptsrins="aptitude search '~i(~n $name|~d $description)'"
-# Search for package info
-alias zppinfo="zypper info"
-alias pacinfo="yay -Qi"
-alias xbpinfo=".."
-alias aptinfo="aptitude show"
-# Search for package files
-alias zppfiles="rpm -ql"
-alias pacfiles="yay -Ql"
-alias xbpfiles=".."
-alias aptfiles="dpkg -L"
-# Istall from remote repository
-alias zppins="sudo zypper install"
-alias pacins="yay -S"
-alias xbpins="sudo xbps -S"
-alias aptins="sudo aptitude install"
-alias aptinsb="sudo apt -t buster-backports install"
-# Install from local package
-alias zpplins="sudo zypper in"
-alias paclins="yay -U"
-alias xbplins=".."
-alias aptlins="sudo dpkg -i"
-# Download package
-alias zppdw="zypper --download-only"
-alias pacdw="yay -Sw"
-alias xbpdw=".."
-alias aptdw="sudo aptitude install --download-only"
-# Remove
-alias zpprm="sudo zypper remove"
-alias pacrm="yay -R"
-alias xbprm="sudo xbps -R"
-alias aptrm="sudo aptitude remove"
-# Remove Completly
-alias zppfrm=".."
-alias pacfrm="yay -Rns"
-alias zppfrm=".."
-alias aptfrm="sudo aptitude purge"
-# Update repositories database
-alias zppup="sudo zypper refresh"
-alias pacup="yay -Sy"
-alias xbpup=".."
-alias aptup="sudo aptitude update"
-# Upgrade packages
-alias zppug=".."
-alias pacup="yay -Su"
-alias xbpup=".."
-alias aptug="sudo aptitude upgrade"
-# List avaible upgrades
-alias zppuls="zypper list-updates"
-alias paculs="yay -Qu"
-alias xbpuls=""
-alias aptuls="apt list --upgradable -a"
+#---- 2.Distro Aliases
+#if ( -f $DISTRO),then
+#    if ( DISTRO=='opss') then
+#       source=".alias.d/opss"
+#   fi
+#    if ( DISTRO=='artix') then
+#       source=".alias.d/artix"
+#   fi
+#    if ( DISTRO=='void') then
+#       source=".alias.d/void"
+#   fi
+#    if ( DISTRO=='parrot') then
+#       source=".alias.d/parrot"
+#   fi
+#fi
+
 # Nya = Nya You All
 alias nya="update && upgradels"
 alias nyya="update && upgrade"
-# Remove unneeded dependecy
-alias zpparm=".."
-alias pacarm="yay -Rns $(yay -Qtdq)"
-alias xbparm=".."
-alias aptarm="sudo apt autoremove"
-# Remove old downloaded packages
-alias zppacl="sudo zypper clean"
-alias pacacl="yay -Sc"
-alias xbpacl=".."
-alias aptacl="sudo aptitude autoclean"
-# Others
-alias addgpg="gpg --keyserver pool.sks-keyservers.net --recv-keys"
-alias pacunlock="sudo rm /var/lib/pacman/db.lck"
 
 #---- 3.Scripts
 alias wttr="curl wttr.in"
 # ADD applications in bin folder to PATH
 
-#----- 4.Configuration files | dotfiles
-#alias todo="nvim ~/MEGA/$DISTRIBUTION_NAME"
-alias todo="nvim ~/MEGA/debian"
-# Shell
-#alias fconf="nvim fish"
-alias bconf="nvim ~/.bashrc"
-alias zfd="nvim ~/.bash"
+#----- 4.Configuration files | Dotfiles
+#---4.1 SHELL
+#alias ficonf="nvim ~/.fishrc"
+#alias fifd="nvim ~/.fish.d"
+alias baconf="nvim ~/.bashrc"
+alias bafd="nvim ~/.bash.d"
 alias zconf="nvim ~/.zshrc"
-alias zfd="nvim ~/.zsh"
+alias zfd="nvim ~/.zsh.d"
+#alias zshu="source ~/.zshrc"
 alias shkey="nvim ~/.alias"
-#alias zupd="source ~/.zshrc"
-#alias ohmyconf="nvim ~/.oh-my-zsh"
-# Terminal
+#alias ohmyzconf="nvim ~/.oh-my-zsh"
+#---4.2 TERMINAL
 alias cdki="cd ~/.config/kitty"
 alias kifd="nvim ~/.config/kitty"
 alias kiconf="nvim ~/.config/kitty/kitty.conf"
 alias kikey="nvim ~/.config/kitty/keybinds.conf"
-# Editor
+#---4.3 EDITOR
 alias nvconf="nvim ~/.config/nvim/init.vim"
-#alias nvfd="nvim ~/.conig/nvim"
-# Xresources
+alias nvfd="nvim ~/.config/nvim"
+#---4.4 XRESOURCES
 alias cdxr="cd ~/.Xresources.d"
 alias xrfd="nvim ~/.Xresources.d"
 alias xrconf="nvim ~/.Xresources"
 alias rxr="xrdb -merge ~/.Xresources"
-# Others
+#---4.5 OTHERS
+alias todo="nvim ~/MEGA/${DISTRO}"
 alias neoconf="nvim .config/neofetch/config.conf"
 alias nfch="neofetch --source "
 
-# WORKING DIRECTORIES
+#---- 5.Working Directories
+#---5.1 ORIGIN
 alias cdyo="cd ~/Yowls"
-# Origin
+alias nvyo="nvim ~/Yowls"
 alias omd="nvim ~/README.md"
 alias oig="nvim ~/.gitignore"
-alias ostart="nvim ~/.xsessionrc"
-alias cdgo="cd ~/git/dotfiles"
-# Plasma
-alias plstart="nvim ~/.config/autostart-scripts"
-alias plout="nvim ~/.config/plasma-workspace/shutdown"
-# PekWM
-alias cdpk="cd ~/.pekwm"
-alias pkfd="nvim ~/.pekwm"
-alias pkconf="nvim ~/.pekwm/config"
-alias pkkey="nvim ~/.pekwm/keys"
-alias pkstart="nvim ~/.pekwm/start"
-alias pkmd="nvim ~/.pekwm/README.md"
-# Herbstluft
-alias cdhl="cd ~/.config/herbstluftwm"
-alias hlfd="nvim ~/.config/herbstluftwm"
-alias hlconf="nvim ~/.config/herbstluftwm/autostart"
-alias hlvar="nvim ~/.config/herbstluftwm/vars.sh"
-alias hlstart="nvim ~/.config/herbstluftwm/startup.sh"
-alias hlmd="nvim ~/.config/herbstluftwm/README.md"
-# Qtile
-alias cdql="cd ~/.config/qtile"
-alias qlfd="nvim ~/.config/qtile"
-alias qlconf="nvim ~/.config/qtile/config.py"
-alias qlkey="nvim ~/.config/qtile/keybind.py"
-alias qlstart="nvim ~/.config/qitle/autostart.sh"
-alias qlmd="nvim ~/.config/qtile/README.md"
-# Polybar
-alias cdpb="cd ~/.config/polybar"
-alias pbfd="nvim ~/.config/polybar"
-alias pbmd="nvim ~/.config/polybar/README.md"
-
-# Scripts
+#---5.2 SCRIPTS
 alias cdsc="cd ~/scripts"
 alias scfd="nvim ~/scripts"
 alias scmd="nvim ~/scripts/README.md"
-
-# Startpages
+#---5.3 STARTPAGES
 alias cdst="cd ~/startpages"
 alias stfd="nvim ~/startpages"
 alias stmd="nvim ~/startpages/README.md"
-
-# Firefox
+#---5.4 FIREFOX
 alias cdf="cd ~/.mozilla/firefox/*.default-release/chrome/Yowls"
 alias ffd="nvim ~/.mozilla/firefox/*.default-release/chrome/Yowls"
 alias fcss="nvim ~/.mozilla/firefox/*.default-release/chrome/userChrome.css"
 alias fcnt="nvim ~/.mozilla/firefox/*.default-release/chrome/userContent.css"
 alias fmd="nvim ~/.mozilla/firefox/*.default-release/chrome/README.md"
 
-
-#---- 5.Aplications
+#---- 6.Aplications
 alias v="$EDITOR"
 # Trash-cli
 #alias x="trash-put"
@@ -235,6 +141,6 @@ function man() {
     man "$@"
 }
 
-#---- 6.Common errors
+#---- 7.Common errors
 alias vi=nvim
 alias vim=nvim

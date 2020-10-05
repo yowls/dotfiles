@@ -21,11 +21,15 @@
 !.zshrc
 !.zsh.d
 !.zsh.d/*
+# Load aliases
 !.alias
+!.alias.d
+!.alias.d/*
 # Bookmarks
 !.gtk-bookmarks
 !.config/gtk-3.0
 !.config/gtk-3.0/*
+# Xresources related
 !.Xresources
 !.Xresources.d
 !.Xresources.d/*

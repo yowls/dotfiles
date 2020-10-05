@@ -1,0 +1,76 @@
+#!/usr/bin/env bash
+#        ▄▄▄·▄▄▄ . ▐ ▄ .▄▄ · ▄• ▄▌.▄▄ · ▄▄▄ .
+# ▪     ▐█ ▄█▀▄.▀·•█▌▐█▐█ ▀. █▪██▌▐█ ▀. ▀▄.▀·
+#  ▄█▀▄  ██▀·▐▀▀▪▄▐█▐▐▌▄▀▀▀█▄█▌▐█▌▄▀▀▀█▄▐▀▀▪▄
+# ▐█▌.▐▌▐█▪·•▐█▄▄▌██▐█▌▐█▄▪▐█▐█▄█▌▐█▄▪▐█▐█▄▄▌
+#  ▀█▄▀▪.▀    ▀▀▀ ▀▀ █▪ ▀▀▀▀  ▀▀▀  ▀▀▀▀  ▀▀▀
+#---- 1.System
+# Grub
+alias grupdate="sudo grub2-mkconfig -o /boot/grub2/grub.cfg"
+
+#---- 2.Package manager
+#---2.1 SEARCH
+# Search in online repositories
+alias zppss="zypper se"
+# Search local packages
+alias zppssl="echo nosellama"
+# Search for package info
+alias zppinf="zypper info"
+# Search for package files
+alias zppfiles="rpm -ql"
+
+#---2.2 INSTALL
+# Istall from remote repository
+alias zppin="sudo zypper install"
+# Install from local package
+alias zppinl="sudo zypper in"
+# Download a package
+alias zppdw="zypper --download-only"
+
+#---2.3 REMOVE
+# Remove a package
+alias zpprm="sudo zypper remove"
+# Remove completly include dependencies
+#alias zpprmf=".."
+# Remove unneeded dependecy
+alias zppnd="zypper pa --unneeded"
+# Remove old downloaded packages
+alias zppcl="sudo zypper clean"
+
+#---2.4 UPDATE
+# Update repositories database
+alias zppu="sudo zypper refresh"
+# Upgrade packages
+alias zppug=".."
+# List avaible upgrades
+alias zppuls="zypper list-updates"
+
+#---- 3.Configuration files | dotfiles
+#---3.1 PLASMA
+alias plstart="nvim ~/.config/autostart-scripts"
+alias plout="nvim ~/.config/plasma-workspace/shutdown"
+#---3.2 PEKWM
+alias cdpk="cd ~/.pekwm"
+alias pkfd="nvim ~/.pekwm"
+alias pkconf="nvim ~/.pekwm/config"
+alias pkkey="nvim ~/.pekwm/keys"
+alias pkstart="nvim ~/.pekwm/start"
+alias pkmd="nvim ~/.pekwm/README.md"
+#---3.3 HERBSTLUFT
+alias cdhl="cd ~/.config/herbstluftwm"
+alias hlfd="nvim ~/.config/herbstluftwm"
+alias hlconf="nvim ~/.config/herbstluftwm/autostart"
+alias hlvar="nvim ~/.config/herbstluftwm/vars.sh"
+alias hlstart="nvim ~/.config/herbstluftwm/startup.sh"
+alias hlmd="nvim ~/.config/herbstluftwm/README.md"
+#---3.4 QTILE
+alias cdql="cd ~/.config/qtile"
+alias qlfd="nvim ~/.config/qtile"
+alias qlconf="nvim ~/.config/qtile/config.py"
+alias qlkey="nvim ~/.config/qtile/keybind.py"
+alias qlstart="nvim ~/.config/qitle/autostart.sh"
+alias qlmd="nvim ~/.config/qtile/README.md"
+#---3.5 POLYBAR
+alias cdpb="cd ~/.config/polybar"
+alias pbfd="nvim ~/.config/polybar"
+alias pbmd="nvim ~/.config/polybar/README.md"

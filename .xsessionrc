@@ -3,15 +3,17 @@
 
 # Autostart Applications On Every Login
 #light-locker &
-#redshift
+#redshift &
+
 # MPD start if no other user instance exists
 #[ ! -s ~/.config/mpd/pid ] && mpd
-#export MPD_HOST=$HOME/.config/mpd/socket
+#export MPD_HOST=${HOME}/.config/mpd/socket
 
 # Defaults
-export EDITOR='nvim'
+export DISTRO='parrot'
+export EDITOR="/usr/bin/nvim"
 export TERMINAL="kitty"
-export BROWSER="firefox"
+export BROWSER="/usr/bin/firefox"
 
 # QT
 export QT_QPA_PLATFORMTHEME="qt5ct"

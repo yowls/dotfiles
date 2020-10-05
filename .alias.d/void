@@ -1,0 +1,76 @@
+#!/usr/bin/env bash
+#  ▌ ▐·      ▪  ·▄▄▄▄
+# ▪█·█▌▪     ██ ██▪ ██
+# ▐█▐█• ▄█▀▄ ▐█·▐█· ▐█▌
+#  ███ ▐█▌.▐▌▐█▌██. ██
+# . ▀   ▀█▄▀▪▀▀▀▀▀▀▀▀•
+#---- 1.System
+# Grub
+alias grupdate="sudo grub-mkconfig -o /boot/grub/grub.cfg"
+
+#---- 2.Package manager
+#---2.1 SEARCH
+# Search in online repositories
+alias xbpss="xbps -Rs"
+# Search local packages
+alias xbpssl=".."
+# Search for package info
+alias xbpinf=".."
+# Search for package files
+alias xbpfiles=".."
+
+#---2.2 INSTALL
+# Istall from remote repository
+alias xbpin="sudo xbps -S"
+# Install from local package
+alias xbpinl=".."
+# Download a package
+alias xbpdw=".."
+
+#---2.3 REMOVE
+# Remove a package
+alias xbprm="sudo xbps -R"
+# Remove completly include dependencies
+alias xbprmf=".."
+# Remove unneeded dependecy
+alias xbpnd=".."
+# Remove old downloaded packages
+alias xbpcl=".."
+
+#---2.4 UPDATE
+# Update repositories database
+alias xbpu=".."
+# Upgrade packages
+alias xbpup=".."
+# List avaible upgrades
+alias xbpuls=""
+
+#---- 3.Configuration files | dotfiles
+#---3.1 XFCE
+alias xfstart="nvim ~/.config/autostart-scripts"
+alias xfout="nvim ~/.config/plasma-workspace/shutdown"
+#---3.2 PEKWM
+alias cdpk="cd ~/.pekwm"
+alias pkfd="nvim ~/.pekwm"
+alias pkconf="nvim ~/.pekwm/config"
+alias pkkey="nvim ~/.pekwm/keys"
+alias pkstart="nvim ~/.pekwm/start"
+alias pkmd="nvim ~/.pekwm/README.md"
+#---3.3 HERBSTLUFT
+alias cdhl="cd ~/.config/herbstluftwm"
+alias hlfd="nvim ~/.config/herbstluftwm"
+alias hlconf="nvim ~/.config/herbstluftwm/autostart"
+alias hlvar="nvim ~/.config/herbstluftwm/vars.sh"
+alias hlstart="nvim ~/.config/herbstluftwm/startup.sh"
+alias hlmd="nvim ~/.config/herbstluftwm/README.md"
+#---3.4 QTILE
+alias cdql="cd ~/.config/qtile"
+alias qlfd="nvim ~/.config/qtile"
+alias qlconf="nvim ~/.config/qtile/config.py"
+alias qlkey="nvim ~/.config/qtile/keybind.py"
+alias qlstart="nvim ~/.config/qitle/autostart.sh"
+alias qlmd="nvim ~/.config/qtile/README.md"
+#---3.5 POLYBAR
+alias cdpb="cd ~/.config/polybar"
+alias pbfd="nvim ~/.config/polybar"
+alias pbmd="nvim ~/.config/polybar/README.md"
