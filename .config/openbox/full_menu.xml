@@ -5,6 +5,12 @@
             <item label="Atom"> <action name="Execute">
                 <execute>env ATOM_DISABLE_SHELLING_OUT_FOR_ENVIRONMENT=false /usr/bin/atom</execute>
             </action> </item>
+            <item label="CMake"> <action name="Execute">
+                <execute>cmake-gui</execute>
+            </action> </item>
+            <item label="CMake curses GUI (ccmake)"> <action name="Execute">
+                <execute>qterminal -e ccmake</execute>
+            </action> </item>
             <item label="Electron"> <action name="Execute">
                 <execute>electron5</execute>
             </action> </item>
@@ -31,9 +37,6 @@
             </action> </item>
         </menu>
         <menu id="2" label="Editors">
-            <item label="AA Fire"> <action name="Execute">
-                <execute>qterminal -e aafire -driver slang</execute>
-            </action> </item>
             <item label="FeatherPad"> <action name="Execute">
                 <execute>featherpad</execute>
             </action> </item>
@@ -68,15 +71,6 @@
             <item label="GNU Image Manipulation Program"> <action name="Execute">
                 <execute>gimp-2.10</execute>
             </action> </item>
-            <item label="Gpick"> <action name="Execute">
-                <execute>gpick</execute>
-            </action> </item>
-            <item label="GraphicsMagick"> <action name="Execute">
-                <execute>gm display logo:</execute>
-            </action> </item>
-            <item label="Inkscape"> <action name="Execute">
-                <execute>inkscape</execute>
-            </action> </item>
             <item label="LXImage"> <action name="Execute">
                 <execute>lximage-qt</execute>
             </action> </item>
@@ -94,20 +88,8 @@
             <item label="ALSA mixer"> <action name="Execute">
                 <execute>qterminal -e alsamixer</execute>
             </action> </item>
-            <item label="Calf Plugin Pack for JACK"> <action name="Execute">
-                <execute>calfjackhost</execute>
-            </action> </item>
-            <item label="deemix"> <action name="Execute">
-                <execute>deemix-pyweb</execute>
-            </action> </item>
-            <item label="ncmpcpp"> <action name="Execute">
-                <execute>qterminal -e ncmpcpp</execute>
-            </action> </item>
             <item label="PulseAudio Volume Control"> <action name="Execute">
                 <execute>pavucontrol</execute>
-            </action> </item>
-            <item label="PulseEffects"> <action name="Execute">
-                <execute>pulseeffects</execute>
             </action> </item>
             <item label="Qt V4L2 test Utility"> <action name="Execute">
                 <execute>qv4l2</execute>
@@ -129,20 +111,11 @@
             <item label="Avahi VNC Server Browser"> <action name="Execute">
                 <execute>bvnc</execute>
             </action> </item>
-            <item label="Chromium"> <action name="Execute">
-                <execute>chromium</execute>
-            </action> </item>
-            <item label="Discord"> <action name="Execute">
-                <execute>discord</execute>
-            </action> </item>
             <item label="FireFox"> <action name="Execute">
                 <execute>firefox</execute>
             </action> </item>
             <item label="FTP"> <action name="Execute">
                 <execute>qterminal -e ftp</execute>
-            </action> </item>
-            <item label="Mail Reader"> <action name="Execute">
-                <execute>exo-open --launch MailReader</execute>
             </action> </item>
             <item label="MEGAsync"> <action name="Execute">
                 <execute>megasync</execute>
@@ -159,26 +132,17 @@
             <item label="Telnet"> <action name="Execute">
                 <execute>qterminal -e telnet</execute>
             </action> </item>
-            <item label="Transmission"> <action name="Execute">
-                <execute>transmission-gtk</execute>
-            </action> </item>
             <item label="W3m"> <action name="Execute">
                 <execute>qterminal -e w3m</execute>
             </action> </item>
             <item label="w3m"> <action name="Execute">
                 <execute>qterminal -e w3m /usr/share/doc/w3m/MANUAL.html</execute>
             </action> </item>
-            <item label="Web Browser"> <action name="Execute">
-                <execute>exo-open --launch WebBrowser</execute>
-            </action> </item>
             <item label="Zoom"> <action name="Execute">
                 <execute>zoom</execute>
             </action> </item>
         </menu>
         <menu id="3" label="Office">
-            <item label="Crow Translate"> <action name="Execute">
-                <execute>crow</execute>
-            </action> </item>
             <item label="Zathura"> <action name="Execute">
                 <execute>zathura</execute>
             </action> </item>
@@ -204,9 +168,6 @@
             </action> </item>
             <item label="rc"> <action name="Execute">
                 <execute>qterminal -e rc</execute>
-            </action> </item>
-            <item label="Thunar File Manager"> <action name="Execute">
-                <execute>thunar</execute>
             </action> </item>
             <item label="Tilda"> <action name="Execute">
                 <execute>tilda</execute>
@@ -263,17 +224,11 @@
                 <item label="File Associations"> <action name="Execute">
                     <execute>lxqt-config-file-associations</execute>
                 </action> </item>
-                <item label="File Manager Settings"> <action name="Execute">
-                    <execute>thunar-settings</execute>
-                </action> </item>
                 <item label="Grub Customizer"> <action name="Execute">
                     <execute>grub-customizer</execute>
                 </action> </item>
                 <item label="Keyboard and Mouse"> <action name="Execute">
                     <execute>lxqt-config-input</execute>
-                </action> </item>
-                <item label="Keyboard and Mouse"> <action name="Execute">
-                    <execute>lxinput</execute>
                 </action> </item>
                 <item label="Kvantum Manager"> <action name="Execute">
                     <execute>kvantummanager</execute>
@@ -290,23 +245,14 @@
                 <item label="Monitor settings"> <action name="Execute">
                     <execute>lxqt-config-monitor</execute>
                 </action> </item>
-                <item label="Monitor Settings"> <action name="Execute">
-                    <execute>lxrandr</execute>
-                </action> </item>
                 <item label="Openbox Settings"> <action name="Execute">
                     <execute>obconf-qt</execute>
                 </action> </item>
                 <item label="Power Management"> <action name="Execute">
                     <execute>lxqt-config-powermanagement</execute>
                 </action> </item>
-                <item label="Preferred Applications"> <action name="Execute">
-                    <execute>exo-preferred-applications</execute>
-                </action> </item>
                 <item label="Qt5 Settings"> <action name="Execute">
                     <execute>qt5ct</execute>
-                </action> </item>
-                <item label="Removable Drives and Media"> <action name="Execute">
-                    <execute>thunar-volman-settings</execute>
                 </action> </item>
                 <item label="Session Settings"> <action name="Execute">
                     <execute>lxqt-config-session</execute>
@@ -330,9 +276,6 @@
             <item label="Avahi Zeroconf Browser"> <action name="Execute">
                 <execute>avahi-discover</execute>
             </action> </item>
-            <item label="Bulk Rename"> <action name="Execute">
-                <execute>/usr/lib/Thunar/ThunarBulkRename</execute>
-            </action> </item>
             <item label="conky"> <action name="Execute">
                 <execute>conky --daemonize --pause=1</execute>
             </action> </item>
@@ -341,9 +284,6 @@
             </action> </item>
             <item label="GParted"> <action name="Execute">
                 <execute>gparted</execute>
-            </action> </item>
-            <item label="Hardware Locality lstopo"> <action name="Execute">
-                <execute>lstopo</execute>
             </action> </item>
             <item label="Hibernate"> <action name="Execute">
                 <execute>lxqt-leave --hibernate</execute>
@@ -380,9 +320,6 @@
             </action> </item>
         </menu>
         <menu id="38" label="Utilities">
-            <item label="About Xfce"> <action name="Execute">
-                <execute>xfce4-about</execute>
-            </action> </item>
             <item label="Activate ScreenSaver (Next)"> <action name="Execute">
                 <execute>xscreensaver-command -next</execute>
             </action> </item>
@@ -404,23 +341,8 @@
             <item label="Disable XScreenSaver"> <action name="Execute">
                 <execute>xscreensaver-command -exit</execute>
             </action> </item>
-            <item label="Docky"> <action name="Execute">
-                <execute>docky</execute>
-            </action> </item>
             <item label="Enable XScreenSaver"> <action name="Execute">
                 <execute>xscreensaver</execute>
-            </action> </item>
-            <item label="File Manager"> <action name="Execute">
-                <execute>exo-open --launch FileManager</execute>
-            </action> </item>
-            <item label="Font Manager"> <action name="Execute">
-                <execute>font-manager</execute>
-            </action> </item>
-            <item label="Font Viewer"> <action name="Execute">
-                <execute>/usr/libexec/font-manager/font-viewer</execute>
-            </action> </item>
-            <item label="Help"> <action name="Execute">
-                <execute>yelp</execute>
             </action> </item>
             <item label="Info"> <action name="Execute">
                 <execute>qterminal -e info</execute>
@@ -445,9 +367,6 @@
             </action> </item>
             <item label="ScreenSaver Preferences"> <action name="Execute">
                 <execute>xscreensaver-command -prefs</execute>
-            </action> </item>
-            <item label="Terminal Emulator"> <action name="Execute">
-                <execute>exo-open --launch TerminalEmulator</execute>
             </action> </item>
             <item label="Ulauncher"> <action name="Execute">
                 <execute>env GDK_BACKEND=x11 /usr/bin/ulauncher --hide-window</execute>

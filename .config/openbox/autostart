@@ -20,6 +20,8 @@ run picom --config $HOME/.config/picom/picom.conf
 run dunst
 #-- Status bar
 run tint2
+#-- Dock
+run docky
 #-- Widgets
 #conky -c $HOME/.config/conky/
 #-- Wallpaper
@@ -34,7 +36,6 @@ run redshift
 #run greenclip daemon
 run tilda
 #run urxvtd
-run docky
 #run pcmanfm --daemon-mode
 #run thunar --daemon
 #run megasync

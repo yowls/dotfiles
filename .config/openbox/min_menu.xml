@@ -1,0 +1,8 @@
+section "ob conf"
+> obconf-qt
+> lxappearance
+> lxinput
+> lxrandr
+> obkey
+> ob-autostart
+> obapps
