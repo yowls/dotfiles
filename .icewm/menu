@@ -1,0 +1,108 @@
+ menu "Applications" folder {
+  prog "Desktop Preferences" none pcmanfm --desktop-pref
+  prog "KDE Connect Settings" none kdeconnect-settings
+  prog "Qt5 Settings" none qt5ct
+  prog "Screensaver" none xscreensaver-demo
+ }
+ menu "Development" folder {
+  prog "VSCodium" none /usr/share/codium/codium --no-sandbox --unity-launch 
+ }
+ menu "Graphics" folder {
+  prog "GIMP" none gimp-2.10 
+  prog "Gpick" none gpick
+  prog "Gwenview" none gwenview 
+  prog "Inkscape" none inkscape 
+  prog "LibreOffice Draw" none libreoffice --draw 
+  prog "Okular" none okular 
+  prog "Skanlite" none skanlite -qwindowtitle Skanlite 
+ }
+ menu "Internet" folder {
+  prog "Akregator" none akregator 
+  prog "Chromium" none chromium 
+  prog "Crow Translate" none crow
+  prog "Discord" none /usr/bin/discord
+  prog "Firefox" none firefox 
+  prog "KDE Connect" none kdeconnect-app
+  prog "KDE Connect Indicator" none kdeconnect-indicator
+  prog "KDE Connect SMS" none kdeconnect-sms
+  prog "KMail" none kmail -qwindowtitle KMail 
+  prog "KTnef" none ktnef 
+  prog "Konversation" none konversation -qwindowtitle Konversation 
+  prog "MEGAsync" none megasync
+  prog "Microsoft Teams - Preview" none /usr/bin/flatpak run --branch=stable --arch=x86_64 --command=teams --file-forwarding com.microsoft.Teams @@u  @@
+  prog "Open on connected device via KDE Connect" none kdeconnect-handler --open 
+  prog "PIM Data Exporter" none pimdataexporter
+  prog "Sieve Editor" none sieveeditor
+  prog "Telegram Desktop" none telegram-desktop -- 
+  prog "TigerVNC Viewer" none /usr/bin/vncviewer-tigervnc
+  prog "Zoom" none /usr/bin/flatpak run --branch=stable --arch=x86_64 --command=zoom --file-forwarding us.zoom.Zoom @@u  @@
+ }
+ menu "Multimedia" folder {
+  prog "Clementine" none clementine 
+  prog "PulseAudio Volume Control" none pavucontrol
+  prog "VLC media player" none /usr/bin/vlc --started-from-file 
+  prog "projectM PulseAudio Visualization" none projectM-pulseaudio
+ }
+ menu "Office" folder {
+  prog "Crow Translate" none crow
+  prog "KAddressBook" none kaddressbook 
+  prog "KMail" none kmail -qwindowtitle KMail 
+  prog "KOrganizer" none korganizer 
+  prog "KTnef" none ktnef 
+  prog "Kontact" none kontact
+  prog "LibreOffice" none libreoffice 
+  prog "LibreOffice Base" none libreoffice --base 
+  prog "LibreOffice Calc" none libreoffice --calc 
+  prog "LibreOffice Draw" none libreoffice --draw 
+  prog "LibreOffice Impress" none libreoffice --impress 
+  prog "LibreOffice Writer" none libreoffice --writer 
+  prog "Okular" none okular 
+  prog "Sieve Editor" none sieveeditor
+ }
+ menu "System" folder {
+  prog "Ark" none ark 
+  prog "Discover" none plasma-discover 
+  prog "Dolphin" none dolphin 
+  prog "File Manager - Super User Mode" none xdg_menu_su dbus-launch dolphin -qwindowtitle "File Manager - Super User Mode" ""
+  prog "File Manager PCManFM" none pcmanfm 
+  prog "GParted" none /usr/bin/gparted 
+  prog "Htop" none xterm -e htop
+  prog "KSysGuard" none ksysguard 
+  prog "KWalletManager" none kwalletmanager5 
+  prog "Klipper" none klipper
+  prog "Konsole" none konsole
+  prog "MEGAsync" none megasync
+  prog "Terminal - Super User Mode" none konsole --profile "Root Shell"
+  prog "Tilda" none /usr/bin/tilda
+  prog "Wacom Tablet finder" none kde_wacom_tabletfinder
+  prog "XTerm" none xterm
+  prog "YaST" none /usr/bin/xdg-su -c /sbin/yast2
+  prog "YaST Software" none /usr/lib/YaST2/bin/sw_single_wrapper 
+  prog "kitty" none kitty
+  prog "rxvt-unicode" none urxvt
+  prog "rxvt-unicode-256colors" none urxvt-256color
+ }
+ menu "Utilities" folder {
+  prog "Albert" none albert
+  prog "Ark" none ark 
+  prog "Bitwarden" none /usr/bin/flatpak run --branch=stable --arch=x86_64 --command=bitwarden --file-forwarding com.bitwarden.desktop @@u  @@
+  prog "File Manager PCManFM" none pcmanfm 
+  prog "Flameshot" none flameshot
+  prog "KCalc" none kcalc
+  prog "KCharSelect" none kcharselect --qwindowtitle KCharSelect
+  prog "KMag" none kmag
+  prog "KMouseTool" none kmousetool -qwindowtitle KMouseTool
+  prog "KNotes" none knotes
+  prog "Kate" none kate -b 
+  prog "Kleopatra" none kleopatra
+  prog "Kompare" none kompare -o 
+  prog "Kvantum Manager" none kvantummanager
+  prog "Latte" none /usr/bin/latte-dock
+  prog "Neovim" none xterm -e nvim 
+  prog "Spectacle" none /usr/bin/spectacle
+  prog "Tilda" none /usr/bin/tilda
+  prog "VSCodium" none /usr/share/codium/codium --no-sandbox --unity-launch 
+  prog "Wacom Tablet finder" none kde_wacom_tabletfinder
+  prog "picom" none picom --dbus
+ }
+ prog "KDE System Settings" none systemsettings5

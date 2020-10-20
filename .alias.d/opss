@@ -49,7 +49,7 @@ alias zppuls="zypper list-updates"
 #---3.1 PLASMA
 alias plstart="nvim ~/.config/autostart-scripts"
 alias plout="nvim ~/.config/plasma-workspace/shutdown"
-#---3.2 PEKWM
+#---3.2 ICEWM
 alias cdpk="cd ~/.pekwm"
 alias pkfd="nvim ~/.pekwm"
 alias pkconf="nvim ~/.pekwm/config"
@@ -74,3 +74,6 @@ alias qlmd="nvim ~/.config/qtile/README.md"
 alias cdpb="cd ~/.config/polybar"
 alias pbfd="nvim ~/.config/polybar"
 alias pbmd="nvim ~/.config/polybar/README.md"
+
+#---- 4.Applications
+alias vs="vscodium"

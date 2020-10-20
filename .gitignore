@@ -83,14 +83,15 @@
 # Zathura
 !.config/zathura
 !.config/zathura/*
-
+# Others
+!.inputrc
 # Random folder
 !.lists
 !.lists/*
 !.lists/**
 
 # Window Manager (do not include others config files)
-# Plasma
+#-- Plasma
 !.kde
 !.kde/*
 !.kde/**
@@ -101,21 +102,21 @@
 !.config/plasma-workspace
 !.config/plasma-workspace/shutdown
 !.config/plasma-workspace/shutdown/*
-# XFCE
+#-- XFCE
 !.xfce4
 !.xfce4/*
 !.xfce4/**
-# PekWM
-!.pekwm
-!.pekwm/*
-!.pekwm/**
-.pekwm/0conf
-# Openbox
+#--- ICEWM
+!.icewm
+!.icewm/*
+!.icewm/**
+.icewm/0conf
+#--- OPENBOX
 !.config/openbox
 !.config/openbox/*
 !.config/openbox/**
 .config/openbox/OThemes
-# BerryWM
+#--- BERRY
 
 # Tint2
 !.config/tint2
