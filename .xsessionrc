@@ -1,13 +1,19 @@
-# Set keyboard layout
+#-- Set keyboard layout
 #setxkbmap latam &
 
-# Autostart Applications On Every Login
-#light-locker &
+#-- Autostart Applications On Every Login
 #redshift &
+#-- Lockscreen
+#light-locker &
+#xscreensaver -nosplash &
+#xautolock -detectsleep -time 15 -locker "i3lock -n -i /home/user/lockscreen.png" -killtime 20 -killer "systemctl suspend"
 
 # MPD start if no other user instance exists
 #[ ! -s ~/.config/mpd/pid ] && mpd
 #export MPD_HOST=${HOME}/.config/mpd/socket
+
+#-- Reload Xresources
+#xrdb ~/.Xresources
 
 # Defaults
 export DISTRO='parrot'
@@ -19,4 +25,4 @@ export BROWSER="/usr/bin/firefox"
 export QT_QPA_PLATFORMTHEME="qt5ct"
 
 # Custom PATH
-export PATH="${PATH}:${HOME}/.local/bin/:${HOME}/bin"
+export PATH="${PATH}:${HOME}/.local/bin/:${HOME}/bin" #:{HOME}/.cargo/bin"

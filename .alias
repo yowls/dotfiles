@@ -10,35 +10,37 @@
 # ╚═╝  ╚═╝╚══════╝╚═╝╚═╝  ╚═╝╚══════╝
 #---- 1.System
 alias suconf="sudo EDITOR=nvim visudo"
-# Grub
 alias gruconf="sudo nvim /etc/deault/grub"
 # Processes
-#alias p="ps aux | grep"
 alias p="ps -el | grep"
 alias k="pkill"
-alias ka"killall"
+alias ka="killall"
 # Others
 alias ram="free -h --mega"
-alias grep="grep --color=auto"
 alias hosts="sudo nvim /etc/hosts"
 alias rswap="sudo swapoff -a && sudo swapon -a"
 alias lsbok="lsblk -o name,mountpoint,label,size,uuid"
+# Put Colors
+alias grep="grep --color=auto"
+function man() {
+    env \
+    LESS_TERMCAP_mb=$'\e[01;31m'	\
+    LESS_TERMCAP_md=$'\e[01;31m'	\
+    LESS_TERMCAP_me=$'\e[0m'		\
+    LESS_TERMCAP_se=$'\e[0m'		\
+    LESS_TERMCAP_so=$'\e[01;44;33m'	\
+    LESS_TERMCAP_ue=$'\e[0m'		\
+    LESS_TERMCAP_us=$'\e[01;32m'	\
+    man "$@"
+}
 
 #---- 2.Distro Aliases
-#if ( -f $DISTRO),then
-#    if ( DISTRO=='opss') then
-#       source=".alias.d/opss"
-#   fi
-#    if ( DISTRO=='artix') then
-#       source=".alias.d/artix"
-#   fi
-#    if ( DISTRO=='void') then
-#       source=".alias.d/void"
-#   fi
-#    if ( DISTRO=='parrot') then
-#       source=".alias.d/parrot"
-#   fi
-#fi
+if [ -n $DISTRO ]; then
+	[[ $DISTRO = 'opss' ]] && source "${HOME}/.alias.d/opss"
+	[[ $DISTRO = 'artix' ]] && source "${HOME}/.alias.d/artix"
+	[[ $DISTRO = 'void' ]] && source "${HOME}/.alias.d/void"
+	[[ $DISTRO = 'parrot' ]] && source "${HOME}/.alias.d/parrot"
+fi
 
 # Nya = Nya You All
 alias nya="update && upgradels"
@@ -92,7 +94,7 @@ alias cdst="cd ~/startpages"
 alias stfd="nvim ~/startpages"
 alias stmd="nvim ~/startpages/README.md"
 #---5.4 FIREFOX
-alias cdf="cd ~/.mozilla/firefox/*.default-release/chrome/Yowls"
+alias cdf="cd ~/.mozilla/firefox/*.default-release/chrome"
 alias ffd="nvim ~/.mozilla/firefox/*.default-release/chrome/Yowls"
 alias fcss="nvim ~/.mozilla/firefox/*.default-release/chrome/userChrome.css"
 alias fcnt="nvim ~/.mozilla/firefox/*.default-release/chrome/userContent.css"
@@ -115,12 +117,12 @@ alias lx="lsd --group-dirs first"
 alias lxa="lsd --group-dirs first -lhA"
 alias lxt="lsd --group-dirs first --tree"
 # Youtube-dl
-alias audio="youtube-dl -o '$HOME/Desktop/%(title)s.%(ext)s' -f bestaudio -x --audio-format best --audio-quality 0 -i"
-alias mp3="youtube-dl -o '$HOME/Desktop/%(title)s.%(ext)s' -x --audio-format mp3 --audio-quality 0 -i"
-alias mp3t="youtube-dl -o '$HOME/Desktop/%(title)s.%(ext)s' -x --audio-format mp3 --audio-quality 0 --write-thumbnail -i"
-alias video="youtube-dl -o '$HOME/Desktop/%(title)s.%(ext)s' -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 -i"
+alias audio="youtube-dl -o '${HOME}/Desktop/%(title)s.%(ext)s' -f bestaudio -x --audio-format best --audio-quality 0 -i"
+alias mp3="youtube-dl -o '${HOME}/Desktop/%(title)s.%(ext)s' -x --audio-format mp3 --audio-quality 0 -i"
+alias mp3t="youtube-dl -o '${HOME}/Desktop/%(title)s.%(ext)s' -x --audio-format mp3 --audio-quality 0 --write-thumbnail -i"
+alias video="youtube-dl -o '${HOME}/Desktop/%(title)s.%(ext)s' -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 -i"
 # HBlock (hosts)
-alias uhblock="hblock --backup $HOME/Desktop --sources $HOME/MEGA/hblock/hosts --whitelist $HOME/MEGA/hblock/whitelist.list --blacklist $HOME/MEGA/hblock/blacklist.list"
+alias uhblock="hblock --backup ${HOME}/Desktop --sources ${HOME}/MEGA/hblock/hosts --whitelist ${HOME}/MEGA/hblock/whitelist.list --blacklist ${HOME}/MEGA/hblock/blacklist.list"
 # Git
 #https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git#aliases
 alias g="git"
@@ -128,18 +130,6 @@ alias glogg="git log --all --graph --decorate --oneline"
 alias gig="nvim .gitignore"
 alias rmd="nvim README.md"
 alias cdg="cd ~/git"
-# Upgrade Man-page with colors
-function man() {
-    env \
-    LESS_TERMCAP_mb=$'\e[01;31m'	\
-    LESS_TERMCAP_md=$'\e[01;31m'	\
-    LESS_TERMCAP_me=$'\e[0m'		\
-    LESS_TERMCAP_se=$'\e[0m'		\
-    LESS_TERMCAP_so=$'\e[01;44;33m'	\
-    LESS_TERMCAP_ue=$'\e[0m'		\
-    LESS_TERMCAP_us=$'\e[01;32m'	\
-    man "$@"
-}
 
 #---- 7.Common errors
 alias vi=nvim
