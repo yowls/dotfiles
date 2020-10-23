@@ -14,7 +14,7 @@ test -z "$PROFILEREAD" && . /etc/profile || true
 #export LANG=es_ES.UTF-8	# uncomment this line for Spanish output
 
 # Set variables
-export DISTRO='opss'
+#export DISTRO='opss'
 export EDITOR="/usr/bin/nvim"
 export TERMINAL="kitty"
 export BROWSER="/usr/bin/firefox"
@@ -23,7 +23,7 @@ export BROWSER="/usr/bin/firefox"
 export QT_QPA_PLATFORMTHEME="qt5ct"
 
 # Custom PATH
-#export PATH="${PATH}:${HOME}/.local/bin/:${HOME}/bin"
+#export PATH="${PATH}:${HOME}/.local/bin/:${HOME}/bin" #:${HOME}/.cargo/bin"
 
 # For some news readers it makes sense to specify the NEWSSERVER variable here
 #export NEWSSERVER=your.news.server

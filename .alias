@@ -48,7 +48,6 @@ alias nyya="update && upgrade"
 
 #---- 3.Scripts
 alias wttr="curl wttr.in"
-# ADD applications in bin folder to PATH
 
 #----- 4.Configuration files | Dotfiles
 #---4.1 SHELL
@@ -95,7 +94,7 @@ alias stfd="nvim ~/startpages"
 alias stmd="nvim ~/startpages/README.md"
 #---5.4 FIREFOX
 alias cdf="cd ~/.mozilla/firefox/*.default-release/chrome"
-alias ffd="nvim ~/.mozilla/firefox/*.default-release/chrome/Yowls"
+alias ffd="nvim ~/.mozilla/firefox/*.default-release/chrome/"
 alias fcss="nvim ~/.mozilla/firefox/*.default-release/chrome/userChrome.css"
 alias fcnt="nvim ~/.mozilla/firefox/*.default-release/chrome/userContent.css"
 alias fmd="nvim ~/.mozilla/firefox/*.default-release/chrome/README.md"
@@ -123,7 +122,12 @@ alias mp3t="youtube-dl -o '${HOME}/Desktop/%(title)s.%(ext)s' -x --audio-format 
 alias video="youtube-dl -o '${HOME}/Desktop/%(title)s.%(ext)s' -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 -i"
 # HBlock (hosts)
 alias uhblock="hblock --backup ${HOME}/Desktop --sources ${HOME}/MEGA/hblock/hosts --whitelist ${HOME}/MEGA/hblock/whitelist.list --blacklist ${HOME}/MEGA/hblock/blacklist.list"
-# Git
+# WPS Office
+alias word="env GTK2_RC_FILES=/usr/share/themes/Breeze/gtk-2.0/gtkrc wps -style gtk+ &"
+alias ppt="env GTK2_RC_FILES=/usr/share/themes/Breeze/gtk-2.0/gtkrc wpp -style gtk+ &"
+alias excel="env GTK2_RC_FILES=/usr/share/themes/Breeze/gtk-2.0/gtkrc et -style gtk+ &"
+alias pdf="env GTK2_RC_FILES=/usr/share/themes/Breeze/gtk-2.0/gtkrc wpspdf -style gtk+ &"
+# GIT
 #https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git#aliases
 alias g="git"
 alias glogg="git log --all --graph --decorate --oneline"

@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # you can use ~/.xprofile to autostart on login
+export QT_QPA_PLATFORMTHEME="qt5ct"
 
 # If it´s not running, Run it
 function run { if ! pgrep $1 ; then $@&; fi;}
@@ -10,11 +11,11 @@ function run { if ! pgrep $1 ; then $@&; fi;}
 run /usr/libexec/polkit-gnome-authentication-agent-1
 run /usr/lib64/libexec/kf5/pam_kwallet_init
 #-- Compositor
-run picom #--config $HOME/.config/picom/picom.conf
+run picom #--config ${HOME}/.config/picom/picom.conf
 #-- Notification
-run dunst
+run dunst #-config "${HOME}/.config/dunst/dunstrc.conf"
 #-- Status bar
-#run polybar -c "$HOME/.config/polybar/$Ptheme/config.ini" main
+#run polybar -c "${HOME}/.config/polybar/$Ptheme/config.ini" main
 #-- Applets
 sleep 1 &&
 run qlipper	#Clipboard
@@ -27,7 +28,7 @@ run lxqt-powermanagement	#Power manager
 #-- Dock
 run latte
 #-- Widgets
-#conky -c $HOME/.config/conky/
+#conky -c "${HOME}/.config/conky/"
 #-- Wallpaper
 ~/.fehbg	#Automatic
 #feh --bg-fill '/home/aix/MEGA/Wallpaper/General-Art/66398581_p0.jpg' #Static
