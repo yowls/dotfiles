@@ -81,9 +81,9 @@ alias nfch="neofetch --source "
 #---- 5.Working Directories
 #---5.1 ORIGIN
 alias cdyo="cd ~/Yowls"
-alias nvyo="nvim ~/Yowls"
-alias omd="nvim ~/README.md"
-alias oig="nvim ~/.gitignore"
+alias yofd="nvim ~/Yowls"
+alias yomd="nvim ~/Yowls/README.md"
+alias yoig="nvim ~/Yowls/.gitignore"
 #---5.2 SCRIPTS
 alias cdsc="cd ~/scripts"
 alias scfd="nvim ~/scripts"

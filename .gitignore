@@ -76,6 +76,7 @@
 # Kitty
 !.config/kitty
 !.config/kitty/*
+!.config/kitty/**
 # Neovim
 !.vimrc
 !.config/nvim

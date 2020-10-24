@@ -17,15 +17,15 @@ case $- in
 esac
 
 # Import sources
-source "$HOME/.alias"
-source "$HOME/.bash.d/theme1"
+source "${HOME}/.alias"
+source "${HOME}/.bash.d/theme1"
 
 # Export var
-export FETCH="$HOME/MEGA/fetch"
+export FETCH="${HOME}/MEGA/fetch"
 
 # HISTORY
 #Create a bash_history file is doesnt exist
-[ ! -f "$HOME/.cache/bash_history" ] && touch ~/.cache/bash_history
+[ ! -f "${HOME}/.cache/bash_history" ] && touch ~/.cache/bash_history
 HISTSIZE=1000
 HISTFILESIZE=2000
 HISTFILE=~/.cache/bash_history
