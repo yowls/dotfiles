@@ -2,12 +2,7 @@
 # you can use ~/.xprofile to autostart on login
 
 # If it´s not running, Run it
-function run {
-	if ! pgrep $1 ;
-	then
-		$@&
-	fi
-}
+run() { [ ! $(pgrep $1) ] && $@& }
 
 # If you want to use XFCE config tools
 #run xfce-mcs-manager
@@ -15,11 +10,19 @@ function run {
 run lxqt-policykit-agent
 #run /usr/lib64/libexec/kf5/pam_kwallet_init
 #-- Compositor
+#run picom
 run picom --config $HOME/.config/picom/picom.conf
 #-- Notification
 run dunst
+#run dunst #-config "${HOME}/.config/dunst/dunstrc.conf"
 #-- Status bar
 run tint2
+#run tint2 -c ${HOME}/.config/tint2/config
+# Applets
+run qlipper			#Clipboard
+run nm-applet			#Network
+run pa-applet			#Volume
+run lxqt-powermanagement	#Power manager
 #-- Dock
 run docky
 #-- Widgets
@@ -27,9 +30,10 @@ run docky
 #-- Wallpaper
 ~/.fehbg	#Automatic
 #feh --bg-fill '/home/aix/MEGA/Wallpaper/General-Art/66398581_p0.jpg' #Static
-#-- Reload Xresources
-#xrdb ~/.Xresources
 
+#-- Scripts
+#run vitas
+#run wal -R
 
 #-- Demons
 run redshift
@@ -38,19 +42,3 @@ run tilda
 #run urxvtd
 #run pcmanfm --daemon-mode
 #run thunar --daemon
-#run megasync
-
-#-- Applications
-#run kitty
-#run firefox
-#run telegram-desktop
-
-#-- Scripts
-#run vitas
-#run wal -R
-
-# Applets
-run qlipper	#Clipboard
-run nm-applet	#Network
-run pa-applet	#Volume
-run lxqt-powermanagement	#Power manager

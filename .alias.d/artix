@@ -51,28 +51,28 @@ alias pacunlock="sudo rm /var/lib/pacman/db.lck"
 
 #---- 3.Configuration files | dotfiles
 #---3.1 LXQT
-alias lxstart="nvim ~/.config/autostart-scripts"
+alias lxstar="nvim ~/.config/autostart-scripts"
 alias lxout="nvim ~/.config/plasma-workspace/shutdown"
 #---3.2 OPENBOX
 alias cdop="cd ~/.config/openbox"
 alias opfd="nvim ~/.config/openbox"
 alias opconf="nvim ~/.config/openbox/config"
 alias opkey="nvim ~/.config/openbox/keys"
-alias opstart="nvim ~/.config/openbox/start"
+alias opstar="nvim ~/.config/openbox/start"
 alias opmd="nvim ~/.config/openbox/README.md"
 #---3.3 STUMPWM
-alias cdst="cd ~/.config/stumpwm"
-alias stfd="nvim ~/.config/stumpwm"
-alias stconf="nvim ~/.config/stumpwm/autostart"
-alias stvar="nvim ~/.config/stumpwm/vars.sh"
-alias ststart="nvim ~/.config/stumpwm/startup.sh"
-alias stmd="nvim ~/.config/stumpwm/README.md"
+alias cdsp="cd ~/.config/stumpwm"
+alias spfd="nvim ~/.config/stumpwm"
+alias spconf="nvim ~/.config/stumpwm/autostart"
+alias spkey="nvim ~/.config/stumpwm/keybind.sh"
+alias spstar="nvim ~/.config/stumpwm/startup.sh"
+alias spmd="nvim ~/.config/stumpwm/README.md"
 #---3.4 AWESOME
 alias cdaw="cd ~/.config/awesome"
 alias awfd="nvim ~/.config/awesome"
 alias awconf="nvim ~/.config/awesome/config.py"
 alias awkey="nvim ~/.config/awesome/keybind.py"
-alias awstart="nvim ~/.config/awesome/autostart.sh"
+alias awstar="nvim ~/.config/awesome/autostart.sh"
 alias awmd="nvim ~/.config/awesome/README.md"
 #---3.5 TINT2
 alias cdtt="cd ~/.config/tint2"
