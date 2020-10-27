@@ -13,7 +13,7 @@ alias grupdate="sudo grub2-mkconfig -o /boot/grub2/grub.cfg"
 # Search in online repositories
 alias zppss="zypper se"
 # Search local packages
-alias zppssl="echo nosellama"
+#alias zppssl=".."
 # Search for package info
 alias zppinf="zypper info"
 # Search for package files
@@ -41,7 +41,9 @@ alias zppcl="sudo zypper clean"
 # Update repositories database
 alias zppu="sudo zypper refresh"
 # Upgrade packages
-alias zppug=".."
+alias zppug="sudo zypper up"
+# Distro Upgrade
+alias zppugg="sudo zypper dup"
 # List avaible upgrades
 alias zppuls="zypper list-updates"
 

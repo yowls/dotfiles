@@ -24,6 +24,8 @@
 export EDITOR="/usr/bin/nvim"
 export TERMINAL="kitty"
 export BROWSER="/usr/bin/firefox"
+#-- QT
+#export QT_QPA_PLATFORMTHEME="qt5ct"
 #-- Custom PATH
 export PATH="${PATH}:${HOME}/.local/bin/:${HOME}/bin" #:${HOME}/.cargo/bin"
 
