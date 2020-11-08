@@ -20,14 +20,14 @@
 #-- Reload Xresources
 #xrdb ~/.Xresources
 #-- Defaults
-#export DISTRO='opss'
+#export DISTRO='osuse'
 export EDITOR="/usr/bin/nvim"
 export TERMINAL="kitty"
 export BROWSER="/usr/bin/firefox"
 #-- QT
 #export QT_QPA_PLATFORMTHEME="qt5ct"
 #-- Custom PATH
-export PATH="${PATH}:${HOME}/.local/bin/:${HOME}/bin" #:${HOME}/.cargo/bin"
+export PATH="${PATH}:${HOME}/.local/bin/:${HOME}/bin" #:${HOME}/.emacs.d/bin:${HOME}/.cargo/bin"
 
 
 # In case everything goes wrong, we at least fall back to a plain xterm

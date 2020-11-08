@@ -36,7 +36,7 @@ function man() {
 
 #---- 2.Distro Aliases
 if [ -n $DISTRO ]; then
-	[[ $DISTRO = 'opss' ]] && source "${HOME}/.alias.d/opss"
+	[[ $DISTRO = 'osuse' ]] && source "${HOME}/.alias.d/osuse"
 	[[ $DISTRO = 'artix' ]] && source "${HOME}/.alias.d/artix"
 	[[ $DISTRO = 'void' ]] && source "${HOME}/.alias.d/void"
 	[[ $DISTRO = 'parrot' ]] && source "${HOME}/.alias.d/parrot"
@@ -74,7 +74,7 @@ alias xrfd="nvim ~/.Xresources.d"
 alias xrconf="nvim ~/.Xresources"
 alias rxr="xrdb -merge ~/.Xresources"
 #---4.5 OTHERS
-alias todo="nvim ~/MEGA/${DISTRO}"
+alias todo="nvim ~/MEGA/${DISTRO}.org"
 alias neoconf="nvim ~/.config/neofetch/config.conf"
 alias nfch="neofetch --source "
 
