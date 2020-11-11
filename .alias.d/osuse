@@ -40,12 +40,15 @@ alias zppcl="sudo zypper clean"
 #---2.4 UPDATE
 # Update repositories database
 alias zppu="sudo zypper refresh"
+#alias update="sudo zypper refresh"
 # Upgrade packages
 alias zppug="sudo zypper up"
+#alias upgrade="sudo zypper up"
 # Distro Upgrade
 alias zppugg="sudo zypper dup"
 # List avaible upgrades
 alias zppuls="zypper list-updates"
+#alias upgradels="zypper list-updates"
 
 #---- 3.Configuration files | dotfiles
 #---3.1 PLASMA

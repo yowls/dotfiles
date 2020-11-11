@@ -43,8 +43,8 @@ if [ -n $DISTRO ]; then
 fi
 
 # Nya = Nya You All
-alias nya="update && upgradels"
-alias nyya="update && upgrade"
+#alias nya="update && upgradels"
+#alias nyya="update && upgrade"
 
 #---- 3.Scripts
 alias wttr="curl wttr.in"

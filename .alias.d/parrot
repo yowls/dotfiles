@@ -41,37 +41,43 @@ alias aptcl="sudo aptitude autoclean"
 #---2.4 UPDATE
 # Update repositories database
 alias aptu="sudo aptitude update"
+alias update="sudo aptitude update"
 # Upgrade packages
 alias aptug="sudo aptitude upgrade"
+alias upgrade="sudo aptitude upgrade"
 # List avaible upgrades
 alias aptuls="apt list --upgradable -a"
+alias upgradels="apt list --upgradable -a"
 
 #---- 3.Configuration files | dotfiles
 #---3.1 MATE
 alias mtstart="nvim ~/.config/autostart-scripts"
 alias mtout="nvim ~/.config/plasma-workspace/shutdown"
 #---3.2 BERRY
-alias cdpk="cd ~/.pekwm"
-alias pkfd="nvim ~/.pekwm"
-alias pkconf="nvim ~/.pekwm/config"
-alias pkkey="nvim ~/.pekwm/keys"
-alias pkstart="nvim ~/.pekwm/start"
-alias pkmd="nvim ~/.pekwm/README.md"
-#---3.3 HERBSTLUFT
-alias cdhl="cd ~/.config/herbstluftwm"
-alias hlfd="nvim ~/.config/herbstluftwm"
-alias hlconf="nvim ~/.config/herbstluftwm/autostart"
-alias hlvar="nvim ~/.config/herbstluftwm/vars.sh"
-alias hlstart="nvim ~/.config/herbstluftwm/startup.sh"
-alias hlmd="nvim ~/.config/herbstluftwm/README.md"
-#---3.4 QTILE
-alias cdql="cd ~/.config/qtile"
-alias qlfd="nvim ~/.config/qtile"
-alias qlconf="nvim ~/.config/qtile/config.py"
-alias qlkey="nvim ~/.config/qtile/keybind.py"
-alias qlstart="nvim ~/.config/qitle/autostart.sh"
-alias qlmd="nvim ~/.config/qtile/README.md"
+alias cdbr="cd ~/.config/berry"
+alias brfd="nvim ~/.config/berry"
+alias brconf="nvim ~/.config/berry/config"
+alias brstart="nvim ~/.config/berry/autostart"
+alias brkey="nvim ~/.config/berry/keybind"
+alias brmd="nvim ~/.config/berry/README.md"
+#---3.3 BSPWM
+alias cdbp="cd ~/.config/bspwm"
+alias bpfd="nvim ~/.config/bspwm"
+alias bpconf="nvim ~/.config/bspwm/bspwmrc"
+alias bpstart="nvim ~/.config/bspwm/autostart.sh"
+alias bpkey="nvim ~/.config/bspwm/keybind.sh"
+alias bpmd="nvim ~/.config/bspwm/README.md"
+#---3.4 SPECTRWM
+alias cdsp="cd ~/.config/spectrwm"
+alias spfd="nvim ~/.config/spectrwm"
+alias spconf="nvim ~/.config/spectrwm/spectrwm.conf"
+alias spstart="nvim ~/.config/spectrwm/autostart.conf"
+alias spkey="nvim ~/.config/spectrwm/keybind.conf"
+alias spmd="nvim ~/.config/spectrwm/README.md"
 #---3.5 POLYBAR
 alias cdpb="cd ~/.config/polybar"
 alias pbfd="nvim ~/.config/polybar"
 alias pbmd="nvim ~/.config/polybar/README.md"
+
+#---- 4.Applications
+alias vs="codium"

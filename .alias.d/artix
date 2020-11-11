@@ -40,10 +40,13 @@ alias paccl="yay -Scc"
 #---2.4 UPDATE
 # Update repositories database
 alias pacu="yay -Sy"
+#alias update="yay -Sy"
 # Upgrade packages
 alias pacug="yay -Su"
+#alias upgrade="yay -Su"
 # List avaible upgrades
 alias paculs="yay -Qu"
+#alias upgradels="yay -Qu"
 
 #---2.5 OTHERS
 alias addgpg="gpg --keyserver pool.sks-keyservers.net --recv-keys"
