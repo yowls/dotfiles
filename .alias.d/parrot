@@ -44,7 +44,7 @@ alias aptu="sudo aptitude update"
 alias update="sudo aptitude update"
 # Upgrade packages
 alias aptug="sudo aptitude upgrade"
-alias upgrade="sudo aptitude upgrade"
+alias upgrade="sudo aptitude upgrade; flatpak update"
 # List avaible upgrades
 alias aptuls="apt list --upgradable -a"
 alias upgradels="apt list --upgradable -a"
@@ -56,9 +56,9 @@ alias mtout="nvim ~/.config/plasma-workspace/shutdown"
 #---3.2 BERRY
 alias cdbr="cd ~/.config/berry"
 alias brfd="nvim ~/.config/berry"
-alias brconf="nvim ~/.config/berry/config"
-alias brstart="nvim ~/.config/berry/autostart"
-alias brkey="nvim ~/.config/berry/keybind"
+alias brconf="nvim ~/.config/berry/autostart"
+alias brstart="nvim ~/.config/berry/startup.sh"
+alias brkey="nvim ~/.config/berry/keybind.sh"
 alias brmd="nvim ~/.config/berry/README.md"
 #---3.3 BSPWM
 alias cdbp="cd ~/.config/bspwm"

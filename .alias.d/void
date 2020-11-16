@@ -11,66 +11,72 @@ alias grupdate="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 #---- 2.Package manager
 #---2.1 SEARCH
 # Search in online repositories
-alias xbpss="xbps -Rs"
+alias xbpss="xbps-query -Rs"
 # Search local packages
-alias xbpssl=".."
+alias xbpssl="xbps-query -s"
 # Search for package info
-alias xbpinf=".."
+alias xbpinf="xbps-query -S"
 # Search for package files
-alias xbpfiles=".."
+alias xbpfiles="xbps-query -f"
 
 #---2.2 INSTALL
 # Istall from remote repository
-alias xbpin="sudo xbps -S"
+alias xbpin="sudo xbps-install -S"
 # Install from local package
-alias xbpinl=".."
+alias xbpinl="sudo xbps-install"
 # Download a package
-alias xbpdw=".."
+alias xbpdw="sudo xbps-install -D"
 
 #---2.3 REMOVE
 # Remove a package
-alias xbprm="sudo xbps -R"
+alias xbprm="sudo xbps-remove"
 # Remove completly include dependencies
-alias xbprmf=".."
+alias xbprmf="sudo xbps-remove -Rf"
 # Remove unneeded dependecy
-alias xbpnd=".."
+alias xbpnd="sudo xbps-remove -o"
 # Remove old downloaded packages
-alias xbpcl=".."
+alias xbpcl="sudo xbps-remove -O"
 
 #---2.4 UPDATE
 # Update repositories database
-alias xbpu=".."
+alias xbpu="sudo xbps-install -Sy"
+alias update="sudo xbps-install -Sy"
 # Upgrade packages
-alias xbpup=".."
+alias xbpug="sudo xbps-install -Suv"
+alias upgrade="sudo xbps-install -Suv; flatpak update"
 # List avaible upgrades
-alias xbpuls=""
+alias xbpuls="xbps-install -Suvn"
+alias upgradels="xbps-install -Suvn"
 
 #---- 3.Configuration files | dotfiles
 #---3.1 XFCE
 alias xfstart="nvim ~/.config/autostart-scripts"
 alias xfout="nvim ~/.config/plasma-workspace/shutdown"
-#---3.2 PEKWM
-alias cdpk="cd ~/.pekwm"
-alias pkfd="nvim ~/.pekwm"
-alias pkconf="nvim ~/.pekwm/config"
-alias pkkey="nvim ~/.pekwm/keys"
-alias pkstart="nvim ~/.pekwm/start"
-alias pkmd="nvim ~/.pekwm/README.md"
-#---3.3 HERBSTLUFT
-alias cdhl="cd ~/.config/herbstluftwm"
-alias hlfd="nvim ~/.config/herbstluftwm"
-alias hlconf="nvim ~/.config/herbstluftwm/autostart"
-alias hlvar="nvim ~/.config/herbstluftwm/vars.sh"
-alias hlstart="nvim ~/.config/herbstluftwm/startup.sh"
-alias hlmd="nvim ~/.config/herbstluftwm/README.md"
-#---3.4 QTILE
-alias cdql="cd ~/.config/qtile"
-alias qlfd="nvim ~/.config/qtile"
-alias qlconf="nvim ~/.config/qtile/config.py"
-alias qlkey="nvim ~/.config/qtile/keybind.py"
-alias qlstart="nvim ~/.config/qitle/autostart.sh"
-alias qlmd="nvim ~/.config/qtile/README.md"
+#---3.2 BERRY
+alias cdbr="cd ~/.config/berry"
+alias brfd="nvim ~/.config/berry"
+alias brconf="nvim ~/.config/berry/autostart"
+alias brstart="nvim ~/.config/berry/startup.sh"
+alias brkey="nvim ~/.config/berry/keybind.sh"
+alias brmd="nvim ~/.config/berry/README.md"
+#---3.3 SWAY
+alias cdsw="cd ~/.config/sway"
+alias swfd="nvim ~/.config/sway"
+alias swconf="nvim ~/.config/sway/config"
+alias swstart="nvim ~/.config/sway/autostart"
+alias swkey="nvim ~/.config/sway/keybind"
+alias swmd="nvim ~/.config/sway/README.md"
+#---3.4 AWESOME
+alias cdaw="cd ~/.config/awesome"
+alias awfd="nvim ~/.config/awesome"
+alias awconf="nvim ~/.config/awesome/config.py"
+alias awstar="nvim ~/.config/awesome/autostart.sh"
+alias awkey="nvim ~/.config/awesome/keybind.py"
+alias awmd="nvim ~/.config/awesome/README.md"
 #---3.5 POLYBAR
 alias cdpb="cd ~/.config/polybar"
 alias pbfd="nvim ~/.config/polybar"
 alias pbmd="nvim ~/.config/polybar/README.md"
+
+#---- 4.Applications
+alias atom="flatpak run io.atom.Atom"
