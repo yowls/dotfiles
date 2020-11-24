@@ -35,12 +35,7 @@ function man() {
 }
 
 #---- 2.Distro Aliases
-if [ -n $DISTRO ]; then
-	[[ $DISTRO = 'osuse' ]] && source "${HOME}/.alias.d/osuse"
-	[[ $DISTRO = 'artix' ]] && source "${HOME}/.alias.d/artix"
-	[[ $DISTRO = 'void' ]] && source "${HOME}/.alias.d/void"
-	[[ $DISTRO = 'parrot' ]] && source "${HOME}/.alias.d/parrot"
-fi
+[ -n $DISTRO ] && source "${HOME}/.alias.d/${DISTRO}"
 
 # Nya = Nya You All
 #alias nya="update && upgradels"
@@ -58,7 +53,9 @@ alias bafd="nvim ~/.bash.d"
 alias zconf="nvim ~/.zshrc"
 alias zfd="nvim ~/.zsh.d"
 #alias zshu="source ~/.zshrc"
-alias shkey="nvim ~/.alias"
+alias shk="nvim ~/.alias"
+alias shkk="nvim ~/.alias.d/${DISTRO}"
+alias shkfd="nvim ~/.alias.d"
 #alias ohmyzconf="nvim ~/.oh-my-zsh"
 #---4.2 TERMINAL
 alias cdki="cd ~/.config/kitty"

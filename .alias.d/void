@@ -46,7 +46,7 @@ alias xbpug="sudo xbps-install -Suv"
 alias upgrade="sudo xbps-install -Suv; flatpak update"
 # List avaible upgrades
 alias xbpuls="xbps-install -Suvn"
-alias upgradels="xbps-install -Suvn"
+alias upgradels="xbps-install -Sun"
 
 #---- 3.Configuration files | dotfiles
 #---3.1 XFCE
