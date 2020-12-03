@@ -118,6 +118,10 @@
 !.config/openbox/**
 .config/openbox/OThemes
 #--- BERRY
+!.config/berry
+!.config/berry/*
+!.config/berry/**
+!.config/berry/OThemes
 
 # Tint2
 !.config/tint2

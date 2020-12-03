@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 # you can use ~/.xprofile to autostart on login
-export QT_QPA_PLATFORMTHEME="qt5ct"
 
 # If it´s not running, Run it
 run() { [ pgrep $1 ] || $@& }
@@ -8,33 +7,27 @@ run() { [ pgrep $1 ] || $@& }
 # If you want to use XFCE config tools
 #run xfce-mcs-manager
 #-- Polkit | Pam
-run /usr/libexec/polkit-gnome-authentication-agent-1
-run /usr/lib64/libexec/kf5/pam_kwallet_init
-#-- Lockscreen
-#run xscreensaver -nosplash
-#run i3lock
+run /usr/lib/x86_64-linux-gnu/polkit-mate/polkit-mate-authentication-agent-1
+#run /usr/lib64/libexec/kf5/pam_kwallet_init
 #-- Compositor
-run picom 
+run picom
 #run picom -b --backend glx --vsync
 #run picom --config ${HOME}/.config/picom/picom.conf
 #-- Notification
-run dunst 
-#run dunst -config "${HOME}/.config/dunst/dunstrc.conf"
+run dunst
+#run dunst #-config "${HOME}/.config/dunst/dunstrc.conf"
 #-- Status bar
-#run polybar -c "${HOME}/.config/polybar/$Ptheme/config.ini" main
-#-- Applets
-sleep 1 &&
-run qlipper	#Clipboard
-sleep 1 &&
+#run lemonbar
+#run tint2 -c ${HOME}/.config/tint2/config
+# Applets
+run parcellite	#Clipboard
 run nm-applet	#Network
-sleep 1 &&
 run pa-applet	#Volume
-sleep 1 &&
-run lxqt-powermanagement	#Power manager
+#run lxqt-powermanagement	#Power manager
 #-- Dock
-run latte
+run plank
 #-- Widgets
-#conky -c "${HOME}/.config/conky/"
+#conky -c ${HOME}/.config/conky/
 #-- Wallpaper
 ~/.fehbg	#Automatic
 #feh --bg-fill '/home/yowls/MEGA/Wallpaper/General-Art/66398581_p0.jpg' #Static

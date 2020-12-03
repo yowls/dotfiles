@@ -1,0 +1,47 @@
+#!/usr/bin/env bash
+
+#  ________  _______   ________  ________      ___    ___ 
+# |\   __  \|\  ___ \ |\   __  \|\   __  \    |\  \  /  /|
+# \ \  \|\ /\ \   __/|\ \  \|\  \ \  \|\  \   \ \  \/  / /
+#  \ \   __  \ \  \_|/_\ \   _  _\ \   _  _\   \ \    / / 
+#   \ \  \|\  \ \  \_|\ \ \  \\  \\ \  \\  \|   \/  /  /  
+#    \ \_______\ \_______\ \__\\ _\\ \__\\ _\ __/  / /    
+#     \|_______|\|_______|\|__|\|__|\|__|\|__|\___/ /     
+#            github.com/yowls                \|___|/   	
+
+# Clean existing instances
+hc emit_hook reload	#Hooks
+hc keyunbind --all	#Keybinds
+hc mouseunbind --all	#Mousebinds
+hc unrule -F		#Rules
+hc unlock		#Multi monitor
+
+hc() { herbstclient "$@"; }
+
+# Load Preferences
+source ".config/herbstluftwm/vars.sh"
+
+# 1.Load the keybind for manage WINDOWS
+source ".config/herbstluftwm/window.sh"
+
+# 2.Load the keybind for manage LAYOUTS
+source ".config/herbstluftwm/layout.sh"
+
+# 3.Load TAGS for workspaces
+source ".config/herbstluftwm/workspace.sh"
+
+# 4.Load personal KEYBINDS
+sxhkd -c .config/berry/sxhkdrc &
+
+# 5.Load the herbstluft THEME
+source ".config/herbstluftwm/Themes/$Htheme.sh"
+
+# 6.Load the RULES for windows
+source ".config/herbstluftwm/rule.sh"
+
+# 7.Load on login STARTUP programs
+source ".config/herbstluftwm/startup.sh"
+
+# If you have multiple monitors uncomment one of this
+#hc detect_monitors
+#hc set_monitors 1280x1024+0+0 1280x1024+1280+0
