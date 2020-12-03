@@ -2,7 +2,7 @@
 # you can use ~/.xprofile to autostart on login
 
 # If it´s not running, Run it
-run() { [ pgrep $1 ] || $@& }
+run() { [ $(pgrep $1) ] || $@& }
 
 # If you want to use XFCE config tools
 #run xfce-mcs-manager
