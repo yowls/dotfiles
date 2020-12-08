@@ -18,11 +18,10 @@ run dunst
 #run dunst #-config "${HOME}/.config/dunst/dunstrc.conf"
 #-- Status bar
 #run lemonbar
-#run tint2 -c ${HOME}/.config/tint2/config
 # Applets
-run parcellite	#Clipboard
-run nm-applet	#Network
-run pa-applet	#Volume
+run parcellite			#Clipboard
+run nm-applet			#Network
+run pa-applet			#Volume
 #run lxqt-powermanagement	#Power manager
 #-- Dock
 run plank

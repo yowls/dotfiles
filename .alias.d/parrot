@@ -74,10 +74,10 @@ alias spconf="nvim ~/.config/spectrwm/spectrwm.conf"
 alias spstart="nvim ~/.config/spectrwm/autostart.conf"
 alias spkey="nvim ~/.config/spectrwm/keybind.conf"
 alias spmd="nvim ~/.config/spectrwm/README.md"
-#---3.5 POLYBAR
-alias cdpb="cd ~/.config/polybar"
-alias pbfd="nvim ~/.config/polybar"
-alias pbmd="nvim ~/.config/polybar/README.md"
+#---3.5 LEMONBAR
+alias cdpb="cd ~/.config/lemonbar"
+alias pbfd="nvim ~/.config/lemonbar"
+alias pbmd="nvim ~/.config/lemonbar/README.md"
 
 #---- 4.Applications
 alias vs="codium"
