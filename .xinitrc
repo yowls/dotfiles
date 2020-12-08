@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
-# This script is called from 'startx' when you start an X session
-# in SuSE Linux
+# This script is called from 'startx' when you start an X session in SuSE Linux
 
 #-- Set keyboard layout
 #setxkbmap latam &
@@ -18,16 +17,16 @@
 #export MPD_HOST=${HOME}/.config/mpd/socket
 
 #-- Reload Xresources
-#xrdb ~/.Xresources
+xrdb ~/.Xresources
 #-- Defaults
-#export DISTRO='osuse'
+export DISTRO='osuse'
 export EDITOR="/usr/bin/nvim"
 export TERMINAL="kitty"
 export BROWSER="/usr/bin/firefox"
 #-- QT
 #export QT_QPA_PLATFORMTHEME="qt5ct"
 #-- Custom PATH
-export PATH="${PATH}:${HOME}/.local/bin/:${HOME}/bin" #:${HOME}/.emacs.d/bin:${HOME}/.cargo/bin"
+export PATH="${PATH}:${HOME}/.local/bin/:${HOME}/bin:${HOME}/.emacs.d/bin:${HOME}/.cargo/bin" #:${HOME}/scripts/bin
 
 
 # In case everything goes wrong, we at least fall back to a plain xterm
