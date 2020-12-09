@@ -21,7 +21,9 @@ alias hosts="sudo nvim /etc/hosts"
 alias rswap="sudo swapoff -a && sudo swapon -a"
 alias lsbok="lsblk -o name,mountpoint,label,size,uuid"
 # Put Colors
-alias grep="grep --color=auto"
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
 function man() {
     env \
     LESS_TERMCAP_mb=$'\e[01;31m'	\
@@ -46,8 +48,8 @@ alias wttr="curl wttr.in"
 
 #----- 4.Configuration files | Dotfiles
 #---4.1 SHELL
-#alias ficonf="nvim ~/.fishrc"
-#alias fifd="nvim ~/.fish.d"
+#alias ficonf="nvim ~/.config/fish/config.fish"
+#alias fifd="nvim ~/.config/fish"
 alias baconf="nvim ~/.bashrc"
 alias bafd="nvim ~/.bash.d"
 alias zconf="nvim ~/.zshrc"
@@ -76,6 +78,7 @@ alias neoconf="nvim ~/.config/neofetch/config.conf"
 alias nfch="neofetch --source "
 
 #---- 5.Working Directories
+alias cdb="cd ~/bin"
 #---5.1 ORIGIN
 alias cdyo="cd ~/Yowls"
 alias yofd="nvim ~/Yowls"

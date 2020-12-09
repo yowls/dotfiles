@@ -5,6 +5,8 @@
 # ▐█ ▪▐▌▐█•█▌ ▐█▌·▐█▌▪▐█·█▌
 #  ▀  ▀ .▀  ▀ ▀▀▀ ▀▀▀•▀▀ ▀▀
 #---- 1.System
+# Export cusom path
+export PATH="${PATH}:${HOME}/.emacs.d/bin"
 # Grub
 alias grupdate="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 
@@ -66,7 +68,7 @@ alias opmd="nvim ~/.config/openbox/README.md"
 #---3.3 STUMPWM
 alias cdsp="cd ~/.config/stumpwm"
 alias spfd="nvim ~/.config/stumpwm"
-alias spconf="nvim ~/.config/stumpwm/autostart"
+alias spconf="nvim ~/.config/stumpwm/config"
 alias spstar="nvim ~/.config/stumpwm/startup.sh"
 alias spkey="nvim ~/.config/stumpwm/keybind.sh"
 alias spmd="nvim ~/.config/stumpwm/README.md"
