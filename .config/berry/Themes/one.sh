@@ -1,4 +1,3 @@
-
 # Set decoration colors
 berryc focus_color         ${BG:1:7}
 berryc unfocus_color       ${BG:1:7}

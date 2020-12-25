@@ -1,11 +1,139 @@
-# Applications
-Super + b
-	firefox
+# WM INDEPENDENT HOTKEYS
 
-# Terminals
+#-- LOCK SESSION
+#alt + p
+#	i3-lock
+#-- LOGOUT PROMPT
+#alt + l
+#	rofi -show power-menu -modi power-menu:rofi-power-menu
+
+#-- SYSTEM - Volume control
+XF86AudioRaiseVolume
+	pactl set-sink-volume 0 +5%
+
+XF86AudioLowerVolume
+	pactl set-sink-volume 0 -5%
+
+XF86AudioMute
+	pactl set-sink-mute 0 toggle
+
+#-- SYSTEM - Media control
+XF86AudioPlay
+	playerctl play-pause
+
+XF86AudioNext
+	playerctl next
+
+XF86AudioPrev
+	playerctl previous
+
+#-- SYSTEM - Brightness control
+XF86MonBrightnessUp
+	xbacklight -inc 5
+XF86MonBrightnessDown
+	xbacklight -dec 5
+
+#-- PREFERRED APPLICATIONS
+#Terminal emulator (default)
 super + Return
 	kitty
-super + Alt + t
+#Terminal emulator (alternative)
+ctrl + alt + t	
 	urxvt
 
+super + e
+	pcmanfm
+super + b
+	firefox
 
+super + v
+	kitty -e nvim
+
+#-- SCREENSHOTS (maim)
+# Save selected area in clipboard
+Print
+	maim -s | xclip -selection clipboard -t image/png
+# Save an selected area in pictures folder
+alt + Print
+	maim -s ~/Pictures/$(date +%s).png
+# Open a selected area with feh
+#alt + Print
+#	maim -s | feh -
+# Open selected area with image editor
+#alt + Print
+#	maim -s | gimp
+# Save an selected area with shadow effect
+#alt + Print
+#	maim -st 9999999 | convert - \( +clone -background black -shadow 80x3+5+5 \) +swap -background none -layers merge +repage main-shadow.png
+# Save a full Screenshot in Pictures
+super + Print
+	maim ~/Pictures/$(date +%s).png
+
+#-- COLOR PICKER
+#alt + g
+#	colorpicker --short --one-shot | xclip -selection clipboard
+#alt + j
+#	colorpicker --short --one-shot --preview | xclip -selection cliboard
+
+#-- LAUNCHER (rofi)
+alt + space
+	rofi -show drun combi
+alt + x
+	rofi -show run
+
+#-- CLIPBOARD MANAGER (greenclip)
+alt + m
+	rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
+alt + n
+	rm ~/.cache/greenclip.history
+
+#-- Translate (rofitr)
+#alt + t
+#	rofitr
+
+#------------------------------------
+# make sxhkd reload its configuration files
+super + Escape
+	pkill -USR1 -x sxhkd
+
+#------------------------------------
+# BERRY HOTKEYS
+
+super + {h, j, k, l}
+    berryc window_move {-50 0, 0 50, 0 -50, 50 0}
+
+super + shift +  {h, j, k, l}
+    berryc window_resize {-50 0, 0 50, 0 -50, 50 0}
+
+super + {1-9}
+    berryc switch_workspace {0-9}
+
+super + shift + {1-9}
+    berryc send_to_workspace {0-9}
+
+super + m
+    berryc window_monocle
+
+super + f
+    berryc fullscreen
+
+super +  p
+    berryc snap_right
+
+super + o 
+    berryc snap_left
+
+super + n
+    berryc toggle_decorations
+
+super + Tab
+    berryc cycle_focus
+
+super + q
+    berryc window_close
+
+super + c
+    berryc window_center
+
+~button1
+    berryc pointer_focus

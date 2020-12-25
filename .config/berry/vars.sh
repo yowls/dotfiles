@@ -5,8 +5,8 @@ Mod="Mod4"	# Use the SUPER KEY as the main modifier
 Alt="Mod1"	# Use the ALT KEY as second modifier
 
 # Theming
-Htheme="Her"	# Herbstluft Theme
-Ptheme="Her"	# Polybar Theme
+Btheme="default"	# Berry Theme
+Ltheme="default"	# Lemonbar Theme
 
 # Preferred applications
 Terminal="kitty"

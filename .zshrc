@@ -17,6 +17,7 @@ plugins=(
         git
 	fzf
         autojump
+	zsh-autoenv
 	zsh-completions
 	zsh-autocomplete
 	zsh-history-substring-search
