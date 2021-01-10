@@ -73,7 +73,7 @@ alias xrfd="nvim ~/.Xresources.d"
 alias xrconf="nvim ~/.Xresources"
 alias rxr="xrdb -merge ~/.Xresources"
 #---4.5 OTHERS
-alias todo="nvim ~/MEGA/${DISTRO}.org"
+alias todo="emacs ~/MEGA/${DISTRO}.org"
 alias neoconf="nvim ~/.config/neofetch/config.conf"
 alias nfch="neofetch --source "
 

@@ -6,35 +6,31 @@ run() { [ $(pgrep $1) ] || $@& }
 
 # If you want to use XFCE config tools
 #run xfce-mcs-manager
-#-- Polkit | Pam
+#-- POLKIT | PAM | KEYRING
 run lxqt-policykit-agent
-#run /usr/lib64/libexec/kf5/pam_kwallet_init
-#-- Compositor
+#-- COMPOSITOR
 #run picom
 #run picom -b --backend glx --vsync
 run picom --config ${HOME}/.config/picom/picom.conf
-#-- Notification
+#-- NOTIFICATION
 run dunst
-#run dunst #-config "${HOME}/.config/dunst/dunstrc.conf"
-#-- Status bar
+#run dunst -config "${HOME}/.config/dunst/dunstrc.conf"
+#-- STATUS BAR
 run tint2
 #run tint2 -c ${HOME}/.config/tint2/config
-# Applets
-run qlipper			#Clipboard
-run nm-applet			#Network
-run pa-applet			#Volume
-run lxqt-powermanagement	#Power manager
-#-- Dock
+#-- APPLETS
+run qlipper			# Clipboard
+run nm-applet			# Network
+run pa-applet			# Volume
+run lxqt-powermanagement	# Power manager
+#-- DOCK
 run docky
-#-- Widgets
-#conky -c ${HOME}/.config/conky/
-#-- Wallpaper
-~/.fehbg	#Automatic
-#feh --bg-fill '/home/yowls/MEGA/Wallpaper/General-Art/66398581_p0.jpg' #Static
-
-#-- Scripts
-#run vitas
-#run wal -R
+#-- WIDGETS
+#conky -c "${HOME}/.config/conky/"
+#-- WALLPAPER
+~/.fehbg								# Automatic
+#script									# Dynamic
+#feh --bg-fill '/home/yowls/MEGA/Wallpaper/General-Art/66398581_p0.jpg' # Static
 
 #-- Demons
 run redshift
@@ -42,3 +38,8 @@ run tilda
 #run urxvtd
 #run pcmanfm --daemon-mode
 #run thunar --daemon
+#run emacs --daemon
+
+#-- Scripts
+#run vitas
+#run wal -R
