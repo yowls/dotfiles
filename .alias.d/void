@@ -18,6 +18,8 @@ alias xbpssl="xbps-query -s"
 alias xbpinf="xbps-query -S"
 # Search for package files
 alias xbpfiles="xbps-query -f"
+# Sort packages by size
+alias xbpsize="xbps-query -p installed_size -s '' | sort -h -k2 | column -s: -t"
 
 #---2.2 INSTALL
 # Istall from remote repository
@@ -80,3 +82,8 @@ alias pbmd="nvim ~/.config/polybar/README.md"
 
 #---- 4.Applications
 alias atom="flatpak run io.atom.Atom"
+# Youtube-dl
+alias audio="youtube-dl -o '${HOME}/Desktop/%(title)s.%(ext)s' -f bestaudio -x --audio-format best --audio-quality 0 -i"
+alias mp3="youtube-dl -o '${HOME}/Desktop/%(title)s.%(ext)s' -x --audio-format mp3 --audio-quality 0 -i"
+alias mp3t="youtube-dl -o '${HOME}/Desktop/%(title)s.%(ext)s' -x --audio-format mp3 --audio-quality 0 --write-thumbnail -i"
+alias video="youtube-dl -o '${HOME}/Desktop/%(title)s.%(ext)s' -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 -i"

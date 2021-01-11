@@ -13,8 +13,9 @@ alias suconf="sudo EDITOR=nvim visudo"
 alias gruconf="sudo nvim /etc/default/grub"
 # Processes
 alias p="ps -el | grep"
-alias k="pkill"
+alias k="kill"
 alias ka="killall"
+alias pk="pkill"
 # Others
 alias ram="free -h --mega"
 alias hosts="sudo nvim /etc/hosts"
@@ -38,8 +39,6 @@ function man() {
 
 #---- 2.Distro Aliases
 [ -n $DISTRO ] && source "${HOME}/.alias.d/${DISTRO}"
-
-# Nya = Nya You All
 #alias nya="update && upgradels"
 #alias nyya="update && upgrade"
 
@@ -115,18 +114,8 @@ alias l="exa --group-directories-first -lh"
 alias lx="lsd --group-dirs first"
 alias lxa="lsd --group-dirs first -lhA"
 alias lxt="lsd --group-dirs first --tree"
-# Youtube-dl
-alias audio="youtube-dl -o '${HOME}/Desktop/%(title)s.%(ext)s' -f bestaudio -x --audio-format best --audio-quality 0 -i"
-alias mp3="youtube-dl -o '${HOME}/Desktop/%(title)s.%(ext)s' -x --audio-format mp3 --audio-quality 0 -i"
-alias mp3t="youtube-dl -o '${HOME}/Desktop/%(title)s.%(ext)s' -x --audio-format mp3 --audio-quality 0 --write-thumbnail -i"
-alias video="youtube-dl -o '${HOME}/Desktop/%(title)s.%(ext)s' -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 -i"
 # HBlock (hosts)
 alias uhblock="hblock --backup ${HOME}/Desktop --sources ${HOME}/MEGA/hblock/hosts --whitelist ${HOME}/MEGA/hblock/whitelist.list --blacklist ${HOME}/MEGA/hblock/blacklist.list"
-# WPS Office
-alias word="env GTK2_RC_FILES=/usr/share/themes/Breeze/gtk-2.0/gtkrc wps -style gtk+ &"
-alias ppt="env GTK2_RC_FILES=/usr/share/themes/Breeze/gtk-2.0/gtkrc wpp -style gtk+ &"
-alias excel="env GTK2_RC_FILES=/usr/share/themes/Breeze/gtk-2.0/gtkrc et -style gtk+ &"
-alias pdf="env GTK2_RC_FILES=/usr/share/themes/Breeze/gtk-2.0/gtkrc wpspdf -style gtk+ &"
 # GIT
 #https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git#aliases
 alias g="git"

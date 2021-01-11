@@ -83,3 +83,10 @@ alias awmd="nvim ~/.config/awesome/README.md"
 alias cdtt="cd ~/.config/tint2"
 alias ttfd="nvim ~/.config/tint2"
 alias ttmd="nvim ~/.config/tint2/README.md"
+
+#---- 4.Applications
+# WPS Office
+alias word="env GTK2_RC_FILES=/usr/share/themes/Breeze/gtk-2.0/gtkrc wps -style gtk+ &"
+alias ppt="env GTK2_RC_FILES=/usr/share/themes/Breeze/gtk-2.0/gtkrc wpp -style gtk+ &"
+alias excel="env GTK2_RC_FILES=/usr/share/themes/Breeze/gtk-2.0/gtkrc et -style gtk+ &"
+alias pdf="env GTK2_RC_FILES=/usr/share/themes/Breeze/gtk-2.0/gtkrc wpspdf -style gtk+ &"
