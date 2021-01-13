@@ -13,7 +13,7 @@ alias suconf="sudo EDITOR=nvim visudo"
 alias gruconf="sudo nvim /etc/default/grub"
 # Processes
 alias p="ps -el | grep"
-alias k="kill"
+alias k="kill -s USR1"
 alias ka="killall"
 alias pk="pkill"
 # Others
@@ -78,6 +78,8 @@ alias nfch="neofetch --source "
 
 #---- 5.Working Directories
 alias cdb="cd ~/bin"
+alias cdd="cd ~/Downloads"
+alias cddc="cd ~/Documents"
 #---5.1 ORIGIN
 alias cdyo="cd ~/Yowls"
 alias yofd="nvim ~/Yowls"

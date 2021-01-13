@@ -26,7 +26,7 @@ export BROWSER="/usr/bin/firefox"
 #-- QT
 #export QT_QPA_PLATFORMTHEME="qt5ct"
 #-- Custom PATH
-export PATH="${PATH}:${HOME}/.local/bin/:${HOME}/bin:${HOME}/.emacs.d/bin:${HOME}/.cargo/bin" #:${HOME}/scripts/bin
+export PATH="${PATH}:${HOME}/bin:${HOME}/bin/scripts:${HOME}/.emacs.d/bin:${HOME}/.cargo/bin" #:${HOME}/.local/bin/
 
 
 # In case everything goes wrong, we at least fall back to a plain xterm
