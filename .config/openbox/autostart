@@ -6,7 +6,7 @@ run() { [ $(pgrep $1) ] || $@& }
 
 # If you want to use XFCE config tools
 #run xfce-mcs-manager
-#-- POLKIT | PAM | KEYRING
+#-- POLKIT | PAM
 run lxqt-policykit-agent
 #-- COMPOSITOR
 #run picom
@@ -19,10 +19,10 @@ run dunst
 run tint2
 #run tint2 -c ${HOME}/.config/tint2/config
 #-- APPLETS
-run qlipper			# Clipboard
+run lxqt-powermanagement	# Power manager
 run nm-applet			# Network
 run pa-applet			# Volume
-run lxqt-powermanagement	# Power manager
+run qlipper			# Clipboard
 #-- DOCK
 run docky
 #-- WIDGETS

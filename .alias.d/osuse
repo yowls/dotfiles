@@ -72,7 +72,7 @@ alias hlmd="nvim ~/.config/herbstluftwm/README.md"
 alias cdql="cd ~/.config/qtile"
 alias qlfd="nvim ~/.config/qtile"
 alias qlconf="nvim ~/.config/qtile/config.py"
-alias qlkey="nvim ~/.config/qtile/keybind.py"
+alias qlset="nvim ~/.config/qtile/settings.py"
 alias qlstar="nvim ~/.config/qitle/autostart.sh"
 alias qlmd="nvim ~/.config/qtile/README.md"
 #---3.5 POLYBAR

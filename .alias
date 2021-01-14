@@ -77,9 +77,10 @@ alias neoconf="nvim ~/.config/neofetch/config.conf"
 alias nfch="neofetch --source "
 
 #---- 5.Working Directories
-alias cdb="cd ~/bin"
 alias cdd="cd ~/Downloads"
 alias cddc="cd ~/Documents"
+alias cdb="cd ~/bin"
+alias cdg="cd ~/git"
 #---5.1 ORIGIN
 alias cdyo="cd ~/Yowls"
 alias yofd="nvim ~/Yowls"
@@ -124,7 +125,6 @@ alias g="git"
 alias glogg="git log --all --graph --decorate --oneline"
 alias gig="nvim .gitignore"
 alias rmd="nvim README.md"
-alias cdg="cd ~/git"
 
 #---- 7.Common errors
 alias vi=nvim
