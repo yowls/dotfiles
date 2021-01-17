@@ -4,6 +4,7 @@
 
 #-- Set keyboard layout
 #setxkbmap latam &
+#xsetroot -cursor_name left_ptr
 
 #-- Autostart Applications On Every Login
 #redshift &

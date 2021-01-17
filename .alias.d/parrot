@@ -44,7 +44,7 @@ alias aptu="sudo aptitude update"
 alias update="sudo aptitude update"
 # Upgrade packages
 alias aptug="sudo aptitude upgrade"
-alias upgrade="sudo aptitude upgrade; flatpak update"
+alias upgrade="sudo parrot-upgrade; flatpak update"
 # List avaible upgrades
 alias aptuls="apt list --upgradable -a"
 alias upgradels="apt list --upgradable -a"
@@ -67,17 +67,17 @@ alias bpconf="nvim ~/.config/bspwm/bspwmrc"
 alias bpstart="nvim ~/.config/bspwm/autostart.sh"
 alias bpkey="nvim ~/.config/bspwm/keybind.sh"
 alias bpmd="nvim ~/.config/bspwm/README.md"
-#---3.4 SPECTRWM
-alias cdsp="cd ~/.config/spectrwm"
-alias spfd="nvim ~/.config/spectrwm"
-alias spconf="nvim ~/.config/spectrwm/spectrwm.conf"
-alias spstart="nvim ~/.config/spectrwm/autostart.conf"
-alias spkey="nvim ~/.config/spectrwm/keybind.conf"
-alias spmd="nvim ~/.config/spectrwm/README.md"
+#---3.4 XMonad
+alias cdxm="cd ~/.xmonad"
+alias xmfd="nvim ~/.xmonad"
+alias xmconf="nvim ~/.xmonad/xmonad.hs"
+alias xmstart="nvim ~/.xmonad/autostart.conf"
+alias xmkey="nvim ~/.xmonad/keybind.conf"
+alias xmmd="nvim ~/.xmonad/README.md"
 #---3.5 LEMONBAR
-alias cdpb="cd ~/.config/lemonbar"
-alias pbfd="nvim ~/.config/lemonbar"
-alias pbmd="nvim ~/.config/lemonbar/README.md"
+alias cdlb="cd ~/.config/lemonbar"
+alias lbfd="nvim ~/.config/lemonbar"
+alias lbmd="nvim ~/.config/lemonbar/README.md"
 
 #---- 4.Applications
 alias vs="codium"
