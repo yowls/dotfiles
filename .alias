@@ -14,8 +14,8 @@ alias gruconf="sudo nvim /etc/default/grub"
 # Processes
 alias p="ps -el | grep"
 alias k="kill -s USR1"
-alias ka="killall"
-alias pk="pkill"
+alias ka="killall $1 || true"
+alias pk="pkill $1 || true"
 # Others
 alias ram="free -h --mega"
 alias hosts="sudo nvim /etc/hosts"
@@ -91,9 +91,9 @@ alias cdsc="cd ~/scripts"
 alias scfd="nvim ~/scripts"
 alias scmd="nvim ~/scripts/README.md"
 #---5.3 STARTPAGES
-alias cdst="cd ~/startpages"
-alias stfd="nvim ~/startpages"
-alias stmd="nvim ~/startpages/README.md"
+alias cdsp="cd ~/startpages"
+alias spfd="nvim ~/startpages"
+alias spmd="nvim ~/startpages/README.md"
 #---5.4 FIREFOX
 alias cdf="cd ~/.mozilla/firefox/*.default-release/chrome"
 alias ffd="nvim ~/.mozilla/firefox/*.default-release/chrome/"

@@ -31,7 +31,7 @@ alias zppdw="zypper --download-only"
 # Remove a package
 alias zpprm="sudo zypper remove"
 # Remove completly include dependencies
-#alias zpprmf=".."
+alias zpprmf="sudo zypper remove -u"
 # Remove unneeded dependecy
 alias zppnd="zypper pa --unneeded"
 # Remove old downloaded packages
