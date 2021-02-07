@@ -18,6 +18,7 @@ xrdb ~/.Xresources
 
 # Defaults
 export DISTRO='parrot'
+#export VISUAL="/usr/bin/nvim"
 export EDITOR="/usr/bin/nvim"
 export TERMINAL="kitty"
 export BROWSER="/usr/bin/firefox"

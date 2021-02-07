@@ -21,6 +21,7 @@
 xrdb ~/.Xresources
 #-- Defaults
 export DISTRO='osuse'
+#export VISUAL="/usr/bin/nvim"
 export EDITOR="/usr/bin/nvim"
 export TERMINAL="kitty"
 export BROWSER="/usr/bin/firefox"

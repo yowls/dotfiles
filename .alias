@@ -20,7 +20,7 @@ alias pk="pkill $1 || true"
 alias ram="free -h --mega"
 alias hosts="sudo nvim /etc/hosts"
 alias rswap="sudo swapoff -a && sudo swapon -a"
-alias lsbok="lsblk -o name,mountpoint,label,size,uuid"
+alias lsbok="sudo lsblk -o name,mountpoint,label,size,uuid"
 # Put Colors
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
@@ -36,6 +36,9 @@ function man() {
     LESS_TERMCAP_us=$'\e[01;32m'	\
     man "$@"
 }
+# Encrypt text file (need parameters)
+alias crypt="openssl aes-256-cbc -in $1 -out $1.enc"
+alias uncrypt="openssl aes-256-cbc -d -in $1 -out $2"
 
 #---- 2.Distro Aliases
 [ -n $DISTRO ] && source "${HOME}/.alias.d/${DISTRO}"
