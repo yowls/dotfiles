@@ -1,11 +1,11 @@
 # WM INDEPENDENT HOTKEYS
 
 #-- LOCK SESSION
-#alt + p
+#alt + l
 #	i3-lock
 #-- LOGOUT PROMPT
-#alt + l
-#	rofi -show power-menu -modi power-menu:rofi-power-menu
+#alt + p
+	rofi-power-menu
 
 #-- SYSTEM - Volume control
 XF86AudioRaiseVolume
@@ -41,13 +41,30 @@ super + Return
 ctrl + alt + t	
 	urxvt
 
-super + e
-	pcmanfm
+# Editor
+super + v
+	codium
+super + shift + v 
+	kitty -e nvim
+
+# Config
+#super + ??
+#	$config
+#super + ??
+#	$config_dir
+
+# Explorer
 super + b
 	firefox
+super + e
+	kitty -e ranger
 
-super + v
-	kitty -e nvim
+# Monitoring
+ctrl + Escape
+	kitty -e htop
+
+#super + shift + t
+#	$todo
 
 #-- SCREENSHOTS (maim)
 # Save selected area in clipboard

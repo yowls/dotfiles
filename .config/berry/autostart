@@ -1,5 +1,4 @@
-#!/usr/bin/env bash
-
+#!/bin/bash
 #  ________  _______   ________  ________      ___    ___ 
 # |\   __  \|\  ___ \ |\   __  \|\   __  \    |\  \  /  /|
 # \ \  \|\ /\ \   __/|\ \  \|\  \ \  \|\  \   \ \  \/  / /
@@ -7,35 +6,25 @@
 #   \ \  \|\  \ \  \_|\ \ \  \\  \\ \  \\  \|   \/  /  /  
 #    \ \_______\ \_______\ \__\\ _\\ \__\\ _\ __/  / /    
 #     \|_______|\|_______|\|__|\|__|\|__|\|__|\___/ /     
-#            github.com/yowls                \|___|/   	
-
+#        github.com/yowls                    \|___|/   	
 
 # Load Preferences
-source ".config/berry/vars.sh"
+bash $HOME/.config/berry/vars.sh
 
-# 1.Load the keybind for manage WINDOWS
-#source ".config/berry/window.sh"
+# 1.Load TAGS for workspaces
+#source ~/.config/berry/workspace.sh
 
-# 2.Load the keybind for manage LAYOUTS
-#source ".config/berry/layout.sh"
+# 2.Load the RULES for windows
+#source ~/.config/berry/rule.sh
 
-# 3.Load TAGS for workspaces
-#source ".config/berry/workspace.sh"
+# 3.Load the Berry THEME
+bash $HOME/.config/berry/Themes/$Btheme.sh
 
-# 4.Load personal KEYBINDS
-sxhkd -c .config/berry/sxhkdrc &
-
-# 5.Load the herbstluft THEME
-source ".config/berry/Themes/$Btheme.sh"
-
-# 6.Load the RULES for windows
-#source ".config/berry/rule.sh"
-
-# 7.Load on login STARTUP programs
-source ".config/berry/startup.sh"
+# 4.Load on login STARTUP programs
+bash $HOME/.config/berry/startup.sh
 
 # Other options
 berryc smart_place "true"
 berryc draw_text   "true"
 berryc edge_lock   "true"
-berryc set_font    "Dina-9"
+berryc set_font    "Monospace-9"
