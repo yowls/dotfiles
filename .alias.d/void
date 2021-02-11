@@ -75,10 +75,10 @@ alias awconf="nvim ~/.config/awesome/config.py"
 alias awstar="nvim ~/.config/awesome/autostart.sh"
 alias awkey="nvim ~/.config/awesome/keybind.py"
 alias awmd="nvim ~/.config/awesome/README.md"
-#---3.5 POLYBAR
-alias cdpb="cd ~/.config/polybar"
-alias pbfd="nvim ~/.config/polybar"
-alias pbmd="nvim ~/.config/polybar/README.md"
+#---3.5 Waybar
+alias cdwb="cd ~/.config/waybar"
+alias wbfd="nvim ~/.config/waybar"
+alias wbmd="nvim ~/.config/waybar/README.md"
 
 #---- 4.Applications
 alias atom="flatpak run io.atom.Atom"
