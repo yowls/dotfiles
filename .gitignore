@@ -45,6 +45,8 @@
 # Config folder
 !.config
 !.config/redshift.conf
+!.config/gammastep
+!.config/gammastep/*
 # Compositor
 !.config/picom
 !.config/picom/*
