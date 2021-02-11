@@ -13,8 +13,7 @@ run lxqt-policykit-agent
 #run picom -b --backend glx --vsync
 run picom --config ${HOME}/.config/picom/picom.conf
 #-- NOTIFICATION
-run dunst
-#run dunst -config "${HOME}/.config/dunst/dunstrc.conf"
+run deadd-notification-center
 #-- STATUS BAR
 run tint2
 #run tint2 -c ${HOME}/.config/tint2/config
@@ -28,15 +27,15 @@ run docky
 #-- WIDGETS
 #conky -c "${HOME}/.config/conky/"
 #-- WALLPAPER
-~/.fehbg								# Automatic
 #script									# Dynamic
 #feh --bg-fill '/home/yowls/MEGA/Wallpaper/General-Art/66398581_p0.jpg' # Static
+run pcmanfm-qt --desktop						# Desktop icons
 
 #-- Demons
 run redshift
 run tilda
 #run urxvtd
-#run pcmanfm --daemon-mode
+#run pcmanfm-qt --daemon-mode
 #run thunar --daemon
 #run emacs --daemon
 

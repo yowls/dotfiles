@@ -13,42 +13,46 @@ alias grupdate="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 #---- 2.Package manager
 #---2.1 SEARCH
 # Search in online repositories
-alias pacss="yay -Ss"
+alias pacss="paru -Ss"
 # Search local packages
-alias pacssl="yay -Qs"
+alias pacssl="paru -Qs"
 # Search for package info
-alias pacinf="yay -Qi"
+alias pacinf="paru -Qi"
 # Search for package files
-alias pacfiles="yay -Ql"
+alias pacfiles="paru -Ql"
 
 #---2.2 INSTALL
 # Istall from remote repository
-alias pacin="yay -S"
+alias pacin="paru -S"
 # Install from local package
-alias pacinl="yay -U"
+alias pacinl="paru -U"
 # Download a package
-alias pacdw="yay -Sw"
+alias pacdw="paru -Sw"
 
 #---2.3 REMOVE
 # Remove a package
-alias pacrm="yay -R"
+alias pacrm="paru -R"
 # Remove completly include dependencies
-alias pacrmf="yay -Rns"
+alias pacrmf="paru -Rns"
 # Remove unneeded dependecy
-alias pacnd="yay -Rns $(yay -Qtdq)"
+alias pacnd="paru -Rns $(paru -Qtdq)"
 # Remove old downloaded packages
-alias paccl="yay -Scc"
+alias paccl="paru -Scc"
 
 #---2.4 UPDATE
 # Update repositories database
-alias pacu="yay -Sy"
-#alias update="yay -Sy"
+alias pacu="paru -Sy"
+#alias update="paru -Sy"
 # Upgrade packages
-alias pacug="yay -Su"
-#alias upgrade="yay -Su"
+alias pacug="paru -Su"
+#alias upgrade="paru -Su"
 # List avaible upgrades
-alias paculs="yay -Qu"
-#alias upgradels="yay -Qu"
+alias paculs="paru -Qu"
+#alias upgradels="paru -Qu"
+
+#---2.5 PARU AUR HELPER
+alias update-aur="paru -Sua"
+alias updatels-aur="paru -Qua"
 
 #---2.5 OTHERS
 alias addgpg="gpg --keyserver pool.sks-keyservers.net --recv-keys"
