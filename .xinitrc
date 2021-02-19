@@ -11,7 +11,7 @@
 #-- Lockscreen
 #light-locker &
 #xscreensaver -nosplash &
-#xautolock -detectsleep -time 15 -locker "i3lock -n -i /home/user/lockscreen.png" -killtime 20 -killer "systemctl suspend"
+#xautolock -detectsleep -time 15 -locker "i3lock -n -i $HOME/lockscreen.png" -killtime 20 -killer "systemctl suspend"
 
 #-- MPD start if no other user instance exists
 #[ ! -s ~/.config/mpd/pid ] && mpd
@@ -28,7 +28,7 @@ export BROWSER="/usr/bin/firefox"
 #-- QT
 #export QT_QPA_PLATFORMTHEME="qt5ct"
 #-- Custom PATH
-export PATH="${PATH}:${HOME}/bin:${HOME}/bin/scripts:${HOME}/.emacs.d/bin:${HOME}/.cargo/bin" #:${HOME}/.local/bin/
+export PATH="${PATH}:${HOME}/bin:${HOME}/bin/scripts:${HOME}/.cargo/bin" #:${HOME}/.local/bin/
 
 
 # In case everything goes wrong, we at least fall back to a plain xterm
