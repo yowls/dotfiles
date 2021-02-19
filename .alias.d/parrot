@@ -48,11 +48,13 @@ alias upgrade="sudo parrot-upgrade; flatpak update"
 # List avaible upgrades
 alias aptuls="apt list --upgradable -a"
 alias upgradels="apt list --upgradable -a"
+# Update and Upgrade
+alias nya="update && upgradels"
+alias nyya="update && upgrade"
 
 #---- 3.Configuration files | dotfiles
-#---3.1 MATE
-alias mtstart="nvim ~/.config/autostart-scripts"
-alias mtout="nvim ~/.config/plasma-workspace/shutdown"
+#---3.1 GNOME
+alias gnstart="nvim ~/.config/autostart/scripts"
 #---3.2 BERRY
 alias cdbr="cd ~/.config/berry"
 alias brfd="nvim ~/.config/berry"
@@ -78,6 +80,3 @@ alias xmrd="nvim ~/.xmonad/README.org"
 alias cdlb="cd ~/.config/lemonbar"
 alias lbfd="nvim ~/.config/lemonbar"
 alias lbmd="nvim ~/.config/lemonbar/README.md"
-
-#---- 4.Applications
-alias vs="codium"

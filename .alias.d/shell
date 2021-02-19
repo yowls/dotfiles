@@ -1,134 +1,162 @@
 #!/usr/bin/env bash
 
+# .▄▄ ·  ▄ .▄▄▄▄ .▄▄▌  ▄▄▌       ▄▄▄· ▄▄▌  ▪   ▄▄▄· .▄▄ · 
+# ▐█ ▀. ██▪▐█▀▄.▀·██•  ██•      ▐█ ▀█ ██•  ██ ▐█ ▀█ ▐█ ▀. 
+# ▄▀▀▀█▄██▀▐█▐▀▀▪▄██▪  ██▪      ▄█▀▀█ ██▪  ▐█·▄█▀▀█ ▄▀▀▀█▄
+# ▐█▄▪▐███▌▐▀▐█▄▄▌▐█▌▐▌▐█▌▐▌    ▐█ ▪▐▌▐█▌▐▌▐█▌▐█ ▪▐▌▐█▄▪▐█
+#  ▀▀▀▀ ▀▀▀ · ▀▀▀ .▀▀▀ .▀▀▀      ▀  ▀ .▀▀▀ ▀▀▀ ▀  ▀  ▀▀▀▀
+#=========================================================
 # For a full list of active aliases, run `alias`.
-# alias come from .alias,.alias.d,default zsh,ohmyzsh,p10K.
-#  █████╗ ██╗     ██╗ █████╗ ███████╗
-# ██╔══██╗██║     ██║██╔══██╗██╔════╝
-# ███████║██║     ██║███████║███████╗
-# ██╔══██║██║     ██║██╔══██║╚════██║
-# ██║  ██║███████╗██║██║  ██║███████║
-# ╚═╝  ╚═╝╚══════╝╚═╝╚═╝  ╚═╝╚══════╝
-#---- 1.System
+# alias may come from .alias.d, defaults shell, framework, theme.
+
+# 1 - System
+#=================
 alias suconf="sudo EDITOR=nvim visudo"
 alias gruconf="sudo nvim /etc/default/grub"
+
 # Processes
 alias p="ps -el | grep"
 alias k="kill -s USR1"
 alias ka="killall $1 || true"
 alias pk="pkill $1 || true"
+
 # Others
 alias ram="free -h --mega"
 alias hosts="sudo nvim /etc/hosts"
 alias rswap="sudo swapoff -a && sudo swapon -a"
 alias lsbok="sudo lsblk -o name,mountpoint,label,size,uuid"
+
 # Put Colors
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
-function man() {
-    env \
-    LESS_TERMCAP_mb=$'\e[01;31m'	\
-    LESS_TERMCAP_md=$'\e[01;31m'	\
-    LESS_TERMCAP_me=$'\e[0m'		\
-    LESS_TERMCAP_se=$'\e[0m'		\
-    LESS_TERMCAP_so=$'\e[01;44;33m'	\
-    LESS_TERMCAP_ue=$'\e[0m'		\
-    LESS_TERMCAP_us=$'\e[01;32m'	\
-    man "$@"
-}
+
+# Man colors
+export LESS_TERMCAP_mb=$'\e[1;32m'
+export LESS_TERMCAP_md=$'\e[1;32m'
+export LESS_TERMCAP_me=$'\e[0m'
+export LESS_TERMCAP_se=$'\e[0m'
+export LESS_TERMCAP_so=$'\e[01;33m'
+export LESS_TERMCAP_ue=$'\e[0m'
+export LESS_TERMCAP_us=$'\e[1;4;31m'
+
 # Encrypt text file (need parameters)
 alias crypt="openssl aes-256-cbc -in $1 -out $1.enc"
 alias uncrypt="openssl aes-256-cbc -d -in $1 -out $2"
 
-#---- 2.Distro Aliases
-[ -n $DISTRO ] && source "${HOME}/.alias.d/${DISTRO}"
+
+# 2 - Distro Aliases [DEPRECATED]
+#=======================
+#[ -n $DISTRO ] && source "${HOME}/.alias.d/${DISTRO}"
 #alias nya="update && upgradels"
 #alias nyya="update && upgrade"
 
-#---- 3.Scripts
+
+# 3 - Scripts [DEPRECATED]
+#======================
 alias wttr="curl wttr.in"
 
-#----- 4.Configuration files | Dotfiles
-#---4.1 SHELL
-#alias ficonf="nvim ~/.config/fish/config.fish"
-#alias fifd="nvim ~/.config/fish"
+
+# 4 - Configuration files | Dotfiles
+#=====================================
+# FISH SHELL
+alias ficonf="nvim ~/.config/fish/config.fish"
+alias fifd="nvim ~/.config/fish"
+
+# BASH SHELL
 alias baconf="nvim ~/.bashrc"
 alias bafd="nvim ~/.bash.d"
+
+# Z SHELL
 alias zconf="nvim ~/.zshrc"
 alias zfd="nvim ~/.zsh.d"
-#alias zshu="source ~/.zshrc"
-alias shk="nvim ~/.alias"
+alias cdomz="cd ~/.oh-my-zsh/custom"
+
+# ALIAS
+alias shk="nvim ~/.alias.d/shell"
 alias shkk="nvim ~/.alias.d/${DISTRO}"
 alias shkfd="nvim ~/.alias.d"
-#alias ohmyzconf="nvim ~/.oh-my-zsh"
-#---4.2 TERMINAL
+
+# TERMINAL KITTY
 alias cdki="cd ~/.config/kitty"
 alias kifd="nvim ~/.config/kitty"
 alias kiconf="nvim ~/.config/kitty/kitty.conf"
 alias kikey="nvim ~/.config/kitty/keybinds.conf"
-#---4.3 EDITOR
+
+# EDITOR NVIM
 alias nvconf="nvim ~/.config/nvim/init.vim"
 alias nvfd="nvim ~/.config/nvim"
-#---4.4 XRESOURCES
+
+# XRESOURCES
 alias cdxr="cd ~/.Xresources.d"
 alias xrfd="nvim ~/.Xresources.d"
 alias xrconf="nvim ~/.Xresources"
 alias rxr="xrdb -merge ~/.Xresources"
-#---4.5 OTHERS
+
+# OTHERS
 alias todo="emacs ~/MEGA/${DISTRO}.org"
 alias neoconf="nvim ~/.config/neofetch/config.conf"
-alias nfch="neofetch --source "
+alias nfch="neofetch --source " #[DEPRECATED]
 
-#---- 5.Working Directories
+
+# 5 - Working Directories
+#============================
 alias cdd="cd ~/Downloads"
 alias cddc="cd ~/Documents"
 alias cdb="cd ~/bin"
 alias cdg="cd ~/git"
-#---5.1 ORIGIN
+
+# ORIGIN
 alias cdyo="cd ~/Yowls"
 alias yofd="nvim ~/Yowls"
 alias yomd="nvim ~/Yowls/README.md"
 alias yoig="nvim ~/Yowls/.gitignore"
-#---5.2 SCRIPTS
+
+# SCRIPTS
 alias cdsc="cd ~/scripts"
 alias scfd="nvim ~/scripts"
 alias scmd="nvim ~/scripts/README.md"
-#---5.3 STARTPAGES
+
+# STARTPAGES
 alias cdsp="cd ~/startpages"
 alias spfd="nvim ~/startpages"
 alias spmd="nvim ~/startpages/README.md"
-#---5.4 FIREFOX
+
+# FIREFOX
 alias cdf="cd ~/.mozilla/firefox/*.default-release/chrome"
 alias ffd="nvim ~/.mozilla/firefox/*.default-release/chrome/"
 alias fcss="nvim ~/.mozilla/firefox/*.default-release/chrome/userChrome.css"
 alias fcnt="nvim ~/.mozilla/firefox/*.default-release/chrome/userContent.css"
 alias fmd="nvim ~/.mozilla/firefox/*.default-release/chrome/README.md"
 
-#---- 6.Aplications
+
+# 6 - Aplications
+#=====================
 alias v="$EDITOR"
-# Trash-cli
-#alias x="trash-put"
-#alias xl="trash-list"
-#alias xr="trash-restore"
-#alias xempty="trash-empty"
+
 # Exa
 alias ls="exa --group-directories-first"
 alias la="exa --group-directories-first -a"
 alias ll="exa --group-directories-first -lha"
 alias l="exa --group-directories-first -lh"
-# Lsd
+
+# Lsd #[DEPRECATED]
 alias lx="lsd --group-dirs first"
 alias lxa="lsd --group-dirs first -lhA"
 alias lxt="lsd --group-dirs first --tree"
+
 # HBlock (hosts)
-alias uhblock="hblock --backup ${HOME}/Desktop --sources ${HOME}/MEGA/hblock/hosts --whitelist ${HOME}/MEGA/hblock/whitelist.list --blacklist ${HOME}/MEGA/hblock/blacklist.list"
-# GIT
+alias uhblock="hblock --backup ${HOME}/Documents --sources ${HOME}/MEGA/hosts/sources --whitelist ${HOME}/MEGA/hosts/whitelist.list --blacklist ${HOME}/MEGA/hosts/blacklist.list"
+
+# GIT [CHANGE]
 #https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git#aliases
 alias g="git"
 alias glogg="git log --all --graph --decorate --oneline"
 alias gig="nvim .gitignore"
 alias rmd="nvim README.md"
 
-#---- 7.Common errors
+
+# 7 - Common errors
+#======================
 alias vi=nvim
 alias vim=nvim

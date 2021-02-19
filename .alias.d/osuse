@@ -49,6 +49,9 @@ alias zppugg="sudo zypper dup"
 # List avaible upgrades
 alias zppuls="zypper list-updates"
 alias upgradels="zypper list-updates"
+# Update and Upgrade
+alias nya="update && upgradels"
+alias nyya="update && upgrade"
 
 #---- 3.Configuration files | dotfiles
 #---3.1 PLASMA
