@@ -5,7 +5,7 @@
 "   \    /    |  | |  |  |  |     |  `----.|  `--'  | |  |\   | |  |     |  | |  |__| |
 "    \__/     |__| |__|  |__|      \______| \______/  |__| \__| |__|     |__|  \______|
 "
-" INIT PLUGINS
+" INIT PLUGINS with vim-plug
 call plug#begin('~/.vim/plugged')
 	" Style
 	Plug 'ap/vim-css-color'

@@ -1,9 +1,9 @@
 # Import sources
-source ${HOME}/.alias.d/fish
+source ${HOME}/.alias.d/shell
 source ${HOME}/.config/fish/functions.fish
 
 # Export variables
-export FETCH="$HOME/MEGA/fetch"
+export FETCH="$HOME/MEGA/fetch" #[DEPRECATED]
 
 # Theme
 set fish_color_normal brcyan

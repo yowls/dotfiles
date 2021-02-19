@@ -8,15 +8,17 @@ esac
 #===========================
 source "${HOME}/.alias.d/shell"
 source "${HOME}/.bash.d/theme1"
+# Start Autojump
+[[ -s /etc/profile.d/autojump.sh ]] && source /etc/profile.d/autojump.sh
+
 
 # EXPORT VAR [DEPRECATED]
 #===============================
 export FETCH="${HOME}/MEGA/fetch"
 
-# Start Autojump
-[[ -s /etc/profile.d/autojump.sh ]] && source /etc/profile.d/autojump.sh
 
 # HISTORY
+#===============
 # create a bash_history file is doesnt exist
 [ ! -f "${HOME}/.cache/bash_history" ] && touch ~/.cache/bash_history
 HISTSIZE=1000
@@ -24,7 +26,9 @@ HISTFILESIZE=2000
 HISTFILE=~/.cache/bash_history
 HISTCONTROL=ignoreboth
 
-# Options
+
+# OPTIONS
+#==================
 shopt -s histappend
 shopt -s checkwinsize
 #shopt -s globstar
