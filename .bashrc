@@ -1,57 +1,39 @@
-#  /|                               .
-#  ||                             .'|
-#  ||                            <  |
-#  ||  __        __               | |
-#  ||/'__ '.  .:--.'.         _   | | .'''-.
-#  |:/`  '. '/ |   \ |      .' |  | |/.'''. \
-#  ||     | |`" __ | |     .   | /|  /    | |
-#  ||\    / ' .'.''| |   .'.'| |//| |     | |
-#  |/\'..' / / /   | |_.'.'.-'  / | |     | |
-#  '  `'-'`  \ \._,\ '/.'   \_.'  | '.    | '.
-#             `--'  `"            '---'   '---'
-
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
       *) return;;
 esac
 
-# Import sources
-source "${HOME}/.alias"
+# IMPORT SOURCES
+#===========================
+source "${HOME}/.alias.d/shell"
 source "${HOME}/.bash.d/theme1"
 
-# Export var
+# EXPORT VAR [DEPRECATED]
+#===============================
 export FETCH="${HOME}/MEGA/fetch"
 
+# Start Autojump
+[[ -s /etc/profile.d/autojump.sh ]] && source /etc/profile.d/autojump.sh
+
 # HISTORY
-#Create a bash_history file is doesnt exist
+# create a bash_history file is doesnt exist
 [ ! -f "${HOME}/.cache/bash_history" ] && touch ~/.cache/bash_history
 HISTSIZE=1000
 HISTFILESIZE=2000
 HISTFILE=~/.cache/bash_history
 HISTCONTROL=ignoreboth
-# append to the history file, don't overwrite it
+
+# Options
 shopt -s histappend
-
-# Autojump
-[[ -s /etc/profile.d/autojump.sh ]] && source /etc/profile.d/autojump.sh
-
-# check the window size after each command and, if necessary,
-# update the values of LINES and COLUMNS.
 shopt -s checkwinsize
-
-# If set, the pattern "**" used in a pathname expansion context will
-# match all files and zero or more directories and subdirectories.
 #shopt -s globstar
-
-# make less more friendly for non-text input files, see lesspipe(1)
 #[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
-
 #force_color_prompt=yes
 color_prompt=yes
 
 
-# Aliases
+# Aliases [DEPRECATED]
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     alias ls='ls --color=auto'
@@ -67,9 +49,9 @@ fi
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 
-# enable programmable completion features (you don't need to enable
-# this, if it's already enabled in /etc/bash.bashrc and /etc/profile
-# sources /etc/bash.bashrc).
+# Enable completion 
+# you don't need to enable this, if it's already enabled in
+# /etc/bash.bashrc and /etc/profile sources /etc/bash.bashrc
 if ! shopt -oq posix; then
   if [ -f /usr/share/bash-completion/bash_completion ]; then
     . /usr/share/bash-completion/bash_completion

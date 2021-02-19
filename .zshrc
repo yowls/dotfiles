@@ -4,14 +4,19 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # Import sources
-source "$HOME/.alias"
+source "$HOME/.alias.d/shell"
+[ -n $DISTRO ] && source "${HOME}/.alias.d/${DISTRO}"
+
 # Export variables
-export FETCH="$HOME/MEGA/fetch"
-export ZSH="$HOME/.oh-my-zsh"
+export FETCH="$HOME/MEGA/fetch" #[DEPRECATED]
+
 
 # Oh My ZSH: PLUGINS
+#========================
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+
+# [CHANGE]
 plugins=(
 	wd
         git
@@ -23,24 +28,30 @@ plugins=(
 	zsh-history-substring-search
 )
 
+
 # Oh My ZSH: THEME
+#========================
 # Standard themes can be found in ~/.oh-my-zsh/themes/*
 # Custom themes may be added to ~/.oh-my-zsh/custom/themes/
+
 ZSH_THEME="powerlevel10k/powerlevel10k"
+
 #ZSH_THEME="random"
 #ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
-source $ZSH/oh-my-zsh.sh
 
-# Options
+source "$HOME/.oh-my-zsh/oh-my-zsh.sh"
+
+
+# OPTIONS
 setopt correct		# Enable auto-correction.
 #setopt autocd		# Automatically cd into typed directory.
 
-# History
+# HISTORY
 HISTSIZE=3000
 SAVEHIST=3000
 HISTFILE=~/.cache/zsh_history
 
-# Plugins
+# ZSH PLUGINS
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 

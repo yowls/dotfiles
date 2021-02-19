@@ -15,9 +15,8 @@
 !.bashrc
 !.bash.d
 !.bash.d/*
-#!.fishrc
-#!.fish.d
-#!.fish.d/*
+!.config/fish
+!.config/fish/*
 !.zshrc
 !.zsh.d
 !.zsh.d/*
