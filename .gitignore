@@ -21,7 +21,6 @@
 !.zsh.d
 !.zsh.d/*
 # Load aliases
-!.alias
 !.alias.d
 !.alias.d/*
 # Bookmarks
@@ -52,12 +51,16 @@
 # Launcher
 !.config/rofi
 !.config/rofi/*
+!.config/wofi
+!.config/wofi/*
+# Notifications
+!.config/dunst
+!.config/dunst/*
+!.config/mako
+!.config/mako/*
 # Neofetch
 !.config/neofetch
 !.config/neofetch/*
-# Dunst
-!.config/dunst
-!.config/dunst/*
 # Conky
 !.config/conky
 !.config/conky/*
@@ -124,11 +127,11 @@
 !.config/berry/**
 !.config/berry/OThemes
 
-# Tint2
+# Tint2 [DEPRECATED]
 !.config/tint2
 !.config/tint2/*
 
-# Temp files
+# VIM Temp files
 [._]*.s[a-v][a-z]
 [._]*.sw[a-p]
 [._]s[a-v][a-z]
