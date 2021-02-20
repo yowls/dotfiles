@@ -86,7 +86,7 @@ alias wbmd="nvim ~/.config/waybar/README.md"
 #---- 4.Applications
 alias atom="flatpak run io.atom.Atom"
 # Youtube-dl
-alias audio="youtube-dl -o '${HOME}/Desktop/%(title)s.%(ext)s' -f bestaudio -x --audio-format best --audio-quality 0 -i"
-alias mp3="youtube-dl -o '${HOME}/Desktop/%(title)s.%(ext)s' -x --audio-format mp3 --audio-quality 0 -i"
-alias mp3t="youtube-dl -o '${HOME}/Desktop/%(title)s.%(ext)s' -x --audio-format mp3 --audio-quality 0 --write-thumbnail -i"
-alias video="youtube-dl -o '${HOME}/Desktop/%(title)s.%(ext)s' -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 -i"
+alias audio="youtube-dl -o '$HOME/Desktop/%(title)s.%(ext)s' -f bestaudio -x --audio-format best --audio-quality 0 -i"
+alias mp3="youtube-dl -o '$HOME/Desktop/%(title)s.%(ext)s' -x --audio-format mp3 --audio-quality 0 -i"
+alias mp3t="youtube-dl -o '$HOME/Desktop/%(title)s.%(ext)s' -x --audio-format mp3 --audio-quality 0 --write-thumbnail -i"
+alias video="youtube-dl -o '$HOME/Desktop/%(title)s.%(ext)s' -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 -i"

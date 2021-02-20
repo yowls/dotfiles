@@ -31,15 +31,6 @@ alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 
-# Man colors
-export LESS_TERMCAP_mb=$'\e[1;32m'
-export LESS_TERMCAP_md=$'\e[1;32m'
-export LESS_TERMCAP_me=$'\e[0m'
-export LESS_TERMCAP_se=$'\e[0m'
-export LESS_TERMCAP_so=$'\e[01;33m'
-export LESS_TERMCAP_ue=$'\e[0m'
-export LESS_TERMCAP_us=$'\e[1;4;31m'
-
 # Encrypt text file (need parameters)
 alias crypt="openssl aes-256-cbc -in $1 -out $1.enc"
 alias uncrypt="openssl aes-256-cbc -d -in $1 -out $2"
@@ -74,7 +65,7 @@ alias cdomz="cd ~/.oh-my-zsh/custom"
 
 # ALIAS
 alias shk="nvim ~/.alias.d/shell"
-alias shkk="nvim ~/.alias.d/${DISTRO}"
+alias shkk="nvim ~/.alias.d/$DISTRO"
 alias shkfd="nvim ~/.alias.d"
 
 # TERMINAL KITTY
@@ -94,9 +85,9 @@ alias xrconf="nvim ~/.Xresources"
 alias rxr="xrdb -merge ~/.Xresources"
 
 # OTHERS
-alias todo="emacs ~/MEGA/${DISTRO}.org"
+alias todo="emacs ~/MEGA/$DISTRO.org"
 alias neoconf="nvim ~/.config/neofetch/config.conf"
-alias nfch="neofetch --source " #[DEPRECATED]
+#alias nfch="neofetch --source " #[DEPRECATED]
 
 
 # 5 - Working Directories
@@ -146,7 +137,7 @@ alias lxa="lsd --group-dirs first -lhA"
 alias lxt="lsd --group-dirs first --tree"
 
 # HBlock (hosts)
-alias uhblock="hblock --backup ${HOME}/Documents --sources ${HOME}/MEGA/hosts/sources --whitelist ${HOME}/MEGA/hosts/whitelist.list --blacklist ${HOME}/MEGA/hosts/blacklist.list"
+alias uhblock="hblock --backup $HOME/Documents --sources $HOME/MEGA/hosts/sources --whitelist $HOME/MEGA/hosts/whitelist.list --blacklist $HOME/MEGA/hosts/blacklist.list"
 
 # GIT [CHANGE]
 #https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git#aliases
