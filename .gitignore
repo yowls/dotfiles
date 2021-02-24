@@ -11,15 +11,15 @@
 !.xprofile
 !.profile
 !.xinitrc
-# Shell
+# Shells
 !.bashrc
 !.bash.d
 !.bash.d/*
 !.config/fish
 !.config/fish/*
-!.zshrc
-!.zsh.d
-!.zsh.d/*
+!.zshenv
+!.config/zsh
+!.config/zsh/*
 # Load aliases
 !.alias.d
 !.alias.d/*

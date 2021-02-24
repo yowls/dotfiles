@@ -15,7 +15,6 @@
 #xrdb ~/.Xresources
 
 #-- Defaults
-#export DISTRO='artix'
 #export VISUAL="/usr/bin/nvim"
 export EDITOR="/usr/bin/nvim"
 export TERMINAL="kitty"
@@ -24,6 +23,8 @@ export BROWSER="/usr/bin/firefox"
 export QT_QPA_PLATFORMTHEME="qt5ct"
 #-- Custom PATH
 export PATH="${PATH}:${HOME}/bin:${HOME}/bin/scripts"
+#-- Distro configs
+#export DISTRO='artix'
 
 #-- OPENRC
 #xbacklight -set 10

@@ -19,8 +19,8 @@
 
 #-- Reload Xresources
 xrdb ~/.Xresources
+
 #-- Defaults
-export DISTRO='osuse'
 #export VISUAL="/usr/bin/nvim"
 export EDITOR="/usr/bin/nvim"
 export TERMINAL="kitty"
@@ -29,6 +29,8 @@ export BROWSER="/usr/bin/firefox"
 #export QT_QPA_PLATFORMTHEME="qt5ct"
 #-- Custom PATH
 export PATH="${PATH}:${HOME}/bin:${HOME}/bin/scripts:${HOME}/.cargo/bin" #:${HOME}/.local/bin/
+#-- Distro configs
+export DISTRO='osuse'
 
 
 # In case everything goes wrong, we at least fall back to a plain xterm
