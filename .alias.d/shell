@@ -36,19 +36,12 @@ alias crypt="openssl aes-256-cbc -in $1 -out $1.enc"
 alias uncrypt="openssl aes-256-cbc -d -in $1 -out $2"
 
 
-# 2 - Distro Aliases [DEPRECATED]
-#=======================
-#[ -n $DISTRO ] && source "${HOME}/.alias.d/${DISTRO}"
-#alias nya="update && upgradels"
-#alias nyya="update && upgrade"
-
-
-# 3 - Scripts [DEPRECATED]
+# 2 - Scripts [DEPRECATED]
 #======================
 alias wttr="curl wttr.in"
 
 
-# 4 - Configuration files | Dotfiles
+# 3 - Configuration files | Dotfiles
 #=====================================
 # FISH SHELL
 alias ficonf="nvim ~/.config/fish/config.fish"
@@ -90,7 +83,7 @@ alias neoconf="nvim ~/.config/neofetch/config.conf"
 #alias nfch="neofetch --source " #[DEPRECATED]
 
 
-# 5 - Working Directories
+# 4 - Working Directories
 #============================
 alias cdd="cd ~/Downloads"
 alias cddc="cd ~/Documents"
@@ -121,7 +114,7 @@ alias fcnt="nvim ~/.mozilla/firefox/*.default-release/chrome/userContent.css"
 alias fmd="nvim ~/.mozilla/firefox/*.default-release/chrome/README.md"
 
 
-# 6 - Aplications
+# 5 - Aplications
 #=====================
 alias v="$EDITOR"
 
@@ -131,23 +124,20 @@ alias la="exa --group-directories-first -a"
 alias ll="exa --group-directories-first -lha"
 alias l="exa --group-directories-first -lh"
 
-# Lsd #[DEPRECATED]
-alias lx="lsd --group-dirs first"
-alias lxa="lsd --group-dirs first -lhA"
-alias lxt="lsd --group-dirs first --tree"
-
 # HBlock (hosts)
 alias uhblock="hblock --backup $HOME/Documents --sources $HOME/MEGA/hosts/sources --whitelist $HOME/MEGA/hosts/whitelist.list --blacklist $HOME/MEGA/hosts/blacklist.list"
 
-# GIT [CHANGE]
-#https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git#aliases
+# GIT
 alias g="git"
-alias glogg="git log --all --graph --decorate --oneline"
 alias gig="nvim .gitignore"
 alias rmd="nvim README.md"
+alias glogg="git log --all --graph --decorate --oneline"
+alias gst="git status"
+alias gaa="git add -A"
+alias gpl="git pull"
+alias gps="git push"
 
-
-# 7 - Common errors
+# 6 - Common errors
 #======================
 alias vi=nvim
 alias vim=nvim

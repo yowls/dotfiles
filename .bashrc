@@ -72,3 +72,6 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# Run Starship prompt
+eval "$(starship init bash)"
