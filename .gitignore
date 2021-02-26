@@ -88,6 +88,9 @@
 # Zathura
 !.config/zathura
 !.config/zathura/*
+# Qutebrowser
+!.config/qutebrowser
+!.config/qutebrowser/*
 # Others
 !.inputrc
 # Random folder

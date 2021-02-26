@@ -6,6 +6,11 @@ source $HOME/.alias.d/shell
 # Export variables
 #export FETCH="$HOME/MEGA/fetch" #[DEPRECATED]
 
+# Gnome keyring
+if test -n "$DESKTOP_SESSION"
+    set -x (gnome-keyring-daemon --start | string split "=")
+end
+
 # Theme
 set fish_color_normal brcyan
 set fish_color_autosuggestion '#7d7d7d'
