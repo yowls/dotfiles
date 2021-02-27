@@ -13,7 +13,8 @@ run lxqt-policykit-agent
 #run picom -b --backend glx --vsync
 run picom --config ${HOME}/.config/picom/picom.conf
 #-- NOTIFICATION
-run deadd-notification-center
+run dunst
+#run deadd-notification-center
 #-- STATUS BAR
 run tint2
 #run tint2 -c ${HOME}/.config/tint2/config
@@ -41,4 +42,5 @@ run tilda
 
 #-- Scripts
 #run vitas
+#run dual_monitor
 #run wal -R
