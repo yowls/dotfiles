@@ -1,6 +1,7 @@
-*last updated: 08 February 21*<br>
-*version: 0.1.7*
+*last updated: 27 Feb 21*<br>
+*version: 0.1.5*
 
-<img src="Pics/b_banner.png" align=center height=300px>
+<img src="Pics/banner.png" align=center height=300px>
 
-Work In Progress..
+🍇 Berry window manager 🍒<br>
+Config files

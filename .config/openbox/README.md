@@ -1,7 +1,7 @@
 *last updated: 25 October 20*<br>
 *Version:3.6.1*
 
-<img src="Pics/op_banner.png" align=center height=300px>
+<img src="pics/banner.png" align=center height=300px>
 
 ### About this window manager
 <p align=left>

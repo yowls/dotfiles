@@ -23,9 +23,9 @@ run sxhkd -c ${HOME}/.config/berry/sxhkdrc
 #-- STATUS BAR
 #run lemonbar
 #-- Applets
-#run parcellite	#Clipboard
-#run nm-applet	#Network
-#run pa-applet	#Volume
+#run parcellite			# Clipboard
+#run nm-applet			# Network
+#run pa-applet			# Volume
 #run lxqt-powermanagement	#Power manager
 #-- DOCK
 run plank
