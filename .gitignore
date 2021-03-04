@@ -48,6 +48,8 @@
 # Compositor
 !.config/picom
 !.config/picom/*
+!.config/flashfocus
+!.config/flashfocus/*
 # Launcher
 !.config/rofi
 !.config/rofi/*
