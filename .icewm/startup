@@ -7,44 +7,43 @@ run() { [ $(pgrep $1) ] || $@& }
 
 # If you want to use XFCE config tools
 #run xfce-mcs-manager
-#-- Polkit | Pam
+#-- POLKIT | PAM | KEYRING
 run /usr/libexec/polkit-gnome-authentication-agent-1
 run /usr/lib64/libexec/kf5/pam_kwallet_init
-#-- Lockscreen
+#-- LOCKSCREEN
 #run xscreensaver -nosplash
 #run i3lock
-#-- Compositor
-run picom 
+#-- COMPOSITOR
+#run picom 
 #run picom -b --backend glx --vsync
-#run picom --config ${HOME}/.config/picom/picom.conf
-#-- Notification
+run picom --config ${HOME}/.config/picom/picom.conf
+#-- NOTIFICATION
 run dunst 
 #run dunst -config "${HOME}/.config/dunst/dunstrc.conf"
-#-- Status bar
-#run polybar -c "${HOME}/.config/polybar/$Ptheme/config.ini" main
-#-- Applets
-sleep 1 &&
-run qlipper	#Clipboard
-sleep 1 &&
-run nm-applet	#Network
-sleep 1 &&
-run pa-applet	#Volume
-sleep 1 &&
-run lxqt-powermanagement	#Power manager
-#-- Dock
+#-- DOCK
 run latte
-#-- Widgets
+#run latte --layout
+#-- WIDGETS
 #conky -c "${HOME}/.config/conky/"
-#-- Wallpaper
-~/.fehbg	#Automatic
-#feh --bg-fill '/home/yowls/MEGA/Wallpaper/General-Art/66398581_p0.jpg' #Static
-
-#-- Scripts
-#run vitas
-#run wal -R
+#-- WALLPAPER
+#mpv?								# Dynamic
+#feh --bg-fill "{$HOME}/MEGA/Wallpaper/General-Art/66398581_p0.jpg" # Static
+run pcmanfm --desktop							# Desktop icons
 
 #-- Demons
 run redshift
 run tilda
 #run urxvtd
 #run pcmanfm --daemon-mode
+#run emacs --daemon
+
+#-- Scripts
+#run vitas
+#run dual_monitor
+#run wal -R
+
+#-- APPLETS
+sleep 1 && run qlipper		# Clipboard
+sleep 1 && run nm-applet	# Network
+sleep 1 && run pa-applet	# Volume
+sleep 1 && run lxqt-powermanagement # Power manager

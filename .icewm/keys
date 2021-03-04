@@ -1,35 +1,84 @@
-# This is an example for icewm 1.6.5 hotkey definition file.
-# It will be installed as /usr/share/icewm/keys.
-# Place your variants in /etc/icewm or in $HOME/.icewm since
-# modifications to this file will be overwritten when you reinstall icewm.
-#
-# A list of all valid keyboard symbols can be found in
 # /usr/include/X11/keysym.h, keysymdefs.h, XF86keysym.h, ...
-# You'll have to omit XK_ prefixs and to replace XF86XK_ prefixes by
-# XF86. Valid modifiers are Alt, Ctrl, Shift, Meta, Super and Hyper.
-#
-key "Alt+Ctrl+t"            xterm
-key "Alt+Ctrl+b"            xdg-open about:blank
-key "Alt+Ctrl+s"            xdg-open https://www.google.com
+# You'll have to omit XK_ prefixs and to replace XF86XK_ prefixes by XF86
+# Valid modifiers are Alt, Ctrl, Shift, Meta, Super and Hyper.
 
-key "Super+KP_Subtract"     amixer sset Master 5%-
-key "Super+KP_Add"          amixer sset Master 5%+
+# SYSTEM KEYBINDS
+# ..
 
-# "Multimedia key" bindings for Xorg. Gather the keycodes of your
-# advanced function keys by watching the output of the xev command whilest
-# pressing those keys and map those symbols by using xmodmap.
+switchkey "Super+p"         icewm-menu-xrandr
 
-# Note: some of them might have unwanted side effects through concurrency with
-# other listeners like systemd for the suspend key events
-#
+
+# BASIC SYSTEM CONTROL
+#########################
+# Suspend
 # key "XF86Standby"         /bin/sh -c "{ test -e /run/systemd/system && systemctl suspend; } ||:"
 # key "XF86Sleep"           /bin/sh -c "{ test -e /run/systemd/system && systemctl suspend; } ||:"
-key "XF86AudioLowerVolume"  amixer sset Master 5%-
-key "XF86AudioRaiseVolume"  amixer sset Master 5%+
-key "XF86AudioMute"         amixer sset Master toggle
+
+# Volume
+key "XF86AudioLowerVolume"  pactl set-sink-volume 0 -5%
+key "XF86AudioRaiseVolume"  pactl set-sink-volume 0 +5%
+key "XF86AudioMute"         pactl set-sink-mute 0 toggle
+
+# Microphone
+key "XF86AudioMicMute"      pactl set-source-mute @DEFAULT_SOURCE@ toggle
+
+# Music
+key "XF86AudioNext"         playerctl next
+key "XF86AudioPrev"         playerctl previous
+key "XF86AudioPlay"         playerctl play-pause
+
+# Brightness
+key "XF86MonBrightnessUp"       xbacklight -inc 10
+key "XF86MonBrightnessDown"     xbacklight -dec 10
+
+# Browse
 key "XF86HomePage"          xdg-open about:blank
 key "XF86Search"            xdg-open https://www.google.com
+
+# Others
 key "XF86Eject"             eject
 key "XF86Calculator"        /bin/sh -c "gnome-calculator || xcalc || ( type bc >/dev/null 2>&1 && xterm -e bc -l)"
 
-switchkey "Super+p"         icewm-menu-xrandr
+
+# PREFERED APPLICATIONS
+##########################
+# Terminal
+key "Super+Return"	kitty
+key "Alt+Ctrl+t+"	urxvt
+
+# Editors
+key "Super+v"               vscodium
+key "Super+Shift+v"         kitty -e nvim
+
+# Config
+#key "Super+p"          kitty -e nvim ~/.icewm/prefereces [[CONFLICT]
+#key "Super"            kitty -e nvim ~/.icewm/
+
+# Browser
+key "Super+b"           firefox
+key "Super+e"           pcmanfm
+
+# System monitor
+#key "Ctrl+Escape"       kitty -e htop
+
+# To-do's
+key "Super+Shift+t"     emacs ~/MEGA/osuse.org
+
+
+# REST OF APPLICATIONS
+######################
+key "Super+c"       emacs
+
+key "Print"         flameshot gui
+key "Super+Print"   flameshot full -p ~/Pictures
+
+#record
+
+key "Alt+Space"		rofi -show drun combi
+key "Alt+x"         rofi -show run
+
+
+# REMOVE
+# "Multimedia key" bindings for Xorg. Gather the keycodes of your
+# advanced function keys by watching the output of the xev command whilest
+# pressing those keys and map those symbols by using xmodmap.
