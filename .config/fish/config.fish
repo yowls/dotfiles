@@ -52,5 +52,5 @@ if test "$DISTRO" = "void"
 		set -x (gnome-keyring-daemon --start | string split "=")
 	end
 	# Run starship prompt
-	#starship init fish | source
+	starship init fish | source
 end
