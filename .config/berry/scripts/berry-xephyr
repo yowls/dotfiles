@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Settings
+DISPLAY_SIZE="1366x768"
+
+# Wait until the processes have been shut down
+#killall sxhkd 
+#while pgrep -u $UID -x sxhkd >/dev/null; do sleep 1; done
+
+# Launch xephyr window
+Xephyr -br -ac -noreset -screen $DISPLAY_SIZE :1 &
+#Xephyr -screen 640x480 -screen 640x480 +xinerama :80 &
+sleep 1
+
+# Set display
+export DISPLAY=:1
+sleep 1
+
+# Launch window manager
+sxhkd -c ../sxhkdrc &
+berry -c ../autostart &
