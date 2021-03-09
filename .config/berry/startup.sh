@@ -31,10 +31,6 @@ run sxhkd -c ${HOME}/.config/berry/sxhkdrc
 run plank
 #-- WIDGETS
 #conky -c ${HOME}/.config/conky/
-#-- WALLPAPER
-run nitrogen --restore						# Automatic
-#mpv?								# Dynamic
-#feh --bg-fill '/home/yowls/MEGA/Wallpaper/General-Art/66398581_p0.jpg' # Static
 
 #-- Demons
 run tilda
@@ -45,5 +41,10 @@ run tilda
 
 #-- Scripts
 #run vitas
-#run dual_monitors
+run dual_monitors
 #run wal -R
+
+#-- WALLPAPER
+run nitrogen --restore						# Automatic
+#mpv?								# Dynamic
+#feh --bg-fill '/home/yowls/MEGA/Wallpaper/General-Art/66398581_p0.jpg' # Static

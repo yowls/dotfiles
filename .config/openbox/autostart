@@ -16,8 +16,9 @@ run picom --config ${HOME}/.config/picom/picom.conf
 run dunst
 #run deadd-notification-center
 #-- STATUS BAR
-run tint2
-#run tint2 -c ${HOME}/.config/tint2/config
+#run tint2
+#run tint2 -c ${HOME}/.config/tint2/tint2rc
+run ${HOME}/.config/tint2/whiter/launch.sh
 #-- APPLETS
 run lxqt-powermanagement	# Power manager
 run nm-applet			# Network
@@ -27,10 +28,6 @@ run qlipper			# Clipboard
 run docky
 #-- WIDGETS
 #conky -c "${HOME}/.config/conky/"
-#-- WALLPAPER
-#script									# Dynamic
-#feh --bg-fill '/home/yowls/MEGA/Wallpaper/General-Art/66398581_p0.jpg' # Static
-run pcmanfm-qt --desktop						# Desktop icons
 
 #-- Demons
 run redshift
@@ -42,5 +39,10 @@ run tilda
 
 #-- Scripts
 #run vitas
-#run dual_monitor
+run dual_monitors
 #run wal -R
+
+#-- WALLPAPER
+#script									# Dynamic
+feh --no-fehbg --bg-fill '/home/yowls/MEGA/Wallpaper/PixelArt/20210222_010451.jpg' # Static
+#run pcmanfm-qt --desktop						# Desktop icons

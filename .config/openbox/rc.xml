@@ -1,4 +1,3 @@
-<?xml version="1.0"?>
 <openbox_config xmlns="http://openbox.org/3.4/rc" xmlns:xi="http://www.w3.org/2001/XInclude">
   <resistance>
     <strength>10</strength>
@@ -384,32 +383,32 @@
     </keybind>
     <keybind key="W-Print">
       <action name="Execute">
-        <command>flameshot full -p /home/yowls/Desktop</command>
+        <command>flameshot full -p /home/yowls/Pictures</command>
       </action>
     </keybind>
     <keybind key="XF86AudioMute">
       <action name="Execute">
-        <command>pactl set-sink-mute @DEFAULT_SINK@ toggle</command>
+        <command>volume toggle-mute</command>
       </action>
     </keybind>
     <keybind key="XF86AudioLowerVolume">
       <action name="Execute">
-        <command>pactl set-sink-volume @DEFAULT_SINK@ -5%</command>
+        <command>volume down</command>
       </action>
     </keybind>
     <keybind key="XF86AudioRaiseVolume">
       <action name="Execute">
-        <command>pactl set-sink-volume @DEFAULT_SINK@ +5%</command>
+        <command>volume up</command>
       </action>
     </keybind>
     <keybind key="XF86MonBrightnessDown">
       <action name="Execute">
-        <command>xbacklight -dec 5</command>
+        <command>brightness down</command>
       </action>
     </keybind>
     <keybind key="XF86MonBrightnessUp">
       <action name="Execute">
-        <command>xbacklight -inc 5</command>
+        <command>brightness up</command>
       </action>
     </keybind>
     <keybind key="W-Right">

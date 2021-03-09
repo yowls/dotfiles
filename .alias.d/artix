@@ -66,17 +66,10 @@ alias lxout="nvim ~/.config/plasma-workspace/shutdown"
 #---3.2 OPENBOX
 alias cdop="cd ~/.config/openbox"
 alias opfd="nvim ~/.config/openbox"
-alias opconf="nvim ~/.config/openbox/config"
-alias opkey="nvim ~/.config/openbox/keys"
-alias opstar="nvim ~/.config/openbox/start"
+alias opconf="nvim ~/.config/openbox/rc.xml"
+alias opstar="nvim ~/.config/openbox/autostart"
 alias opmd="nvim ~/.config/openbox/README.md"
-#---3.3 STUMPWM
-alias cdsp="cd ~/.config/stumpwm"
-alias spfd="nvim ~/.config/stumpwm"
-alias spconf="nvim ~/.config/stumpwm/config"
-alias spstar="nvim ~/.config/stumpwm/startup.sh"
-alias spkey="nvim ~/.config/stumpwm/keybind.sh"
-alias spmd="nvim ~/.config/stumpwm/README.md"
+#---3.3 ..
 #---3.4 AWESOME
 alias cdaw="cd ~/.config/awesome"
 alias awfd="nvim ~/.config/awesome"
